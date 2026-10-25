@@ -453,8 +453,8 @@
     "images": [
       {
         "path": "assets/answer-history/moscow.jpg",
-        "alt": "Собор Василия Блаженного. Современная Москва",
-        "caption": "Собор Василия Блаженного. Современная Москва",
+        "alt": "Москва. Современная фотография",
+        "caption": "Москва. Современная фотография",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moscow_July_2011-4a.jpg",
         "author": "Alvesgaspar",
         "license": "CC BY-SA 3.0",
@@ -466,12 +466,14 @@
         "description": "Saint Basil's Cathedral (Cathedral of the Protection of Most Holy Theotokos on the Moat) on Red Square in Moscow (Russia).",
         "originalDate": "2011-07-10",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Первое летописное упоминание о Москве",
+        "eventDate": "1147"
       },
       {
         "path": "assets/answer-history/petersburg.jpg",
-        "alt": "Петропавловская крепость. Современный Санкт-Петербург",
-        "caption": "Петропавловская крепость. Современный Санкт-Петербург",
+        "alt": "Петропавловская крепость. Современная фотография",
+        "caption": "Петропавловская крепость. Современная фотография",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saint_Petersburg_under_heavy_clouds,_Russia.jpg",
         "author": "Vyacheslav Argenberg",
         "license": "CC BY 4.0",
@@ -483,7 +485,9 @@
         "description": "The Peter and Paul Fortress, the original citadel of Saint Petersburg, Russia, founded by Peter the Great in 1703 and built to Domenico Trezzini's designs from 1706 to 1740.",
         "originalDate": "2007-08-18 17:47:07",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Основание Санкт-Петербурга",
+        "eventDate": "1703"
       }
     ]
   },
@@ -491,8 +495,8 @@
     "images": [
       {
         "path": "assets/answer-history/sputnik.jpg",
-        "alt": "Модель первого искусственного спутника Земли. Музейный экспонат",
-        "caption": "Модель первого искусственного спутника Земли. Музейный экспонат",
+        "alt": "Макет первого искусственного спутника Земли",
+        "caption": "Макет первого искусственного спутника Земли",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sputnik_1_satellite_model.png",
         "author": "Soyuz235",
         "license": "Public domain",
@@ -504,12 +508,14 @@
         "description": "A replica of Sputnik 1, the first artificial satellite in the world to be put into outer space: the replica is stored in the National Air and Space Museum.",
         "originalDate": "1 September 2023",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Запуск первого искусственного спутника Земли",
+        "eventDate": "1957-10-04"
       },
       {
         "path": "assets/answer-history/gagarin.jpg",
-        "alt": "Юрий Гагарин. Фотография 1961 года",
-        "caption": "Юрий Гагарин. Фотография 1961 года",
+        "alt": "Юрий Гагарин. Архивный портрет",
+        "caption": "Юрий Гагарин. Архивный портрет",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_(1961)_-_Restoration.jpg",
         "author": "Arto Jousi / /Suomen valokuvataiteen museo / Alma Media / Uuden Suomen kokoelma; Restored by Adam Cuerden",
         "license": "Public domain",
@@ -521,7 +527,28 @@
         "description": "Photograph of the Soviet cosmonaut Yuri Gagarin at a press conference during his visit to Finland.",
         "originalDate": "Taken on 3 July 1961",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Первый полёт Юрия Гагарина",
+        "eventDate": "1961-04-12"
+      },
+      {
+        "title": "Valentina Tereshkova (January 1963).jpg",
+        "caption": "Валентина Терешкова. Архивный портрет",
+        "author": "Alexander Mokletsov / RIA Novosti archive #616304",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "originalDate": "1963",
+        "path": "assets/chronology-cards/tereshkova.jpg",
+        "alt": "Валентина Терешкова. Архивный портрет",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valentina_Tereshkova_%28January_1963%29.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Valentina_Tereshkova_%28January_1963%29.jpg",
+        "sha256": "1e4c3a220bd0c192b7f13555d1b12a1fa5f6a5bde8714779fbbbd90325d72633",
+        "width": 601,
+        "height": 853,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Полёт Валентины Терешковой",
+        "eventDate": "1963-06-16"
       }
     ]
   },
@@ -529,8 +556,8 @@
     "images": [
       {
         "path": "assets/answer-history/book.jpg",
-        "alt": "Разворот московского «Апостола», 1564 год",
-        "caption": "Разворот московского «Апостола», 1564 год",
+        "alt": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца",
+        "caption": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apostol_1564_Spread.jpg",
         "author": "Иван Фёдоров, Пётр Мстиславец",
         "license": "Public domain",
@@ -542,12 +569,14 @@
         "description": "Page-spread from \"Apostol\" printed by Ivan Fyodorov and Pyotr Mstislavets in 1564/1564 at Moscow. Copy of the Siberian Department of Russian Academy of Sciences.",
         "originalDate": "1563/1564",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
+        "eventDate": "1564"
       },
       {
         "path": "assets/answer-history/kunstkamera.jpg",
-        "alt": "Здание Кунсткамеры. Современная фотография",
-        "caption": "Здание Кунсткамеры. Современная фотография",
+        "alt": "Кунсткамера. Современная фотография",
+        "caption": "Кунсткамера. Современная фотография",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Kunstkamera_building_01.jpg",
         "author": "Andrey Korzun",
         "license": "CC BY-SA 4.0",
@@ -559,31 +588,108 @@
         "description": "Museum of Anthropology and Ethnography of the Academy of Sciences (Kunstkamera), St. Petersburg. The museum is named after Peter the Great.",
         "originalDate": "2018-08-12 18:26:11",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Основание Кунсткамеры",
+        "eventDate": "1714"
+      },
+      {
+        "title": "Mgu 1798.jpg",
+        "caption": "Московский университет. Акварель XVIII века",
+        "author": "Неизвестный художник XVIII века",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "originalDate": "XVIII век",
+        "path": "assets/chronology-cards/msu.jpg",
+        "alt": "Московский университет. Акварель XVIII века",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mgu_1798.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Mgu_1798.jpg",
+        "sha256": "fb52c4c6d42320097d9a7b597c8f56098b999f0b036672d6af92a1e83a4d441e",
+        "width": 640,
+        "height": 413,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Основание Московского университета",
+        "eventDate": "1755"
       }
     ]
   },
   "c6-order-800": {
     "images": [
       {
-        "path": "assets/images/image10.jpeg",
-        "alt": "Современный Владивосток",
-        "caption": "Современный Владивосток",
-        "sourceUrl": "source/kviz-original.ppt",
-        "author": "Из исходной презентации пользователя",
-        "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "1617bdb3e4407f2110fd251f7350b104cc0d0e6aa19b4ee0a331dfc17e898c65",
-        "transform": "Без изменения исходного файла"
+        "title": "Хабаровка. Вид 2 (фотография В. В. Ланина).jpg",
+        "caption": "Хабаровка. Ранняя архивная фотография",
+        "author": "Владимир Васильевич Ланин",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Russia-expired",
+        "originalDate": "1860-е; опубликовано в альбоме 1875–1876",
+        "path": "assets/chronology-cards/khabarovka.jpg",
+        "alt": "Хабаровка. Ранняя архивная фотография",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D0%BA%D0%B0._%D0%92%D0%B8%D0%B4_2_%28%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%92._%D0%92._%D0%9B%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0%29.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D0%BA%D0%B0._%D0%92%D0%B8%D0%B4_2_%28%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%92._%D0%92._%D0%9B%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0%29.jpg",
+        "sha256": "6de6ff2ddaf81fa0934c558841831c78ee0c77b05a86b2243d243ce354995059",
+        "width": 1000,
+        "height": 784,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Основание военного поста Хабаровка",
+        "eventDate": "1858"
       },
       {
-        "path": "assets/images/image34.jpeg",
-        "alt": "Первый мост через Амур в Хабаровске. Архивная фотография",
-        "caption": "Первый мост через Амур в Хабаровске. Архивная фотография",
-        "sourceUrl": "source/kviz-original.ppt",
-        "author": "Из исходной презентации пользователя",
-        "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "b4e58a4691fc689b47256ccfcee4079ff8f3d3a6afb861798efbca183375491b",
-        "transform": "Без изменения исходного файла"
+        "title": "Владивосток. Вид улицы Светланской (фотография В. В. Ланина № 76).jpg",
+        "caption": "Ранний Владивосток. Архивная фотография",
+        "author": "Владимир Васильевич Ланин",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Russia-expired",
+        "originalDate": "1870-е; альбом 1875–1876",
+        "path": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Ранний Владивосток. Архивная фотография",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA._%D0%92%D0%B8%D0%B4_%D1%83%D0%BB%D0%B8%D1%86%D1%8B_%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%28%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%92._%D0%92._%D0%9B%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0_%E2%84%96_76%29.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA._%D0%92%D0%B8%D0%B4_%D1%83%D0%BB%D0%B8%D1%86%D1%8B_%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%28%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%92._%D0%92._%D0%9B%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0_%E2%84%96_76%29.jpg",
+        "sha256": "a0ff662e1938816e2dee49b2d24d40840fc7594ab4bf55d1ac0941908afb2f42",
+        "width": 1000,
+        "height": 746,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Основание военного поста Владивосток",
+        "eventDate": "1860"
+      },
+      {
+        "title": "Закладка великой сибирской дороги, 1891.jpg",
+        "caption": "Закладка Транссиба. Историческая иллюстрация",
+        "author": "Иллюстрация из издания А. Ф. Маркса (1901); сканирование Владимир Васильев",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "originalDate": "Иллюстрация события 1891 года, опубликована в 1901; скан 2014",
+        "path": "assets/chronology-cards/transsib.jpg",
+        "alt": "Закладка Транссиба. Историческая иллюстрация",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B8%2C_1891.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/%D0%97%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B8%2C_1891.jpg",
+        "sha256": "5f456523b71dd41e884da215c4a2874449eb43ef12ed817c580ff7f535482caf",
+        "width": 900,
+        "height": 630,
+        "transform": "Уменьшение; нижняя печатная подпись с датой исключена при кадрировании, цвета сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Церемония закладки Транссибирской магистрали у Владивостока",
+        "eventDate": "1891"
+      },
+      {
+        "title": "East end, Amur Bridge 1 7-8 miles LCCN2014709643.jpg",
+        "caption": "Первый мост через Амур. Архивная фотография",
+        "author": "Bain News Service / Library of Congress, ggbain.29485",
+        "license": "Public domain",
+        "licenseUrl": "https://www.loc.gov/rr/print/res/274_bain.html",
+        "originalDate": "1916",
+        "path": "assets/chronology-cards/amur-bridge.jpg",
+        "alt": "Первый мост через Амур. Архивная фотография",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_end%2C_Amur_Bridge_1_7-8_miles_LCCN2014709643.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/East_end%2C_Amur_Bridge_1_7-8_miles_LCCN2014709643.jpg",
+        "sha256": "cd35f221c5816147c0f8a776913c391595c8985120ace795c67cf24c798443cb",
+        "width": 1000,
+        "height": 739,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Открытие первого постоянного моста через Амур в Хабаровске",
+        "eventDate": "1916"
       }
     ]
   },
@@ -591,8 +697,8 @@
     "images": [
       {
         "path": "assets/answer-history/gagarin.jpg",
-        "alt": "Юрий Гагарин. Фотография 1961 года",
-        "caption": "Юрий Гагарин. Фотография 1961 года",
+        "alt": "Юрий Гагарин. Архивный портрет",
+        "caption": "Юрий Гагарин. Архивный портрет",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_(1961)_-_Restoration.jpg",
         "author": "Arto Jousi / /Suomen valokuvataiteen museo / Alma Media / Uuden Suomen kokoelma; Restored by Adam Cuerden",
         "license": "Public domain",
@@ -604,12 +710,33 @@
         "description": "Photograph of the Soviet cosmonaut Yuri Gagarin at a press conference during his visit to Finland.",
         "originalDate": "Taken on 3 July 1961",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "eventText": "Первый полёт Юрия Гагарина",
+        "eventDate": "1961-04-12"
+      },
+      {
+        "title": "German Titov.JPG",
+        "caption": "Герман Титов. Архивный портрет",
+        "author": "NASA / Asif Siddiqi; crop by Yekrats",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+        "originalDate": "1962-05-03",
+        "path": "assets/chronology-cards/titov.jpg",
+        "alt": "Герман Титов. Архивный портрет",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:German_Titov.JPG",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/German_Titov.JPG",
+        "sha256": "c363b7c3f89ee13c34aabbb095e8a7f716b37dba45a59531a5267cf49ce2f96d",
+        "width": 728,
+        "height": 1000,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Старт Германа Титова на корабле «Восток-2»",
+        "eventDate": "1961-08-06"
       },
       {
         "path": "assets/answer-history/berlin-wall.jpg",
-        "alt": "Строительство Берлинской стены. 20 ноября 1961 года",
-        "caption": "Строительство Берлинской стены. 20 ноября 1961 года",
+        "alt": "Строительство Берлинской стены. Архивный снимок",
+        "caption": "Строительство Берлинской стены. Архивный снимок",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_1961-11-20.jpg",
         "author": "National Archives",
         "license": "Public domain",
@@ -621,7 +748,30 @@
         "description": "East German construction workers building the Berlin Wall.",
         "originalDate": "1961-11-20",
         "transform": "Уменьшение для экрана; цвета оригинала сохранены",
-        "retrieved": "2026-10-25"
+        "retrieved": "2026-10-25",
+        "note": "Иллюстрация процесса строительства; снимок сделан позднее начала сооружения стены.",
+        "eventText": "Начало сооружения Берлинской стены",
+        "eventDate": "1961-08-13"
+      },
+      {
+        "title": "State Kremlin Palace 1964.jpg",
+        "caption": "Кремлёвский дворец съездов — место проведения XXII съезда",
+        "author": "Thomas Taylor Hammond / University of Virginia",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "originalDate": "1964",
+        "note": "Иллюстрация места проведения, а не фотография заседания 1961 года.",
+        "path": "assets/chronology-cards/congress-palace.jpg",
+        "alt": "Кремлёвский дворец съездов — место проведения XXII съезда",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:State_Kremlin_Palace_1964.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/State_Kremlin_Palace_1964.jpg",
+        "sha256": "3e3f6e9f236e38b9e94cc2e29f606f64b676bc984ab30153abcf65c934405276",
+        "width": 1000,
+        "height": 647,
+        "transform": "Уменьшение для экрана; цвета оригинала сохранены",
+        "retrieved": "2026-10-25",
+        "eventText": "Открытие XXII съезда КПСС",
+        "eventDate": "1961-10-17"
       }
     ]
   },

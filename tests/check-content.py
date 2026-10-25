@@ -110,10 +110,29 @@ assert all((r/x['photo']).is_file() for x in cover['sectors'])
 extra=json.loads((r/'source/cover-history-extra-sources.json').read_text())
 assert len(extra)==4
 for x in extra:
- assert x['license']=='Public domain' and x['path'] in {x['photo'] for x in cover['sectors']}
+ assert x['license']=='Public domain'
  assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
+eras=json.loads((r/'source/cover-era-sources.json').read_text())['images']
+assert len(eras)==9 and {x['path'] for x in eras}=={x['photo'] for x in cover['sectors']}
+assert {'Русь','Российская империя','СССР'}<={x['theme'] for x in eras}
+assert any('Войны' in x['theme'] for x in eras)
+for x in eras:
+ assert x['author'] and x['license'] and x['sourceUrl']
+ assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
+event_sources=json.loads((r/'source/chronology-card-sources.json').read_text())
+assert set(event_sources)=={q['id'] for q in timelines}
+assert sum(len(q['events']) for q in timelines)==16
+for q in timelines:
+ assert set(event_sources[q['id']])=={e['label'] for e in q['events']}
+ assert q['images']==[e['image'] for e in q['events']]
+ assert q['answerImages']==[e['image'] for e in sorted(q['events'],key=lambda e:e['date'])]
+ assert len(q['images'])==len(set(q['images']))
+ for event in q['events']:
+  item=event_sources[q['id']][event['label']]
+  assert event['image']==item['path'] and event['date']==item['eventDate'] and event['text']==item['eventText']
+  assert hashlib.sha256((r/item['path']).read_bytes()).hexdigest()==item['sha256']
 index=(r/'index.html').read_text()
 assert index.index('cover-art.js')<index.index('app.js')
 print('PASS: 52 source slides, 25 original mappings preserved, 30 active cells in 6 categories, 12 warmup questions, 5 sourced photos, 5 verified timelines, local assets/checksums.')
 print('PASS: 42 sourced answer illustrations, two authentic color 1945 photographs, four local stage objects.')
-print('PASS: live cover shares 9 unique local photos with the 4:3 poster, true circular O, four new sourced historical color photos.')
+print('PASS: 9 unique sourced era illustrations in the live cover/poster; all 16 chronology events have separate sourced cards.')

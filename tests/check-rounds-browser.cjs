@@ -33,10 +33,10 @@ async function layout(p){return p.evaluate(()=>({overflow:[...document.querySele
   for(const q of data.questions){
    await manager(p,'questions');await click(p,'admin-open',`[data-id="${q.id}"]`);
    let view=await layout(p);assert(view.images,q.id+' question image missing');
-   if(q.type!=='matching')assert(view.text.includes(q.text),q.id+' question mismatch');
+   if(!['matching','chronology'].includes(q.type))assert(view.text.includes(q.text),q.id+' question mismatch');
    if(!q.sourceSlide){assert.deepEqual(view.overflow,[],q.id+' question needs scroll');await p.keyboard.press('1');await p.keyboard.press('1');assert.equal((await snapshot(p)).pendingAward.taskKey,'main:'+q.id);}
    if(q.id==='c5-photo-600')await p.screenshot({path:path.join(output,'photo-question.jpg'),quality:85});
-   await next(p);view=await layout(p);assert(view.images,q.id+' answer image missing');assert(view.text.includes(q.answer),q.id+' answer mismatch');
+   await next(p);view=await layout(p);assert(view.images,q.id+' answer image missing');if(q.type==='chronology')assert.deepEqual(await p.locator('.chronology-card').evaluateAll(xs=>xs.map(x=>x.dataset.event)),q.correctOrder);else assert(view.text.includes(q.answer),q.id+' answer mismatch');
    if(!q.sourceSlide)assert.deepEqual(view.overflow,[],q.id+' answer needs scroll');
    if(q.id==='c6-order-1000')await p.screenshot({path:path.join(output,'timeline-answer.jpg'),quality:85});
    await next(p);assert(['board','ranking'].includes((await snapshot(p)).current.screen));
