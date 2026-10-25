@@ -1,0 +1,150 @@
+{
+  "archivedOn": "2026-10-25",
+  "reason": "По запросу пользователя категория полностью заменена фотозаданиями; оригиналы сохранены для прослеживаемости.",
+  "questions": [
+    {
+      "id": "c5-200",
+      "category": "Кадр прошлого",
+      "value": 200,
+      "type": "video",
+      "text": "Что за события представлены на видеофрагменте?",
+      "answer": "Ледовое побоище, 1242 год.",
+      "images": [
+        "assets/images/image28.png"
+      ],
+      "answerImages": [],
+      "video": null,
+      "enabled": false,
+      "status": "missing-video",
+      "sourceSlide": 35,
+      "answerSlide": 36,
+      "pairEvidence": "reviewed-content-and-adjacency",
+      "source": "source/kviz-original.ppt",
+      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
+      "original": {
+        "text": "Что за события представлены на видео фрагмете ?",
+        "answer": "Ледовое побоище, 1242г"
+      },
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "evidence": [
+          "source-video"
+        ]
+      }
+    },
+    {
+      "id": "c5-400",
+      "category": "Кадр прошлого",
+      "value": 400,
+      "type": "video",
+      "text": "Про какую историческую личность идёт речь? Назовите год и событие, связанное с этой исторической личностью.",
+      "answer": "Воцарение Михаила Фёдоровича Романова в 1613 году — начало правления династии Романовых.",
+      "images": [
+        "assets/images/image29.png"
+      ],
+      "answerImages": [
+        "assets/images/image30.jpeg"
+      ],
+      "video": null,
+      "enabled": false,
+      "status": "missing-video",
+      "sourceSlide": 37,
+      "answerSlide": 38,
+      "pairEvidence": "reviewed-content-and-adjacency",
+      "source": "source/kviz-original.ppt",
+      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
+      "original": {
+        "text": "Про какую историческую личность идёт речь? .Назовите год и какое событие связано с исторической личностью",
+        "answer": "Воцарение Михаила Федоровича(воцарение новой династии, Романовых)1613 год."
+      },
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "evidence": [
+          "source-video"
+        ]
+      }
+    },
+    {
+      "id": "c5-600",
+      "category": "Кадр прошлого",
+      "value": 600,
+      "type": "video",
+      "text": "Назовите историческое событие.",
+      "answer": "Оборона Сталинграда.",
+      "images": [
+        "assets/images/image31.png"
+      ],
+      "answerImages": [],
+      "video": null,
+      "enabled": false,
+      "status": "missing-video",
+      "sourceSlide": 39,
+      "answerSlide": 40,
+      "pairEvidence": "reviewed-content-and-adjacency",
+      "source": "source/kviz-original.ppt",
+      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
+      "original": {
+        "text": "Назовите историческое событие",
+        "answer": "Оборона Сталинграда"
+      },
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "evidence": [
+          "source-video"
+        ]
+      }
+    },
+    {
+      "id": "c5-800",
+      "category": "Кадр прошлого",
+      "value": 800,
+      "type": "video",
+      "text": "Чему посвящён данный видеофрагмент?",
+      "answer": "Вхождение в состав России Крыма в 2014 году",
+      "images": [
+        "assets/images/image32.png"
+      ],
+      "answerImages": [],
+      "video": null,
+      "enabled": false,
+      "status": "missing-video",
+      "sourceSlide": 41,
+      "answerSlide": 42,
+      "pairEvidence": "reviewed-content-and-adjacency",
+      "source": "source/kviz-original.ppt",
+      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
+      "original": {
+        "text": "Чему посвящен данный видео фрагмент?",
+        "answer": "Вхождение в состав России Крыма в 2014 году"
+      },
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "evidence": [
+          "source-video"
+        ]
+      }
+    },
+    {
+      "id": "c5-1000",
+      "category": "Кадр прошлого",
+      "value": 1000,
+      "type": "text",
+      "text": "Текст",
+      "answer": "Текст",
+      "images": [],
+      "answerImages": [],
+      "video": null,
+      "enabled": false,
+      "status": "placeholder",
+      "sourceSlide": 51,
+      "answerSlide": 52,
+      "pairEvidence": "next-slide-action",
+      "source": "source/kviz-original.ppt",
+      "unavailableReason": "В исходнике только текстовая заглушка."
+    }
+  ]
+}

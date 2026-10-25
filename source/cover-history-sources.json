@@ -1,0 +1,442 @@
+[
+  {
+    "id": "cover-locomotive",
+    "file": "assets/cover-history/locomotive.jpg",
+    "caption": "Паровоз, начало XX века",
+    "commonsTitle": "File:Prokudin-Gorskii-26.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-26.jpg",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Prokudin-Gorskii-26.jpg/1280px-Prokudin-Gorskii-26.jpg",
+    "retrieved": "2026-10-25",
+    "width": 1280,
+    "height": 1100,
+    "sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db",
+    "usage": "Decorative historical photograph for manually composed cover; not a quiz question or answer.",
+    "processing": "Wikimedia thumbnail only; no generative editing, artificial colorization, local crop, or retouch. Color reconstructed from original historical color-separation negatives where applicable.",
+    "metadata": {
+      "DateTime": {
+        "value": "2006-05-14 04:29:14",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Prokudin-Gorskii-26",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Images from the Library of Congress|Ural Railway|Russian locomotive class Б|PD-old-80-expired|CC-PD-Mark|1910 in rail transport in Russia|Historical images of trains in Russia|PD-old missing SDC copyright status|Railway photos by Sergey Prokudin-Gorsky|Photo of Perm Governorate by Sergey Prokudin-Gorsky",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Early color photograph from Russia, created by <a href=\"https://en.wikipedia.org/wiki/Sergei_Mikhailovich_Prokudin-Gorskii\" class=\"extiw\" title=\"w:Sergei Mikhailovich Prokudin-Gorskii\">Sergei Mikhailovich Prokudin-Gorskii</a> as part of his work to document the Russian Empire from 1909 to 1915. \nA <a href=\"https://en.wikipedia.org/wiki/steam_locomotive\" class=\"extiw\" title=\"w:steam locomotive\">w: steam locomotive</a> type A<sub>b</sub>-132, later reclassified as B51 (А<sub><small>Б</small></sub>132, позднее <a href=\"https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BE%D0%B2%D0%BE%D0%B7_%D0%91\" class=\"extiw\" title=\"ru:Паровоз Б\">Б51</a> -- cycillic characters) with a Schmidt boiler on the railroad between <a href=\"//commons.wikimedia.org/wiki/Perm\" class=\"mw-redirect\" title=\"Perm\">Perm</a> and <a href=\"//commons.wikimedia.org/wiki/Yekaterinburg\" class=\"mw-redirect\" title=\"Yekaterinburg\">Yekaterinburg</a> in the <a href=\"https://en.wikipedia.org/wiki/Ural_Mountains\" class=\"extiw\" title=\"w:Ural Mountains\">w:Ural Mountains</a> region in the far eastern part of European Russia. Built at the Bryansk factory, these B-series locomotives were designed for hauling high-speed passenger trains, and, until 1912, were the fastest locomotives on the Russian railways (125 km/hr).",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "1910",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsc.04424\">ppmsc.04424</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Sergey_Prokudin-Gorsky\" class=\"extiw\" title=\"w:en:Sergey Prokudin-Gorsky\"><span title=\"Russian chemist and photographer (1863–1944)\">Sergei Prokudin-Gorskii</span></a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "There are no known restrictions on the use of this image.",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  },
+  {
+    "id": "cover-suzdal",
+    "file": "assets/cover-history/suzdal.jpg",
+    "caption": "Рождественский собор, Суздаль",
+    "commonsTitle": "File:Cathedral of the Nativity of the Theotokos (Suzdal) 00.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Nativity_of_the_Theotokos_(Suzdal)_00.jpg",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Cathedral_of_the_Nativity_of_the_Theotokos_%28Suzdal%29_00.jpg/1280px-Cathedral_of_the_Nativity_of_the_Theotokos_%28Suzdal%29_00.jpg",
+    "retrieved": "2026-10-25",
+    "width": 1280,
+    "height": 1165,
+    "sha256": "4a8e879f45823e26870b82a2e1cf02e585cf244d9c6e48ca9b2e3bc45aa63607",
+    "usage": "Decorative historical photograph for manually composed cover; not a quiz question or answer.",
+    "processing": "Wikimedia thumbnail only; no generative editing, artificial colorization, local crop, or retouch. Color reconstructed from original historical color-separation negatives where applicable.",
+    "metadata": {
+      "DateTime": {
+        "value": "2014-10-11 09:13:17",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Cathedral of the Nativity of the Theotokos (Suzdal) 00",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Images from the Library of Congress|PD-old-80-expired|CC-PD-Mark|Photos of Suzdal by Sergey Prokudin-Gorsky|Historical images of Church of the Nativity of the Theotokos (Suzdal)",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Богородице-Рождественский собор (Суздаль)",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "1912",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/prokc.21256\">prokc.21256</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Sergey_Prokudin-Gorsky\" class=\"extiw\" title=\"w:en:Sergey Prokudin-Gorsky\"><span title=\"Russian chemist and photographer (1863–1944)\">Sergei Prokudin-Gorskii</span></a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  },
+  {
+    "id": "cover-wooden-house",
+    "file": "assets/cover-history/wooden-house.jpg",
+    "caption": "Традиционный деревянный дом, Кириллов",
+    "commonsTitle": "File:Russian peasant girls in front of a traditional wooden house in Kirillov.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg/1280px-Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg",
+    "retrieved": "2026-10-25",
+    "width": 1280,
+    "height": 1108,
+    "sha256": "5588d15d9943da95a4e5eed6c07ba91eb5c71b924fc2c764b40f6322be7de1a7",
+    "usage": "Decorative historical photograph for manually composed cover; not a quiz question or answer.",
+    "processing": "Wikimedia thumbnail only; no generative editing, artificial colorization, local crop, or retouch. Color reconstructed from original historical color-separation negatives where applicable.",
+    "metadata": {
+      "DateTime": {
+        "value": "2006-05-15 04:01:28",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Russian peasant girls in front of a traditional wooden house in Kirillov",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Russians|Kerchiefs|Images from the Library of Congress|1900s fashion|Wooden architecture in Vologda Oblast|Sarafan|People of Vologda Oblast|Multicolor dresses|Photos of people of the Russian Empire by Sergey Prokudin-Gorsky|Files with derivative versions|PD-old-80-expired|Peasants from Russia|Adolescent girls of Russia|Featured pictures on Wikipedia, Vietnamese|Women wearing purple dresses|CC-PD-Mark|Featured pictures of Vologda Oblast|Featured pictures of people of Russia|1900s dresses|Women wearing headscarves in Russia|Featured pictures of children|1909 photographs of Russia|1909 portrait photographs of women|Featured pictures of women|Women in Russian national costumes|3 girls|Featured photographs in the public domain|PD-old missing SDC copyright status|Featured historical portrait photographs|Featured pictures from the Library of Congress|Bilberries|Featured pictures taken on glass plates|Group portrait photographs of women wearing dresses|Peasants in early 20th century|Photo of Vologda Governorate by Sergey Prokudin-Gorsky|Russian costumes of Vologda Governorate|Topornya",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "featured|potd|poty",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Young Russian peasant women in front of traditional wooden house, in a rural area along the Sheksna River near the small town of <a href=\"https://en.wikipedia.org/wiki/Kirillov_(town)\" class=\"extiw\" title=\"en:Kirillov (town)\">Kirillov</a>. Early color photograph from Russia, created by <a href=\"https://en.wikipedia.org/wiki/Sergei_Mikhailovich_Prokudin-Gorskii\" class=\"extiw\" title=\"w:Sergei Mikhailovich Prokudin-Gorskii\">Sergei Mikhailovich Prokudin-Gorskii</a> as part of his work to document the Russian Empire from 1909 to 1915.",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "1909",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsc.03954\">ppmsc.03954</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Sergey_Prokudin-Gorsky\" class=\"extiw\" title=\"w:en:Sergey Prokudin-Gorsky\"><span title=\"Russian chemist and photographer (1863–1944)\">Sergei Prokudin-Gorskii</span></a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "Public Domain: published more 95 years ago. There are no known restrictions on the use of this image.",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  },
+  {
+    "id": "cover-spinning",
+    "file": "assets/cover-history/spinning.jpg",
+    "caption": "Прядение, деревня Изведово, 1910",
+    "commonsTitle": "File:Russian woman spinning yarn, Izvedovo village (by Sergei Prokudin-Gorskii, 1910).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Russian_woman_spinning_yarn,_Izvedovo_village_(by_Sergei_Prokudin-Gorskii,_1910).jpg",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Russian_woman_spinning_yarn%2C_Izvedovo_village_%28by_Sergei_Prokudin-Gorskii%2C_1910%29.jpg/1280px-Russian_woman_spinning_yarn%2C_Izvedovo_village_%28by_Sergei_Prokudin-Gorskii%2C_1910%29.jpg",
+    "retrieved": "2026-10-25",
+    "width": 1280,
+    "height": 1136,
+    "sha256": "f6d4cea0540704d26c506a15493b200f04dffe9e2238f53541bd67bbcd20a765",
+    "usage": "Decorative historical photograph for manually composed cover; not a quiz question or answer.",
+    "processing": "Wikimedia thumbnail only; no generative editing, artificial colorization, local crop, or retouch. Color reconstructed from original historical color-separation negatives where applicable.",
+    "metadata": {
+      "DateTime": {
+        "value": "2007-09-27 22:14:02",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Russian woman spinning yarn, Izvedovo village (by Sergei Prokudin-Gorskii, 1910)",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Images from the Library of Congress|Peno|Distaffs|Photos of people of the Russian Empire by Sergey Prokudin-Gorsky|Vernacular architecture of Russia|Porches in Russia|PD-old-80-expired|CC-PD-Mark|Spinning in Russia|1910 in Tver Governorate|Photo of Tver Governorate by Sergey Prokudin-Gorsky|Wooden distaffs of Russian peasants",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Spinning yarn. In the village of Izvedovo.",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "1910",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsc.03941\">ppmsc.03941</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/Sergei_Mikhailovich_Prokudin-Gorskii\" class=\"mw-redirect\" title=\"Sergei Mikhailovich Prokudin-Gorskii\">Sergei Mikhailovich Prokudin-Gorskii</a>, digital rendering for the Library of Congress by Walter Frankhauser / WalterStudio",
+        "source": "commons-desc-page"
+      },
+      "Permission": {
+        "value": "There are no known restrictions on the use of this image.",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  },
+  {
+    "id": "cover-river-bridge",
+    "file": "assets/cover-history/river-bridge.jpg",
+    "caption": "Железнодорожный мост через Каму у Перми, 1909–1915",
+    "commonsTitle": "File:Prokudin-Gorskii-25.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-25.jpg",
+    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Prokudin-Gorskii-25.jpg/1280px-Prokudin-Gorskii-25.jpg",
+    "retrieved": "2026-10-25",
+    "width": 1200,
+    "height": 918,
+    "sha256": "7654c45131143d2c2ebea2220854c494fe98acaa0cbf2d526f500be5a93566b5",
+    "usage": "Decorative historical photograph for manually composed cover; not a quiz question or answer.",
+    "processing": "Wikimedia thumbnail only; no generative editing, artificial colorization, local crop, or retouch. Color reconstructed from original historical color-separation negatives where applicable.",
+    "metadata": {
+      "DateTime": {
+        "value": "2006-05-14 04:43:23",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Prokudin-Gorskii-25",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Images from the Library of Congress|K. Rudzki i S-ka|Railway Bridge in Perm|PD-old-80-expired|CC-PD-Mark|Perm in the 1900s|Perm in the 1910s|Historical images of rail transport in Russia|1912 in Perm Governorate|1912 photographs of Russia|History of Trans-Siberian railway|Railway photos by Sergey Prokudin-Gorsky|Photo of Perm by Sergey Prokudin-Gorsky",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Metal Truss Railroad Bridge (<a href=\"https://en.wikipedia.org/wiki/Kama_River\" class=\"extiw\" title=\"en:Kama River\">Kama River</a>, near <a href=\"https://en.wikipedia.org/wiki/Perm\" class=\"extiw\" title=\"en:Perm\">Perm</a> city). Early color photograph from Russia, created by <a href=\"https://en.wikipedia.org/wiki/Sergei_Mikhailovich_Prokudin-Gorskii\" class=\"extiw\" title=\"w:Sergei Mikhailovich Prokudin-Gorskii\">Sergei Mikhailovich Prokudin-Gorskii</a> as part of his work to document the Russian Empire from 1909 to 1915.",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "between 1909 and 1915<div style=\"display: none;\">date QS:P,+1950-00-00T00:00:00Z/7,P1319,+1909-00-00T00:00:00Z/9,P1326,+1915-00-00T00:00:00Z/9</div>",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsc.04413\">ppmsc.04413</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Sergey_Prokudin-Gorsky\" class=\"extiw\" title=\"w:en:Sergey Prokudin-Gorsky\"><span title=\"Russian chemist and photographer (1863–1944)\">Sergei Prokudin-Gorskii</span></a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  }
+]

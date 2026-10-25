@@ -1,13 +1,14 @@
-// Source wording restored with targeted corrections. Originals remain available per item.
+// Original questions remain documented; photo and chronology rounds added by user request.
 window.QUIZ_DATA = {
   "title": "КУЛЬТУРНЫЙ КОД",
-  "version": 3,
+  "version": 4,
   "categories": [
     "Русь матушка",
     "Дальневосточные истории",
     "Хабаровская земля",
     "Ты точно его знаешь",
-    "Кадр прошлого"
+    "Кадры прошлого",
+    "Что было раньше?"
   ],
   "values": [
     200,
@@ -718,148 +719,448 @@ window.QUIZ_DATA = {
       }
     },
     {
-      "id": "c5-200",
-      "category": "Кадр прошлого",
+      "id": "c5-photo-200",
+      "category": "Кадры прошлого",
       "value": 200,
-      "type": "video",
-      "text": "Что за события представлены на видеофрагменте?",
-      "answer": "Ледовое побоище, 1242 год.",
+      "type": "photo",
+      "text": "Назовите фильм по кадру.",
+      "answer": "«Александр Невский» (1938).",
       "images": [
-        "assets/images/image28.png"
-      ],
-      "answerImages": [],
-      "video": null,
-      "enabled": false,
-      "status": "missing-video",
-      "sourceSlide": 35,
-      "answerSlide": 36,
-      "pairEvidence": "reviewed-content-and-adjacency",
-      "source": "source/kviz-original.ppt",
-      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
-      "original": {
-        "text": "Что за события представлены на видео фрагмете ?",
-        "answer": "Ледовое побоище, 1242г"
-      },
-      "revision": {
-        "date": "2026-10-25",
-        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
-        "evidence": [
-          "source-video"
-        ]
-      }
-    },
-    {
-      "id": "c5-400",
-      "category": "Кадр прошлого",
-      "value": 400,
-      "type": "video",
-      "text": "Про какую историческую личность идёт речь? Назовите год и событие, связанное с этой исторической личностью.",
-      "answer": "Воцарение Михаила Фёдоровича Романова в 1613 году — начало правления династии Романовых.",
-      "images": [
-        "assets/images/image29.png"
+        "assets/photo-round/nevsky-1938.jpg"
       ],
       "answerImages": [
-        "assets/images/image30.jpeg"
+        "assets/photo-round/nevsky-1938.jpg"
       ],
       "video": null,
-      "enabled": false,
-      "status": "missing-video",
-      "sourceSlide": 37,
-      "answerSlide": 38,
-      "pairEvidence": "reviewed-content-and-adjacency",
-      "source": "source/kviz-original.ppt",
-      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
-      "original": {
-        "text": "Про какую историческую личность идёт речь? .Назовите год и какое событие связано с исторической личностью",
-        "answer": "Воцарение Михаила Федоровича(воцарение новой династии, Романовых)1613 год."
-      },
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/photo-round-sources.json",
+      "sourceRefs": [
+        "frame-nevsky"
+      ],
+      "acceptance": "Достаточно названия фильма; год не обязателен.",
       "revision": {
         "date": "2026-10-25",
-        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "note": "Новое фотозадание по запросу пользователя; заменяет прежнюю видеоячейку.",
         "evidence": [
-          "source-video"
+          "frame-nevsky"
         ]
       }
     },
     {
-      "id": "c5-600",
-      "category": "Кадр прошлого",
+      "id": "c5-photo-400",
+      "category": "Кадры прошлого",
+      "value": 400,
+      "type": "photo",
+      "text": "Какой парад запечатлён на фотографии? Назовите год.",
+      "answer": "Парад Победы на Красной площади в Москве.\n24 июня 1945 года.",
+      "images": [
+        "assets/photo-round/victory-parade-1945.jpg"
+      ],
+      "answerImages": [
+        "assets/photo-round/victory-parade-1945.jpg"
+      ],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/photo-round-sources.json",
+      "sourceRefs": [
+        "frame-parade"
+      ],
+      "acceptance": "Для полного ответа нужны Парад Победы и 1945 год; точная дата не обязательна.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новое фотозадание по запросу пользователя; заменяет прежнюю видеоячейку.",
+        "evidence": [
+          "frame-parade"
+        ]
+      }
+    },
+    {
+      "id": "c5-photo-600",
+      "category": "Кадры прошлого",
       "value": 600,
-      "type": "video",
-      "text": "Назовите историческое событие.",
-      "answer": "Оборона Сталинграда.",
+      "type": "photo",
+      "text": "Назовите фильм и его режиссёра.",
+      "answer": "«Броненосец „Потёмкин“» (1925).\nРежиссёр — Сергей Эйзенштейн.",
       "images": [
-        "assets/images/image31.png"
+        "assets/photo-round/potemkin-1925.jpg"
       ],
-      "answerImages": [],
+      "answerImages": [
+        "assets/photo-round/potemkin-1925.jpg"
+      ],
       "video": null,
-      "enabled": false,
-      "status": "missing-video",
-      "sourceSlide": 39,
-      "answerSlide": 40,
-      "pairEvidence": "reviewed-content-and-adjacency",
-      "source": "source/kviz-original.ppt",
-      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
-      "original": {
-        "text": "Назовите историческое событие",
-        "answer": "Оборона Сталинграда"
-      },
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/photo-round-sources.json",
+      "sourceRefs": [
+        "frame-potemkin"
+      ],
+      "acceptance": "Принимаются название фильма и фамилия Эйзенштейн; год не обязателен.",
       "revision": {
         "date": "2026-10-25",
-        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "note": "Новое фотозадание по запросу пользователя; заменяет прежнюю видеоячейку.",
         "evidence": [
-          "source-video"
+          "frame-potemkin"
         ]
       }
     },
     {
-      "id": "c5-800",
-      "category": "Кадр прошлого",
+      "id": "c5-photo-800",
+      "category": "Кадры прошлого",
       "value": 800,
-      "type": "video",
-      "text": "Чему посвящён данный видеофрагмент?",
-      "answer": "Вхождение в состав России Крыма в 2014 году",
+      "type": "photo",
+      "text": "На снимке — советские и американские военные в Торгау после встречи союзников. На какой реке состоялась эта встреча и в каком году?",
+      "answer": "Встреча на Эльбе, 1945 год.",
       "images": [
-        "assets/images/image32.png"
+        "assets/photo-round/elbe-1945.jpg"
       ],
-      "answerImages": [],
+      "answerImages": [
+        "assets/photo-round/elbe-1945.jpg"
+      ],
       "video": null,
-      "enabled": false,
-      "status": "missing-video",
-      "sourceSlide": 41,
-      "answerSlide": 42,
-      "pairEvidence": "reviewed-content-and-adjacency",
-      "source": "source/kviz-original.ppt",
-      "unavailableReason": "В исходнике сохранился только кадр-превью. Нужен оригинальный видеофайл.",
-      "original": {
-        "text": "Чему посвящен данный видео фрагмент?",
-        "answer": "Вхождение в состав России Крыма в 2014 году"
-      },
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/photo-round-sources.json",
+      "sourceRefs": [
+        "frame-elbe"
+      ],
+      "acceptance": "Для полного ответа нужны Эльба и 1945 год. Сам снимок сделан 26 апреля; первые встречи войск состоялись 25 апреля 1945 года.",
       "revision": {
         "date": "2026-10-25",
-        "note": "Возвращена исходная формулировка; исправлены только орфография и пунктуация. Исправленный ответ сохранён.",
+        "note": "Новое фотозадание по запросу пользователя; заменяет прежнюю видеоячейку.",
         "evidence": [
-          "source-video"
+          "frame-elbe"
         ]
       }
     },
     {
-      "id": "c5-1000",
-      "category": "Кадр прошлого",
+      "id": "c5-photo-1000",
+      "category": "Кадры прошлого",
       "value": 1000,
-      "type": "text",
-      "text": "Текст",
-      "answer": "Текст",
+      "type": "photo",
+      "text": "Назовите конференцию и год. В каком дворце проходили её основные заседания?",
+      "answer": "Ялтинская (Крымская) конференция, 1945 год.\nЛивадийский дворец.",
+      "images": [
+        "assets/photo-round/yalta-1945.jpg"
+      ],
+      "answerImages": [
+        "assets/photo-round/yalta-1945.jpg"
+      ],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/photo-round-sources.json",
+      "sourceRefs": [
+        "frame-yalta",
+        "yalta-palace"
+      ],
+      "acceptance": "Для полного ответа нужны название конференции, 1945 год и Ливадийский дворец.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новое фотозадание по запросу пользователя; заменяет прежнюю видеоячейку.",
+        "evidence": [
+          "frame-yalta",
+          "yalta-palace"
+        ]
+      }
+    },
+    {
+      "id": "c6-order-200",
+      "category": "Что было раньше?",
+      "value": 200,
+      "type": "chronology",
+      "text": "Что было раньше? Назовите букву.\n\nА) Основание Санкт-Петербурга\n\nБ) Первое летописное упоминание о Москве",
+      "answer": "Б → А\n\nБ) Первое летописное упоминание о Москве — 1147 год.\nА) Основание Санкт-Петербурга — 1703 год.",
       "images": [],
       "answerImages": [],
       "video": null,
-      "enabled": false,
-      "status": "placeholder",
-      "sourceSlide": 51,
-      "answerSlide": 52,
-      "pairEvidence": "next-slide-action",
-      "source": "source/kviz-original.ppt",
-      "unavailableReason": "В исходнике только текстовая заглушка."
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/new-question-evidence.json",
+      "sourceRefs": [
+        "petersburg",
+        "moscow"
+      ],
+      "events": [
+        {
+          "label": "А",
+          "text": "Основание Санкт-Петербурга",
+          "date": "1703",
+          "sourceRef": "petersburg"
+        },
+        {
+          "label": "Б",
+          "text": "Первое летописное упоминание о Москве",
+          "date": "1147",
+          "sourceRef": "moscow"
+        }
+      ],
+      "correctOrder": [
+        "Б",
+        "А"
+      ],
+      "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+        "evidence": [
+          "petersburg",
+          "moscow"
+        ]
+      }
+    },
+    {
+      "id": "c6-order-400",
+      "category": "Что было раньше?",
+      "value": 400,
+      "type": "chronology",
+      "text": "Расположите космические события от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Первый полёт Юрия Гагарина\n\nБ) Полёт Валентины Терешковой\n\nВ) Запуск первого искусственного спутника Земли",
+      "answer": "В → А → Б\n\nВ) Запуск первого искусственного спутника Земли — 4 октября 1957.\nА) Первый полёт Юрия Гагарина — 12 апреля 1961.\nБ) Полёт Валентины Терешковой — 16 июня 1963.",
+      "images": [],
+      "answerImages": [],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/new-question-evidence.json",
+      "sourceRefs": [
+        "space-firsts",
+        "tereshkova"
+      ],
+      "events": [
+        {
+          "label": "А",
+          "text": "Первый полёт Юрия Гагарина",
+          "date": "1961-04-12",
+          "sourceRef": "space-firsts"
+        },
+        {
+          "label": "Б",
+          "text": "Полёт Валентины Терешковой",
+          "date": "1963-06-16",
+          "sourceRef": "tereshkova"
+        },
+        {
+          "label": "В",
+          "text": "Запуск первого искусственного спутника Земли",
+          "date": "1957-10-04",
+          "sourceRef": "space-firsts"
+        }
+      ],
+      "correctOrder": [
+        "В",
+        "А",
+        "Б"
+      ],
+      "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+        "evidence": [
+          "space-firsts",
+          "tereshkova"
+        ]
+      }
+    },
+    {
+      "id": "c6-order-600",
+      "category": "Что было раньше?",
+      "value": 600,
+      "type": "chronology",
+      "text": "Расположите события в истории культуры и науки от раннего к позднему. Назовите порядок букв.\n\nА) Основание Московского университета\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца\n\nВ) Основание Кунсткамеры",
+      "answer": "Б → В → А\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца — 1564 год.\nВ) Основание Кунсткамеры — 1714 год.\nА) Основание Московского университета — 1755 год.",
+      "images": [],
+      "answerImages": [],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/new-question-evidence.json",
+      "sourceRefs": [
+        "msu",
+        "apostol",
+        "kunstkamera"
+      ],
+      "events": [
+        {
+          "label": "А",
+          "text": "Основание Московского университета",
+          "date": "1755",
+          "sourceRef": "msu"
+        },
+        {
+          "label": "Б",
+          "text": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
+          "date": "1564",
+          "sourceRef": "apostol"
+        },
+        {
+          "label": "В",
+          "text": "Основание Кунсткамеры",
+          "date": "1714",
+          "sourceRef": "kunstkamera"
+        }
+      ],
+      "correctOrder": [
+        "Б",
+        "В",
+        "А"
+      ],
+      "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+        "evidence": [
+          "msu",
+          "apostol",
+          "kunstkamera"
+        ]
+      }
+    },
+    {
+      "id": "c6-order-800",
+      "category": "Что было раньше?",
+      "value": 800,
+      "type": "chronology",
+      "text": "Соберите дальневосточную хронологию: от самого раннего события к самому позднему. Назовите порядок букв.\n\nА) Открытие первого постоянного моста через Амур в Хабаровске\n\nБ) Основание военного поста Владивосток\n\nВ) Церемония закладки Транссибирской магистрали у Владивостока\n\nГ) Основание военного поста Хабаровка",
+      "answer": "Г → Б → В → А\n\nГ) Основание военного поста Хабаровка — 1858 год.\nБ) Основание военного поста Владивосток — 1860 год.\nВ) Церемония закладки Транссибирской магистрали у Владивостока — 1891 год.\nА) Открытие первого постоянного моста через Амур в Хабаровске — 1916 год.",
+      "images": [],
+      "answerImages": [],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/new-question-evidence.json",
+      "sourceRefs": [
+        "bridge",
+        "vladivostok",
+        "transsib",
+        "khabarovsk"
+      ],
+      "events": [
+        {
+          "label": "А",
+          "text": "Открытие первого постоянного моста через Амур в Хабаровске",
+          "date": "1916",
+          "sourceRef": "bridge"
+        },
+        {
+          "label": "Б",
+          "text": "Основание военного поста Владивосток",
+          "date": "1860",
+          "sourceRef": "vladivostok"
+        },
+        {
+          "label": "В",
+          "text": "Церемония закладки Транссибирской магистрали у Владивостока",
+          "date": "1891",
+          "sourceRef": "transsib"
+        },
+        {
+          "label": "Г",
+          "text": "Основание военного поста Хабаровка",
+          "date": "1858",
+          "sourceRef": "khabarovsk"
+        }
+      ],
+      "correctOrder": [
+        "Г",
+        "Б",
+        "В",
+        "А"
+      ],
+      "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+        "evidence": [
+          "bridge",
+          "vladivostok",
+          "transsib",
+          "khabarovsk"
+        ]
+      }
+    },
+    {
+      "id": "c6-order-1000",
+      "category": "Что было раньше?",
+      "value": 1000,
+      "type": "chronology",
+      "text": "Все эти события произошли в 1961 году. Расположите их от раннего к позднему. Назовите порядок букв.\n\nА) Открытие XXII съезда КПСС\n\nБ) Начало сооружения Берлинской стены\n\nВ) Старт Германа Титова на корабле «Восток-2»\n\nГ) Первый полёт Юрия Гагарина",
+      "answer": "Г → В → Б → А\n\nГ) Первый полёт Юрия Гагарина — 12 апреля 1961.\nВ) Старт Германа Титова на корабле «Восток-2» — 6 августа 1961.\nБ) Начало сооружения Берлинской стены — 13 августа 1961.\nА) Открытие XXII съезда КПСС — 17 октября 1961.",
+      "images": [],
+      "answerImages": [],
+      "video": null,
+      "enabled": true,
+      "status": "complete",
+      "sourceSlide": null,
+      "answerSlide": null,
+      "source": "source/new-question-evidence.json",
+      "sourceRefs": [
+        "congress",
+        "berlin",
+        "titov",
+        "space-firsts"
+      ],
+      "events": [
+        {
+          "label": "А",
+          "text": "Открытие XXII съезда КПСС",
+          "date": "1961-10-17",
+          "sourceRef": "congress"
+        },
+        {
+          "label": "Б",
+          "text": "Начало сооружения Берлинской стены",
+          "date": "1961-08-13",
+          "sourceRef": "berlin"
+        },
+        {
+          "label": "В",
+          "text": "Старт Германа Титова на корабле «Восток-2»",
+          "date": "1961-08-06",
+          "sourceRef": "titov"
+        },
+        {
+          "label": "Г",
+          "text": "Первый полёт Юрия Гагарина",
+          "date": "1961-04-12",
+          "sourceRef": "space-firsts"
+        }
+      ],
+      "correctOrder": [
+        "Г",
+        "В",
+        "Б",
+        "А"
+      ],
+      "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+      "revision": {
+        "date": "2026-10-25",
+        "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+        "evidence": [
+          "congress",
+          "berlin",
+          "titov",
+          "space-firsts"
+        ]
+      }
     }
   ],
   "warmup": [

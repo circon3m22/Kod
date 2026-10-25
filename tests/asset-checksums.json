@@ -1,4 +1,24 @@
 {
+  "assets/cover-history/locomotive.jpg": {
+    "bytes": 356480,
+    "sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db"
+  },
+  "assets/cover-history/river-bridge.jpg": {
+    "bytes": 288420,
+    "sha256": "7654c45131143d2c2ebea2220854c494fe98acaa0cbf2d526f500be5a93566b5"
+  },
+  "assets/cover-history/spinning.jpg": {
+    "bytes": 436310,
+    "sha256": "f6d4cea0540704d26c506a15493b200f04dffe9e2238f53541bd67bbcd20a765"
+  },
+  "assets/cover-history/suzdal.jpg": {
+    "bytes": 339407,
+    "sha256": "4a8e879f45823e26870b82a2e1cf02e585cf244d9c6e48ca9b2e3bc45aa63607"
+  },
+  "assets/cover-history/wooden-house.jpg": {
+    "bytes": 519711,
+    "sha256": "5588d15d9943da95a4e5eed6c07ba91eb5c71b924fc2c764b40f6322be7de1a7"
+  },
   "assets/design/cover-mosaic-v1.png": {
     "bytes": 2838215,
     "sha256": "cd3999e1d405269ae20e13be377c4728011b307c8fbcf87de67ca3b06341616d"
@@ -166,5 +186,25 @@
   "assets/images/image9.png": {
     "bytes": 1438,
     "sha256": "eb751ffccfb0a472155ef8b0e358bf565982dabe01552390702cce65227a7c04"
+  },
+  "assets/photo-round/elbe-1945.jpg": {
+    "bytes": 616767,
+    "sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370"
+  },
+  "assets/photo-round/nevsky-1938.jpg": {
+    "bytes": 152319,
+    "sha256": "cb21cbb5d6c007cc66d055f5b97c70f45228ef468a589871515468df1a417313"
+  },
+  "assets/photo-round/potemkin-1925.jpg": {
+    "bytes": 181884,
+    "sha256": "44591cc99ac02dae8737a183340201a9e64a368e89fe69812d37cde9a7fcec26"
+  },
+  "assets/photo-round/victory-parade-1945.jpg": {
+    "bytes": 454727,
+    "sha256": "d529bc595afa48229d53dd82f14185736ba8062d8209853978c6f8268bd8df1b"
+  },
+  "assets/photo-round/yalta-1945.jpg": {
+    "bytes": 1050190,
+    "sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd"
   }
 }
