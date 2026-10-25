@@ -81,7 +81,9 @@ for p in sorted((r/'assets').rglob('*')):
 for fn in ['index.html','styles.css','app.js','quiz-data.js']:
  txt=(r/fn).read_text()
  assert not re.search(r'https?://|@import|fetch\s*\(|XMLHttpRequest|import\s*\(',txt),fn+' contains external dependency'
-for path in re.findall(r"url\(['\"]?([^)'\"]+)",(r/'styles.css').read_text()):assert (r/path).is_file(),path
+for path in re.findall(r"url\(['\"]?([^)'\"]+)",(r/'styles.css').read_text()):
+ if path.startswith('#'):assert 'id="'+path[1:]+'"' in (r/'app.js').read_text()+(r/'index.html').read_text(),path
+ else:assert (r/path).is_file(),path
 assert len(list((r/'assets/images').glob('*')))==38
 assert manifest==json.loads((r/'tests/asset-checksums.json').read_text()),'Asset checksums differ from the reviewed manifest'
 print('PASS: 52 source slides, 25 original mappings preserved, 30 active cells in 6 categories, 12 warmup questions, 5 sourced photos, 5 verified timelines, local assets/checksums.')

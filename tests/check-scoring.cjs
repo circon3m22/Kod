@@ -23,3 +23,6 @@ ctx.state.current={screen:'bonus',bonusIndex:0};ctx.selectTeam(0);ctx.selectTeam
 ctx.state.current={screen:'captains',captainIndex:0};ctx.selectTeam(0);ctx.commitSelection();ctx.commitSelection();assert.equal(ctx.state.teams[0].score,700);
 ctx.state.current={screen:'question',questionId:'c1-200'};ctx.selectTeam(1);ctx.state.teams.pop();ctx.commitSelection();assert.equal(ctx.state.teams[0].score,700);
 console.log('PASS: 50 repeated selections do not score; last choice wins; one commit per task; reopen protection; undo; clear; stale selection; bonus/captains; deleted team.');
+
+ctx.state.teams=[{id:'a',name:'Север',score:200}];ctx.state.history=[{id:'live',entries:[{teamId:'a',teamName:'Север',delta:200}],undone:false,isUndo:false},{id:'removed',entries:[{teamId:'b',teamName:'Юг',delta:400}],undone:false,isUndo:false}];ctx.quietUndo();assert.equal(ctx.state.teams[0].score,0);assert.equal(ctx.state.history[0].undone,true);
+console.log('PASS: removing a team does not block undo of earlier awards to surviving teams.');

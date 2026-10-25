@@ -23,3 +23,6 @@ console.log('PASS: pending selection round-trip, invalid selection rejection, le
 
 for(const qid of ['c5-photo-200','c6-order-1000']){const next=JSON.parse(JSON.stringify(good));next.current={screen:'question',questionId:qid,answer:true};next.used=[qid,'c5-200'];next.pendingAward={taskKey:'main:'+qid,teamId:'t2'};const n=context.validate(next);assert.equal(n.current.questionId,qid);assert.equal(n.current.screen,'question');assert.equal(n.current.answer,true);assert.equal(n.pendingAward.teamId,'t2');assert.deepEqual([...n.used],[qid]);}
 console.log('PASS: photo/timeline question, answer and selection round-trip; archived video IDs cannot block new tasks.');
+
+const flow=JSON.parse(JSON.stringify(good));flow.current.screen='ranking';flow.completedStages=['warmup','board','unknown','warmup'];flow.intermission={after:'board',next:'bonus'};const n=context.validate(flow);assert.deepEqual([...n.completedStages],['warmup','board']);assert.equal(n.intermission.next,'bonus');flow.intermission={after:'captains',next:'javascript:alert(1)'};assert.equal(context.validate(flow).intermission,null);
+console.log('PASS: completed stages/interim continuation preserved; invalid stage transitions rejected.');

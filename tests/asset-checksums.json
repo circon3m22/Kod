@@ -1,4 +1,24 @@
 {
+  "assets/cover-history/locomotive.jpg": {
+    "bytes": 356480,
+    "sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db"
+  },
+  "assets/cover-history/river-bridge.jpg": {
+    "bytes": 288420,
+    "sha256": "7654c45131143d2c2ebea2220854c494fe98acaa0cbf2d526f500be5a93566b5"
+  },
+  "assets/cover-history/spinning.jpg": {
+    "bytes": 436310,
+    "sha256": "f6d4cea0540704d26c506a15493b200f04dffe9e2238f53541bd67bbcd20a765"
+  },
+  "assets/cover-history/suzdal.jpg": {
+    "bytes": 339407,
+    "sha256": "4a8e879f45823e26870b82a2e1cf02e585cf244d9c6e48ca9b2e3bc45aa63607"
+  },
+  "assets/cover-history/wooden-house.jpg": {
+    "bytes": 519711,
+    "sha256": "5588d15d9943da95a4e5eed6c07ba91eb5c71b924fc2c764b40f6322be7de1a7"
+  },
   "assets/design/cover-mosaic-v1.png": {
     "bytes": 2838215,
     "sha256": "cd3999e1d405269ae20e13be377c4728011b307c8fbcf87de67ca3b06341616d"
