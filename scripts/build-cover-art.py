@@ -3,6 +3,7 @@
 from pathlib import Path
 import json,math,base64
 from html import escape
+import xml.etree.ElementTree as ET
 from PIL import Image
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
@@ -59,14 +60,17 @@ art={'width':1725,'height':630,'letters':letters,'sectors':sectors,'event':{'kic
 
 credits='\n\n'.join(f"{x['caption']}\n{x['author']} · {x['license']}\n{x['sourceUrl']}\n{x.get('licenseUrl','')}\nИзменения: кадрирование по скруглённым секциям; исходный цвет сохранён." for x in photo_sources)
 background=json.loads((ROOT/'source/poster-background-source.json').read_text())
-credits+='\n\nФон афиши: акварельный пейзаж, предоставлен пользователем 25 октября 2026 года. Авторство и лицензия не указаны. Исходный файл сохранён без изменений.'
+credits+=f"\n\nФон афиши: светлый силуэт карты. {background['author']} · {background['license']}\n{background['sourceUrl']}\n{background['licenseUrl']}\nИзменения: проекция Альберса; единая очень светлая заливка без обводки; подписи и внутренние границы удалены; компоновка 4:3. Геоданные под ODbL 1.0: source/russia-silhouette-geodata.geojson."
 (ROOT/'design/cultural-code-poster-kod-4x3-credits.txt').write_text('Источники афиши Культурный код\n\n'+credits+'\n')
 
 # The poster uses the same background and clipped regions as the live website.
 font=instantiateVariableFont(TTFont(ROOT/'assets/fonts/Onest-Variable.ttf'),{'wght':500},inplace=False);glyphs=font.getGlyphSet();cmap=font.getBestCmap();units=font['head'].unitsPerEm
 parts=['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400mm" height="300mm" viewBox="0 0 1920 1440" role="img" aria-labelledby="title">','<title id="title">Культурный код. Исторический квиз. 2 ноября 18:30. «Вектор», ул. Фрунзе, 60</title>','<rect width="1920" height="1440" fill="white"/>']
-background_raw=base64.b64encode((ROOT/background['path']).read_bytes()).decode()
-parts.append(f'<image id="poster-background" x="0" y="0" width="1920" height="1440" preserveAspectRatio="xMidYMid meet" xlink:href="data:image/jpeg;base64,{background_raw}"/>')
+# Inline the vector silhouette so the print PDF has no rasterized map.
+background_svg=ET.parse(ROOT/background['path']).getroot()
+parts.append('<g id="poster-background">')
+parts.extend(ET.tostring(child,encoding='unicode') for child in background_svg if child.tag.split('}')[-1]=='g')
+parts.append('</g>')
 def text(label,y,size,tracking=0,color='#171717'):
  scale=size/units;width=sum(glyphs[cmap[ord(c)]].width for c in label)*scale+tracking*(len(label)-1);x=(1920-width)/2;cursor=0
  parts.append(f'<g aria-label="{escape(label)}" fill="{color}" transform="translate({x:.3f} {y})">')

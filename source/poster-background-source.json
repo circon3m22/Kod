@@ -1,10 +1,39 @@
 {
-  "path": "assets/design/poster-watercolor-background.jpg",
-  "source": "User-provided attachment, 25 October 2026",
-  "description": "Акварельный пейзаж с берёзами, рекой и орнаментом",
-  "width": 1280,
-  "height": 960,
-  "sha256": "5586fcca6c4443794164f750bf41861d5d214df5dcbf879d98826af0b00a6e09",
-  "changes": "Original bytes retained; fitted to the 4:3 poster without cropping or color changes.",
-  "rights": "Provided by the user for this poster; authorship and license were not supplied."
+  "path": "assets/design/poster-russia-silhouette.svg",
+  "description": "Светлый декоративный силуэт карты на белом листе 4:3",
+  "sourceUrl": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+  "author": "Natural Earth; © OpenStreetMap contributors, Wambacher (via geoBoundaries)",
+  "license": "Natural Earth: public domain; regional boundary data: ODbL 1.0",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "retrievedDate": "2026-10-25",
+  "sha256": "c9ddc8816eb63dc9b5a7b42699d0624baa7817ac870c9e962a73219510f0bfa3",
+  "width": 1920,
+  "height": 1440,
+  "fill": "#f5f5f3",
+  "changes": "United country and six requested region geometries; Albers equal-area projection; antimeridian unwrapped; simplified 2.5 km at country scale; small dataset seams closed at 1.8 km; uniform scale only, no stroke, very light grey fill.",
+  "boundaryConvention": "Requested depiction follows Russian territorial claims, including Crimea, Sevastopol and the full Donetsk, Luhansk, Zaporizhzhia and Kherson regions; it is not a map of international recognition or current military control.",
+  "projection": "+proj=aea +lat_1=50 +lat_2=70 +lat_0=56 +lon_0=105 +datum=WGS84 +units=m +no_defs",
+  "geometrySource": "source/russia-silhouette-geodata.geojson",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/"
+    },
+    {
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/UKR/ADM1/geoBoundaries-UKR-ADM1_simplified.geojson",
+      "metadataUrl": "https://www.geoboundaries.org/api/current/gbOpen/UKR/ADM1/",
+      "source": "OpenStreetMap, Wambacher",
+      "license": "ODbL 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    }
+  ],
+  "selectedRegions": [
+    "Autonomous Republic of Crimea",
+    "Donetsk Oblast",
+    "Kherson Oblast",
+    "Luhansk Oblast",
+    "Sevastopol",
+    "Zaporizhia Oblast"
+  ]
 }
