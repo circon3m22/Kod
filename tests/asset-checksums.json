@@ -1,4 +1,92 @@
 {
+  "assets/answer-history/aurora.jpg": {
+    "bytes": 135579,
+    "sha256": "b3f529ecfc952c58278923c3a36faf3ad1ae667fd9ae8c539226f3ca72974174"
+  },
+  "assets/answer-history/berlin-wall.jpg": {
+    "bytes": 132431,
+    "sha256": "e3b9f9d72d0285d0944d7bfa1cf815ba7907180c403edda9e3880bd75c40affa"
+  },
+  "assets/answer-history/book.jpg": {
+    "bytes": 177916,
+    "sha256": "9216f422387e05f0e31364233c7c04d4cdfaa465b58b6f2e60c78343267eb0c8"
+  },
+  "assets/answer-history/chervonets.jpg": {
+    "bytes": 159193,
+    "sha256": "952ef39a7317fb9322a8a73e262a64c9161ff379be2a6328af56785d8e118f39"
+  },
+  "assets/answer-history/cyril-methodius.jpg": {
+    "bytes": 141388,
+    "sha256": "87c024dab030527a2fb554b63aa8188e4a0be906a1dd336ce9b4597ba036efb8"
+  },
+  "assets/answer-history/emancipation.jpg": {
+    "bytes": 138906,
+    "sha256": "516de4f7a8bfd88c4f5652630a91962a7fd857248314d8a028bbdddd376e6f30"
+  },
+  "assets/answer-history/far-east.jpg": {
+    "bytes": 90359,
+    "sha256": "ec7640932ccc20b6566efa4bd5769e8489d27dd7a353544a073e2c509a506d7d"
+  },
+  "assets/answer-history/gagarin.jpg": {
+    "bytes": 162950,
+    "sha256": "0c668d6b6a1ce68de842ae4c72e0903e650d0cfa289e8013b738ed1235456c82"
+  },
+  "assets/answer-history/godunov.jpg": {
+    "bytes": 118522,
+    "sha256": "557153a6f60d982fdd703a49fa83661b33df792a11b7247a63116955a0c50033"
+  },
+  "assets/answer-history/ivan-iii.jpg": {
+    "bytes": 157999,
+    "sha256": "53fe06f7bba707a93c04816b8666327a63e9b32db8adf4d6fa11f001a24bbf19"
+  },
+  "assets/answer-history/kazan.jpg": {
+    "bytes": 146058,
+    "sha256": "977745ae39107fc25646a5e057de706b48a8bd8b7aefa8f6dcdeba5452a3b32f"
+  },
+  "assets/answer-history/kunstkamera.jpg": {
+    "bytes": 154851,
+    "sha256": "55affc65bfcfe8fd0bef9dc7df55eb2b99e9b87cd1c8d9afcbf66cce1f5bbefb"
+  },
+  "assets/answer-history/kyiv.jpg": {
+    "bytes": 141502,
+    "sha256": "d8fdb30d2972ff08226b810c5523148f3eeb1acb3f25063010714015b919d3c2"
+  },
+  "assets/answer-history/lesnaya.jpg": {
+    "bytes": 91268,
+    "sha256": "532ddd4fbbc2773424d2f048072317b48ac923d27bf45fcf560411834d26e80d"
+  },
+  "assets/answer-history/moscow.jpg": {
+    "bytes": 161952,
+    "sha256": "b2ee7aa7d151d0adc387d98155573181dccfba8769a62195687decd7bb42f663"
+  },
+  "assets/answer-history/petersburg.jpg": {
+    "bytes": 120933,
+    "sha256": "22a31bbcbf5838d8256641d4e1d9dfe8919f4b49de1577102499c4adbe47139a"
+  },
+  "assets/answer-history/sputnik.jpg": {
+    "bytes": 5341,
+    "sha256": "e1f5cb7ba837c220641280f7ad317cbbd59326c48c27c6e2195a97dc36f45f87"
+  },
+  "assets/answer-history/streltsy.jpg": {
+    "bytes": 177045,
+    "sha256": "86d0680be6990a74a72c091cf7327fc5aeee73f5d9344cec95b6689e537ff7d9"
+  },
+  "assets/answer-history/victory-parade-1945-color.jpg": {
+    "bytes": 72249,
+    "sha256": "74a4349d374637120cc5607915add306f538763fad2fc8237226a4ed91b4ddf4"
+  },
+  "assets/answer-history/vladimir.jpg": {
+    "bytes": 109625,
+    "sha256": "50744ddc304e7976ed2706e8f11b93f19b46dd25e61d4fef09c5f1a0de4b1ff5"
+  },
+  "assets/answer-history/yalta-1945-color.jpg": {
+    "bytes": 129190,
+    "sha256": "2fd2d792b0ecf7d5ab57e935ee71891940e26d73ea043e7a1b3ee6d8b203aeee"
+  },
+  "assets/answer-history/yeltsin.jpg": {
+    "bytes": 68006,
+    "sha256": "4f05a85f2efc4b433d0157170cee48759c254f67dae4bbd1e108e94f2d5d098a"
+  },
   "assets/cover-history/locomotive.jpg": {
     "bytes": 356480,
     "sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db"
@@ -214,5 +302,21 @@
   "assets/photo-round/yalta-1945.jpg": {
     "bytes": 1050190,
     "sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd"
+  },
+  "assets/stage-objects/captains-compass.png": {
+    "bytes": 164164,
+    "sha256": "ca28988bf4827a7ca391a92dac89588cd92003fe3df60024cf669726059ba22a"
+  },
+  "assets/stage-objects/creative-quill.png": {
+    "bytes": 109859,
+    "sha256": "1e5f3c7a4a98666d6c6de8e8cb97f5af05b306a765189c5ceef846885e9b931b"
+  },
+  "assets/stage-objects/main-globe.png": {
+    "bytes": 128909,
+    "sha256": "187fcab638f075a79d7d4ad8e862c84d01e24f7969916efccc170471af248abf"
+  },
+  "assets/stage-objects/warmup-book.png": {
+    "bytes": 12171,
+    "sha256": "7aa0cc24809fd3400db67cf69ac8007fdaeb2be3d98b1d945a5cd18c0cc3f15f"
   }
 }

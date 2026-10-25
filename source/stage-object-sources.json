@@ -1,0 +1,65 @@
+{
+  "description": "Color source-backed transparent object illustrations for the four stage cards. No generated images.",
+  "images": [
+    {
+      "stage": "warmup",
+      "path": "assets/stage-objects/warmup-book.png",
+      "alt": "Раскрытая книга",
+      "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=467986&picture=open-book-clipart",
+      "downloadUrl": "https://www.publicdomainpictures.net/pictures/470000/velka/open-book-clipart.png",
+      "author": "Karen Arnold",
+      "license": "CC0 1.0 Public Domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Downscaled to at most 760px, transparent outer margin trimmed, PNG palette optimized. Original colors and transparency preserved; no generative edits.",
+      "sha256": "7aa0cc24809fd3400db67cf69ac8007fdaeb2be3d98b1d945a5cd18c0cc3f15f",
+      "width": 760,
+      "height": 569,
+      "bytes": 12171
+    },
+    {
+      "stage": "board",
+      "path": "assets/stage-objects/main-globe.png",
+      "alt": "Старинный глобус",
+      "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=398526&picture=globe-vintage-clipart",
+      "downloadUrl": "https://www.publicdomainpictures.net/pictures/400000/velka/globe-vintage-clipart.png",
+      "author": "Karen Arnold",
+      "license": "CC0 1.0 Public Domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Downscaled to at most 760px, transparent outer margin trimmed, PNG palette optimized. Original colors and transparency preserved; no generative edits.",
+      "sha256": "187fcab638f075a79d7d4ad8e862c84d01e24f7969916efccc170471af248abf",
+      "width": 586,
+      "height": 760,
+      "bytes": 128909
+    },
+    {
+      "stage": "bonus",
+      "path": "assets/stage-objects/creative-quill.png",
+      "alt": "Перо с чернильницей, винтажная иллюстрация",
+      "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=410764&picture=feather-quill-ink-vintage",
+      "downloadUrl": "https://www.publicdomainpictures.net/pictures/420000/velka/feather-quill-ink-vintage-1631094550IIH.png",
+      "author": "Karen Arnold",
+      "license": "CC0 1.0 Public Domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Downscaled to at most 760px, transparent outer margin trimmed, PNG palette optimized. Original colors and transparency preserved; no generative edits.",
+      "sha256": "1e5f3c7a4a98666d6c6de8e8cb97f5af05b306a765189c5ceef846885e9b931b",
+      "width": 760,
+      "height": 448,
+      "bytes": 109859
+    },
+    {
+      "stage": "captains",
+      "path": "assets/stage-objects/captains-compass.png",
+      "alt": "Старинный навигационный компас",
+      "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=413976&picture=clipart-compass-navigation-vintage",
+      "downloadUrl": "https://www.publicdomainpictures.net/pictures/420000/velka/clipart-kompass-navigation-vintage-1632836904jMO.png",
+      "author": "Andrea Stöckel",
+      "license": "CC0 1.0 Public Domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Downscaled to at most 760px, transparent outer margin trimmed, PNG palette optimized. Original colors and transparency preserved; no generative edits.",
+      "sha256": "ca28988bf4827a7ca391a92dac89588cd92003fe3df60024cf669726059ba22a",
+      "width": 760,
+      "height": 664,
+      "bytes": 164164
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 // Original questions remain documented; photo and chronology rounds added by user request.
 window.QUIZ_DATA = {
   "title": "КУЛЬТУРНЫЙ КОД",
-  "version": 4,
+  "version": 5,
   "categories": [
     "Русь матушка",
     "Дальневосточные истории",
@@ -46,7 +46,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "pvl"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image5.jpeg",
+          "alt": "Святослав Игоревич. Художественный образ",
+          "caption": "Святослав Игоревич. Художественный образ"
+        }
+      ]
     },
     {
       "id": "c1-400",
@@ -56,7 +63,9 @@ window.QUIZ_DATA = {
       "text": "О каком историческом событии идёт речь?\n\n«Помещики, сохраняя право собственности на все принадлежащие им земли, предоставляют крестьянам, за установленные повинности, в постоянное пользование усадебную их оседлость и сверх того, для обеспечения быта их и исполнения обязанностей их пред правительством, определённое в положениях количество полевой земли и других угодий».",
       "answer": "Отмена крепостного права в 1861 году.\nМанифест Александра II.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/emancipation.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -74,7 +83,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "emancipation"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/emancipation.jpg",
+          "alt": "Отмена крепостного права. Историческая иллюстрация",
+          "caption": "Отмена крепостного права. Историческая иллюстрация"
+        }
+      ]
     },
     {
       "id": "c1-600",
@@ -86,7 +102,9 @@ window.QUIZ_DATA = {
       "images": [
         "assets/images/image6.png"
       ],
-      "answerImages": [],
+      "answerImages": [
+        "assets/images/image6.png"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -104,7 +122,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "barbarossa"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image6.png",
+          "alt": "Карта плана «Барбаросса»",
+          "caption": "Карта плана «Барбаросса»"
+        }
+      ]
     },
     {
       "id": "c1-800",
@@ -114,7 +139,9 @@ window.QUIZ_DATA = {
       "text": "Соотнесите исторические события и даты.",
       "answer": "А — 4; Б — 2; В — 5; Г — 6.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/lesnaya.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -171,7 +198,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "dates"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/lesnaya.jpg",
+          "alt": "Битва при Лесной. Историческая гравюра",
+          "caption": "Битва при Лесной. Историческая гравюра"
+        }
+      ]
     },
     {
       "id": "c1-1000",
@@ -181,7 +215,9 @@ window.QUIZ_DATA = {
       "text": "Как называлась организация, созданная в 1923 году для контроля над финансовой системой СССР?",
       "answer": "Народный комиссариат финансов СССР — Наркомфин.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/chervonets.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -199,7 +235,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "narkomfin"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/chervonets.jpg",
+          "alt": "Золотой червонец «Сеятель», 1923 год. Реверс",
+          "caption": "Золотой червонец «Сеятель», 1923 год. Реверс"
+        }
+      ]
     },
     {
       "id": "c2-200",
@@ -209,7 +252,9 @@ window.QUIZ_DATA = {
       "text": "Сколько субъектов РФ входят в состав Дальневосточного федерального округа?",
       "answer": "11 субъектов.\n\nРеспублика Бурятия, Республика Саха (Якутия), Забайкальский, Камчатский, Приморский и Хабаровский края; Амурская, Магаданская и Сахалинская области; Еврейская автономная область и Чукотский автономный округ.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/far-east.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -227,7 +272,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "dfo"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/far-east.jpg",
+          "alt": "Дальневосточный федеральный округ. Состав с 2018 года",
+          "caption": "Дальневосточный федеральный округ. Состав с 2018 года"
+        }
+      ]
     },
     {
       "id": "c2-400",
@@ -257,7 +309,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "arsenyev"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image8.jpeg",
+          "alt": "Владимир Клавдиевич Арсеньев. Архивная фотография",
+          "caption": "Владимир Клавдиевич Арсеньев. Архивная фотография"
+        }
+      ]
     },
     {
       "id": "c2-600",
@@ -268,7 +327,7 @@ window.QUIZ_DATA = {
       "answer": "1 — В; 2 — Б; 3 — Д; 4 — Е; 5 — Г; 6 — Ж; 7 — А.",
       "images": [],
       "answerImages": [
-        "assets/images/image9.png"
+        "assets/answer-history/far-east.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -337,7 +396,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "geography"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/far-east.jpg",
+          "alt": "Дальневосточный федеральный округ. Состав с 2018 года",
+          "caption": "Дальневосточный федеральный округ. Состав с 2018 года"
+        }
+      ]
     },
     {
       "id": "c2-800",
@@ -367,7 +433,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "vladivostok"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image10.jpeg",
+          "alt": "Современный Владивосток",
+          "caption": "Современный Владивосток"
+        }
+      ]
     },
     {
       "id": "c2-1000",
@@ -397,7 +470,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "nevelskoy"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image33.jpeg",
+          "alt": "Геннадий Иванович Невельской. Портрет",
+          "caption": "Геннадий Иванович Невельской. Портрет"
+        }
+      ]
     },
     {
       "id": "c3-200",
@@ -427,7 +507,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "cathedral"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image11.jpeg",
+          "alt": "Спасо-Преображенский кафедральный собор в Хабаровске",
+          "caption": "Спасо-Преображенский кафедральный собор в Хабаровске"
+        }
+      ]
     },
     {
       "id": "c3-400",
@@ -459,7 +546,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "library"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image13.jpeg",
+          "alt": "Дальневосточная государственная научная библиотека. Современный вид",
+          "caption": "Дальневосточная государственная научная библиотека. Современный вид"
+        }
+      ]
     },
     {
       "id": "c3-600",
@@ -489,7 +583,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "relief"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image14.jpeg",
+          "alt": "Памятный рельеф у Амурского утёса",
+          "caption": "Памятный рельеф у Амурского утёса"
+        }
+      ]
     },
     {
       "id": "c3-800",
@@ -519,7 +620,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "tsum"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image15.jpeg",
+          "alt": "Хабаровский центральный универмаг",
+          "caption": "Хабаровский центральный универмаг"
+        }
+      ]
     },
     {
       "id": "c3-1000",
@@ -551,7 +659,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "bridge"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image35.jpeg",
+          "alt": "Лавр Дмитриевич Проскуряков. Портрет",
+          "caption": "Лавр Дмитриевич Проскуряков. Портрет"
+        }
+      ]
     },
     {
       "id": "c4-200",
@@ -584,7 +699,19 @@ window.QUIZ_DATA = {
         "evidence": [
           "portraits"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image17.jpeg",
+          "alt": "Пётр I",
+          "caption": "Пётр I"
+        },
+        {
+          "src": "assets/images/image18.jpeg",
+          "alt": "Иван IV Грозный",
+          "caption": "Иван IV Грозный"
+        }
+      ]
     },
     {
       "id": "c4-400",
@@ -597,8 +724,8 @@ window.QUIZ_DATA = {
         "assets/images/image19.jpeg"
       ],
       "answerImages": [
-        "assets/images/image20.jpeg",
-        "assets/images/image21.jpeg"
+        "assets/images/image21.jpeg",
+        "assets/images/image20.jpeg"
       ],
       "video": null,
       "enabled": true,
@@ -617,7 +744,19 @@ window.QUIZ_DATA = {
         "evidence": [
           "portraits"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image21.jpeg",
+          "alt": "Екатерина II",
+          "caption": "Екатерина II"
+        },
+        {
+          "src": "assets/images/image20.jpeg",
+          "alt": "Елизавета Петровна",
+          "caption": "Елизавета Петровна"
+        }
+      ]
     },
     {
       "id": "c4-600",
@@ -650,7 +789,19 @@ window.QUIZ_DATA = {
         "evidence": [
           "portraits"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image23.jpeg",
+          "alt": "Александр Васильевич Суворов",
+          "caption": "Александр Васильевич Суворов"
+        },
+        {
+          "src": "assets/images/image24.jpeg",
+          "alt": "Михаил Илларионович Кутузов",
+          "caption": "Михаил Илларионович Кутузов"
+        }
+      ]
     },
     {
       "id": "c4-800",
@@ -683,7 +834,19 @@ window.QUIZ_DATA = {
         "evidence": [
           "portraits"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image26.jpeg",
+          "alt": "Дмитрий Викторович Демешин",
+          "caption": "Дмитрий Викторович Демешин"
+        },
+        {
+          "src": "assets/images/image27.jpeg",
+          "alt": "Сергей Анатольевич Кравчук",
+          "caption": "Сергей Анатольевич Кравчук"
+        }
+      ]
     },
     {
       "id": "c4-1000",
@@ -716,7 +879,19 @@ window.QUIZ_DATA = {
         "evidence": [
           "portraits"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image37.png",
+          "alt": "Леонид Ильич Брежнев",
+          "caption": "Леонид Ильич Брежнев"
+        },
+        {
+          "src": "assets/images/image38.png",
+          "alt": "Никита Сергеевич Хрущёв",
+          "caption": "Никита Сергеевич Хрущёв"
+        }
+      ]
     },
     {
       "id": "c5-photo-200",
@@ -747,7 +922,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "frame-nevsky"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/photo-round/nevsky-1938.jpg",
+          "alt": "«Александр Невский», 1938. Кадр из фильма",
+          "caption": "«Александр Невский», 1938. Кадр из фильма"
+        }
+      ]
     },
     {
       "id": "c5-photo-400",
@@ -757,10 +939,10 @@ window.QUIZ_DATA = {
       "text": "Какой парад запечатлён на фотографии? Назовите год.",
       "answer": "Парад Победы на Красной площади в Москве.\n24 июня 1945 года.",
       "images": [
-        "assets/photo-round/victory-parade-1945.jpg"
+        "assets/answer-history/victory-parade-1945-color.jpg"
       ],
       "answerImages": [
-        "assets/photo-round/victory-parade-1945.jpg"
+        "assets/answer-history/victory-parade-1945-color.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -778,7 +960,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "frame-parade"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/victory-parade-1945-color.jpg",
+          "alt": "Парад Победы, Москва, 24 июня 1945 года. Кадр из подлинной цветной кинохроники",
+          "caption": "Парад Победы, Москва, 24 июня 1945 года. Кадр из подлинной цветной кинохроники"
+        }
+      ]
     },
     {
       "id": "c5-photo-600",
@@ -809,7 +998,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "frame-potemkin"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/photo-round/potemkin-1925.jpg",
+          "alt": "«Броненосец „Потёмкин“», 1925. Кадр из фильма",
+          "caption": "«Броненосец „Потёмкин“», 1925. Кадр из фильма"
+        }
+      ]
     },
     {
       "id": "c5-photo-800",
@@ -840,7 +1036,14 @@ window.QUIZ_DATA = {
         "evidence": [
           "frame-elbe"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/photo-round/elbe-1945.jpg",
+          "alt": "Советские и американские генералы на Эльбе. Торгау, 26 апреля 1945 года",
+          "caption": "Советские и американские генералы на Эльбе. Торгау, 26 апреля 1945 года"
+        }
+      ]
     },
     {
       "id": "c5-photo-1000",
@@ -850,10 +1053,10 @@ window.QUIZ_DATA = {
       "text": "Назовите конференцию и год. В каком дворце проходили её основные заседания?",
       "answer": "Ялтинская (Крымская) конференция, 1945 год.\nЛивадийский дворец.",
       "images": [
-        "assets/photo-round/yalta-1945.jpg"
+        "assets/answer-history/yalta-1945-color.jpg"
       ],
       "answerImages": [
-        "assets/photo-round/yalta-1945.jpg"
+        "assets/answer-history/yalta-1945-color.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -873,7 +1076,14 @@ window.QUIZ_DATA = {
           "frame-yalta",
           "yalta-palace"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/yalta-1945-color.jpg",
+          "alt": "Ялтинская конференция, 1945 год",
+          "caption": "Ялтинская конференция, 1945 год"
+        }
+      ]
     },
     {
       "id": "c6-order-200",
@@ -883,7 +1093,10 @@ window.QUIZ_DATA = {
       "text": "Что было раньше? Назовите букву.\n\nА) Основание Санкт-Петербурга\n\nБ) Первое летописное упоминание о Москве",
       "answer": "Б → А\n\nБ) Первое летописное упоминание о Москве — 1147 год.\nА) Основание Санкт-Петербурга — 1703 год.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/moscow.jpg",
+        "assets/answer-history/petersburg.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -920,7 +1133,19 @@ window.QUIZ_DATA = {
           "petersburg",
           "moscow"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/moscow.jpg",
+          "alt": "Собор Василия Блаженного. Современная Москва",
+          "caption": "Собор Василия Блаженного. Современная Москва"
+        },
+        {
+          "src": "assets/answer-history/petersburg.jpg",
+          "alt": "Петропавловская крепость. Современный Санкт-Петербург",
+          "caption": "Петропавловская крепость. Современный Санкт-Петербург"
+        }
+      ]
     },
     {
       "id": "c6-order-400",
@@ -930,7 +1155,10 @@ window.QUIZ_DATA = {
       "text": "Расположите космические события от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Первый полёт Юрия Гагарина\n\nБ) Полёт Валентины Терешковой\n\nВ) Запуск первого искусственного спутника Земли",
       "answer": "В → А → Б\n\nВ) Запуск первого искусственного спутника Земли — 4 октября 1957.\nА) Первый полёт Юрия Гагарина — 12 апреля 1961.\nБ) Полёт Валентины Терешковой — 16 июня 1963.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/sputnik.jpg",
+        "assets/answer-history/gagarin.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -974,7 +1202,19 @@ window.QUIZ_DATA = {
           "space-firsts",
           "tereshkova"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/sputnik.jpg",
+          "alt": "Модель первого искусственного спутника Земли. Музейный экспонат",
+          "caption": "Модель первого искусственного спутника Земли. Музейный экспонат"
+        },
+        {
+          "src": "assets/answer-history/gagarin.jpg",
+          "alt": "Юрий Гагарин. Фотография 1961 года",
+          "caption": "Юрий Гагарин. Фотография 1961 года"
+        }
+      ]
     },
     {
       "id": "c6-order-600",
@@ -984,7 +1224,10 @@ window.QUIZ_DATA = {
       "text": "Расположите события в истории культуры и науки от раннего к позднему. Назовите порядок букв.\n\nА) Основание Московского университета\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца\n\nВ) Основание Кунсткамеры",
       "answer": "Б → В → А\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца — 1564 год.\nВ) Основание Кунсткамеры — 1714 год.\nА) Основание Московского университета — 1755 год.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/book.jpg",
+        "assets/answer-history/kunstkamera.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -1030,7 +1273,19 @@ window.QUIZ_DATA = {
           "apostol",
           "kunstkamera"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/book.jpg",
+          "alt": "Разворот московского «Апостола», 1564 год",
+          "caption": "Разворот московского «Апостола», 1564 год"
+        },
+        {
+          "src": "assets/answer-history/kunstkamera.jpg",
+          "alt": "Здание Кунсткамеры. Современная фотография",
+          "caption": "Здание Кунсткамеры. Современная фотография"
+        }
+      ]
     },
     {
       "id": "c6-order-800",
@@ -1040,7 +1295,10 @@ window.QUIZ_DATA = {
       "text": "Соберите дальневосточную хронологию: от самого раннего события к самому позднему. Назовите порядок букв.\n\nА) Открытие первого постоянного моста через Амур в Хабаровске\n\nБ) Основание военного поста Владивосток\n\nВ) Церемония закладки Транссибирской магистрали у Владивостока\n\nГ) Основание военного поста Хабаровка",
       "answer": "Г → Б → В → А\n\nГ) Основание военного поста Хабаровка — 1858 год.\nБ) Основание военного поста Владивосток — 1860 год.\nВ) Церемония закладки Транссибирской магистрали у Владивостока — 1891 год.\nА) Открытие первого постоянного моста через Амур в Хабаровске — 1916 год.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/images/image10.jpeg",
+        "assets/images/image34.jpeg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -1095,7 +1353,19 @@ window.QUIZ_DATA = {
           "transsib",
           "khabarovsk"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image10.jpeg",
+          "alt": "Современный Владивосток",
+          "caption": "Современный Владивосток"
+        },
+        {
+          "src": "assets/images/image34.jpeg",
+          "alt": "Первый мост через Амур в Хабаровске. Архивная фотография",
+          "caption": "Первый мост через Амур в Хабаровске. Архивная фотография"
+        }
+      ]
     },
     {
       "id": "c6-order-1000",
@@ -1105,7 +1375,10 @@ window.QUIZ_DATA = {
       "text": "Все эти события произошли в 1961 году. Расположите их от раннего к позднему. Назовите порядок букв.\n\nА) Открытие XXII съезда КПСС\n\nБ) Начало сооружения Берлинской стены\n\nВ) Старт Германа Титова на корабле «Восток-2»\n\nГ) Первый полёт Юрия Гагарина",
       "answer": "Г → В → Б → А\n\nГ) Первый полёт Юрия Гагарина — 12 апреля 1961.\nВ) Старт Германа Титова на корабле «Восток-2» — 6 августа 1961.\nБ) Начало сооружения Берлинской стены — 13 августа 1961.\nА) Открытие XXII съезда КПСС — 17 октября 1961.",
       "images": [],
-      "answerImages": [],
+      "answerImages": [
+        "assets/answer-history/gagarin.jpg",
+        "assets/answer-history/berlin-wall.jpg"
+      ],
       "video": null,
       "enabled": true,
       "status": "complete",
@@ -1160,7 +1433,19 @@ window.QUIZ_DATA = {
           "titov",
           "space-firsts"
         ]
-      }
+      },
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/gagarin.jpg",
+          "alt": "Юрий Гагарин. Фотография 1961 года",
+          "caption": "Юрий Гагарин. Фотография 1961 года"
+        },
+        {
+          "src": "assets/answer-history/berlin-wall.jpg",
+          "alt": "Строительство Берлинской стены. 20 ноября 1961 года",
+          "caption": "Строительство Берлинской стены. 20 ноября 1961 года"
+        }
+      ]
     }
   ],
   "warmup": [
@@ -1180,7 +1465,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/kyiv.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/kyiv.jpg",
+          "alt": "Софийский собор. Современный Киев",
+          "caption": "Софийский собор. Современный Киев"
+        }
+      ]
     },
     {
       "id": "w2",
@@ -1198,7 +1493,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/vladimir.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/vladimir.jpg",
+          "alt": "Князь Владимир. Икона начала XX века по образцу В. Васнецова",
+          "caption": "Князь Владимир. Икона начала XX века по образцу В. Васнецова"
+        }
+      ]
     },
     {
       "id": "w3",
@@ -1216,7 +1521,23 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/images/image18.jpeg",
+        "assets/images/image17.jpeg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image18.jpeg",
+          "alt": "Иван IV Грозный. Династия Рюриковичей",
+          "caption": "Иван IV Грозный. Династия Рюриковичей"
+        },
+        {
+          "src": "assets/images/image17.jpeg",
+          "alt": "Пётр I. Династия Романовых",
+          "caption": "Пётр I. Династия Романовых"
+        }
+      ]
     },
     {
       "id": "w4",
@@ -1234,7 +1555,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/cyril-methodius.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/cyril-methodius.jpg",
+          "alt": "Кирилл и Мефодий. Икона в храме Святой Параскевы",
+          "caption": "Кирилл и Мефодий. Икона в храме Святой Параскевы"
+        }
+      ]
     },
     {
       "id": "w5",
@@ -1252,7 +1583,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/ivan-iii.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/ivan-iii.jpg",
+          "alt": "Иван III. Исторический портрет",
+          "caption": "Иван III. Исторический портрет"
+        }
+      ]
     },
     {
       "id": "w6",
@@ -1270,7 +1611,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/images/image18.jpeg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image18.jpeg",
+          "alt": "Иван IV Грозный",
+          "caption": "Иван IV Грозный"
+        }
+      ]
     },
     {
       "id": "w7",
@@ -1288,7 +1639,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/godunov.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/godunov.jpg",
+          "alt": "Борис Годунов. «Царский титулярник», XVII век",
+          "caption": "Борис Годунов. «Царский титулярник», XVII век"
+        }
+      ]
     },
     {
       "id": "w8",
@@ -1306,7 +1667,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/kazan.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/kazan.jpg",
+          "alt": "«Взятие Казани». Григорий Угрюмов, 1800 год",
+          "caption": "«Взятие Казани». Григорий Угрюмов, 1800 год"
+        }
+      ]
     },
     {
       "id": "w9",
@@ -1324,7 +1695,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/streltsy.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/streltsy.jpg",
+          "alt": "«Утро стрелецкой казни». Василий Суриков, 1881 год. События 1698 года",
+          "caption": "«Утро стрелецкой казни». Василий Суриков, 1881 год. События 1698 года"
+        }
+      ]
     },
     {
       "id": "w10",
@@ -1342,7 +1723,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/images/image21.jpeg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/images/image21.jpeg",
+          "alt": "Екатерина II",
+          "caption": "Екатерина II"
+        }
+      ]
     },
     {
       "id": "w11",
@@ -1360,7 +1751,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/aurora.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/aurora.jpg",
+          "alt": "Крейсер «Аврора». Современная фотография",
+          "caption": "Крейсер «Аврора». Современная фотография"
+        }
+      ]
     },
     {
       "id": "w12",
@@ -1378,7 +1779,17 @@ window.QUIZ_DATA = {
         "evidence": [
           "warmup"
         ]
-      }
+      },
+      "answerImages": [
+        "assets/answer-history/yeltsin.jpg"
+      ],
+      "answerImageDetails": [
+        {
+          "src": "assets/answer-history/yeltsin.jpg",
+          "alt": "Борис Ельцин. Фотография 1993 года",
+          "caption": "Борис Ельцин. Фотография 1993 года"
+        }
+      ]
     }
   ],
   "defaultTeams": [

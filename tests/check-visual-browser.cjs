@@ -1,0 +1,24 @@
+/* Development-only: all answer illustrations, source colors, stage/card geometry and text fit. */
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
+const output=process.env.QUIZ_CHECK_OUTPUT||'/tmp/kod-visual-check';fs.mkdirSync(output,{recursive:true});
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});try{
+ const p=await browser.newPage({viewport:{width:1920,height:1080}}),errors=[],requests=[];p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>requests.push(r.url()));
+ await p.goto(process.env.QUIZ_URL||'http://127.0.0.1:8777');await p.evaluate(()=>document.fonts.ready);await p.locator('.cover').click();await p.waitForTimeout(650);
+ async function settled(){await p.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.querySelectorAll('#screen img')].map(x=>x.decode()));for(const a of document.getAnimations())if(a.effect?.getTiming().iterations!==Infinity)a.finish();});}
+ async function manager(tab){if(await p.locator('#overlay').isVisible())await p.keyboard.press('Escape');await p.keyboard.press('m');await p.locator(`[data-tab="${tab}"]`).click();}
+ async function inspect(id,answer){await settled();const result=await p.evaluate(()=>({overflow:[...document.querySelectorAll('#screen .question-text,#screen .match-answer-row,#screen .match-answer-key,#screen .media-caption')].filter(x=>x.scrollHeight>x.clientHeight+2||x.scrollWidth>x.clientWidth+2).map(x=>({text:x.textContent,client:x.clientHeight,scroll:x.scrollHeight})),images:[...document.querySelectorAll('#screen img')].map(x=>({src:x.getAttribute('src'),ok:x.naturalWidth>0,color:getComputedStyle(x).filter})),stage:document.querySelector('#stage').getBoundingClientRect().toJSON()}));assert.deepEqual(result.overflow,[],id+' text overflow');assert(result.images.every(x=>x.ok&&x.color==='none'),id+' image missing or filtered');return result;}
+ for(const [width,height] of [[1920,1080],[1366,768],[390,844],[844,390],[768,1024]]){await p.setViewportSize({width,height});await settled();const cards=await p.locator('.sequence-item').evaluateAll(xs=>xs.map(x=>{const r=x.getBoundingClientRect(),i=x.querySelector('img').getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,iw:i.width,ih:i.height,inside:i.left>=r.left-1&&i.right<=r.right+1&&i.top>=r.top-1&&i.bottom<=r.bottom+1};}));assert.equal(cards.length,4);assert(cards.every(x=>x.inside&&x.iw>0&&x.ih>0),'stage image clipped');if(width>height){assert(cards.every(x=>Math.abs(x.y-cards[0].y)<1));assert(cards.every((x,i)=>i===0||x.x>cards[i-1].right));}assert.equal(await p.locator('.sequence-item small,.sequence-arrow,.sequence-number').count(),0);await p.screenshot({path:output+`/stages-${width}.jpg`,quality:86});}
+ await p.setViewportSize({width:1920,height:1080});const data=await p.evaluate(()=>CulturalCode.content),results=[];
+ for(const large of [false,true]){
+  await manager('settings');await p.locator('[data-preference="large"]').setChecked(large);await p.keyboard.press('Escape');
+  for(const [kind,list] of [['main',data.questions],['warmup',data.warmup]])for(const [i,q] of list.entries()){
+   await manager('questions');await p.locator(kind==='main'?`[data-action="admin-open"][data-id="${q.id}"]`:`[data-action="open-warm"][data-index="${i}"]`).click();
+   let v=await inspect(q.id,false);assert.deepEqual(v.images.map(x=>x.src),q.images||[],q.id+' answer image leaked before reveal');await p.keyboard.press('Space');v=await inspect(q.id,true);
+   assert.deepEqual(v.images.map(x=>x.src),q.answerImages,q.id+' answer image omitted');assert(v.images.length>0,q.id+' no illustration');
+   if(!large&&['w1','w7','c2-600','c5-photo-1000','c6-order-800'].includes(q.id))await p.screenshot({path:output+'/'+q.id+'.jpg',quality:87});results.push({id:q.id,large,images:v.images.length});
+  }
+ }
+ await p.locator('#operator-dot').click();await p.waitForTimeout(500);assert(await p.locator('#selection-status').evaluate(x=>x.getBoundingClientRect().width<=1));assert.equal(await p.locator('.quick-dialog .photo-credits-link,.selection-clear').count(),0);await p.screenshot({path:output+'/operator.jpg',quality:87});
+ await p.keyboard.press('2');assert.equal(await p.locator('.quick-team[aria-pressed="true"]').count(),1);await p.locator('[data-action="clear-selection"]').click();assert.equal((await p.evaluate(()=>CulturalCode.snapshot())).pendingAward,null);
+ assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);fs.writeFileSync(output+'/visual-results.json',JSON.stringify(results,null,2));console.log('PASS: 42 question/answer pairs in normal and large modes; local unfiltered illustrations, no answer-image leaks or text overflow; four stage cards at five viewports; compact accessible scoring menu.');
+ }finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

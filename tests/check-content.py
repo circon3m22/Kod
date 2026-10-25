@@ -86,4 +86,21 @@ for path in re.findall(r"url\(['\"]?([^)'\"]+)",(r/'styles.css').read_text()):
  else:assert (r/path).is_file(),path
 assert len(list((r/'assets/images').glob('*')))==38
 assert manifest==json.loads((r/'tests/asset-checksums.json').read_text()),'Asset checksums differ from the reviewed manifest'
+answer_sources=json.loads((r/'source/answer-image-sources.json').read_text())
+assert set(answer_sources)=={q['id'] for q in d['questions']+d['warmup']}
+for q in d['questions']+d['warmup']:
+ images=answer_sources[q['id']]['images']
+ assert images and q['answerImages']==[x['path'] for x in images],q['id']
+ assert q['answerImageDetails']==[{'src':x['path'],'alt':x['alt'],'caption':x['caption']} for x in images],q['id']
+ for x in images:
+  assert x['alt'] and x['caption'] and x['sourceUrl'] and x['license'],q['id']
+  assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256'],x['path']
+for qid in ['c5-photo-400','c5-photo-1000']:
+ assert by_id[qid]['images']==by_id[qid]['answerImages']
+ assert answer_sources[qid]['images'][0]['colorEvidence']
+objects=json.loads((r/'source/stage-object-sources.json').read_text())['images']
+assert {x['stage'] for x in objects}=={'warmup','board','bonus','captains'}
+for x in objects:
+ assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
 print('PASS: 52 source slides, 25 original mappings preserved, 30 active cells in 6 categories, 12 warmup questions, 5 sourced photos, 5 verified timelines, local assets/checksums.')
+print('PASS: 42 sourced answer illustrations, two authentic color 1945 photographs, four local stage objects.')
