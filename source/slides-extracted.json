@@ -1,0 +1,2783 @@
+[
+  {
+    "slide": 1,
+    "texts": [],
+    "images": [
+      "assets/images/image2.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image1.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 14,
+        "type": "PICTURE (13)",
+        "x": 0,
+        "y": 0,
+        "width": 12191760,
+        "height": 6858000
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "texts": [],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide3.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide5.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide7.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide9.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide43.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide11.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide13.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide15.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide17.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide45.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide19.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide21.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide23.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide25.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide47.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide27.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide29.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide31.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide33.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide49.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide35.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide37.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide39.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide41.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide51.xml"
+      }
+    ],
+    "backgroundImages": [],
+    "shapes": [
+      {
+        "id": 15,
+        "type": "TABLE (19)",
+        "x": 0,
+        "y": 0,
+        "width": 12191760,
+        "height": 7134120
+      }
+    ],
+    "table": [
+      [
+        "Русь матушка ",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ],
+      [
+        "Дальневосточные истории",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ],
+      [
+        "Хабаровская земля",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ],
+      [
+        "Ты точно его знаешь",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ],
+      [
+        "Кадр прошлого",
+        "200",
+        "400",
+        "600",
+        "800",
+        "1000"
+      ]
+    ],
+    "tableLinks": [
+      [
+        {
+          "text": "Русь матушка ",
+          "targets": []
+        },
+        {
+          "text": "200",
+          "targets": [
+            "slide3.xml"
+          ]
+        },
+        {
+          "text": "400",
+          "targets": [
+            "slide5.xml"
+          ]
+        },
+        {
+          "text": "600",
+          "targets": [
+            "slide7.xml"
+          ]
+        },
+        {
+          "text": "800",
+          "targets": [
+            "slide9.xml"
+          ]
+        },
+        {
+          "text": "1000",
+          "targets": [
+            "slide43.xml"
+          ]
+        }
+      ],
+      [
+        {
+          "text": "Дальневосточные истории",
+          "targets": []
+        },
+        {
+          "text": "200",
+          "targets": [
+            "slide11.xml"
+          ]
+        },
+        {
+          "text": "400",
+          "targets": [
+            "slide13.xml"
+          ]
+        },
+        {
+          "text": "600",
+          "targets": [
+            "slide15.xml"
+          ]
+        },
+        {
+          "text": "800",
+          "targets": [
+            "slide17.xml"
+          ]
+        },
+        {
+          "text": "1000",
+          "targets": [
+            "slide45.xml"
+          ]
+        }
+      ],
+      [
+        {
+          "text": "Хабаровская земля",
+          "targets": []
+        },
+        {
+          "text": "200",
+          "targets": [
+            "slide19.xml"
+          ]
+        },
+        {
+          "text": "400",
+          "targets": [
+            "slide21.xml"
+          ]
+        },
+        {
+          "text": "600",
+          "targets": [
+            "slide23.xml"
+          ]
+        },
+        {
+          "text": "800",
+          "targets": [
+            "slide25.xml"
+          ]
+        },
+        {
+          "text": "1000",
+          "targets": [
+            "slide47.xml"
+          ]
+        }
+      ],
+      [
+        {
+          "text": "Ты точно его знаешь",
+          "targets": []
+        },
+        {
+          "text": "200",
+          "targets": [
+            "slide27.xml"
+          ]
+        },
+        {
+          "text": "400",
+          "targets": [
+            "slide29.xml"
+          ]
+        },
+        {
+          "text": "600",
+          "targets": [
+            "slide31.xml"
+          ]
+        },
+        {
+          "text": "800",
+          "targets": [
+            "slide33.xml"
+          ]
+        },
+        {
+          "text": "1000",
+          "targets": [
+            "slide49.xml"
+          ]
+        }
+      ],
+      [
+        {
+          "text": "Кадр прошлого",
+          "targets": []
+        },
+        {
+          "text": "200",
+          "targets": [
+            "slide35.xml"
+          ]
+        },
+        {
+          "text": "400",
+          "targets": [
+            "slide37.xml"
+          ]
+        },
+        {
+          "text": "600",
+          "targets": [
+            "slide39.xml"
+          ]
+        },
+        {
+          "text": "800",
+          "targets": [
+            "slide41.xml"
+          ]
+        },
+        {
+          "text": "1000",
+          "targets": [
+            "slide51.xml"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "slide": 3,
+    "texts": [
+      "Узнать ответ",
+      "«И взял голову его, и сделал чашу из черепа, оковав его, и пил из него» про кого эти строки"
+    ],
+    "images": [
+      "assets/images/image3.jpeg",
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide4.xml"
+      },
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide4.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 16,
+        "type": "PICTURE (13)",
+        "x": 0,
+        "y": 0,
+        "width": 12191760,
+        "height": 7791120
+      },
+      {
+        "id": 17,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 18,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 19,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2679480,
+        "y": 1952280,
+        "width": 6545160,
+        "height": 2226600
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "texts": [
+      "Святослав \u000b",
+      "Вернуться к выбору тем→"
+    ],
+    "images": [
+      "assets/images/image5.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 20,
+        "type": "PLACEHOLDER (14)",
+        "x": 798120,
+        "y": 905760,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 21,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 22,
+        "type": "PICTURE (13)",
+        "x": 4878360,
+        "y": 1984320,
+        "width": 2600280,
+        "height": 3162240
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "texts": [
+      "\u000b",
+      "Узнать ответ",
+      " О каком историческом событии идет речь?\n\n«Помещики, сохраняя право собственности на все принадлежащие им земли, предоставляют крестьянам, за установленные повинности, в постоянное пользование усадебную их оседлость и сверх того, для обеспечения быта их и исполнения обязанностей их пред правительством, определённое в положениях количество полевой земли и других угодий»."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide6.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 23,
+        "type": "PLACEHOLDER (14)",
+        "x": 914040,
+        "y": 642600,
+        "width": 10760040,
+        "height": 4578480
+      },
+      {
+        "id": 24,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 25,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 26,
+        "type": "AUTO_SHAPE (1)",
+        "x": 1049040,
+        "y": 966600,
+        "width": 9761760,
+        "height": 2908440
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "\u000b",
+      "Речь идет о манифесте императора Александра  II ,об отмене крепостного права. "
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 27,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4012560,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 525240
+      },
+      {
+        "id": 28,
+        "type": "PLACEHOLDER (14)",
+        "x": 137520,
+        "y": 347400,
+        "width": 11495160,
+        "height": 1712880
+      },
+      {
+        "id": 29,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2857320,
+        "y": 1819080,
+        "width": 6699240,
+        "height": 3900600
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "texts": [
+      "Узнать ответ",
+      "Что изображено на карте?"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image6.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide8.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 30,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 31,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 32,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2458800,
+        "y": 412560,
+        "width": 7277040,
+        "height": 627120
+      },
+      {
+        "id": 33,
+        "type": "PICTURE (13)",
+        "x": 2187360,
+        "y": 1169640,
+        "width": 8004240,
+        "height": 4202280
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "План Барбароса"
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 34,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 35,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 2419200,
+        "width": 10760040,
+        "height": 1512720
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "texts": [
+      "Узнать ответ",
+      "Соотнесите историечские события и даты ",
+      "A) битва при д. Лесной\nБ) созыв Стоглавого собора\nВ) ликвидация военных поселений\nГ) заключение Брестского мира\n\n\n\n",
+      "1) 1478 г.\n2) 1551 г.\n3) 1634 г.\n4) 1708 г.\n5) 1857 г.\n6) 1918 г."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide10.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 36,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 37,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 38,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2373120,
+        "y": 412560,
+        "width": 7278840,
+        "height": 1160280
+      },
+      {
+        "id": 39,
+        "type": "AUTO_SHAPE (1)",
+        "x": 495000,
+        "y": 1581120,
+        "width": 5623200,
+        "height": 3193920
+      },
+      {
+        "id": 40,
+        "type": "AUTO_SHAPE (1)",
+        "x": 8629560,
+        "y": 1581120,
+        "width": 2690640,
+        "height": 3620880
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "A) битва при д. Лесной\nБ) созыв Стоглавого собора\nВ) ликвидация военных поселений\nГ) заключение Брестского мира",
+      "1) 1478 г.\n2) 1551 г.\n3) 1634 г.\n4) 1708 г.\n5) 1857 г.\n6) 1918 г."
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 41,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 42,
+        "type": "AUTO_SHAPE (1)",
+        "x": 493560,
+        "y": 831600,
+        "width": 6095880,
+        "height": 3018600
+      },
+      {
+        "id": 43,
+        "type": "AUTO_SHAPE (1)",
+        "x": 8794440,
+        "y": 831600,
+        "width": 3022560,
+        "height": 3385800
+      },
+      {
+        "id": 44,
+        "type": "LINE (9)",
+        "x": 5422320,
+        "y": 1106280,
+        "width": 3275640,
+        "height": 1613520
+      },
+      {
+        "id": 45,
+        "type": "LINE (9)",
+        "x": 5422320,
+        "y": 1666800,
+        "width": 3275640,
+        "height": 132480
+      },
+      {
+        "id": 46,
+        "type": "LINE (9)",
+        "x": 5040000,
+        "y": 2250360,
+        "width": 3658320,
+        "height": 1143720
+      },
+      {
+        "id": 47,
+        "type": "LINE (9)",
+        "x": 6217560,
+        "y": 3147480,
+        "width": 2421720,
+        "height": 741960
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "texts": [
+      "Узнать ответ",
+      "Сколько субъектов РФ входят в состав Дальневосточного федерального округа?\n"
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide12.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image3.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 48,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 49,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 50,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2563560,
+        "y": 1985760,
+        "width": 7278840,
+        "height": 2226600
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "11",
+      "Приморский край, \nХабаровский край, \nКамчатский край, \nРеспублика Саха (Якутия), \nАмурская область, \nМагаданская область, \nСахалинская область, \nЕврейская автономная область, \nЧукотский автономный округ, \nРеспублика Бурятия \nЗабайкальский край."
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 51,
+        "type": "AUTO_SHAPE (1)",
+        "x": 7594560,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 52,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 0,
+        "width": 10760040,
+        "height": 1512720
+      },
+      {
+        "id": 53,
+        "type": "AUTO_SHAPE (1)",
+        "x": 847440,
+        "y": 1231560,
+        "width": 10507680,
+        "height": 3826080
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "texts": [
+      "Узнать ответ",
+      " О ком эти строки?\n\n«Директор Хабаровского краеведческого музея имени Н. И. Гродекова в 1910—1919 и 1924—1925 годах. Офицер Русской императорской армии: за 26 лет военной службы прошёл путь от вольноопределяющегося и подпрапорщика до подполковника. Состоя на службе офицером для особых поручений при приамурском генерал-губернаторе Н. Л. Гондатти, в 1911—1915 годах разработал и лично возглавил ряд секретных экспедиций по борьбе с хунхузами (китайскими бандитами), нелегальными иммигрантами и лесными браконьерами.Действительный член Общества изучения Амурского края, Императорского Русского Географического Общества, Вашингтонского Национального географического общества и множества других научных организаций."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide14.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 54,
+        "type": "PICTURE (13)",
+        "x": 9428040,
+        "y": 5898960,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 55,
+        "type": "AUTO_SHAPE (1)",
+        "x": 9828720,
+        "y": 6103800,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 56,
+        "type": "AUTO_SHAPE (1)",
+        "x": 493560,
+        "y": 504720,
+        "width": 11285640,
+        "height": 6759360
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Владимир Клавдиевич Арсеньев"
+    ],
+    "images": [
+      "assets/images/image8.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 57,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 58,
+        "type": "PLACEHOLDER (14)",
+        "x": 798120,
+        "y": 185040,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 59,
+        "type": "PICTURE (13)",
+        "x": 4835520,
+        "y": 1422360,
+        "width": 2531880,
+        "height": 4012920
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "texts": [
+      "Узнать ответ",
+      "Соотнесите  ",
+      "Полуостров Камчатка\nРека Амур\nОстров Сахалин\nЗалив Петра Великого\nЧукотский полуостров\nГород Хабаровск\nОстров Даманский",
+      "А) Место военного конфликта между СССР и Китаем в 1969 году.\nБ) Река, по которой проходила граница по Айгунскому договору.\nВ) Земля, где проживают коренные народы — ительмены и коряки.\nГ) Регион, где расположен самый восточный город России — Анадырь.\nД) Крупнейший остров региона, богатый углём и нефтью.\nЕ) Залив, на берегах которого стоит город-порт Владивосток.\nЖ) Город, названный в честь русского землепроходца."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide16.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 60,
+        "type": "PICTURE (13)",
+        "x": 230040,
+        "y": 5814720,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 61,
+        "type": "AUTO_SHAPE (1)",
+        "x": 641160,
+        "y": 6018120,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 62,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2415960,
+        "y": 276120,
+        "width": 7278840,
+        "height": 627120
+      },
+      {
+        "id": 63,
+        "type": "AUTO_SHAPE (1)",
+        "x": 0,
+        "y": 1052280,
+        "width": 6095880,
+        "height": 3077640
+      },
+      {
+        "id": 64,
+        "type": "AUTO_SHAPE (1)",
+        "x": 6802200,
+        "y": 1052280,
+        "width": 5245200,
+        "height": 6224760
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Полуостров Камчатка\nРека Амур\nОстров Сахалин\nЗалив Петра Великого\nЧукотский полуостров\nГород Хабаровск\nОстров Даманский",
+      "А) Место военного конфликта между СССР и Китаем в 1969 году.\nБ) Река, по которой проходила граница по Айгунскому договору.\nВ) Земля, где проживают коренные народы — ительмены и коряки.\nГ) Регион, где расположен самый восточный город России — Анадырь.\nД) Крупнейший остров региона, богатый углём и нефтью.\nЕ) Залив, на берегах которого стоит город-порт Владивосток.\nЖ) Город, названный в честь русского землепроходца.",
+      "Соотнесите  "
+    ],
+    "images": [
+      "assets/images/image9.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 65,
+        "type": "AUTO_SHAPE (1)",
+        "x": 235800,
+        "y": 5949720,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 66,
+        "type": "AUTO_SHAPE (1)",
+        "x": 0,
+        "y": 1052280,
+        "width": 6095880,
+        "height": 3077640
+      },
+      {
+        "id": 67,
+        "type": "AUTO_SHAPE (1)",
+        "x": 6802200,
+        "y": 1052280,
+        "width": 5245200,
+        "height": 6224760
+      },
+      {
+        "id": 68,
+        "type": "PICTURE (13)",
+        "x": 3985920,
+        "y": 1377720,
+        "width": 2944800,
+        "height": 1309680
+      },
+      {
+        "id": 69,
+        "type": "LINE (9)",
+        "x": 2499840,
+        "y": 1793160,
+        "width": 4197960,
+        "height": 156600
+      },
+      {
+        "id": 70,
+        "type": "LINE (9)",
+        "x": 3031560,
+        "y": 2141280,
+        "width": 3686760,
+        "height": 2007360
+      },
+      {
+        "id": 71,
+        "type": "LINE (9)",
+        "x": 3795480,
+        "y": 2549160,
+        "width": 3007440,
+        "height": 2167560
+      },
+      {
+        "id": 72,
+        "type": "LINE (9)",
+        "x": 3795480,
+        "y": 3090240,
+        "width": 2975760,
+        "height": 374040
+      },
+      {
+        "id": 73,
+        "type": "LINE (9)",
+        "x": 3158640,
+        "y": 3463920,
+        "width": 3655080,
+        "height": 1946880
+      },
+      {
+        "id": 74,
+        "type": "LINE (9)",
+        "x": 3403080,
+        "y": 1391760,
+        "width": 3283560,
+        "height": 2520000
+      },
+      {
+        "id": 75,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2415960,
+        "y": 276120,
+        "width": 7278840,
+        "height": 627120
+      }
+    ]
+  },
+  {
+    "slide": 17,
+    "texts": [
+      "Узнать ответ",
+      "О каком городе идёт речь?",
+      "В древности территория современного_______ входила в состав государства Бохай (698—926 гг.), начиная с X века она принадлежала киданям, а затем Чжурчжэни. В начале XIII века на территории современного_________ существовало несколько городов чжурчжэньского государства Восточное Ся. Все они были разрушены монголами в результате нападения 1233 года, после чего территория пришла в запустение. Позднее из-за споров между маньжурами и ханьцами территория обезлюдело и практически не упоминалось в источниках вплоть до XIX века."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide18.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 76,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 77,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 78,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2458800,
+        "y": 257040,
+        "width": 7277040,
+        "height": 627120
+      },
+      {
+        "id": 79,
+        "type": "AUTO_SHAPE (1)",
+        "x": 558720,
+        "y": 1118880,
+        "width": 10653480,
+        "height": 3996000
+      }
+    ]
+  },
+  {
+    "slide": 18,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Владивосток "
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image10.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 80,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 81,
+        "type": "PLACEHOLDER (14)",
+        "x": 809280,
+        "y": 63360,
+        "width": 10760400,
+        "height": 1512720
+      }
+    ]
+  },
+  {
+    "slide": 19,
+    "texts": [
+      "Узнать ответ",
+      "Назовите собор, который является визитной карточкой Хабаровска и виден практически с любой набережной.В честь какого важного события в русской истории он был построен? "
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide20.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 82,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 83,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 84,
+        "type": "AUTO_SHAPE (1)",
+        "x": 564840,
+        "y": 1927080,
+        "width": 11241360,
+        "height": 2226600
+      }
+    ]
+  },
+  {
+    "slide": 20,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Спасо-Преображенский собор.Построен в память о погибших в русско-японской войне 1904-1905 гг.)"
+    ],
+    "images": [],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image11.jpeg"
+    ],
+    "shapes": [
+      {
+        "id": 85,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 86,
+        "type": "PLACEHOLDER (14)",
+        "x": 441000,
+        "y": 958680,
+        "width": 4470480,
+        "height": 1512720
+      }
+    ]
+  },
+  {
+    "slide": 21,
+    "texts": [
+      "Узнать ответ",
+      "Определите,что это за улица.Какое здание изображено на фотографии и что это за здание сейчас"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image12.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide22.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 87,
+        "type": "PICTURE (13)",
+        "x": 9839160,
+        "y": 6051240,
+        "width": 2352600,
+        "height": 806760
+      },
+      {
+        "id": 88,
+        "type": "AUTO_SHAPE (1)",
+        "x": 10215360,
+        "y": 6195960,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 89,
+        "type": "AUTO_SHAPE (1)",
+        "x": 522000,
+        "y": 104760,
+        "width": 10285560,
+        "height": 1556280
+      },
+      {
+        "id": 90,
+        "type": "PICTURE (13)",
+        "x": 1696680,
+        "y": 1672920,
+        "width": 7767720,
+        "height": 4751640
+      }
+    ]
+  },
+  {
+    "slide": 22,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Центральная улица города Муравьева-Амурского.Библиотека Приамурского отдела Императорского Русского географического общества.В наши дни это Дальневосточная государственная научная библиотека"
+    ],
+    "images": [
+      "assets/images/image13.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 91,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 92,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 347040,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 93,
+        "type": "PICTURE (13)",
+        "x": 3836880,
+        "y": 2288880,
+        "width": 4519440,
+        "height": 3000600
+      }
+    ]
+  },
+  {
+    "slide": 23,
+    "texts": [
+      "Узнать ответ",
+      "Назовите место, где 31 мая 1858 года солдаты 13-го линейного Сибирского батальона под командованием капитана Якова Дьяченко основали военный пост. Сейчас там стоит памятный камень. Что написано на нем?"
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide24.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 94,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 95,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 96,
+        "type": "AUTO_SHAPE (1)",
+        "x": 1474560,
+        "y": 1160280,
+        "width": 9244080,
+        "height": 3292920
+      }
+    ]
+  },
+  {
+    "slide": 24,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Памятный камень на Утесе, надпись: \"Здесь в 1858 году основан пост Хабаровска\""
+    ],
+    "images": [
+      "assets/images/image14.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 97,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 98,
+        "type": "PLACEHOLDER (14)",
+        "x": 862920,
+        "y": 242280,
+        "width": 10758600,
+        "height": 1513080
+      },
+      {
+        "id": 99,
+        "type": "PICTURE (13)",
+        "x": 3416040,
+        "y": 1653840,
+        "width": 5359320,
+        "height": 3865680
+      }
+    ]
+  },
+  {
+    "slide": 25,
+    "texts": [
+      "Узнать ответ",
+      "4 апреля 1920 года во время провокационного выступления японцев здание (как штаб, исполком) сильно пострадало от артобстрела. Как повествуют историки, целью японского орудия был именно \"дом купца Архипова\", как его по привычке называли в те годы. Назовите здание."
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide26.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 100,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 101,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 102,
+        "type": "AUTO_SHAPE (1)",
+        "x": 1900080,
+        "y": 582480,
+        "width": 8582040,
+        "height": 3655800
+      }
+    ]
+  },
+  {
+    "slide": 26,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Хабаровский ЦУМ"
+    ],
+    "images": [
+      "assets/images/image15.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 103,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 104,
+        "type": "PLACEHOLDER (14)",
+        "x": 609120,
+        "y": 106200,
+        "width": 10760040,
+        "height": 1512720
+      },
+      {
+        "id": 105,
+        "type": "PICTURE (13)",
+        "x": 3560760,
+        "y": 1552320,
+        "width": 5070240,
+        "height": 4006800
+      }
+    ]
+  },
+  {
+    "slide": 27,
+    "texts": [
+      "Узнать ответ",
+      "Какие 2 исторические личности изображены на фотографии?"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image16.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide28.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 106,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 107,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 108,
+        "type": "AUTO_SHAPE (1)",
+        "x": 185400,
+        "y": 552240,
+        "width": 7277400,
+        "height": 1068840
+      },
+      {
+        "id": 109,
+        "type": "PICTURE (13)",
+        "x": 7621560,
+        "y": 1292040,
+        "width": 4114800,
+        "height": 4491000
+      }
+    ]
+  },
+  {
+    "slide": 28,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Петр I  и Иван Грозный"
+    ],
+    "images": [
+      "assets/images/image17.jpeg",
+      "assets/images/image18.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 110,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 111,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 158040,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 112,
+        "type": "PICTURE (13)",
+        "x": 715680,
+        "y": 1341360,
+        "width": 3810240,
+        "height": 3943080
+      },
+      {
+        "id": 113,
+        "type": "PICTURE (13)",
+        "x": 6965640,
+        "y": 1276200,
+        "width": 4275360,
+        "height": 4008240
+      }
+    ]
+  },
+  {
+    "slide": 29,
+    "texts": [
+      "Узнать ответ",
+      "Какие 2 исторические личности изображены на фотографии?\n"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image19.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide30.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 114,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 115,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 116,
+        "type": "AUTO_SHAPE (1)",
+        "x": 426960,
+        "y": 438120,
+        "width": 7278480,
+        "height": 1693440
+      },
+      {
+        "id": 117,
+        "type": "PICTURE (13)",
+        "x": 7705440,
+        "y": 320400,
+        "width": 4027680,
+        "height": 6248520
+      }
+    ]
+  },
+  {
+    "slide": 30,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Екатерина 2 и Елизавета Петровна "
+    ],
+    "images": [
+      "assets/images/image20.jpeg",
+      "assets/images/image21.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinksldjump",
+        "target": "slide2.xml"
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 118,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 119,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 106200,
+        "width": 10760040,
+        "height": 1512720
+      },
+      {
+        "id": 120,
+        "type": "PICTURE (13)",
+        "x": 7026120,
+        "y": 1468080,
+        "width": 3178080,
+        "height": 4140360
+      },
+      {
+        "id": 121,
+        "type": "PICTURE (13)",
+        "x": 2311200,
+        "y": 1469880,
+        "width": 3394080,
+        "height": 4138560
+      }
+    ]
+  },
+  {
+    "slide": 31,
+    "texts": [
+      "Узнать ответ",
+      "",
+      "Какие 2 исторические личности изображены на фотографии?\n"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image22.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 122,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 123,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 124,
+        "type": "AUTO_SHAPE (1)",
+        "x": 133200,
+        "y": 382320,
+        "width": 7277040,
+        "height": 833400
+      },
+      {
+        "id": 125,
+        "type": "AUTO_SHAPE (1)",
+        "x": 376200,
+        "y": 290160,
+        "width": 6095880,
+        "height": 2226600
+      },
+      {
+        "id": 126,
+        "type": "PICTURE (13)",
+        "x": 7410240,
+        "y": 382320,
+        "width": 4172040,
+        "height": 5307120
+      }
+    ]
+  },
+  {
+    "slide": 32,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Суворов А.В и Кутузов М.И"
+    ],
+    "images": [
+      "assets/images/image23.jpeg",
+      "assets/images/image24.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 127,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 128,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 80280,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 129,
+        "type": "PICTURE (13)",
+        "x": 2363760,
+        "y": 1304640,
+        "width": 3362040,
+        "height": 4257720
+      },
+      {
+        "id": 130,
+        "type": "PICTURE (13)",
+        "x": 6818040,
+        "y": 1304640,
+        "width": 3527640,
+        "height": 4257720
+      }
+    ]
+  },
+  {
+    "slide": 33,
+    "texts": [
+      "Узнать ответ",
+      "Какие 2 важные личности изображены на фотографии?\n\n"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image25.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 131,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 132,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 133,
+        "type": "AUTO_SHAPE (1)",
+        "x": 353880,
+        "y": 293400,
+        "width": 7277040,
+        "height": 2226600
+      },
+      {
+        "id": 134,
+        "type": "PICTURE (13)",
+        "x": 7505640,
+        "y": 1199880,
+        "width": 4300560,
+        "height": 4491000
+      }
+    ]
+  },
+  {
+    "slide": 34,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Демешин Д.В и Кравчук С.А"
+    ],
+    "images": [
+      "assets/images/image26.jpeg",
+      "assets/images/image27.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 135,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 136,
+        "type": "PLACEHOLDER (14)",
+        "x": 862920,
+        "y": 210960,
+        "width": 10758600,
+        "height": 1512720
+      },
+      {
+        "id": 137,
+        "type": "PICTURE (13)",
+        "x": 1520640,
+        "y": 1611000,
+        "width": 4049640,
+        "height": 3635640
+      },
+      {
+        "id": 138,
+        "type": "PICTURE (13)",
+        "x": 6902280,
+        "y": 1611000,
+        "width": 3425760,
+        "height": 3703680
+      }
+    ]
+  },
+  {
+    "slide": 35,
+    "texts": [
+      "Узнать ответ",
+      "Что за события представлены на видео фрагмете ?"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image28.png"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 139,
+        "type": "PICTURE (13)",
+        "x": 4754520,
+        "y": 5948280,
+        "width": 2350800,
+        "height": 807840
+      },
+      {
+        "id": 140,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5135400,
+        "y": 6091200,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 141,
+        "type": "AUTO_SHAPE (1)",
+        "x": 1500120,
+        "y": 295200,
+        "width": 9688320,
+        "height": 1160280
+      },
+      {
+        "id": 142,
+        "type": "PICTURE (13)",
+        "x": 2022120,
+        "y": 1604880,
+        "width": 8385480,
+        "height": 4048200
+      }
+    ]
+  },
+  {
+    "slide": 36,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Ледовое побоище, 1242г"
+    ],
+    "images": [],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 143,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 144,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 2419200,
+        "width": 10760040,
+        "height": 1512720
+      }
+    ]
+  },
+  {
+    "slide": 37,
+    "texts": [
+      "Узнать ответ",
+      "Про какую историческую личность идёт речь? .Назовите год и какое событие связано с исторической личностью"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image29.png"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 145,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 146,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 147,
+        "type": "AUTO_SHAPE (1)",
+        "x": 149040,
+        "y": 0,
+        "width": 11815920,
+        "height": 1952280
+      },
+      {
+        "id": 148,
+        "type": "PICTURE (13)",
+        "x": 2239920,
+        "y": 1768320,
+        "width": 7840440,
+        "height": 3921120
+      }
+    ]
+  },
+  {
+    "slide": 38,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Воцарение Михаила Федоровича(воцарение новой династии, Романовых)1613 год."
+    ],
+    "images": [
+      "assets/images/image30.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 149,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 150,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 315360,
+        "width": 10760040,
+        "height": 1514520
+      },
+      {
+        "id": 151,
+        "type": "PICTURE (13)",
+        "x": 4968720,
+        "y": 1749240,
+        "width": 2697120,
+        "height": 3873600
+      }
+    ]
+  },
+  {
+    "slide": 39,
+    "texts": [
+      "Узнать ответ",
+      "Назовите историческое событие"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image31.png"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 152,
+        "type": "PICTURE (13)",
+        "x": 9084960,
+        "y": 6102000,
+        "width": 2352960,
+        "height": 806760
+      },
+      {
+        "id": 153,
+        "type": "AUTO_SHAPE (1)",
+        "x": 9468360,
+        "y": 6306840,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 154,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2562120,
+        "y": 193320,
+        "width": 7278480,
+        "height": 627120
+      },
+      {
+        "id": 155,
+        "type": "PICTURE (13)",
+        "x": 2125440,
+        "y": 1276200,
+        "width": 8151840,
+        "height": 4740120
+      }
+    ]
+  },
+  {
+    "slide": 40,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Оборона Сталинграда "
+    ],
+    "images": [],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 156,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 157,
+        "type": "PLACEHOLDER (14)",
+        "x": 107640,
+        "y": 2062080,
+        "width": 11366640,
+        "height": 1869840
+      }
+    ]
+  },
+  {
+    "slide": 41,
+    "texts": [
+      "Узнать ответ",
+      "Чему посвящен данный видео фрагмент?"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image32.png"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 158,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 159,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 160,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2458800,
+        "y": 225360,
+        "width": 7277040,
+        "height": 1160280
+      },
+      {
+        "id": 161,
+        "type": "PICTURE (13)",
+        "x": 2371680,
+        "y": 1541160,
+        "width": 7800840,
+        "height": 3594240
+      }
+    ]
+  },
+  {
+    "slide": 42,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Вхождение в состав России Крыма в 2014 году"
+    ],
+    "images": [],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 162,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 163,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 2419200,
+        "width": 10760040,
+        "height": 1512720
+      }
+    ]
+  },
+  {
+    "slide": 43,
+    "texts": [
+      "Узнать ответ",
+      "Как называлась организация, созданная в 1922 году для контроля над финансовой системой СССР?"
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinkshowjump?jump=nextslide",
+        "target": null
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 164,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 165,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 166,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2457360,
+        "y": 1939680,
+        "width": 7277040,
+        "height": 2288520
+      }
+    ]
+  },
+  {
+    "slide": 44,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Наркомфин \u000b(Народный комиссариат финансов)"
+    ],
+    "images": [],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 167,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 168,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 2442600,
+        "width": 10760040,
+        "height": 1513080
+      }
+    ]
+  },
+  {
+    "slide": 45,
+    "texts": [
+      "Узнать ответ",
+      "Какой знаменитый путешественник первым описал побережье Приморья и Сахалина в XIX веке?"
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinkshowjump?jump=nextslide",
+        "target": null
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 169,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 170,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 171,
+        "type": "AUTO_SHAPE (1)",
+        "x": 2457360,
+        "y": 1939680,
+        "width": 7277040,
+        "height": 2288520
+      }
+    ]
+  },
+  {
+    "slide": 46,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Геннадий Невельской"
+    ],
+    "images": [
+      "assets/images/image33.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 172,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 173,
+        "type": "PLACEHOLDER (14)",
+        "x": 713880,
+        "y": 3945960,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 174,
+        "type": "PICTURE (13)",
+        "x": 4841640,
+        "y": 661680,
+        "width": 2506680,
+        "height": 3513240
+      }
+    ]
+  },
+  {
+    "slide": 47,
+    "texts": [
+      "Узнать ответ",
+      "Какой известный инженер спроектировал первый постоянный мост через реку Амур в Хабаровске, открытый в 1916 году?\u000b"
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image34.jpeg"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinkshowjump?jump=nextslide",
+        "target": null
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 175,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 176,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 177,
+        "type": "AUTO_SHAPE (1)",
+        "x": 793440,
+        "y": 3840120,
+        "width": 10437840,
+        "height": 2043720
+      },
+      {
+        "id": 178,
+        "type": "PICTURE (13)",
+        "x": 2998440,
+        "y": 525240,
+        "width": 6194520,
+        "height": 3219480
+      }
+    ]
+  },
+  {
+    "slide": 48,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Лавр Дмитриевич Проскуряков"
+    ],
+    "images": [
+      "assets/images/image35.jpeg"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 179,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 180,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 4206240,
+        "width": 10760040,
+        "height": 1513080
+      },
+      {
+        "id": 181,
+        "type": "PICTURE (13)",
+        "x": 4711680,
+        "y": 555480,
+        "width": 2766960,
+        "height": 3849480
+      }
+    ]
+  },
+  {
+    "slide": 49,
+    "texts": [
+      "Узнать ответ",
+      "Какие 2 исторические личности изображены на фотографии?\n\n",
+      ""
+    ],
+    "images": [
+      "assets/images/image4.png",
+      "assets/images/image36.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinkshowjump?jump=nextslide",
+        "target": null
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 182,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 183,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 184,
+        "type": "AUTO_SHAPE (1)",
+        "x": -109440,
+        "y": 552240,
+        "width": 8430840,
+        "height": 2226600
+      },
+      {
+        "id": 185,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5943600,
+        "y": 3276360,
+        "width": 304560,
+        "height": 304920
+      },
+      {
+        "id": 186,
+        "type": "PICTURE (13)",
+        "x": 7916760,
+        "y": 568080,
+        "width": 3614760,
+        "height": 4953240
+      }
+    ]
+  },
+  {
+    "slide": 50,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Брежнев Л. И. и Хрущев Н. С.\n"
+    ],
+    "images": [
+      "assets/images/image37.png",
+      "assets/images/image38.png"
+    ],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 187,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 188,
+        "type": "PICTURE (13)",
+        "x": 2689200,
+        "y": 1244520,
+        "width": 3070080,
+        "height": 4206600
+      },
+      {
+        "id": 189,
+        "type": "AUTO_SHAPE (1)",
+        "x": 510840,
+        "y": 377640,
+        "width": 11122200,
+        "height": 1160280
+      },
+      {
+        "id": 190,
+        "type": "PICTURE (13)",
+        "x": 6395760,
+        "y": 1244520,
+        "width": 2946600,
+        "height": 4206600
+      }
+    ]
+  },
+  {
+    "slide": 51,
+    "texts": [
+      "Узнать ответ",
+      "Текст\u000b"
+    ],
+    "images": [
+      "assets/images/image4.png"
+    ],
+    "links": [
+      {
+        "action": "ppaction://hlinkshowjump?jump=nextslide",
+        "target": null
+      }
+    ],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 191,
+        "type": "PICTURE (13)",
+        "x": 4836960,
+        "y": 5499000,
+        "width": 2351160,
+        "height": 806400
+      },
+      {
+        "id": 192,
+        "type": "AUTO_SHAPE (1)",
+        "x": 5219280,
+        "y": 5690880,
+        "width": 1754280,
+        "height": 398520
+      },
+      {
+        "id": 193,
+        "type": "AUTO_SHAPE (1)",
+        "x": 793440,
+        "y": 552240,
+        "width": 10437840,
+        "height": 1068840
+      }
+    ]
+  },
+  {
+    "slide": 52,
+    "texts": [
+      "Вернуться к выбору тем→",
+      "Текст"
+    ],
+    "images": [],
+    "links": [],
+    "backgroundImages": [
+      "assets/images/image7.png"
+    ],
+    "shapes": [
+      {
+        "id": 194,
+        "type": "AUTO_SHAPE (1)",
+        "x": 4011480,
+        "y": 5719680,
+        "width": 4166640,
+        "height": 474480
+      },
+      {
+        "id": 195,
+        "type": "PLACEHOLDER (14)",
+        "x": 715320,
+        "y": 2442600,
+        "width": 10760040,
+        "height": 1513080
+      }
+    ]
+  }
+]

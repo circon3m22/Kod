@@ -82,7 +82,7 @@ Fullscreen API и блокировка системной ориентации �
 
 ## Данные и исходники
 
-Фактически предоставлены «квиз код1(2).ppt» и «сценарий квиза (1).docx». Они сохранены как source/kviz-original.ppt и source/scenario.docx. Конвертация LibreOffice находится в source/kviz-converted.pptx. source/slides-extracted.json содержит извлечённые тексты всех 52 слайдов, таблицу ссылок, изображения и сведения о фигурах. source/scenario-extracted.txt содержит полный текст сценария.
+Фактически предоставлены «квиз код1(2).ppt» и «сценарий квиза (1).docx». Оригинальная презентация сохранена без изменений внутри source/kviz-original.ppt.zip (распакуйте её при необходимости), сценарий — source/scenario.docx. Конвертация LibreOffice находится в source/kviz-converted.pptx. source/slides-extracted.json содержит извлечённые тексты всех 52 слайдов, таблицу ссылок, изображения и сведения о фигурах. source/scenario-extracted.txt содержит полный текст сценария.
 
 quiz-data.js подключается обычным script, без fetch и ES-модулей. Вопросы независимы от компонентов интерфейса. Основные поля: id, category, value, type, text, answer, images, answerImages, video, enabled, status, sourceSlide, answerSlide, pairEvidence. Два задания matching имеют columns и matches (индексы с нуля), перенесённые по стрелкам исходного ответа.
 
