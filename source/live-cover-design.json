@@ -1,0 +1,12 @@
+{
+  "format": "4:3, 400 × 300 mm, 1920 × 1440 viewBox",
+  "sectors": 9,
+  "uniquePhotographs": 9,
+  "font": "Onest Medium 500",
+  "layout": "cover-art.js",
+  "photoSources": [
+    "source/cover-history-sources.json",
+    "source/cover-history-extra-sources.json"
+  ],
+  "animation": "Text fades; each photograph region moves outwards independently. System and app reduced motion skip this transition."
+}

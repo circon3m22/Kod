@@ -87,6 +87,14 @@
     "bytes": 68006,
     "sha256": "4f05a85f2efc4b433d0157170cee48759c254f67dae4bbd1e108e94f2d5d098a"
   },
+  "assets/cover-history/fabric-merchant.jpg": {
+    "bytes": 446702,
+    "sha256": "63f12959e57aadd8616ff92900b1dd8f5c2a35935f529710c5231db8a0b08dcb"
+  },
+  "assets/cover-history/haying.jpg": {
+    "bytes": 398439,
+    "sha256": "90434bc24f9d59738a114776ac95a3a46d13fcfa6e5516bec97b8958cf9ad3d3"
+  },
   "assets/cover-history/locomotive.jpg": {
     "bytes": 356480,
     "sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db"
@@ -99,9 +107,17 @@
     "bytes": 436310,
     "sha256": "f6d4cea0540704d26c506a15493b200f04dffe9e2238f53541bd67bbcd20a765"
   },
+  "assets/cover-history/suna-river.jpg": {
+    "bytes": 327557,
+    "sha256": "c67ebc8cd90e6e4e23527d3be6238c1d8d125536929563c39a012c627459bbb3"
+  },
   "assets/cover-history/suzdal.jpg": {
     "bytes": 339407,
     "sha256": "4a8e879f45823e26870b82a2e1cf02e585cf244d9c6e48ca9b2e3bc45aa63607"
+  },
+  "assets/cover-history/tyumen-steamer.jpg": {
+    "bytes": 199202,
+    "sha256": "464d5be001dba7d3c71277817d8c6474c4d4dcccf0cb66132eb8ae7680f8bf47"
   },
   "assets/cover-history/wooden-house.jpg": {
     "bytes": 519711,
@@ -130,6 +146,14 @@
   "assets/fonts/Montserrat-Variable.ttf": {
     "bytes": 744936,
     "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+  },
+  "assets/fonts/Onest-OFL.txt": {
+    "bytes": 4384,
+    "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc"
+  },
+  "assets/fonts/Onest-Variable.ttf": {
+    "bytes": 193056,
+    "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31"
   },
   "assets/fonts/Rubik-OFL.txt": {
     "bytes": 4384,

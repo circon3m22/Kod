@@ -78,7 +78,7 @@ assert 'Какие две исторические личности' in by_id['c
 manifest={}
 for p in sorted((r/'assets').rglob('*')):
  if p.is_file():manifest[str(p.relative_to(r))]={'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
-for fn in ['index.html','styles.css','app.js','quiz-data.js']:
+for fn in ['index.html','styles.css','app.js','quiz-data.js','cover-art.js']:
  txt=(r/fn).read_text()
  assert not re.search(r'https?://|@import|fetch\s*\(|XMLHttpRequest|import\s*\(',txt),fn+' contains external dependency'
 for path in re.findall(r"url\(['\"]?([^)'\"]+)",(r/'styles.css').read_text()):
@@ -102,5 +102,18 @@ objects=json.loads((r/'source/stage-object-sources.json').read_text())['images']
 assert {x['stage'] for x in objects}=={'warmup','board','bonus','captains'}
 for x in objects:
  assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
+cover=json.loads((r/'cover-art.js').read_text().split('window.COVER_ART = ',1)[1].rstrip(';\n'))
+assert len(cover['sectors'])==len({x['photo'] for x in cover['sectors']})==9
+assert [x['name'] for x in cover['letters']]==['К','О','Д']
+assert 'A280 280' in cover['letters'][1]['path'] and 'A148 148' in cover['letters'][1]['path']
+assert all((r/x['photo']).is_file() for x in cover['sectors'])
+extra=json.loads((r/'source/cover-history-extra-sources.json').read_text())
+assert len(extra)==4
+for x in extra:
+ assert x['license']=='Public domain' and x['path'] in {x['photo'] for x in cover['sectors']}
+ assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
+index=(r/'index.html').read_text()
+assert index.index('cover-art.js')<index.index('app.js')
 print('PASS: 52 source slides, 25 original mappings preserved, 30 active cells in 6 categories, 12 warmup questions, 5 sourced photos, 5 verified timelines, local assets/checksums.')
 print('PASS: 42 sourced answer illustrations, two authentic color 1945 photographs, four local stage objects.')
+print('PASS: live cover shares 9 unique local photos with the 4:3 poster, true circular O, four new sourced historical color photos.')
