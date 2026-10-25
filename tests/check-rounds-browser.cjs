@@ -19,7 +19,7 @@ async function layout(p){return p.evaluate(()=>({overflow:[...document.querySele
   const errors=[],failures=[];p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>failures.push(r.url()));
   const url=process.env.QUIZ_URL||'http://127.0.0.1:8765';
   await p.goto(url);await p.evaluate(()=>document.fonts.ready);await pause(p);
-  await click(p,'enter-cover');await p.waitForTimeout(600);await manager(p);await click(p,'board');
+  await click(p,'enter-cover');await p.locator('.stage-sequence').waitFor();await manager(p);await click(p,'board');
   const data=await p.evaluate(()=>CulturalCode.content);
   assert.equal(await p.locator('.category').count(),6);assert.equal(await p.locator('.cell').count(),30);assert.equal(await p.locator('.cell:disabled').count(),0);
   for(const [w,h] of [[1920,1080],[1366,768],[390,844],[430,932],[844,390],[932,430],[768,1024]]){
@@ -53,7 +53,7 @@ async function layout(p){return p.evaluate(()=>({overflow:[...document.querySele
   const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
   const m=await mobile.newPage();await m.goto(url);await pause(m);
   for(const a of ['enter-cover']){await m.locator(`[data-action="${a}"]`).first().tap();await pause(m);}
-  await m.waitForTimeout(600);await m.keyboard.press('m');await pause(m);await m.locator('#overlay [data-action="board"]').first().tap();await pause(m);await m.locator('[data-id="c6-order-1000"]').tap();await pause(m);assert.equal((await snapshot(m)).current.questionId,'c6-order-1000');assert.deepEqual((await layout(m)).overflow,[]);
+  await m.locator('.stage-sequence').waitFor();await m.keyboard.press('m');await pause(m);await m.locator('#overlay [data-action="board"]').first().tap();await pause(m);await m.locator('[data-id="c6-order-1000"]').tap();await pause(m);assert.equal((await snapshot(m)).current.questionId,'c6-order-1000');assert.deepEqual((await layout(m)).overflow,[]);
   await m.keyboard.press('Escape');await pause(m);await m.locator('[data-id="c5-photo-1000"]').tap();await pause(m);assert((await layout(m)).images);await m.locator('.media-item').tap();await pause(m);assert((await snapshot(m)).current.answer);assert.deepEqual((await layout(m)).overflow,[]);await m.screenshot({path:path.join(output,'photo-mobile.jpg'),quality:85});
   await mobile.close();assert.deepEqual(errors,[]);assert.deepEqual(failures,[]);
   fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({questions:measured,newAwards:10,total:6000,largeMode:'pass',mobileTouch:'pass',viewports:7,errors,failures},null,2));

@@ -1,0 +1,18 @@
+{
+  "family": "Onest",
+  "license": "SIL OFL 1.1",
+  "files": [
+    {
+      "file": "assets/fonts/Onest-Variable.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/onest/Onest%5Bwght%5D.ttf",
+      "bytes": 193056,
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31"
+    },
+    {
+      "file": "assets/fonts/Onest-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/onest/OFL.txt",
+      "bytes": 4384,
+      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc"
+    }
+  ]
+}
