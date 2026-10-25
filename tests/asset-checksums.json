@@ -195,6 +195,10 @@
     "bytes": 2838215,
     "sha256": "cd3999e1d405269ae20e13be377c4728011b307c8fbcf87de67ca3b06341616d"
   },
+  "assets/design/poster-russia-silhouette.svg": {
+    "bytes": 51146,
+    "sha256": "c9ddc8816eb63dc9b5a7b42699d0624baa7817ac870c9e962a73219510f0bfa3"
+  },
   "assets/design/poster-watercolor-background.jpg": {
     "bytes": 259242,
     "sha256": "5586fcca6c4443794164f750bf41861d5d214df5dcbf879d98826af0b00a6e09"
