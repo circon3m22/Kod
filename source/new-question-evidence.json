@@ -1,0 +1,65 @@
+{
+  "checkedOn": "2026-10-25",
+  "sources": {
+    "moscow": {
+      "title": "Первое летописное упоминание о Москве",
+      "url": "https://www.prlib.ru/history/1955256"
+    },
+    "petersburg": {
+      "title": "Основан Санкт-Петербург",
+      "url": "https://www.prlib.ru/history/619267"
+    },
+    "space-firsts": {
+      "title": "Музей Гагарина: Космическая гавань",
+      "url": "https://museumgagarin.ru/news/kosmicheskaya_gavan/"
+    },
+    "tereshkova": {
+      "title": "Музей Гагарина: Позывной «Чайка»",
+      "url": "https://museumgagarin.ru/news/pozyvnoy_chayka/"
+    },
+    "apostol": {
+      "title": "НЭБ: Апостол, издание 1563–1564",
+      "url": "https://kp.rusneb.ru/item/material/apostol-1-20"
+    },
+    "kunstkamera": {
+      "title": "Основание Кунсткамеры в 1714 году",
+      "url": "https://www.kunstkamera.ru/exposition/kunst_hist/2/"
+    },
+    "msu": {
+      "title": "МГУ: История и традиции",
+      "url": "https://openday.msu.ru/ru/history"
+    },
+    "khabarovsk": {
+      "title": "ДВГНБ: Знаменательные и памятные даты Хабаровского края, 2022, основание Хабаровки",
+      "url": "https://fessl.ru/docs-downloads/2021/10_21/ZPDHK2022.pdf"
+    },
+    "vladivostok": {
+      "title": "Основан Владивосток",
+      "url": "https://www.prlib.ru/history/619354"
+    },
+    "transsib": {
+      "title": "ГА РФ: церемония закладки Транссибирской магистрали, 31 мая 1891",
+      "url": "https://statearchive.ru/history/18.html"
+    },
+    "bridge": {
+      "title": "Центральный музей железнодорожного транспорта: Амурский мост, открытие в 1916",
+      "url": "https://cmzt.ru/events/news-events/amurskij-most/"
+    },
+    "titov": {
+      "title": "Музей боевой и трудовой славы: старт Германа Титова 6 августа 1961",
+      "url": "https://www.sargmbs.ru/novosti-i-meropriyatiya/poseshhenie-muzejno-memorialnogo-kompleksa-chlenami-semi-geroya-sovetskogo-soyuza-letchika-kosmonavta-g.s.-titova/"
+    },
+    "berlin": {
+      "title": "Художественный музей: начало сооружения Берлинской стены 13 августа 1961",
+      "url": "https://www.artmuseum.ru/listofdays/08/13/Nachato_sooruzhenie_Berlinskoj_steni/"
+    },
+    "congress": {
+      "title": "ЭБИД: доклад XXII съезду, 17 октября 1961",
+      "url": "https://docs.historyrussia.org/ru/nodes/450967-iz-otchetnogo-doklada-tsk-kpss-xxii-sezdu-kommunisticheskoy-partii-sovetskogo-soyuza-17-oktyabrya-1961-g"
+    },
+    "yalta-palace": {
+      "title": "ПБ: заседание Ялтинской конференции в Ливадийском дворце",
+      "url": "https://www.prlib.ru/item/2062090"
+    }
+  }
+}

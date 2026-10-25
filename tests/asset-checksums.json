@@ -166,5 +166,25 @@
   "assets/images/image9.png": {
     "bytes": 1438,
     "sha256": "eb751ffccfb0a472155ef8b0e358bf565982dabe01552390702cce65227a7c04"
+  },
+  "assets/photo-round/elbe-1945.jpg": {
+    "bytes": 616767,
+    "sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370"
+  },
+  "assets/photo-round/nevsky-1938.jpg": {
+    "bytes": 152319,
+    "sha256": "cb21cbb5d6c007cc66d055f5b97c70f45228ef468a589871515468df1a417313"
+  },
+  "assets/photo-round/potemkin-1925.jpg": {
+    "bytes": 181884,
+    "sha256": "44591cc99ac02dae8737a183340201a9e64a368e89fe69812d37cde9a7fcec26"
+  },
+  "assets/photo-round/victory-parade-1945.jpg": {
+    "bytes": 454727,
+    "sha256": "d529bc595afa48229d53dd82f14185736ba8062d8209853978c6f8268bd8df1b"
+  },
+  "assets/photo-round/yalta-1945.jpg": {
+    "bytes": 1050190,
+    "sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd"
   }
 }
