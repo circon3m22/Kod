@@ -5,8 +5,7 @@
   "font": "Onest Medium 500",
   "layout": "cover-art.js",
   "photoSources": [
-    "source/cover-history-sources.json",
-    "source/cover-history-extra-sources.json"
+    "source/cover-era-sources.json"
   ],
   "animation": "Text fades; each photograph region moves outwards independently. System and app reduced motion skip this transition."
 }

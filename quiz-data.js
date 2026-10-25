@@ -1,7 +1,7 @@
 // Original questions remain documented; photo and chronology rounds added by user request.
 window.QUIZ_DATA = {
   "title": "КУЛЬТУРНЫЙ КОД",
-  "version": 5,
+  "version": 6,
   "categories": [
     "Русь матушка",
     "Дальневосточные истории",
@@ -1092,7 +1092,10 @@ window.QUIZ_DATA = {
       "type": "chronology",
       "text": "Что было раньше? Назовите букву.\n\nА) Основание Санкт-Петербурга\n\nБ) Первое летописное упоминание о Москве",
       "answer": "Б → А\n\nБ) Первое летописное упоминание о Москве — 1147 год.\nА) Основание Санкт-Петербурга — 1703 год.",
-      "images": [],
+      "images": [
+        "assets/answer-history/petersburg.jpg",
+        "assets/answer-history/moscow.jpg"
+      ],
       "answerImages": [
         "assets/answer-history/moscow.jpg",
         "assets/answer-history/petersburg.jpg"
@@ -1112,13 +1115,15 @@ window.QUIZ_DATA = {
           "label": "А",
           "text": "Основание Санкт-Петербурга",
           "date": "1703",
-          "sourceRef": "petersburg"
+          "sourceRef": "petersburg",
+          "image": "assets/answer-history/petersburg.jpg"
         },
         {
           "label": "Б",
           "text": "Первое летописное упоминание о Москве",
           "date": "1147",
-          "sourceRef": "moscow"
+          "sourceRef": "moscow",
+          "image": "assets/answer-history/moscow.jpg"
         }
       ],
       "correctOrder": [
@@ -1137,13 +1142,13 @@ window.QUIZ_DATA = {
       "answerImageDetails": [
         {
           "src": "assets/answer-history/moscow.jpg",
-          "alt": "Собор Василия Блаженного. Современная Москва",
-          "caption": "Собор Василия Блаженного. Современная Москва"
+          "alt": "Москва. Современная фотография",
+          "caption": "Москва. Современная фотография"
         },
         {
           "src": "assets/answer-history/petersburg.jpg",
-          "alt": "Петропавловская крепость. Современный Санкт-Петербург",
-          "caption": "Петропавловская крепость. Современный Санкт-Петербург"
+          "alt": "Петропавловская крепость. Современная фотография",
+          "caption": "Петропавловская крепость. Современная фотография"
         }
       ]
     },
@@ -1154,10 +1159,15 @@ window.QUIZ_DATA = {
       "type": "chronology",
       "text": "Расположите космические события от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Первый полёт Юрия Гагарина\n\nБ) Полёт Валентины Терешковой\n\nВ) Запуск первого искусственного спутника Земли",
       "answer": "В → А → Б\n\nВ) Запуск первого искусственного спутника Земли — 4 октября 1957.\nА) Первый полёт Юрия Гагарина — 12 апреля 1961.\nБ) Полёт Валентины Терешковой — 16 июня 1963.",
-      "images": [],
+      "images": [
+        "assets/answer-history/gagarin.jpg",
+        "assets/chronology-cards/tereshkova.jpg",
+        "assets/answer-history/sputnik.jpg"
+      ],
       "answerImages": [
         "assets/answer-history/sputnik.jpg",
-        "assets/answer-history/gagarin.jpg"
+        "assets/answer-history/gagarin.jpg",
+        "assets/chronology-cards/tereshkova.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -1174,19 +1184,22 @@ window.QUIZ_DATA = {
           "label": "А",
           "text": "Первый полёт Юрия Гагарина",
           "date": "1961-04-12",
-          "sourceRef": "space-firsts"
+          "sourceRef": "space-firsts",
+          "image": "assets/answer-history/gagarin.jpg"
         },
         {
           "label": "Б",
           "text": "Полёт Валентины Терешковой",
           "date": "1963-06-16",
-          "sourceRef": "tereshkova"
+          "sourceRef": "tereshkova",
+          "image": "assets/chronology-cards/tereshkova.jpg"
         },
         {
           "label": "В",
           "text": "Запуск первого искусственного спутника Земли",
           "date": "1957-10-04",
-          "sourceRef": "space-firsts"
+          "sourceRef": "space-firsts",
+          "image": "assets/answer-history/sputnik.jpg"
         }
       ],
       "correctOrder": [
@@ -1206,13 +1219,18 @@ window.QUIZ_DATA = {
       "answerImageDetails": [
         {
           "src": "assets/answer-history/sputnik.jpg",
-          "alt": "Модель первого искусственного спутника Земли. Музейный экспонат",
-          "caption": "Модель первого искусственного спутника Земли. Музейный экспонат"
+          "alt": "Макет первого искусственного спутника Земли",
+          "caption": "Макет первого искусственного спутника Земли"
         },
         {
           "src": "assets/answer-history/gagarin.jpg",
-          "alt": "Юрий Гагарин. Фотография 1961 года",
-          "caption": "Юрий Гагарин. Фотография 1961 года"
+          "alt": "Юрий Гагарин. Архивный портрет",
+          "caption": "Юрий Гагарин. Архивный портрет"
+        },
+        {
+          "src": "assets/chronology-cards/tereshkova.jpg",
+          "alt": "Валентина Терешкова. Архивный портрет",
+          "caption": "Валентина Терешкова. Архивный портрет"
         }
       ]
     },
@@ -1223,10 +1241,15 @@ window.QUIZ_DATA = {
       "type": "chronology",
       "text": "Расположите события в истории культуры и науки от раннего к позднему. Назовите порядок букв.\n\nА) Основание Московского университета\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца\n\nВ) Основание Кунсткамеры",
       "answer": "Б → В → А\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца — 1564 год.\nВ) Основание Кунсткамеры — 1714 год.\nА) Основание Московского университета — 1755 год.",
-      "images": [],
-      "answerImages": [
+      "images": [
+        "assets/chronology-cards/msu.jpg",
         "assets/answer-history/book.jpg",
         "assets/answer-history/kunstkamera.jpg"
+      ],
+      "answerImages": [
+        "assets/answer-history/book.jpg",
+        "assets/answer-history/kunstkamera.jpg",
+        "assets/chronology-cards/msu.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -1244,19 +1267,22 @@ window.QUIZ_DATA = {
           "label": "А",
           "text": "Основание Московского университета",
           "date": "1755",
-          "sourceRef": "msu"
+          "sourceRef": "msu",
+          "image": "assets/chronology-cards/msu.jpg"
         },
         {
           "label": "Б",
           "text": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
           "date": "1564",
-          "sourceRef": "apostol"
+          "sourceRef": "apostol",
+          "image": "assets/answer-history/book.jpg"
         },
         {
           "label": "В",
           "text": "Основание Кунсткамеры",
           "date": "1714",
-          "sourceRef": "kunstkamera"
+          "sourceRef": "kunstkamera",
+          "image": "assets/answer-history/kunstkamera.jpg"
         }
       ],
       "correctOrder": [
@@ -1277,13 +1303,18 @@ window.QUIZ_DATA = {
       "answerImageDetails": [
         {
           "src": "assets/answer-history/book.jpg",
-          "alt": "Разворот московского «Апостола», 1564 год",
-          "caption": "Разворот московского «Апостола», 1564 год"
+          "alt": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца",
+          "caption": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца"
         },
         {
           "src": "assets/answer-history/kunstkamera.jpg",
-          "alt": "Здание Кунсткамеры. Современная фотография",
-          "caption": "Здание Кунсткамеры. Современная фотография"
+          "alt": "Кунсткамера. Современная фотография",
+          "caption": "Кунсткамера. Современная фотография"
+        },
+        {
+          "src": "assets/chronology-cards/msu.jpg",
+          "alt": "Московский университет. Акварель XVIII века",
+          "caption": "Московский университет. Акварель XVIII века"
         }
       ]
     },
@@ -1294,10 +1325,17 @@ window.QUIZ_DATA = {
       "type": "chronology",
       "text": "Соберите дальневосточную хронологию: от самого раннего события к самому позднему. Назовите порядок букв.\n\nА) Открытие первого постоянного моста через Амур в Хабаровске\n\nБ) Основание военного поста Владивосток\n\nВ) Церемония закладки Транссибирской магистрали у Владивостока\n\nГ) Основание военного поста Хабаровка",
       "answer": "Г → Б → В → А\n\nГ) Основание военного поста Хабаровка — 1858 год.\nБ) Основание военного поста Владивосток — 1860 год.\nВ) Церемония закладки Транссибирской магистрали у Владивостока — 1891 год.\nА) Открытие первого постоянного моста через Амур в Хабаровске — 1916 год.",
-      "images": [],
+      "images": [
+        "assets/chronology-cards/amur-bridge.jpg",
+        "assets/chronology-cards/vladivostok.jpg",
+        "assets/chronology-cards/transsib.jpg",
+        "assets/chronology-cards/khabarovka.jpg"
+      ],
       "answerImages": [
-        "assets/images/image10.jpeg",
-        "assets/images/image34.jpeg"
+        "assets/chronology-cards/khabarovka.jpg",
+        "assets/chronology-cards/vladivostok.jpg",
+        "assets/chronology-cards/transsib.jpg",
+        "assets/chronology-cards/amur-bridge.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -1316,25 +1354,29 @@ window.QUIZ_DATA = {
           "label": "А",
           "text": "Открытие первого постоянного моста через Амур в Хабаровске",
           "date": "1916",
-          "sourceRef": "bridge"
+          "sourceRef": "bridge",
+          "image": "assets/chronology-cards/amur-bridge.jpg"
         },
         {
           "label": "Б",
           "text": "Основание военного поста Владивосток",
           "date": "1860",
-          "sourceRef": "vladivostok"
+          "sourceRef": "vladivostok",
+          "image": "assets/chronology-cards/vladivostok.jpg"
         },
         {
           "label": "В",
           "text": "Церемония закладки Транссибирской магистрали у Владивостока",
           "date": "1891",
-          "sourceRef": "transsib"
+          "sourceRef": "transsib",
+          "image": "assets/chronology-cards/transsib.jpg"
         },
         {
           "label": "Г",
           "text": "Основание военного поста Хабаровка",
           "date": "1858",
-          "sourceRef": "khabarovsk"
+          "sourceRef": "khabarovsk",
+          "image": "assets/chronology-cards/khabarovka.jpg"
         }
       ],
       "correctOrder": [
@@ -1356,14 +1398,24 @@ window.QUIZ_DATA = {
       },
       "answerImageDetails": [
         {
-          "src": "assets/images/image10.jpeg",
-          "alt": "Современный Владивосток",
-          "caption": "Современный Владивосток"
+          "src": "assets/chronology-cards/khabarovka.jpg",
+          "alt": "Хабаровка. Ранняя архивная фотография",
+          "caption": "Хабаровка. Ранняя архивная фотография"
         },
         {
-          "src": "assets/images/image34.jpeg",
-          "alt": "Первый мост через Амур в Хабаровске. Архивная фотография",
-          "caption": "Первый мост через Амур в Хабаровске. Архивная фотография"
+          "src": "assets/chronology-cards/vladivostok.jpg",
+          "alt": "Ранний Владивосток. Архивная фотография",
+          "caption": "Ранний Владивосток. Архивная фотография"
+        },
+        {
+          "src": "assets/chronology-cards/transsib.jpg",
+          "alt": "Закладка Транссиба. Историческая иллюстрация",
+          "caption": "Закладка Транссиба. Историческая иллюстрация"
+        },
+        {
+          "src": "assets/chronology-cards/amur-bridge.jpg",
+          "alt": "Первый мост через Амур. Архивная фотография",
+          "caption": "Первый мост через Амур. Архивная фотография"
         }
       ]
     },
@@ -1374,10 +1426,17 @@ window.QUIZ_DATA = {
       "type": "chronology",
       "text": "Все эти события произошли в 1961 году. Расположите их от раннего к позднему. Назовите порядок букв.\n\nА) Открытие XXII съезда КПСС\n\nБ) Начало сооружения Берлинской стены\n\nВ) Старт Германа Титова на корабле «Восток-2»\n\nГ) Первый полёт Юрия Гагарина",
       "answer": "Г → В → Б → А\n\nГ) Первый полёт Юрия Гагарина — 12 апреля 1961.\nВ) Старт Германа Титова на корабле «Восток-2» — 6 августа 1961.\nБ) Начало сооружения Берлинской стены — 13 августа 1961.\nА) Открытие XXII съезда КПСС — 17 октября 1961.",
-      "images": [],
+      "images": [
+        "assets/chronology-cards/congress-palace.jpg",
+        "assets/answer-history/berlin-wall.jpg",
+        "assets/chronology-cards/titov.jpg",
+        "assets/answer-history/gagarin.jpg"
+      ],
       "answerImages": [
         "assets/answer-history/gagarin.jpg",
-        "assets/answer-history/berlin-wall.jpg"
+        "assets/chronology-cards/titov.jpg",
+        "assets/answer-history/berlin-wall.jpg",
+        "assets/chronology-cards/congress-palace.jpg"
       ],
       "video": null,
       "enabled": true,
@@ -1396,25 +1455,29 @@ window.QUIZ_DATA = {
           "label": "А",
           "text": "Открытие XXII съезда КПСС",
           "date": "1961-10-17",
-          "sourceRef": "congress"
+          "sourceRef": "congress",
+          "image": "assets/chronology-cards/congress-palace.jpg"
         },
         {
           "label": "Б",
           "text": "Начало сооружения Берлинской стены",
           "date": "1961-08-13",
-          "sourceRef": "berlin"
+          "sourceRef": "berlin",
+          "image": "assets/answer-history/berlin-wall.jpg"
         },
         {
           "label": "В",
           "text": "Старт Германа Титова на корабле «Восток-2»",
           "date": "1961-08-06",
-          "sourceRef": "titov"
+          "sourceRef": "titov",
+          "image": "assets/chronology-cards/titov.jpg"
         },
         {
           "label": "Г",
           "text": "Первый полёт Юрия Гагарина",
           "date": "1961-04-12",
-          "sourceRef": "space-firsts"
+          "sourceRef": "space-firsts",
+          "image": "assets/answer-history/gagarin.jpg"
         }
       ],
       "correctOrder": [
@@ -1437,13 +1500,23 @@ window.QUIZ_DATA = {
       "answerImageDetails": [
         {
           "src": "assets/answer-history/gagarin.jpg",
-          "alt": "Юрий Гагарин. Фотография 1961 года",
-          "caption": "Юрий Гагарин. Фотография 1961 года"
+          "alt": "Юрий Гагарин. Архивный портрет",
+          "caption": "Юрий Гагарин. Архивный портрет"
+        },
+        {
+          "src": "assets/chronology-cards/titov.jpg",
+          "alt": "Герман Титов. Архивный портрет",
+          "caption": "Герман Титов. Архивный портрет"
         },
         {
           "src": "assets/answer-history/berlin-wall.jpg",
-          "alt": "Строительство Берлинской стены. 20 ноября 1961 года",
-          "caption": "Строительство Берлинской стены. 20 ноября 1961 года"
+          "alt": "Строительство Берлинской стены. Архивный снимок",
+          "caption": "Строительство Берлинской стены. Архивный снимок"
+        },
+        {
+          "src": "assets/chronology-cards/congress-palace.jpg",
+          "alt": "Кремлёвский дворец съездов — место проведения XXII съезда",
+          "caption": "Кремлёвский дворец съездов — место проведения XXII съезда"
         }
       ]
     }
