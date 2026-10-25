@@ -195,6 +195,10 @@
     "bytes": 2838215,
     "sha256": "cd3999e1d405269ae20e13be377c4728011b307c8fbcf87de67ca3b06341616d"
   },
+  "assets/design/poster-watercolor-background.jpg": {
+    "bytes": 259242,
+    "sha256": "5586fcca6c4443794164f750bf41861d5d214df5dcbf879d98826af0b00a6e09"
+  },
   "assets/fonts/DejaVuSans.ttf": {
     "bytes": 759720,
     "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
