@@ -82,7 +82,7 @@ for i,s in enumerate(sectors):
  parts.append(f'<g transform="translate({letters[s["letter"]]["x"]} 0)"><g clip-path="url(#letter-{s["letter"]})"><g clip-path="url(#sector-{i})"><image x="{x}" y="{y}" width="{w}" height="{h}" preserveAspectRatio="{align}" xlink:href="data:image/jpeg;base64,{raw}"/></g></g></g>')
 parts.append('</g>');text(art['event']['date'],1225,56,.4);text(art['event']['venue'],1300,32,.2);parts.append('</svg>')
 (ROOT/'design/cultural-code-poster-kod-4x3.svg').write_text('\n'.join(parts))
-(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'animation':'Text fades; each photograph region moves outwards independently. System and app reduced motion skip this transition.'},ensure_ascii=False,indent=2)+'\n')
+(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'animation':'Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions.'},ensure_ascii=False,indent=2)+'\n')
 print('Built shared nine-sector wordmark and 4:3 poster.')
 
 if '--export' in __import__('sys').argv:
