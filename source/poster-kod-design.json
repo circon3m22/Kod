@@ -1,0 +1,21 @@
+{
+  "format": "A3 portrait 297 × 420 mm",
+  "svg": "design/cultural-code-poster-kod.svg",
+  "text": [
+    "Исторический квиз",
+    "КУЛЬТУРНЫЙ",
+    "КОД",
+    "2 ноября 18:30",
+    "«Вектор», ул. Фрунзе, 60"
+  ],
+  "construction": "Hand-built SVG; 15 rounded photograph sections form Cyrillic КОД; no generated imagery or colorization. Text outlined from local Montserrat Medium 500.",
+  "photoSources": "source/cover-history-sources.json",
+  "fontSource": "source/montserrat-font-source.json",
+  "photos": [
+    "assets/cover-history/locomotive.jpg",
+    "assets/cover-history/suzdal.jpg",
+    "assets/cover-history/wooden-house.jpg",
+    "assets/cover-history/spinning.jpg",
+    "assets/cover-history/river-bridge.jpg"
+  ]
+}

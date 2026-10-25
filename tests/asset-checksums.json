@@ -123,6 +123,14 @@
     "bytes": 3859,
     "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
   },
+  "assets/fonts/Montserrat-OFL.txt": {
+    "bytes": 4400,
+    "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e"
+  },
+  "assets/fonts/Montserrat-Variable.ttf": {
+    "bytes": 744936,
+    "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+  },
   "assets/fonts/Rubik-OFL.txt": {
     "bytes": 4384,
     "sha256": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb"
