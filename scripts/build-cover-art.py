@@ -58,11 +58,15 @@ art={'width':1725,'height':630,'letters':letters,'sectors':sectors,'event':{'kic
 (ROOT/'cover-art.js').write_text('// Shared geometry for the live cover and the 4:3 poster. Local sources only.\nwindow.COVER_ART = '+json.dumps(art,ensure_ascii=False,indent=2)+';\n')
 
 credits='\n\n'.join(f"{x['caption']}\n{x['author']} · {x['license']}\n{x['sourceUrl']}\n{x.get('licenseUrl','')}\nИзменения: кадрирование по скруглённым секциям; исходный цвет сохранён." for x in photo_sources)
-(ROOT/'design/cultural-code-poster-kod-4x3-credits.txt').write_text('Источники фотосекций афиши Культурный код\n\n'+credits+'\n')
+background=json.loads((ROOT/'source/poster-background-source.json').read_text())
+credits+='\n\nФон афиши: акварельный пейзаж, предоставлен пользователем 25 октября 2026 года. Авторство и лицензия не указаны. Исходный файл сохранён без изменений.'
+(ROOT/'design/cultural-code-poster-kod-4x3-credits.txt').write_text('Источники афиши Культурный код\n\n'+credits+'\n')
 
-# The poster uses exactly the same clipped regions as the live website.
+# The poster uses the same background and clipped regions as the live website.
 font=instantiateVariableFont(TTFont(ROOT/'assets/fonts/Onest-Variable.ttf'),{'wght':500},inplace=False);glyphs=font.getGlyphSet();cmap=font.getBestCmap();units=font['head'].unitsPerEm
 parts=['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400mm" height="300mm" viewBox="0 0 1920 1440" role="img" aria-labelledby="title">','<title id="title">Культурный код. Исторический квиз. 2 ноября 18:30. «Вектор», ул. Фрунзе, 60</title>','<rect width="1920" height="1440" fill="white"/>']
+background_raw=base64.b64encode((ROOT/background['path']).read_bytes()).decode()
+parts.append(f'<image id="poster-background" x="0" y="0" width="1920" height="1440" preserveAspectRatio="xMidYMid meet" xlink:href="data:image/jpeg;base64,{background_raw}"/>')
 def text(label,y,size,tracking=0,color='#171717'):
  scale=size/units;width=sum(glyphs[cmap[ord(c)]].width for c in label)*scale+tracking*(len(label)-1);x=(1920-width)/2;cursor=0
  parts.append(f'<g aria-label="{escape(label)}" fill="{color}" transform="translate({x:.3f} {y})">')
@@ -82,7 +86,7 @@ for i,s in enumerate(sectors):
  parts.append(f'<g transform="translate({letters[s["letter"]]["x"]} 0)"><g clip-path="url(#letter-{s["letter"]})"><g clip-path="url(#sector-{i})"><image x="{x}" y="{y}" width="{w}" height="{h}" preserveAspectRatio="{align}" xlink:href="data:image/jpeg;base64,{raw}"/></g></g></g>')
 parts.append('</g>');text(art['event']['date'],1225,56,.4);text(art['event']['venue'],1300,32,.2);parts.append('</svg>')
 (ROOT/'design/cultural-code-poster-kod-4x3.svg').write_text('\n'.join(parts))
-(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'animation':'Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions.'},ensure_ascii=False,indent=2)+'\n')
+(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'backgroundSource':'source/poster-background-source.json','animation':'Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions.'},ensure_ascii=False,indent=2)+'\n')
 print('Built shared nine-sector wordmark and 4:3 poster.')
 
 if '--export' in __import__('sys').argv:
