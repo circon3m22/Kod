@@ -7,5 +7,5 @@
   "photoSources": [
     "source/cover-era-sources.json"
   ],
-  "animation": "Text fades; each photograph region moves outwards independently. System and app reduced motion skip this transition."
+  "animation": "Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions."
 }
