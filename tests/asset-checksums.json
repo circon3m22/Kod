@@ -35,6 +35,14 @@
     "bytes": 3859,
     "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
   },
+  "assets/fonts/Rubik-OFL.txt": {
+    "bytes": 4384,
+    "sha256": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb"
+  },
+  "assets/fonts/Rubik-Variable.ttf": {
+    "bytes": 359804,
+    "sha256": "1b3a7437ba2af80e465e773ed60c5036d1ba6ace492d89046dbcf18fb31e4e88"
+  },
   "assets/images/image1.jpeg": {
     "bytes": 34663,
     "sha256": "3d64141fce8793513aedf2e9feb7634a8a8a17877832b416da447beaf6a46f33"

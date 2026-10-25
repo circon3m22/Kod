@@ -1,0 +1,19 @@
+{
+  "family": "Rubik",
+  "license": "SIL Open Font License 1.1",
+  "retrieved": "2026-10-25",
+  "files": [
+    {
+      "file": "assets/fonts/Rubik-Variable.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/rubik/Rubik%5Bwght%5D.ttf",
+      "sha256": "1b3a7437ba2af80e465e773ed60c5036d1ba6ace492d89046dbcf18fb31e4e88",
+      "bytes": 359804
+    },
+    {
+      "file": "assets/fonts/Rubik-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/rubik/OFL.txt",
+      "sha256": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb",
+      "bytes": 4384
+    }
+  ]
+}
