@@ -391,6 +391,218 @@
     "bytes": 1438,
     "sha256": "eb751ffccfb0a472155ef8b0e358bf565982dabe01552390702cce65227a7c04"
   },
+  "assets/paper-rounds/aelita-costume.jpg": {
+    "bytes": 119210,
+    "sha256": "8bded65b2b97ca764e438d0f57903968c784eff36ccb032b96d8a22343c21079"
+  },
+  "assets/paper-rounds/amur-cliff.jpg": {
+    "bytes": 120765,
+    "sha256": "e0321f3b4e4ae54713910f89aa6631fc53a6f4d2c8838bc34a0f18f878e7cf39"
+  },
+  "assets/paper-rounds/beard-token.jpg": {
+    "bytes": 54632,
+    "sha256": "5016723eea83bbcca84b9bcb62db911d74d5e186881bf1b52a74136534e462a1"
+  },
+  "assets/paper-rounds/birch-bark-onfim.jpg": {
+    "bytes": 138000,
+    "sha256": "0685ebcc9ef9c8c7065829e48ecd01e13c0b1b55fb8b9deb3c15b4eb57d59d29"
+  },
+  "assets/paper-rounds/bloody-sunday.jpg": {
+    "bytes": 14425,
+    "sha256": "db247bfab965bac131a0611a0f757e03999b07b340697768001d15bbb6dbd238"
+  },
+  "assets/paper-rounds/borodin.jpg": {
+    "bytes": 115041,
+    "sha256": "e87aa1beab3b27e4376d7e8a417d9c4dd9520ed39a0ac22e723061203871a9ac"
+  },
+  "assets/paper-rounds/children-railway.jpg": {
+    "bytes": 292392,
+    "sha256": "28cd67673c4ed1317cd996704e08af7c0bd6b980047b703bd1626338c8a3ad00"
+  },
+  "assets/paper-rounds/duma-opening.jpg": {
+    "bytes": 264402,
+    "sha256": "84b93d1f495ef1adb499619d7650aa364d2990298f817142c4420f9d0475731c"
+  },
+  "assets/paper-rounds/gogol.jpg": {
+    "bytes": 304905,
+    "sha256": "ed1c67b1f00aa016775bbf942ea24e4181f935fbceb7f45834c5828ed76d571a"
+  },
+  "assets/paper-rounds/grodekov-museum.jpg": {
+    "bytes": 229822,
+    "sha256": "e09ed024b7fb0344c584707cfbd7963de376630b61fad715b9ceb5ff15518122"
+  },
+  "assets/paper-rounds/hermitage.jpg": {
+    "bytes": 241235,
+    "sha256": "485b0a8cb41c0ffaa23b61cef9f301c89d9b22632a5289bc05ac74708f3afcf8"
+  },
+  "assets/paper-rounds/komsomolsk.jpg": {
+    "bytes": 268270,
+    "sha256": "fd6e5e47e2723d1ad24a50fd7b24a2553d0d3a4e81670ccb989d49a70309b428"
+  },
+  "assets/paper-rounds/kopecks.jpg": {
+    "bytes": 66399,
+    "sha256": "350f331aca5b8c0296cc1f3a6acd2adb007112909e44318b623601191f983824"
+  },
+  "assets/paper-rounds/kotelnikov.jpg": {
+    "bytes": 482088,
+    "sha256": "cb99d34cb76098406d353ab25d4c197dfb4bc2b14e71a0439ae429144251973e"
+  },
+  "assets/paper-rounds/kurosawa.jpg": {
+    "bytes": 235809,
+    "sha256": "af27d5d07495c2e29dbc0b13d19aa27fb3b9b211062043e279276bfca198201d"
+  },
+  "assets/paper-rounds/laika.jpg": {
+    "bytes": 108399,
+    "sha256": "82d2fdb472f6daed063996525bc90fd050b61cb8f37b662d5ed65a30dc8ef5a8"
+  },
+  "assets/paper-rounds/lazarev.jpg": {
+    "bytes": 302881,
+    "sha256": "c055b6aa2905d208270bceff3fad31801cf3c0bfad1b661c31a13a1db70fabc8"
+  },
+  "assets/paper-rounds/lermontov.jpg": {
+    "bytes": 339255,
+    "sha256": "207d6ae2bacebec82857410159def00498177c6001a2c2e63bbe4487985fb835"
+  },
+  "assets/paper-rounds/lodygin.jpg": {
+    "bytes": 60399,
+    "sha256": "dc26efe5fb33b99704d826e126ccdb83ffeaa69454cd2349532166a3cbbc7c63"
+  },
+  "assets/paper-rounds/manjur.jpg": {
+    "bytes": 219998,
+    "sha256": "9ab934e21bcdf289f38d84217905d478b385ca96a023167d1351b49cca4a1179"
+  },
+  "assets/paper-rounds/mendeleev.jpg": {
+    "bytes": 151897,
+    "sha256": "94190bbbc7495fb502441035b4a34d95a9a6a7b78c7e2d1c62c87122cb78e071"
+  },
+  "assets/paper-rounds/metro-moscow.jpg": {
+    "bytes": 140442,
+    "sha256": "73b23136ead0d8632e90098d413008979d91b3387cb6cbc98a505d87a7299f23"
+  },
+  "assets/paper-rounds/millennium.jpg": {
+    "bytes": 237741,
+    "sha256": "6bddd1d379e93a9349e889233c14718a62df494f8ac9464e9de4df34db61a642"
+  },
+  "assets/paper-rounds/northpole.jpg": {
+    "bytes": 149516,
+    "sha256": "d39b24266fe6ffb11c9b45629e8dd2d61975f62ff6098da36c63363fcebce92a"
+  },
+  "assets/paper-rounds/obninsk.jpg": {
+    "bytes": 144973,
+    "sha256": "fd663aa5b5a0fec82be9611825215325c9aa3f4702086f7e7dabdb33de061cf7"
+  },
+  "assets/paper-rounds/oryol.jpg": {
+    "bytes": 268695,
+    "sha256": "e9a8a2a35e533f178d408e18d4c4999698c1788456999992bb99a6d324501449"
+  },
+  "assets/paper-rounds/pallada.jpg": {
+    "bytes": 97813,
+    "sha256": "212406903e1e7e81189649320e882e40c73c6800b78e4296d4c2cb8f6d85911e"
+  },
+  "assets/paper-rounds/peter-iii.jpg": {
+    "bytes": 477859,
+    "sha256": "a5d9e632ab5097a78fdbbd971b2b36851546ea6f7455b6f3127f60f8d90b1d37"
+  },
+  "assets/paper-rounds/petropavlovsk.jpg": {
+    "bytes": 204077,
+    "sha256": "1938ad5a73d5176c0c43020b90cd70c64fbe14d79f2778089708a4ce39c8a825"
+  },
+  "assets/paper-rounds/pirogov.jpg": {
+    "bytes": 257983,
+    "sha256": "213efb1ece921b8b94f734e459a564c6d28fb6b33ac85a49c77b2765cf08940d"
+  },
+  "assets/paper-rounds/platinum.jpg": {
+    "bytes": 128966,
+    "sha256": "44fa11838fb608f34fb59015ee8893586ac208336a38da03b4f9727804e4bec0"
+  },
+  "assets/paper-rounds/popov.jpg": {
+    "bytes": 323265,
+    "sha256": "8c33c9c23a9957f13d6ab433b7d66849bde7eeca0196ae104e7fd9e3cc6fe511"
+  },
+  "assets/paper-rounds/portsmouth.jpg": {
+    "bytes": 81251,
+    "sha256": "f3d5b87f88311b16de89caadff64d85f668175222fdee89fbc3d38b9ac699999"
+  },
+  "assets/paper-rounds/potemkin-uprising.jpg": {
+    "bytes": 198207,
+    "sha256": "e1280c1d190dc606788399e142a8c898bbf5e6c421f500e39a12e16f6775d265"
+  },
+  "assets/paper-rounds/projector.svg": {
+    "bytes": 918,
+    "sha256": "db734140a4354653c51f299314a0a07518b6fb92e9a0c2f45ab6d98f035ff18f"
+  },
+  "assets/paper-rounds/pushkin.jpg": {
+    "bytes": 346327,
+    "sha256": "243798078145b1e8ba15589d3490ae0a325080117d6eccca8025136dea5c3584"
+  },
+  "assets/paper-rounds/rail-capitals.jpg": {
+    "bytes": 174255,
+    "sha256": "06932098046b8804d42366637e88b3e3d6db1bce30b1df7c0993b74498124b9c"
+  },
+  "assets/paper-rounds/rail-tsarskoe.jpg": {
+    "bytes": 47719,
+    "sha256": "1978a65e57d522e40ec57bb9d12f1c79f7e2ba5902d0eca2a78104be0433c5d1"
+  },
+  "assets/paper-rounds/road-to-life.jpg": {
+    "bytes": 410672,
+    "sha256": "1522254c89ddf6c58f1fc9936e3165b1aa0af4f76ee6c7c58518198c82e9070f"
+  },
+  "assets/paper-rounds/russian-museum.jpg": {
+    "bytes": 316620,
+    "sha256": "46b93cb5a61630a4e78a339e80c2c30f643d36f1d01e4ace83635596bea06852"
+  },
+  "assets/paper-rounds/sailing-ship.svg": {
+    "bytes": 531,
+    "sha256": "76a9b301aef23885eaa8fb623b74c364d9e04dadb5d832dc1a284a588d75006b"
+  },
+  "assets/paper-rounds/sakhalin-velikan.jpg": {
+    "bytes": 382490,
+    "sha256": "5efa09e29eebbbc09b5c18ae536e163277c090e0a44bf367ce594601d8f534c0"
+  },
+  "assets/paper-rounds/shostakovich.jpg": {
+    "bytes": 107430,
+    "sha256": "57ce097286202c5918741321d2695d910a69b78ee09e5e1f2c520fae990b458e"
+  },
+  "assets/paper-rounds/shukhov.jpg": {
+    "bytes": 369830,
+    "sha256": "c9366a26120e905367560cb0b3ccf8dea5cdcef992ed43f99f3ab886378b501e"
+  },
+  "assets/paper-rounds/sikachi-alyan.jpg": {
+    "bytes": 238244,
+    "sha256": "7ef81cb714a1de1fc5fa95d5b0febec67b7c5c23564d38443bea34387f89822a"
+  },
+  "assets/paper-rounds/sputnik2.jpg": {
+    "bytes": 144896,
+    "sha256": "2c334f67bc4b7eac77014c3060a94a2c923dfe2d9f71d94451b78555bf52f37f"
+  },
+  "assets/paper-rounds/stone-tortoise.jpg": {
+    "bytes": 260037,
+    "sha256": "e5785d69b3812ddeb9697bbfaaa55d20aabcfb378695097515a19612d29461b7"
+  },
+  "assets/paper-rounds/terminal.svg": {
+    "bytes": 3897,
+    "sha256": "665b54f33bb6d8b8779876504439d59628654b4df606c3bc8e8aaa2dd08d9da0"
+  },
+  "assets/paper-rounds/tetris.svg": {
+    "bytes": 1785,
+    "sha256": "2f9a16bab44109fdc7fe62e2ca02a906db8ad27ac5961d081c2ab413bc14b277"
+  },
+  "assets/paper-rounds/tretyakov.jpg": {
+    "bytes": 209205,
+    "sha256": "2e3fe8caf1b3a2f894c0eb6ea949737fa071ea7e6fac64d5b9eee0f3a6b93656"
+  },
+  "assets/paper-rounds/tsiolkovsky.jpg": {
+    "bytes": 189135,
+    "sha256": "8aa48244fb082ca6af9440c740b6e11ab5683c44feb359c69250ab0e705a1c60"
+  },
+  "assets/paper-rounds/venus-transit.jpg": {
+    "bytes": 79778,
+    "sha256": "f61850aaff7a37ea2b127128a8b0e9569ee745292363704743d0d95a753640c7"
+  },
+  "assets/paper-rounds/yermak.jpg": {
+    "bytes": 135689,
+    "sha256": "bb2109a0482ab650e6abeeee3b31196fbc64c2662c69685e40db99bffb1b3afa"
+  },
   "assets/photo-round/elbe-1945.jpg": {
     "bytes": 616767,
     "sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370"

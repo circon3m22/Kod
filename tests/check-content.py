@@ -7,11 +7,14 @@ d=json.loads((r/'quiz-data.js').read_text().split('window.QUIZ_DATA = ',1)[1].rs
 s=json.loads((r/'source/slides-extracted.json').read_text())
 archive=json.loads((r/'source/replaced-video-questions.json').read_text())['questions']
 photo_sources=json.loads((r/'source/photo-round-sources.json').read_text())
+paper=json.loads((r/'source/paper-round-content.json').read_text())
+paper_ids={q['id'] for q in paper['main']+paper['warmup']}
+paper_refs=paper_ids|{q['id']+':'+e['id'] for q in paper['main'] for e in q.get('events',[])}
 new_sources=json.loads((r/'source/new-question-evidence.json').read_text())['sources']
-assert len(s)==52 and len(d['questions'])==30 and len(d['categories'])==6
-assert len(d['warmup'])==12 and all(q['enabled'] for q in d['questions'])
-assert len({q['id'] for q in d['questions']})==30
-assert len({(q['category'],q['value']) for q in d['questions']})==30
+assert len(s)==52 and len(d['questions'])==60 and len(d['categories'])==6
+assert len(d['warmup'])==15 and all(q['enabled'] for q in d['questions'])
+assert len({q['id'] for q in d['questions']})==60
+assert len({(q['category'],q['value']) for q in d['questions']})==60
 assert all(sum(q['category']==c and q['value']==v for q in d['questions'])==1 for c in d['categories'] for v in d['values'])
 clean=lambda t:t.replace('\x0b','\n').strip()
 content=lambda slide:[clean(t) for t in slide['texts'] if t.strip() and not t.startswith(('Узнать ответ','Вернуться к выбору'))]
@@ -19,7 +22,7 @@ original_questions=[q for q in d['questions'] if q['sourceSlide'] is not None]
 assert len(original_questions)==20 and len(archive)==5
 original_categories=d['categories'][:4]+[archive[0]['category']]
 for q in original_questions+archive:
- ci=original_categories.index(q['category']);vi=d['values'].index(q['value'])+1
+ ci=original_categories.index(q['category']);vi=[200,400,600,800,1000].index(q.get('legacyValue',q['value']))+1
  target=s[1]['tableLinks'][ci][vi]['targets'][0]
  assert int(re.search(r'slide(\d+)',target).group(1))==q['sourceSlide'],q['id']
  qs=s[q['sourceSlide']-1];ans=s[q['answerSlide']-1]
@@ -38,19 +41,19 @@ for q in original_questions+archive:
   assert q['answer'].strip()!='Текст' and q['text'].strip()!='Текст'
   assert 'original' in q and q['revision']['date']=='2026-10-25'
  if q['status']=='missing-video':assert q['images'] and not q['video'] and not q['enabled']
-known_refs=set(new_sources)|{x['id'] for x in photo_sources}
+known_refs=set(new_sources)|{x['id'] for x in photo_sources}|paper_refs
 for q in d['questions']:
  assert q['enabled'] and q['status']=='complete' and q['text'].strip() and q['answer'].strip()
  assert q['text'].strip()!='Текст' and q['answer'].strip()!='Текст'
  assert q['category'] in d['categories'] and q['value'] in d['values']
  if q['sourceSlide'] is None:
-  assert q['type'] in ['photo','chronology'] and q['acceptance']
+  assert q['type'] in ['text','photo','chronology'] and q['acceptance']
   assert q['sourceRefs'] and set(q['sourceRefs'])<=known_refs
-  assert q['revision']['date']=='2026-10-25' and not q['video']
+  assert q['revision']['date'] in ['2026-10-25','2026-10-26'] and not q['video']
  for path in q['images']+q['answerImages']:assert (r/path).is_file(),path
 photos=[q for q in d['questions'] if q['type']=='photo' and q['sourceSlide'] is None]
 timelines=[q for q in d['questions'] if q['type']=='chronology']
-assert len(photos)==len(timelines)==len(photo_sources)==5
+assert len(photos)==len(photo_sources)==5 and len(timelines)==10
 assert not {q['id'] for q in d['questions']}&{q['id'] for q in archive}
 for item in photo_sources:
  assert hashlib.sha256((r/item['file']).read_bytes()).hexdigest()==item['sha256']
@@ -61,10 +64,9 @@ for q in timelines:
  assert len({x['label'] for x in events})==len(events)
  assert q['correctOrder']==[x['label'] for x in ordered]
  assert q['answer'].startswith(' → '.join(q['correctOrder']))
- assert all(x['sourceRef'] in new_sources for x in events)
+ assert all(x['sourceRef'] in known_refs for x in events)
  assert all(x['text'] in q['text'] and x['text'] in q['answer'] for x in events)
-assert all(w['text'].strip() and w['answer'].strip() and w.get('original') for w in d['warmup'])
-assert d['warmup'][6]['answer'].startswith('Борис Годунов')
+assert all(w['text'].strip() and w['answer'].strip() and w['id'] in paper_ids and w['acceptance'] for w in d['warmup'])
 assert '1923' in next(q for q in d['questions'] if q['id']=='c1-1000')['text']
 assert next(q for q in d['questions'] if q['id']=='c3-200')['answer']=='Спасо-Преображенский кафедральный собор.'
 by_id={q['id']:q for q in d['questions']}
@@ -121,7 +123,7 @@ for x in eras:
  assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
 event_sources=json.loads((r/'source/chronology-card-sources.json').read_text())
 assert set(event_sources)=={q['id'] for q in timelines}
-assert sum(len(q['events']) for q in timelines)==16
+assert sum(len(q['events']) for q in timelines)==31
 for q in timelines:
  assert set(event_sources[q['id']])=={e['label'] for e in q['events']}
  assert q['images']==[e['image'] for e in q['events']]
@@ -133,6 +135,30 @@ for q in timelines:
   assert hashlib.sha256((r/item['path']).read_bytes()).hexdigest()==item['sha256']
 index=(r/'index.html').read_text()
 assert index.index('cover-art.js')<index.index('app.js')
-print('PASS: 52 source slides, 25 original mappings preserved, 30 active cells in 6 categories, 12 warmup questions, 5 sourced photos, 5 verified timelines, local assets/checksums.')
-print('PASS: 42 sourced answer illustrations, two authentic color 1945 photographs, four local stage objects.')
-print('PASS: 9 unique sourced era illustrations in the live cover/poster; all 16 chronology events have separate sourced cards.')
+
+prior=json.loads((r/'source/pre-paper-quiz-data.json').read_text())
+for old in prior['questions']:
+ q=by_id[old['id']]
+ for key in ['text','answer','type','images','events','matches','columns']:
+  if key in old:assert q[key]==old[key],(q['id'],key)
+ assert q['legacyValue']==old['value']
+assert d['legacyWarmupIds']==[q['id'] for q in prior['warmup']]
+assert d['values']==list(range(100,1001,100))
+assert len(d['rounds'])==7 and d['rounds'][0]['questionIds']==[q['id'] for q in d['warmup']]
+main_rounds=[x for x in d['rounds'] if x['kind']=='main']
+assert len(main_rounds)==6
+assert {qid for x in main_rounds for qid in x['questionIds']}==set(by_id)
+for block in main_rounds:
+ assert len(block['questionIds'])==10
+ assert [by_id[qid]['value'] for qid in block['questionIds']]==list(range(100,1001,100))
+ assert sum(by_id[qid]['value'] for qid in block['questionIds'])==5500
+ assert (r/block['image']).is_file()
+assert sum(q['value'] for q in d['questions']+d['warmup'])==34500
+for q in d['questions']+d['warmup']:
+ assert q['paperImages'] and q['paperImageDetails']
+ assert all((r/p).is_file() for p in q['paperImages'])
+ assert all(not x.get('caption') for x in q['paperImageDetails'])
+assert 'class="media-caption"' not in (r/'app.js').read_text()
+print('PASS: 60 main questions, 15 warmup; 7 paper rounds; ordered 100–1000 costs; 34500 maximum.')
+print('PASS: all 30 previous questions preserved; original slide mappings; 75 sourced answer illustrations and question images.')
+print('PASS: 10 timelines / 31 illustrated events; sources, local dependencies, asset checksums and cover geometry.')

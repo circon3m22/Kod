@@ -5,7 +5,7 @@ const data={window:{}};vm.createContext(data);vm.runInContext(fs.readFileSync(pa
 let sequence=0;
 const ctx={D:data.window.QUIZ_DATA,state:{current:{screen:'question',questionId:'c1-600',warmIndex:0,bonusIndex:0,captainIndex:0},teams:[{id:'a',name:'Север',score:0},{id:'b',name:'Юг',score:0}],history:[],pendingAward:null},modal:null,id:()=>String(++sequence),save:()=>{},renderScores:()=>{},toast:()=>{},closeModal:()=>{},flashDot:()=>{},refreshSelection:()=>{}};
 vm.createContext(ctx);
-const names=['taskKey','alreadyAwarded','scoreDefaults','record','selectTeam','commitSelection','clearSelection','quietUndo'];
+const names=['paperRound','taskKey','alreadyAwarded','scoreDefaults','record','selectTeam','commitSelection','clearSelection','quietUndo'];
 const definitions=names.map(name=>{const line=src.split('\n').find(s=>s.startsWith('function '+name+'('));assert(line,name);return line;}).join('\n');
 vm.runInContext('const qById=id=>D.questions.find(q=>q.id===id);\n'+definitions,ctx);
 for(let i=0;i<50;i++)ctx.selectTeam(i%2);ctx.selectTeam(1);
@@ -26,3 +26,9 @@ console.log('PASS: 50 repeated selections do not score; last choice wins; one co
 
 ctx.state.teams=[{id:'a',name:'Север',score:200}];ctx.state.history=[{id:'live',entries:[{teamId:'a',teamName:'Север',delta:200}],undone:false,isUndo:false},{id:'removed',entries:[{teamId:'b',teamName:'Юг',delta:400}],undone:false,isUndo:false}];ctx.quietUndo();assert.equal(ctx.state.teams[0].score,0);assert.equal(ctx.state.history[0].undone,true);
 console.log('PASS: removing a team does not block undo of earlier awards to surviving teams.');
+
+ctx.state.current={screen:'paper',blockId:'b1',paperPhase:'questions',paperIndex:0};ctx.state.pendingAward=null;const before=ctx.state.teams[0].score,count=ctx.state.history.length;for(let i=0;i<30;i++){ctx.selectTeam(0);ctx.commitSelection();}assert.equal(ctx.state.pendingAward,null);assert.equal(ctx.state.teams[0].score,before);assert.equal(ctx.state.history.length,count);assert.equal(ctx.taskKey(),null);assert.equal(ctx.scoreDefaults().amount,0);assert.equal(ctx.scoreDefaults().reason,'Бланки · '+ctx.D.rounds[1].title);
+console.log('PASS: repeated numeric selection never changes paper scores or history.');
+
+vm.runInContext(src.split('\n').find(s=>s.startsWith('function roundScore(')),ctx);ctx.state.teams=[{id:'a',name:'Север',score:1800}];ctx.state.history=[{id:'r1',roundId:'b1',entries:[{teamId:'a',delta:1200}],undone:false,isUndo:false},{id:'r2',roundId:'b2',entries:[{teamId:'a',delta:600}],undone:false,isUndo:false},{id:'r3',roundId:'b1',entries:[{teamId:'a',delta:700}],undone:true,isUndo:false},{id:'u3',roundId:null,entries:[{teamId:'a',delta:-700}],undone:false,isUndo:true}];assert.equal(ctx.roundScore('a','b1'),1200);assert.equal(ctx.roundScore('a','b2'),600);assert.equal(ctx.roundScore('missing','b1'),0);
+console.log('PASS: statistics sums scores by round, excluding undone and undo records.');
