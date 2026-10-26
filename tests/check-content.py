@@ -173,3 +173,15 @@ for x in film_sources:
 assert not re.search(r'https?://|fetch\s*\(', (r/'cover-film.js').read_text())
 assert (r/'index.html').read_text().index('cover-film.js')<(r/'index.html').read_text().index('app.js')
 print('PASS: 13 sourced local animation images; independent scene data loaded before the app.')
+
+# Rule illustrations are local, transparent originals with source/license records.
+rules = json.loads((r / 'source/rules-image-sources.json').read_text())
+assert len(rules) == 3 and len({r['sha256'] for r in rules}) == 3
+for item in rules:
+    path = r / item['path']
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == item['sha256']
+    assert item['license'] == 'CC0 1.0' and item['sourceUrl'].startswith('https://')
+    png = path.read_bytes()
+    assert png[25] in (4, 6) or (png[25] == 3 and b'tRNS' in png)
+assert 'quiz-flow.js' in (r / 'index.html').read_text() and (r / 'flow.css').exists()
+print('PASS: three source-backed transparent rule illustrations and local sequential-flow dependencies.')

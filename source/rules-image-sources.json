@@ -1,0 +1,35 @@
+[
+  {
+    "path": "assets/rules/telephone.png",
+    "title": "Telephone Vintage",
+    "author": "Karen Arnold",
+    "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=320846&picture=telephone-vintage",
+    "downloadUrl": "https://www.publicdomainpictures.net/pictures/330000/velka/telephone-vintage.png",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sha256": "4f5580a3d5ee3737b16367bd0e5956cae10ba817780b43955a08bebfb299a466",
+    "modifications": "Original standard-resolution PNG, colors and transparency preserved. No generated content."
+  },
+  {
+    "path": "assets/rules/binoculars.png",
+    "title": "Binoculars Clipart Png",
+    "author": "Martina Stokow",
+    "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=668473&picture=binoculars-clipart-png",
+    "downloadUrl": "https://www.publicdomainpictures.net/pictures/670000/velka/fernglas-clipart-png.png",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sha256": "5b940579b36d344baab5d5efb34a40fcc97e2a6b7c3b912be83d6311a8bf7f1c",
+    "modifications": "Original standard-resolution PNG, colors and transparency preserved. No generated content."
+  },
+  {
+    "path": "assets/rules/hourglass.png",
+    "title": "Clipart Hourglass Time Illustration",
+    "author": "Andrea Stöckel",
+    "sourceUrl": "https://www.publicdomainpictures.net/en/view-image.php?image=446331&picture=clipart-hourglass-time-illustration",
+    "downloadUrl": "https://www.publicdomainpictures.net/pictures/450000/velka/clipart-sanduhr-zeit-illustration.png",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sha256": "dd501dafd301feafea849379a9e088d9385cb5ad6cf5943f46cc3c7ca7c196a4",
+    "modifications": "Original standard-resolution PNG, colors and transparency preserved. No generated content."
+  }
+]
