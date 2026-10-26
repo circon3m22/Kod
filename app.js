@@ -83,7 +83,7 @@ function posterFilmMarkup(){
  defs+=`<clipPath id="${key}-mask" clipPathUnits="userSpaceOnUse"><path class="film-mask" data-mask="${key}" d="${part.region}"/></clipPath>`;
  pieces+=`<g class="film-piece" data-sector="${sector}" data-key="${key}" clip-path="url(#${key}-mask)"><image class="film-photo film-photo-a" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/><image class="film-photo film-photo-b" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" opacity="0"/>${scene===3?`<image class="film-final-photo" href="${part.photo}" preserveAspectRatio="${part.imageBox?'none':part.align+' slice'}" opacity="0"/>`:''}</g>`;
  });scenes+=`<g class="film-scene" data-scene="${scene}" data-letter="${window.COVER_FILM.sequence[scene]}" style="display:none"><rect width="1920" height="1080" fill="#fff"/>${scene===3?'<g class="film-map-window" mask="url(#film-map-reveal)"><image class="film-map" href="assets/design/poster-russia-silhouette.svg" x="240" y="0" width="1440" height="1080"/></g>':''}${pieces}</g>`;});
- return `<svg class="poster-film" viewBox="0 0 1920 1080" aria-hidden="true" focusable="false"><defs>${defs}</defs>${scenes}</svg>`;
+ return `<svg class="poster-film" viewBox="0 0 1920 1080" aria-hidden="true" focusable="false"><defs>${defs}</defs>${scenes}</svg><div class="poster-film-final" aria-hidden="true"><div class="final-map-window"><canvas class="final-map" width="1920" height="1080"></canvas><div class="final-map-curtain"></div></div><div class="final-pieces"></div></div>`;
 }
 let posterFilm=null;
 const filmEase=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
@@ -109,32 +109,91 @@ function filmPose(scene,j,sector,t,target){
  // A shared rotation and outward-only offsets preserve the gaps between parts.
  return [x+scale*spread*(dx*Math.cos(rad)-dy*Math.sin(rad)),y+scale*spread*(dx*Math.sin(rad)+dy*Math.cos(rad)),scale,scale,angle,cx,cy];
 }
+// Rasterize each section once in spare time. The finale then changes only
+// compositor transforms/opacity, without repainting SVG paths or photographs.
+function filmDrawCover(ctx,image,x,y,w,h,stretch=false){
+ if(!image?.complete||!image.naturalWidth)return false;
+ if(stretch){ctx.drawImage(image,x,y,w,h);return true;}
+ const scale=Math.max(w/image.naturalWidth,h/image.naturalHeight),sw=w/scale,sh=h/scale;
+ ctx.drawImage(image,(image.naturalWidth-sw)/2,(image.naturalHeight-sh)/2,sw,sh,x,y,w,h);return true;
+}
+function prepareFilmFinal(film,decoded){
+ const layer=film.finalLayer;if(!layer||typeof Path2D==='undefined')return null;
+ const map=layer.querySelector('.final-map'),ctx=map.getContext('2d');if(!ctx)return null;
+ const f={layer,map,curtain:layer.querySelector('.final-map-curtain'),queue:[],idle:0,cycle:null,ready:false,mapReady:false};
+ const source=new Image();source.src='assets/design/poster-russia-silhouette.svg';source.decode().then(()=>{if(!film.svg.isConnected)return;ctx.drawImage(source,240,0,1440,1080);f.mapReady=true;if(f.cycle!==null)f.markReady();}).catch(()=>{});
+ f.pieces=film.scenes[3].pieces.map(p=>{
+  const part=window.COVER_ART.sectors[p.sector],b=p.mask.getBBox(),scale=p.target.scale,pad=2/scale,box=[b.x-pad,b.y-pad,b.width+pad*2,b.height+pad*2],origin=[p.target.x+(box[0]-p.target.center[0])*scale,p.target.y+(box[1]-p.target.center[1])*scale];
+  const el=document.createElement('div');el.className='final-piece';el.dataset.sector=p.sector;el.style.width=box[2]*scale+'px';el.style.height=box[3]*scale+'px';
+  const textures=['a','b','original'].map(name=>{const c=document.createElement('canvas');c.className='final-texture final-texture-'+name;c.width=Math.ceil(box[2]*scale*1.25);c.height=Math.ceil(box[3]*scale*1.25);el.append(c);return c;});layer.querySelector('.final-pieces').append(el);
+  return {...p,el,textures,box,origin,path:new Path2D(part.region),letterPath:new Path2D(window.COVER_ART.letters[part.letter].path),imageBox:['x','y','width','height'].map(attr=>Number(p.original.getAttribute(attr))),stretch:!!part.imageBox};
+ });
+ f.draw=(p,index,image,matrix)=>{
+  if(!image?.complete||!image.naturalWidth)return false;
+  const c=p.textures[index],g=c.getContext('2d'),ratioX=c.width/(p.box[2]*p.target.scale),ratioY=c.height/(p.box[3]*p.target.scale),[ox,oy]=p.origin;
+  g.resetTransform();g.clearRect(0,0,c.width,c.height);g.save();g.setTransform(ratioX*p.target.scale,0,0,ratioY*p.target.scale,-p.box[0]*ratioX*p.target.scale,-p.box[1]*ratioY*p.target.scale);g.clip(p.path);g.clip(p.letterPath,'evenodd');
+  if(index===2){const m=matrix;g.setTransform(ratioX*m.a,ratioY*m.b,ratioX*m.c,ratioY*m.d,ratioX*(m.e-ox),ratioY*(m.f-oy));filmDrawCover(g,image,...p.imageBox,p.stretch);}
+  else{const zoom=1.04;g.setTransform(ratioX*zoom,0,0,ratioY*zoom,ratioX*(960*(1-zoom)-ox),ratioY*(540*(1-zoom)-oy));filmDrawCover(g,image,0,0,1920,1080);}
+  g.restore();return true;
+ };
+ f.markReady=()=>{f.ready=!f.queue.length&&f.mapReady;if(f.ready&&!f.effects?.length)f.makeAnimations();layer.dataset.ready=String(f.ready);};
+ f.makeAnimations=()=>{
+  const frames=Array.from({length:121},(_,i)=>i/120),bind=(el,keyframes)=>{const effect=el.animate(keyframes,{duration:4000,fill:'both',easing:'linear'});effect.pause();effect.currentTime=0;return effect;};
+  f.effects=[bind(f.curtain,frames.map(u=>({offset:u,transform:`translateX(${filmMix(-320,2240,filmEase((u*4-.35)/3.1))-220}px)`}))),bind(f.map,frames.map(u=>{const scale=Math.pow(3.6,1-filmEase(u*4/3.65));return {offset:u,transform:`matrix(${scale},0,0,${scale},${960*(1-scale)},${540*(1-scale)})`};}))];
+  f.pieces.forEach(p=>{
+   f.effects.push(bind(p.el,frames.map(u=>{const [x,y,sx,sy,,cx,cy]=filmPose(3,p.j,p.sector,u*4,p.target),zoom=sx/p.target.scale;return {offset:u,transform:`matrix(${zoom},0,0,${zoom},${x+sx*(p.box[0]-cx)},${y+sy*(p.box[1]-cy)})`};})),bind(p.textures[1],frames.map(u=>({offset:u,opacity:filmEase(u*4/2.7)}))),bind(p.textures[2],frames.map(u=>({offset:u,opacity:filmEase((u*4-2.7)/.95)}))));
+  });
+ };
+ f.schedule=()=>{if(f.idle||!f.queue.length||posterFilm!==film)return;const run=()=>{f.idle=0;if(posterFilm!==film)return;const task=f.queue.shift();if(task&&!task())f.queue.push(task);f.markReady();if(f.queue.length)f.schedule();};f.idle=window.requestIdleCallback?requestIdleCallback(run,{timeout:50}):setTimeout(run,16);};
+ f.prepare=cycle=>{
+  f.effects?.forEach(a=>a.cancel());f.effects=[];f.playCycle=null;f.cycle=cycle;f.ready=false;f.queue=[];
+  // One batch of reads after the poster drift pauses, before any texture writes.
+  const inverse=film.svg.getScreenCTM().inverse(),matrices=f.pieces.map(p=>inverse.multiply(p.original.getScreenCTM()));
+  f.pieces.forEach((p,i)=>{f.queue.push(()=>f.draw(p,0,decoded.get(film.all[p.order[(cycle+1)%film.all.length]])),()=>f.draw(p,1,decoded.get(film.all[p.order[(cycle+2)%film.all.length]])),()=>f.draw(p,2,decoded.get(window.COVER_ART.sectors[p.sector].photo),matrices[i]));});
+  f.schedule();
+ };
+ return f;
+}
+function paintFilmFinal(film,time){
+ const f=film.final;
+ if(f.playCycle!==f.cycle){
+  const start=film.start+f.cycle/3*20000+16000;
+  f.effects.forEach(a=>{a.play();a.startTime=start;});f.playCycle=f.cycle;
+ }
+ // Geometry and fades now run on the compositor. The main loop only selects
+ // the scene; it no longer sends 29 transform/opacity updates on every frame.
+ f.layer.dataset.landed=String(time>=3.65);
+}
 function stopPosterTour(exit=false){
  const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);posterFilm=null;
- if(exit){film.svg.classList.add('film-exiting');film.svg.style.opacity='0';}
- else{film.svg.style.opacity='0';film.sheet.removeAttribute('data-film-motion');film.sheet.style.removeProperty('--film-copy');film.sheet.style.removeProperty('--film-map');}
+ film.final?.effects?.forEach(a=>{if(exit&&a.effect?.target?.isConnected){try{a.commitStyles();}catch(e){}}a.cancel();});
+ if(film.final?.idle){if(window.cancelIdleCallback)cancelIdleCallback(film.final.idle);else clearTimeout(film.final.idle);}
+ if(exit){for(const layer of [film.svg,film.finalLayer])if(layer){layer.classList.add('film-exiting');layer.style.opacity='0';}}
+ else{film.svg.style.opacity='0';if(film.finalLayer)film.finalLayer.style.opacity='0';film.sheet.removeAttribute('data-film-motion');film.sheet.style.removeProperty('--film-copy');film.sheet.style.removeProperty('--film-map');}
 }
 function startPosterTour(){
- const svg=screen.querySelector('.poster-film'),sheet=screen.querySelector('.poster-sheet');
+ const svg=screen.querySelector('.poster-film'),sheet=screen.querySelector('.poster-sheet'),finalLayer=screen.querySelector('.poster-film-final');
  if(!svg||!window.COVER_FILM||reduceMotion()||coverTransition||posterFilm?.svg===svg)return;
  stopPosterTour();
- const all=[...new Set([...window.COVER_FILM.photos,...window.COVER_ART.sectors.map(s=>s.photo)])],images=all.map(src=>{const image=new Image();image.src=src;image.decode?.().catch(()=>{});return image;});
+ const decoded=new Map(),all=[...new Set([...window.COVER_FILM.photos,...window.COVER_ART.sectors.map(s=>s.photo)])],images=all.map(src=>{const image=new Image();image.src=src;decoded.set(src,image);image.decode?.().catch(()=>{});return image;});
  let seed=86231;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const art=window.COVER_ART,mark=sheet.querySelector('.poster-wordmark'),style=getComputedStyle(mark),baseScale=parseFloat(style.width)/art.width,baseX=sheet.offsetLeft+parseFloat(style.left),baseY=sheet.offsetTop+parseFloat(style.top);
  const orders=art.sectors.map(()=>{const order=all.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const k=Math.floor(random()*(i+1));[order[i],order[k]]=[order[k],order[i]];}return order;});
  const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2];
  return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),original:mark.querySelectorAll('.poster-photo')[sector],order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale}};
  })}));
- const film={svg,sheet,scenes,images,raf:0,start:performance.now(),duration:20000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;
+ const film={svg,sheet,finalLayer,scenes,images,all,raf:0,start:performance.now(),duration:20000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
  film.paint=(ms)=>{
   const seconds=((ms%20000)+20000)%20000/1000,active=seconds>=3.5&&seconds<20;
-  if(film.motion!==active){film.motion=active;sheet.toggleAttribute('data-film-motion',active);}
+  if(film.motion!==active){film.motion=active;sheet.toggleAttribute('data-film-motion',active);if(active&&film.final)film.final.prepare(Math.floor(ms/20000)*3);}
   svg.dataset.scene=active?String(Math.min(3,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
   const copy=seconds<3.5?1:seconds<4?1-filmEase((seconds-3.5)/.5):seconds<19.65?0:filmEase((seconds-19.65)/.35);
   sheet.style.setProperty('--film-copy',copy);sheet.style.setProperty('--film-map','1');
-  svg.style.opacity=active?String(1-copy):'0';
+  const layeredFinal=active&&seconds>=16&&film.final?.ready;
+  svg.style.opacity=active&&!layeredFinal?String(1-copy):'0';if(finalLayer)finalLayer.style.opacity=layeredFinal?String(1-copy):'0';
+  if(layeredFinal)paintFilmFinal(film,seconds-16);
   scenes.forEach(({el,pieces},scene)=>{
-   const time=seconds-(4+scene*4),visible=time>=(scene===0?-.5:0)&&time<4;
+   const time=seconds-(4+scene*4),visible=!(scene===3&&layeredFinal)&&time>=(scene===0?-.5:0)&&time<4;
    el.style.display=visible?'':'none';if(!visible)return;
    if(scene===3){
     const map=el.querySelector('.film-map'),land=filmEase(time/3.65),scale=Math.pow(3.6,1-land),front=filmMix(-320,2240,filmEase((time-.35)/3.1));

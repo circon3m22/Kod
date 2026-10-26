@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-26",
+  "baseline_commit": "824660533ca9d36e0f042f0f115751b671f5812a",
+  "setup": "Chromium headless, 1920×1080, CPU 1×; native first full 20-second cycle, sampled final scene. Runs on the same executor, sequential browser instances.",
+  "command": "THROTTLE=1 OUTPUT=<path> node tests/measure-final-film.cjs",
+  "baseline": {
+    "samples": 94,
+    "medianGap": 33.400000000001455,
+    "p95Gap": 66.70000000000073,
+    "p95Work": 1.5999999940395355,
+    "maxWork": 14.300000004470348,
+    "over50": 16,
+    "renderers": [
+      "svg"
+    ]
+  },
+  "optimized": {
+    "samples": 169,
+    "medianGap": 16.700000000000728,
+    "p95Gap": 50,
+    "p95Work": 0.20000000298023224,
+    "maxWork": 23,
+    "over50": 4,
+    "renderers": [
+      "svg",
+      "layers"
+    ]
+  },
+  "native_animation_checks": [
+    {
+      "t": 16207.8,
+      "scale": 1.15999,
+      "time": 5.9000000014890475,
+      "state": "running"
+    },
+    {
+      "t": 18041,
+      "scale": 1.07907,
+      "time": 1839.1000000014906,
+      "state": "running"
+    }
+  ],
+  "interpretation": "Typical frame interval improved from 33.4 to 16.7 ms. Main-thread callback p95 improved from 1.6 to 0.2 ms. p95 intervals remain 50 ms in this environment; these figures do not guarantee a constant frame rate on every device."
+}

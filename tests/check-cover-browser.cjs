@@ -8,7 +8,7 @@ const url=process.env.QUIZ_URL||'http://127.0.0.1:8782';
  // The original static wordmark remains the landing target beneath the independent scenes.
  const read=()=>p.evaluate(()=>CulturalCode.snapshot());
  assert.equal(await p.locator('.kod-sector image').count(),9);assert.equal(await p.locator('.kod-sector image').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),9);
- assert.equal(await p.locator('.cover-poster img,.cover-poster object,.cover-poster canvas').count(),0);
+ assert.equal(await p.locator('.poster-sheet img,.poster-sheet object,.poster-sheet canvas').count(),0,'the actual poster stays composed HTML/SVG');assert.equal(await p.locator('.poster-wordmark').evaluate(el=>el.tagName.toLowerCase()),'svg');
  assert.equal(await p.locator('.poster-date').innerText(),'2 ноября 18:30');assert.equal(await p.locator('.poster-venue').innerText(),'«Вектор», ул. Фрунзе, 60');
  assert(await p.locator('#home-letter-1 path').evaluate(x=>{const b=x.getBBox();return b.width===560&&b.height===560}));
  const sheen=await p.evaluate(()=>{const sheet=document.querySelector('.poster-sheet'),a=sheet.getAnimations({subtree:true}).find(a=>a.animationName==='map-sheen');if(!a)return {running:false};a.pause();a.currentTime=0;const start=getComputedStyle(sheet,'::after').backgroundPosition;a.currentTime=6000;const middle=getComputedStyle(sheet,'::after').backgroundPosition,mask=getComputedStyle(sheet,'::after').maskImage;a.currentTime=0;a.play();return {running:a.playState==='running',infinite:a.effect.getTiming().iterations===Infinity,moves:start!==middle,masked:mask.includes('poster-russia-silhouette.svg')};});assert(sheen.running&&sheen.infinite&&sheen.moves&&sheen.masked,'the map highlight must move continuously within the local vector mask');
