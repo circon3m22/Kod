@@ -57,6 +57,18 @@ function validate(raw,teams,data){
 function mount(env){
  const {data:D,esc,id,openModal,closeModal,screen,stage,overlay}=env,rows=sequence(D),rounds=D.rounds.filter(r=>r.kind==='main');let sheetTeam=null;
  const state=()=>env.state(),flow=()=>state().flow,step=()=>rows[flow()?.cursor||0],idx=id=>rows.findIndex(r=>r.id===id),findQ=s=>D.questions.find(q=>q.id===s.qid)||D.warmup.find(q=>q.id===s.qid),isWarm=s=>s.kind==='warmup'||s.kind==='warmup-answer';
+ // Warm only the next visible question/answer while the presenter is reading.
+ // Keep a small bounded set and discard pending work on rapid navigation.
+ let preloadJob=null,preloaded=[];
+ function preloadNext(){
+  if(preloadJob!==null){if(window.cancelIdleCallback)cancelIdleCallback(preloadJob);else clearTimeout(preloadJob);preloadJob=null;}
+  const cursor=flow()?.cursor,next=rows[cursor+1];if(!next?.qid||document.hidden||navigator.connection?.saveData)return;
+  const q=findQ(next);if(!q)return;
+  const answer=next.kind==='answer'||next.kind==='warmup-answer';
+  const paths=q.type==='chronology'?(q.events||[]).map(e=>e.image):answer?(q.answerImages?.length?q.answerImages:q.images):(q.paperImages?.length?q.paperImages:q.images);
+  const run=()=>{preloadJob=null;if(state().current.screen!=='flow'||flow()?.cursor!==cursor||document.hidden)return;preloaded=[...new Set((paths||[]).filter(Boolean))].slice(0,5).map(src=>{const img=new Image();img.decoding='async';img.src=src;img.decode?.().catch(()=>{});return img;});};
+  preloadJob=window.requestIdleCallback?requestIdleCallback(run,{timeout:1200}):setTimeout(run,250);
+ }
  const fmt=n=>Math.round(n).toLocaleString('ru-RU'),remain=()=>{const t=flow().clock;return t?.running?Math.max(0,(t.deadline-Date.now())/1000):t?.remaining||0;};
  function ensureClock(){const s=step();if(!s.seconds){flow().clock=null;return;}if(flow().clock?.owner!==s.id)flow().clock={owner:s.id,remaining:s.seconds,running:false,started:false,deadline:0};if(s.kind==='collection'&&!flow().clock.started)startClock();}
  function startClock(){const t=flow().clock;if(!t)return;if(t.remaining<=0)t.remaining=step().seconds;t.running=true;t.started=true;t.deadline=Date.now()+t.remaining*1000;env.save();tick();}
@@ -165,7 +177,7 @@ function mount(env){
   };if(!map[action])return false;map[action]();return true;
  }
  function handleInput(el){if(el.hasAttribute('data-flow-draft')){collectDraft();return true;}if(el.hasAttribute('data-flow-mark')){const teamId=el.dataset.team,qid=el.dataset.flowMark,from=(flow().marks[teamId]||[]).includes(qid);if(!change({kind:'mark',teamId,qid,from,to:el.checked},`Бланк · ${state().teams.find(t=>t.id===teamId).name}`))el.checked=from;const total=overlay.querySelector('[data-sheet-total]');if(total)total.textContent=fmt(points(flow(),teamId,D).main);if(step().kind==='main-results')env.render();return true;}return false;}
- return {enter,view,next,back,tick,operator,manager,undo,afterRender:()=>{const s=step(),q=findQ(s);if(s.kind!=='answer'||q?.type!=='chronology'||env.reduceMotion())return;const row=screen.querySelector('.chronology-cards');if(!row)return;[...row.children].forEach((el,i)=>{const original=q.events.findIndex(e=>e.label===el.dataset.event),dx=(original-i)*(el.offsetWidth+26);if(dx)el.animate([{transform:`translateX(${dx}px)`},{transform:'translateX(0)'}],{duration:850*env.motionScale,easing:'cubic-bezier(.3,0,.18,1)'});});},pause:()=>flow()&&pause(flow()),handleAction,handleInput,
+ return {enter,view,next,back,tick,operator,manager,undo,afterRender:()=>{preloadNext();const s=step(),q=findQ(s);if(s.kind!=='answer'||q?.type!=='chronology'||env.reduceMotion())return;const row=screen.querySelector('.chronology-cards');if(!row)return;[...row.children].forEach((el,i)=>{const original=q.events.findIndex(e=>e.label===el.dataset.event),dx=(original-i)*(el.offsetWidth+26);if(dx)el.animate([{transform:`translateX(${dx}px)`},{transform:'translateX(0)'}],{duration:850*env.motionScale,easing:'cubic-bezier(.3,0,.18,1)'});});},pause:()=>flow()&&pause(flow()),handleAction,handleInput,
   submit:form=>{if(form.id==='flow-team-form'){submitNames(form.dataset.edit==='true');return true;}if(form.id==='flow-manual-form'){submitManual();return true;}return false;},
   digit:n=>{if(isWarm(step())){const t=state().teams.find(t=>t.number===n);if(t)award(t.id);}},
   navigate:kind=>{if(kind==='stages')go(idx('stages'));else if(kind==='setup')manager('teams');else if(kind==='board')stageNext('main');else if(kind==='bonus')stageNext('creative');else if(kind==='captains')stageNext('captains');else if(kind==='rules')go(0);else if(kind==='ranking')go(idx('main-results'));else if(kind==='final')go(idx('awards'));else if(kind==='warmup')go(idx('warm-0-q'));},

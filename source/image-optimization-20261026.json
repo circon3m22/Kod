@@ -1,0 +1,1700 @@
+{
+  "description": "Locally optimized files; prior checksums and dimensions recorded for provenance. The original sources remain linked in the source manifests.",
+  "files": {
+    "assets/cover-film/battleship-borodino.jpg": {
+      "previous_sha256": "fb7463f394352dee60b5d791e3890ed13549e253202c086a2c2919e152e3fe41",
+      "sha256": "d9a30b723da5f74970244d72c6dbffc6036c26b90193dca9363f124df9a7b9cc",
+      "previous_bytes": 460028,
+      "bytes": 429256,
+      "previous_dimensions": [
+        1280,
+        821
+      ],
+      "dimensions": [
+        1280,
+        821
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/boris-gleb.jpg": {
+      "previous_sha256": "a2b3dd4de99d3bc391d599e674f8967a21ca9c8f1d1f9e3d1ba4cf763509cfbb",
+      "sha256": "7bdc1da85fab2c3deaf6b1685d37c67e26ffe49cbf54cf5980bb520ae6e5d608",
+      "previous_bytes": 308757,
+      "bytes": 278129,
+      "previous_dimensions": [
+        1280,
+        1146
+      ],
+      "dimensions": [
+        1280,
+        1146
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/borodino-station.jpg": {
+      "previous_sha256": "9c1a5da3ab98c7704df397325a8907744ae079ddea20f7780c40fcb71c6929b4",
+      "sha256": "9eb76c896b7d19f4f87c4812786c27921b2a3a87fe6a9994f0cc19c386bc1b6f",
+      "previous_bytes": 372998,
+      "bytes": 339953,
+      "previous_dimensions": [
+        1280,
+        1144
+      ],
+      "dimensions": [
+        1280,
+        1144
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/mosaic.jpg": {
+      "previous_sha256": "fb6bb75ca409ab222f46266da53b3aad86d2d3d7df06640fa5b50dc935ab5e80",
+      "sha256": "ee76567d18c99d4670c2cbf9c14bde0c7d0b669b625da9e2f6aaf9dbf9f63a61",
+      "previous_bytes": 519405,
+      "bytes": 374515,
+      "previous_dimensions": [
+        1024,
+        915
+      ],
+      "dimensions": [
+        1024,
+        915
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/moscow-metro-1964.jpg": {
+      "previous_sha256": "ea86eee38316560a1621fd9f8182af9f6b7ee4dc90947d35e78178f00237a8a1",
+      "sha256": "d1115dc82461dbdcb364c22e77c9a62b0b0a8d8509de05594dc0026744ef1c86",
+      "previous_bytes": 113089,
+      "bytes": 105145,
+      "previous_dimensions": [
+        1280,
+        814
+      ],
+      "dimensions": [
+        1280,
+        814
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/nyrob-relic.jpg": {
+      "previous_sha256": "33d7c642850f662b871d35ac711086b6a170831380dcf7045df57b1ae8843992",
+      "sha256": "57360d09a88ebea64fd2d6ba6e4a4b5d6897b35a01d3d3deec369cbd8ab91343",
+      "previous_bytes": 608087,
+      "bytes": 179197,
+      "previous_dimensions": [
+        887,
+        750
+      ],
+      "dimensions": [
+        887,
+        750
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/perm-railway.jpg": {
+      "previous_sha256": "c0764880a6663746d9927e975ad4c02b610ab4d415dad26b39642ef06e0997cf",
+      "sha256": "4870e22500e18612cae520fac307df7edb9753155c154d3a6f7ab6166f1d3c9b",
+      "previous_bytes": 371143,
+      "bytes": 334125,
+      "previous_dimensions": [
+        1280,
+        1038
+      ],
+      "dimensions": [
+        1280,
+        1038
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/pokrov-monastery.jpg": {
+      "previous_sha256": "87f4447f0447fb78e2e2c835a428b4060c481e4318df315248a29c65a4c3f793",
+      "sha256": "daafb5f7cb781f559ce31f95f2c185a0369430320018427437738556719924a7",
+      "previous_bytes": 344161,
+      "bytes": 309538,
+      "previous_dimensions": [
+        1280,
+        1144
+      ],
+      "dimensions": [
+        1280,
+        1144
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/soyuz-apollo-crews.jpg": {
+      "previous_sha256": "8fbdef9c0eba0061764edebeb2dc2592b76842de59db8a49c66e3ba1557a2b1b",
+      "sha256": "9c85fc11d8284a83cc5250da66e7f4dbaf9c158a0740743f40572414113913dc",
+      "previous_bytes": 308903,
+      "bytes": 286544,
+      "previous_dimensions": [
+        1280,
+        1024
+      ],
+      "dimensions": [
+        1280,
+        1024
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/suzdal-cathedral.jpg": {
+      "previous_sha256": "4892627ccfdc391bd96815b58cc73a43da992c38a776e1b5f6a256993118d3c3",
+      "sha256": "b3627b682b12d95047d7eaf781d6851f6a3f4d5fc40aaae6eecdbdb86530119f",
+      "previous_bytes": 293946,
+      "bytes": 269776,
+      "previous_dimensions": [
+        1280,
+        1096
+      ],
+      "dimensions": [
+        1280,
+        1096
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/suzdal-river.jpg": {
+      "previous_sha256": "795c2230e7adb9135433d7afb748eca1ac7fb17f1ec745b67b5e2047d5044728",
+      "sha256": "ff08daa954405fd176d9868b74082580a79769d27aad852695f16ace8d14ee2d",
+      "previous_bytes": 268518,
+      "bytes": 243300,
+      "previous_dimensions": [
+        1280,
+        1123
+      ],
+      "dimensions": [
+        1280,
+        1123
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-film/three-generations.jpg": {
+      "previous_sha256": "a3b1540aa00f264a463d8c6c8f1e347e069a777fefbbaa886d4892a19ba07ec0",
+      "sha256": "d9727777bceab67813d7bdca933fea9f857f2a128f48bb24e57ec9086ae94748",
+      "previous_bytes": 364606,
+      "bytes": 335159,
+      "previous_dimensions": [
+        1280,
+        1114
+      ],
+      "dimensions": [
+        1280,
+        1114
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/fabric-merchant.jpg": {
+      "previous_sha256": "63f12959e57aadd8616ff92900b1dd8f5c2a35935f529710c5231db8a0b08dcb",
+      "sha256": "1f12a4b8f2324c21c48ecd70c007a1530a13d3d5cc7a1ca542f0a6491bebbf00",
+      "previous_bytes": 446702,
+      "bytes": 417386,
+      "previous_dimensions": [
+        1280,
+        1158
+      ],
+      "dimensions": [
+        1280,
+        1158
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/haying.jpg": {
+      "previous_sha256": "90434bc24f9d59738a114776ac95a3a46d13fcfa6e5516bec97b8958cf9ad3d3",
+      "sha256": "f3a78f3fe68411d7a4213d01b170553d254e056900aada6316b110ccc4c9f123",
+      "previous_bytes": 398439,
+      "bytes": 367740,
+      "previous_dimensions": [
+        1280,
+        1103
+      ],
+      "dimensions": [
+        1280,
+        1103
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/locomotive.jpg": {
+      "previous_sha256": "6a535dc0a32f44558143740bdc5851c8b96d3a28a32c137f7c7b9aea38d5a8db",
+      "sha256": "df7ccc31432d84d202d9f08491b8189fd53b1d5b203ee4e27bff0f47fd049a8e",
+      "previous_bytes": 356480,
+      "bytes": 312602,
+      "previous_dimensions": [
+        1280,
+        1100
+      ],
+      "dimensions": [
+        1280,
+        1100
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/river-bridge.jpg": {
+      "previous_sha256": "7654c45131143d2c2ebea2220854c494fe98acaa0cbf2d526f500be5a93566b5",
+      "sha256": "4cfb9e7103c9c3b386aad96141213ba197489dac8fd864eddc4c32711883aa21",
+      "previous_bytes": 288420,
+      "bytes": 260602,
+      "previous_dimensions": [
+        1280,
+        979
+      ],
+      "dimensions": [
+        1280,
+        979
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/spinning.jpg": {
+      "previous_sha256": "f6d4cea0540704d26c506a15493b200f04dffe9e2238f53541bd67bbcd20a765",
+      "sha256": "24d8dfddbc8c3c144e04f9f8675d3a1628595529d20a9474f708407862bc132b",
+      "previous_bytes": 436310,
+      "bytes": 399122,
+      "previous_dimensions": [
+        1280,
+        1136
+      ],
+      "dimensions": [
+        1280,
+        1136
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/suna-river.jpg": {
+      "previous_sha256": "c67ebc8cd90e6e4e23527d3be6238c1d8d125536929563c39a012c627459bbb3",
+      "sha256": "6d8609d9b883349fa978bb7849bca247e32b27e3db7590558223a3776830ca89",
+      "previous_bytes": 327557,
+      "bytes": 304727,
+      "previous_dimensions": [
+        1280,
+        1103
+      ],
+      "dimensions": [
+        1280,
+        1103
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/suzdal.jpg": {
+      "previous_sha256": "4a8e879f45823e26870b82a2e1cf02e585cf244d9c6e48ca9b2e3bc45aa63607",
+      "sha256": "ff4528918a4e3342dce7ccef78057d769cf3c84fc3b0620fe234b9c15f310b7d",
+      "previous_bytes": 339407,
+      "bytes": 311263,
+      "previous_dimensions": [
+        1280,
+        1165
+      ],
+      "dimensions": [
+        1280,
+        1165
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/tyumen-steamer.jpg": {
+      "previous_sha256": "464d5be001dba7d3c71277817d8c6474c4d4dcccf0cb66132eb8ae7680f8bf47",
+      "sha256": "22eb00ce972c042f97d5666aeaec2d101afbca42b24fce5a97f2b598fca47e5b",
+      "previous_bytes": 199202,
+      "bytes": 185469,
+      "previous_dimensions": [
+        1000,
+        943
+      ],
+      "dimensions": [
+        1000,
+        943
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/cover-history/wooden-house.jpg": {
+      "previous_sha256": "5588d15d9943da95a4e5eed6c07ba91eb5c71b924fc2c764b40f6322be7de1a7",
+      "sha256": "5949058435bafb378843cf84782f6cfe0e07622f4f7de2c96e28288d06ab6e78",
+      "previous_bytes": 519711,
+      "bytes": 463533,
+      "previous_dimensions": [
+        1280,
+        1108
+      ],
+      "dimensions": [
+        1280,
+        1108
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/design/poster-watercolor-background.jpg": {
+      "previous_sha256": "5586fcca6c4443794164f750bf41861d5d214df5dcbf879d98826af0b00a6e09",
+      "sha256": "81740ae7d46546675bdfcda8af4f0c80a3902fe3d6e32a5cdecb0b11a67efe17",
+      "previous_bytes": 259242,
+      "bytes": 196879,
+      "previous_dimensions": [
+        1280,
+        960
+      ],
+      "dimensions": [
+        1280,
+        960
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image1.jpeg": {
+      "previous_sha256": "3d64141fce8793513aedf2e9feb7634a8a8a17877832b416da447beaf6a46f33",
+      "sha256": "c8983d3508c62762fdac3c8608bf353d8d74248a109edaf7ae1036d05fe23a37",
+      "previous_bytes": 34663,
+      "bytes": 16744,
+      "previous_dimensions": [
+        1920,
+        1080
+      ],
+      "dimensions": [
+        1600,
+        900
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image10.jpeg": {
+      "previous_sha256": "1617bdb3e4407f2110fd251f7350b104cc0d0e6aa19b4ee0a331dfc17e898c65",
+      "sha256": "f372f645c5c8753c7d2bd08fe2a60c5f426b3c1ab6fee044c6984ef900e978f3",
+      "previous_bytes": 683087,
+      "bytes": 208520,
+      "previous_dimensions": [
+        1100,
+        733
+      ],
+      "dimensions": [
+        1100,
+        733
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image11.jpeg": {
+      "previous_sha256": "0ee22582e3de1d0ac3ef74f3e0089e359d48bb91b44ee9c3bf47df9afeb194ed",
+      "sha256": "2b6ad49ea73a43cb5e7a6ced6b91501fde671a189acc274c49e6c291c2c2c180",
+      "previous_bytes": 306122,
+      "bytes": 229210,
+      "previous_dimensions": [
+        1200,
+        900
+      ],
+      "dimensions": [
+        1200,
+        900
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image13.jpeg": {
+      "previous_sha256": "38c36aa399da74a46df586b6595c076d518745a5b582abc16718ed68542b250a",
+      "sha256": "44b12ec717123e70e623043ad72a5942b875d525eaa903183abfcde16047b27c",
+      "previous_bytes": 215515,
+      "bytes": 123580,
+      "previous_dimensions": [
+        800,
+        531
+      ],
+      "dimensions": [
+        800,
+        531
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image15.jpeg": {
+      "previous_sha256": "b36570a05bca4e84ceec273c7b6bd3e9f48d14141ee731fc536c41921eb7ff28",
+      "sha256": "64c151e5c5ab6b94486d8fd350ebfa0f323f220751c310f5f6e5f6bb3bd25805",
+      "previous_bytes": 1274603,
+      "bytes": 374090,
+      "previous_dimensions": [
+        4176,
+        3300
+      ],
+      "dimensions": [
+        1600,
+        1264
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image16.jpeg": {
+      "previous_sha256": "f7606edfdf22b164c4a8764cfb3e5515baa1987f34353129f15bd13895184201",
+      "sha256": "e8f2ba604486715828e5e5dff359f7972115b75cd5f689e0579ac65d8ee2ed76",
+      "previous_bytes": 78148,
+      "bytes": 73575,
+      "previous_dimensions": [
+        752,
+        800
+      ],
+      "dimensions": [
+        752,
+        800
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image19.jpeg": {
+      "previous_sha256": "f40e658c12ed3ea3dde776e7faba77b6790e799170299153db99248ecd3cbcd9",
+      "sha256": "cb897635a43321fdca7a10304844f2fba6486d92bb118da97497abad4911c4f4",
+      "previous_bytes": 78486,
+      "bytes": 72858,
+      "previous_dimensions": [
+        533,
+        800
+      ],
+      "dimensions": [
+        533,
+        800
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image2.jpeg": {
+      "previous_sha256": "fe2dc1bf21d52728263668a6f8e13001b70018c0e2d3f3342a96e013a27fc309",
+      "sha256": "1ab8ceff7446c845ee16879c6a5db9e481997abbc3c6cb2dbee1db4c973e62a6",
+      "previous_bytes": 307065,
+      "bytes": 217698,
+      "previous_dimensions": [
+        2560,
+        1919
+      ],
+      "dimensions": [
+        1600,
+        1199
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image22.jpeg": {
+      "previous_sha256": "59bc5916832b318905ea5c43c90664943d71183931216a8befec35ed2fec40ac",
+      "sha256": "9096370b1921601877e7f950fc6ef13262e11ba9260c14e87ea904400d67ca83",
+      "previous_bytes": 81642,
+      "bytes": 76048,
+      "previous_dimensions": [
+        533,
+        800
+      ],
+      "dimensions": [
+        533,
+        800
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image3.jpeg": {
+      "previous_sha256": "afa98b39ae1bc59fd473ee92e0d14478a609639d00b278f74bc0182499ed4b79",
+      "sha256": "d917d588ceffca5d3aec6acc0cd14c53ac850d3121f89bb9c336729997252a12",
+      "previous_bytes": 129864,
+      "bytes": 111376,
+      "previous_dimensions": [
+        2560,
+        1919
+      ],
+      "dimensions": [
+        1600,
+        1199
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image31.png": {
+      "previous_sha256": "17f1cf9a8f5ef3db3eb95ee2aecf4811ccee2f842f0557bf1902633da11439b2",
+      "sha256": "4cc3431526fc4043403ec732257c227eb1757b35522e1b91ac88400f3401e92d",
+      "previous_bytes": 1231349,
+      "bytes": 276184,
+      "previous_dimensions": [
+        640,
+        480
+      ],
+      "dimensions": [
+        640,
+        480
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image32.png": {
+      "previous_sha256": "8461a1e9ce4c65bc38df7ae105f6ba9fc97a1d133e6f1b65f5df1ee9266e1223",
+      "sha256": "aadb47cb7ce6f14303ce4461b1a821fbe083a3147c9cd791536a0a78f754d367",
+      "previous_bytes": 923528,
+      "bytes": 427231,
+      "previous_dimensions": [
+        640,
+        360
+      ],
+      "dimensions": [
+        640,
+        360
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image33.jpeg": {
+      "previous_sha256": "782bc6c97030d09b4b72875e817e1382f01c22dcd74107ec74f3ca9c80fc4f9a",
+      "sha256": "82fdf049416d986d36d4a86202cc9668264a7cfb5cdb5c29fa70c4f82051393b",
+      "previous_bytes": 78057,
+      "bytes": 63799,
+      "previous_dimensions": [
+        571,
+        800
+      ],
+      "dimensions": [
+        571,
+        800
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image35.jpeg": {
+      "previous_sha256": "08127b37920731cff8cd823976068139bd6512c65b127009740d5297be2fdc11",
+      "sha256": "0edbe9a5701714e637d7f9ae024298312d0b144fc01bc1f360c272f343f2cabd",
+      "previous_bytes": 241419,
+      "bytes": 136745,
+      "previous_dimensions": [
+        710,
+        988
+      ],
+      "dimensions": [
+        710,
+        988
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/images/image36.png": {
+      "previous_sha256": "38502b9d369d4a8137a5681bb26ab73224fa88a531f70dc1704f66dc0effd052",
+      "sha256": "e51ff2a19c37fcc34762a6b758b0292ec4df048e6aafc6c3537a05b44ddd07f5",
+      "previous_bytes": 896592,
+      "bytes": 665866,
+      "previous_dimensions": [
+        864,
+        1184
+      ],
+      "dimensions": [
+        864,
+        1184
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image37.png": {
+      "previous_sha256": "b9a0c681c050aae4a562656d4edf13e1e116d1769b99f6258a9186bd15931070",
+      "sha256": "eea0f294485d90b60f24cdf9cb8acbefc0bc3771711f269788fffbb73d077cf8",
+      "previous_bytes": 1041988,
+      "bytes": 763377,
+      "previous_dimensions": [
+        864,
+        1184
+      ],
+      "dimensions": [
+        864,
+        1184
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image38.png": {
+      "previous_sha256": "ee802d43b4ab173f8bd938f537d69ea84bf754149188c907189f53cc4cb8100d",
+      "sha256": "7689d106be96c04b34afbe51c8ca2bd2e0641afc49e9ceef29df991034b3f9e9",
+      "previous_bytes": 691708,
+      "bytes": 527457,
+      "previous_dimensions": [
+        832,
+        1248
+      ],
+      "dimensions": [
+        832,
+        1248
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image4.png": {
+      "previous_sha256": "6711dab1bbc6e1e80c7dc05dc8ebf9efd226799f1f72a9e5c181de24e51e5f8b",
+      "sha256": "50e07d8daf9bf1025028f5bbfd47b518e9344e4d34e43f2daf73a8be2e81b085",
+      "previous_bytes": 3444,
+      "bytes": 1636,
+      "previous_dimensions": [
+        273,
+        102
+      ],
+      "dimensions": [
+        273,
+        102
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/images/image7.png": {
+      "previous_sha256": "969995d489728323100366e8bee2479ab7c43f8065fd684eb98602ff42bda7c8",
+      "sha256": "c5ef00276cc56baabb03bdd23e517bdcaffeda70eb4fb5adec2e4c73e4fd91e7",
+      "previous_bytes": 1675652,
+      "bytes": 1312585,
+      "previous_dimensions": [
+        2560,
+        1919
+      ],
+      "dimensions": [
+        2560,
+        1919
+      ],
+      "method": "lossless PNG compression"
+    },
+    "assets/paper-rounds/aelita-costume.jpg": {
+      "previous_sha256": "8bded65b2b97ca764e438d0f57903968c784eff36ccb032b96d8a22343c21079",
+      "sha256": "ae7620ba786524f3af7d578449d03fbb09382c2db206dbd3e694561966775128",
+      "previous_bytes": 119210,
+      "bytes": 46575,
+      "previous_dimensions": [
+        388,
+        594
+      ],
+      "dimensions": [
+        388,
+        594
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/amur-cliff.jpg": {
+      "previous_sha256": "e0321f3b4e4ae54713910f89aa6631fc53a6f4d2c8838bc34a0f18f878e7cf39",
+      "sha256": "dc5cf58992c1b32fd8967695a3cd5660364408a01b5645cfaa7ce0e7650af513",
+      "previous_bytes": 120765,
+      "bytes": 111474,
+      "previous_dimensions": [
+        960,
+        540
+      ],
+      "dimensions": [
+        960,
+        540
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/beard-token.jpg": {
+      "previous_sha256": "5016723eea83bbcca84b9bcb62db911d74d5e186881bf1b52a74136534e462a1",
+      "sha256": "a32b93c41b3502442f9dec9a82b9807cdfd7dcdce5d63140b5228628410f9b70",
+      "previous_bytes": 54632,
+      "bytes": 45227,
+      "previous_dimensions": [
+        432,
+        432
+      ],
+      "dimensions": [
+        432,
+        432
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/birch-bark-onfim.jpg": {
+      "previous_sha256": "0685ebcc9ef9c8c7065829e48ecd01e13c0b1b55fb8b9deb3c15b4eb57d59d29",
+      "sha256": "2261db8547ec782ee551bf15496e90fbfb648962790c92fa1db744c5c89f93da",
+      "previous_bytes": 138000,
+      "bytes": 130788,
+      "previous_dimensions": [
+        960,
+        680
+      ],
+      "dimensions": [
+        960,
+        680
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/borodin.jpg": {
+      "previous_sha256": "e87aa1beab3b27e4376d7e8a417d9c4dd9520ed39a0ac22e723061203871a9ac",
+      "sha256": "8eb5b1a0983b69c611fa0e39e67c442a10bf77ba375426996d46fec9bd8ec3c5",
+      "previous_bytes": 115041,
+      "bytes": 54543,
+      "previous_dimensions": [
+        334,
+        500
+      ],
+      "dimensions": [
+        334,
+        500
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/children-railway.jpg": {
+      "previous_sha256": "28cd67673c4ed1317cd996704e08af7c0bd6b980047b703bd1626338c8a3ad00",
+      "sha256": "541f6a6505a09587ec5b394afdfeba0c6c4bd8fd1bc5d3602a7eb5d9639d8a53",
+      "previous_bytes": 292392,
+      "bytes": 262096,
+      "previous_dimensions": [
+        960,
+        636
+      ],
+      "dimensions": [
+        960,
+        636
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/duma-opening.jpg": {
+      "previous_sha256": "84b93d1f495ef1adb499619d7650aa364d2990298f817142c4420f9d0475731c",
+      "sha256": "d25e371514c2cf5c6abcd75b640cfccd5bc50886c09d92a0ee10e076f6e1c10e",
+      "previous_bytes": 264402,
+      "bytes": 243114,
+      "previous_dimensions": [
+        960,
+        718
+      ],
+      "dimensions": [
+        960,
+        718
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/gogol.jpg": {
+      "previous_sha256": "ed1c67b1f00aa016775bbf942ea24e4181f935fbceb7f45834c5828ed76d571a",
+      "sha256": "82d68bb51a721506fee441d864d1047e06579637b53ba1a916c06f0ffffbabaf",
+      "previous_bytes": 304905,
+      "bytes": 285061,
+      "previous_dimensions": [
+        960,
+        1211
+      ],
+      "dimensions": [
+        960,
+        1211
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/grodekov-museum.jpg": {
+      "previous_sha256": "e09ed024b7fb0344c584707cfbd7963de376630b61fad715b9ceb5ff15518122",
+      "sha256": "525227722f263d9668052a70ecbb6cb3f0373d7ffb286065de4acaad4929a494",
+      "previous_bytes": 229822,
+      "bytes": 212204,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/hermitage.jpg": {
+      "previous_sha256": "485b0a8cb41c0ffaa23b61cef9f301c89d9b22632a5289bc05ac74708f3afcf8",
+      "sha256": "c3c4f2f847c1cfcd4ce051ad40fa8a95ce957aeafbfb235727717713a5186848",
+      "previous_bytes": 241235,
+      "bytes": 219884,
+      "previous_dimensions": [
+        960,
+        570
+      ],
+      "dimensions": [
+        960,
+        570
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/komsomolsk.jpg": {
+      "previous_sha256": "fd6e5e47e2723d1ad24a50fd7b24a2553d0d3a4e81670ccb989d49a70309b428",
+      "sha256": "f64213c965a641183f53b4346a0533e8000c8596f27762c2a87dc662fe8197e4",
+      "previous_bytes": 268270,
+      "bytes": 245480,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/kopecks.jpg": {
+      "previous_sha256": "350f331aca5b8c0296cc1f3a6acd2adb007112909e44318b623601191f983824",
+      "sha256": "dab6a9f5c8bbf6a4ca16187906fb27edf00b2664238a7b1cd2fd24e91fdd9acc",
+      "previous_bytes": 66399,
+      "bytes": 61823,
+      "previous_dimensions": [
+        960,
+        483
+      ],
+      "dimensions": [
+        960,
+        483
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/kotelnikov.jpg": {
+      "previous_sha256": "cb99d34cb76098406d353ab25d4c197dfb4bc2b14e71a0439ae429144251973e",
+      "sha256": "1188eadfa45ed8bfe44a78006c470f8edfaeb918e9ca3e42cfdc4c61de25e4b3",
+      "previous_bytes": 482088,
+      "bytes": 434159,
+      "previous_dimensions": [
+        960,
+        1336
+      ],
+      "dimensions": [
+        960,
+        1336
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/kurosawa.jpg": {
+      "previous_sha256": "af27d5d07495c2e29dbc0b13d19aa27fb3b9b211062043e279276bfca198201d",
+      "sha256": "7c1c1015cd92d16bdac3758327a4b3a6545e9beafd073658ba4050c1ae14349c",
+      "previous_bytes": 235809,
+      "bytes": 214817,
+      "previous_dimensions": [
+        960,
+        1044
+      ],
+      "dimensions": [
+        960,
+        1044
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/laika.jpg": {
+      "previous_sha256": "82d2fdb472f6daed063996525bc90fd050b61cb8f37b662d5ed65a30dc8ef5a8",
+      "sha256": "86699f4b24f356fc780a425ab1bac7e1126c67def4c5b4aaa40a57b963ae5c0b",
+      "previous_bytes": 108399,
+      "bytes": 100818,
+      "previous_dimensions": [
+        960,
+        664
+      ],
+      "dimensions": [
+        960,
+        664
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/lazarev.jpg": {
+      "previous_sha256": "c055b6aa2905d208270bceff3fad31801cf3c0bfad1b661c31a13a1db70fabc8",
+      "sha256": "b396d4d87121b46c4767624fc45c6303594992a3f337b3bc0bd634e3032a5195",
+      "previous_bytes": 302881,
+      "bytes": 277229,
+      "previous_dimensions": [
+        960,
+        1270
+      ],
+      "dimensions": [
+        960,
+        1270
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/lermontov.jpg": {
+      "previous_sha256": "207d6ae2bacebec82857410159def00498177c6001a2c2e63bbe4487985fb835",
+      "sha256": "657ed453fda6f1346352e4e900cea34859d30d4d9571980ab2818c21f37d9196",
+      "previous_bytes": 339255,
+      "bytes": 316406,
+      "previous_dimensions": [
+        960,
+        1281
+      ],
+      "dimensions": [
+        960,
+        1281
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/lodygin.jpg": {
+      "previous_sha256": "dc26efe5fb33b99704d826e126ccdb83ffeaa69454cd2349532166a3cbbc7c63",
+      "sha256": "c6954ecbe74a4ab2e6642619f1c2d62a3a810e91c0ef4c85065a3b3a9a233324",
+      "previous_bytes": 60399,
+      "bytes": 34276,
+      "previous_dimensions": [
+        264,
+        400
+      ],
+      "dimensions": [
+        264,
+        400
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/manjur.jpg": {
+      "previous_sha256": "9ab934e21bcdf289f38d84217905d478b385ca96a023167d1351b49cca4a1179",
+      "sha256": "c04f48ef41f1f5ebd433fcf4caf49ca70aac358f890646f6df59b8de2158b410",
+      "previous_bytes": 219998,
+      "bytes": 197144,
+      "previous_dimensions": [
+        960,
+        713
+      ],
+      "dimensions": [
+        960,
+        713
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/metro-moscow.jpg": {
+      "previous_sha256": "73b23136ead0d8632e90098d413008979d91b3387cb6cbc98a505d87a7299f23",
+      "sha256": "84e28ae6ed511b9a768a182d22309fca38475108a951885fb7771f2e4e9962db",
+      "previous_bytes": 140442,
+      "bytes": 130359,
+      "previous_dimensions": [
+        960,
+        650
+      ],
+      "dimensions": [
+        960,
+        650
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/millennium.jpg": {
+      "previous_sha256": "6bddd1d379e93a9349e889233c14718a62df494f8ac9464e9de4df34db61a642",
+      "sha256": "d2d2e532af3c74fa08cbd44705be9c59b21f5c7f7157e7d940278095d7a95540",
+      "previous_bytes": 237741,
+      "bytes": 217587,
+      "previous_dimensions": [
+        960,
+        1280
+      ],
+      "dimensions": [
+        960,
+        1280
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/northpole.jpg": {
+      "previous_sha256": "d39b24266fe6ffb11c9b45629e8dd2d61975f62ff6098da36c63363fcebce92a",
+      "sha256": "00c871608c882aff5af9dd3b3546e16a3523cb3d6937695064e979ca075007ca",
+      "previous_bytes": 149516,
+      "bytes": 139692,
+      "previous_dimensions": [
+        960,
+        830
+      ],
+      "dimensions": [
+        960,
+        830
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/obninsk.jpg": {
+      "previous_sha256": "fd663aa5b5a0fec82be9611825215325c9aa3f4702086f7e7dabdb33de061cf7",
+      "sha256": "ce407d829c25ca0dab54162f08d60b546aa5156ca09bb3636936f68dbefba2e3",
+      "previous_bytes": 144973,
+      "bytes": 132360,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/peter-iii.jpg": {
+      "previous_sha256": "a5d9e632ab5097a78fdbbd971b2b36851546ea6f7455b6f3127f60f8d90b1d37",
+      "sha256": "4ad7dd15fe7d01dfedda8db6f6d34d6fe224b1ac4fe0e4fe3145aeed6d599515",
+      "previous_bytes": 477859,
+      "bytes": 435872,
+      "previous_dimensions": [
+        960,
+        1350
+      ],
+      "dimensions": [
+        960,
+        1350
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/petropavlovsk.jpg": {
+      "previous_sha256": "1938ad5a73d5176c0c43020b90cd70c64fbe14d79f2778089708a4ce39c8a825",
+      "sha256": "1fe85cfd0639b1fa10b3e0ea863b02fd0eb26ee841958273b1a1924374c562f0",
+      "previous_bytes": 204077,
+      "bytes": 187228,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/pirogov.jpg": {
+      "previous_sha256": "213efb1ece921b8b94f734e459a564c6d28fb6b33ac85a49c77b2765cf08940d",
+      "sha256": "e1de63f3324bd748f6d8890704d57284497898568cd0ba51f4e904dcf0c0f628",
+      "previous_bytes": 257983,
+      "bytes": 239132,
+      "previous_dimensions": [
+        960,
+        1179
+      ],
+      "dimensions": [
+        960,
+        1179
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/platinum.jpg": {
+      "previous_sha256": "44fa11838fb608f34fb59015ee8893586ac208336a38da03b4f9727804e4bec0",
+      "sha256": "58e1c6f675821549e56a14282ca60269d1f126c82c52e5eee89c03efcffc911c",
+      "previous_bytes": 128966,
+      "bytes": 116726,
+      "previous_dimensions": [
+        960,
+        662
+      ],
+      "dimensions": [
+        960,
+        662
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/popov.jpg": {
+      "previous_sha256": "8c33c9c23a9957f13d6ab433b7d66849bde7eeca0196ae104e7fd9e3cc6fe511",
+      "sha256": "b51a59260b9a9bdb107d0bb2807dcc2533bdf1640b9c832caf3e57e5c9e3f8a7",
+      "previous_bytes": 323265,
+      "bytes": 300648,
+      "previous_dimensions": [
+        960,
+        1314
+      ],
+      "dimensions": [
+        960,
+        1314
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/portsmouth.jpg": {
+      "previous_sha256": "f3d5b87f88311b16de89caadff64d85f668175222fdee89fbc3d38b9ac699999",
+      "sha256": "2f7f0754f7fd6a2955c6dd3191e0d479e73b7c1994f20674e1bc7e13cd725ddf",
+      "previous_bytes": 81251,
+      "bytes": 45823,
+      "previous_dimensions": [
+        472,
+        600
+      ],
+      "dimensions": [
+        472,
+        600
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/potemkin-uprising.jpg": {
+      "previous_sha256": "e1280c1d190dc606788399e142a8c898bbf5e6c421f500e39a12e16f6775d265",
+      "sha256": "e0585d934de239ff949538cf26a0ae62504ff68f08af31384c1fd58d9d0604a9",
+      "previous_bytes": 198207,
+      "bytes": 183834,
+      "previous_dimensions": [
+        960,
+        576
+      ],
+      "dimensions": [
+        960,
+        576
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/pushkin.jpg": {
+      "previous_sha256": "243798078145b1e8ba15589d3490ae0a325080117d6eccca8025136dea5c3584",
+      "sha256": "5db61f0e2d817de64e41196b87195580e067a9f567d2db1509f5aa955ce97b50",
+      "previous_bytes": 346327,
+      "bytes": 320900,
+      "previous_dimensions": [
+        960,
+        1118
+      ],
+      "dimensions": [
+        960,
+        1118
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/rail-capitals.jpg": {
+      "previous_sha256": "06932098046b8804d42366637e88b3e3d6db1bce30b1df7c0993b74498124b9c",
+      "sha256": "50bbf8b93f7014b322127c4474246308c7eac883f3e66b8dc8babb05604fbf0b",
+      "previous_bytes": 174255,
+      "bytes": 159340,
+      "previous_dimensions": [
+        960,
+        707
+      ],
+      "dimensions": [
+        960,
+        707
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/rail-tsarskoe.jpg": {
+      "previous_sha256": "1978a65e57d522e40ec57bb9d12f1c79f7e2ba5902d0eca2a78104be0433c5d1",
+      "sha256": "bb20781b4425de3050902659617ae36e3d6842d72b230068c457af7ca35fdda5",
+      "previous_bytes": 47719,
+      "bytes": 38757,
+      "previous_dimensions": [
+        450,
+        316
+      ],
+      "dimensions": [
+        450,
+        316
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/road-to-life.jpg": {
+      "previous_sha256": "1522254c89ddf6c58f1fc9936e3165b1aa0af4f76ee6c7c58518198c82e9070f",
+      "sha256": "83b759646de4c881e1c6b235f1617e721561a09b7c800b4f8d26a8320f5a166e",
+      "previous_bytes": 410672,
+      "bytes": 374443,
+      "previous_dimensions": [
+        960,
+        1300
+      ],
+      "dimensions": [
+        960,
+        1300
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/russian-museum.jpg": {
+      "previous_sha256": "46b93cb5a61630a4e78a339e80c2c30f643d36f1d01e4ace83635596bea06852",
+      "sha256": "cf7a5aca404630721b8f7fe55d837bcf71413f243abd21ab984ee1a63ede7553",
+      "previous_bytes": 316620,
+      "bytes": 299043,
+      "previous_dimensions": [
+        960,
+        1440
+      ],
+      "dimensions": [
+        960,
+        1440
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/sakhalin-velikan.jpg": {
+      "previous_sha256": "5efa09e29eebbbc09b5c18ae536e163277c090e0a44bf367ce594601d8f534c0",
+      "sha256": "c277fbc504b1a26f1ff360808ad63d5793561160a58bbba5bb90858680642248",
+      "previous_bytes": 382490,
+      "bytes": 350839,
+      "previous_dimensions": [
+        960,
+        1280
+      ],
+      "dimensions": [
+        960,
+        1280
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/shostakovich.jpg": {
+      "previous_sha256": "57ce097286202c5918741321d2695d910a69b78ee09e5e1f2c520fae990b458e",
+      "sha256": "fdd0d0ee8e3db82666cfc51177eaca2a5334cd978648ff6d30082603d74fa001",
+      "previous_bytes": 107430,
+      "bytes": 99987,
+      "previous_dimensions": [
+        960,
+        656
+      ],
+      "dimensions": [
+        960,
+        656
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/shukhov.jpg": {
+      "previous_sha256": "c9366a26120e905367560cb0b3ccf8dea5cdcef992ed43f99f3ab886378b501e",
+      "sha256": "fc6e47ea18c9b014abdbbfc8450c610b301e0b89e48c1b662a847a51e31424b1",
+      "previous_bytes": 369830,
+      "bytes": 339870,
+      "previous_dimensions": [
+        960,
+        1449
+      ],
+      "dimensions": [
+        960,
+        1449
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/sikachi-alyan.jpg": {
+      "previous_sha256": "7ef81cb714a1de1fc5fa95d5b0febec67b7c5c23564d38443bea34387f89822a",
+      "sha256": "cbe1fcca12b856568fe6b5f1de7ab436ed4c02036a3dd2cec2334d9e6d1fdd3a",
+      "previous_bytes": 238244,
+      "bytes": 217236,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/sputnik2.jpg": {
+      "previous_sha256": "2c334f67bc4b7eac77014c3060a94a2c923dfe2d9f71d94451b78555bf52f37f",
+      "sha256": "1b6cb10d8c26beede58fd002824008779460d1e949baf325c408c1094b12caca",
+      "previous_bytes": 144896,
+      "bytes": 135209,
+      "previous_dimensions": [
+        960,
+        1280
+      ],
+      "dimensions": [
+        960,
+        1280
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/stone-tortoise.jpg": {
+      "previous_sha256": "e5785d69b3812ddeb9697bbfaaa55d20aabcfb378695097515a19612d29461b7",
+      "sha256": "d83502bb9be8f54b89af2242d04c09adfd50defe2892ff766adae2cec89b2c54",
+      "previous_bytes": 260037,
+      "bytes": 238517,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/tretyakov.jpg": {
+      "previous_sha256": "2e3fe8caf1b3a2f894c0eb6ea949737fa071ea7e6fac64d5b9eee0f3a6b93656",
+      "sha256": "2d66ca02c69993c78d3be25aa451091198146d89e094b8b5fadee4df85a9d451",
+      "previous_bytes": 209205,
+      "bytes": 192324,
+      "previous_dimensions": [
+        960,
+        700
+      ],
+      "dimensions": [
+        960,
+        700
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/tsiolkovsky.jpg": {
+      "previous_sha256": "8aa48244fb082ca6af9440c740b6e11ab5683c44feb359c69250ab0e705a1c60",
+      "sha256": "2e7c67e49aeadf56da5b2a4d93d1a4f52adb6b018c634f12b8b41ac0e1162953",
+      "previous_bytes": 189135,
+      "bytes": 163278,
+      "previous_dimensions": [
+        865,
+        1200
+      ],
+      "dimensions": [
+        865,
+        1200
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/venus-transit.jpg": {
+      "previous_sha256": "f61850aaff7a37ea2b127128a8b0e9569ee745292363704743d0d95a753640c7",
+      "sha256": "6f6df4aa04f55a364b1344ba03d635eb48177b300510c0f15202380ca4a6e417",
+      "previous_bytes": 79778,
+      "bytes": 73980,
+      "previous_dimensions": [
+        960,
+        960
+      ],
+      "dimensions": [
+        960,
+        960
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/paper-rounds/yermak.jpg": {
+      "previous_sha256": "bb2109a0482ab650e6abeeee3b31196fbc64c2662c69685e40db99bffb1b3afa",
+      "sha256": "8fc39974402611d4e3390d2a9018dd46a3d2f07bbc3ea8c356962fc2d938f308",
+      "previous_bytes": 135689,
+      "bytes": 125089,
+      "previous_dimensions": [
+        960,
+        646
+      ],
+      "dimensions": [
+        960,
+        646
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/photo-round/elbe-1945.jpg": {
+      "previous_sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370",
+      "sha256": "ad779d44e63e6445b4bafe37b25a13f157d84843f1e41ce72c5d3f03218b5bc4",
+      "previous_bytes": 616767,
+      "bytes": 501959,
+      "previous_dimensions": [
+        1597,
+        1200
+      ],
+      "dimensions": [
+        1597,
+        1200
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/photo-round/nevsky-1938.jpg": {
+      "previous_sha256": "cb21cbb5d6c007cc66d055f5b97c70f45228ef468a589871515468df1a417313",
+      "sha256": "556834995afb006704b18f12d943caa8d43f53a9e99643eb45a9b5f92b6926dd",
+      "previous_bytes": 152319,
+      "bytes": 48774,
+      "previous_dimensions": [
+        640,
+        463
+      ],
+      "dimensions": [
+        640,
+        463
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/photo-round/potemkin-1925.jpg": {
+      "previous_sha256": "44591cc99ac02dae8737a183340201a9e64a368e89fe69812d37cde9a7fcec26",
+      "sha256": "00e40d62c7904d67e0fca68a975aef19caeb5234a8b95d5379cc1c5e421cb874",
+      "previous_bytes": 181884,
+      "bytes": 77802,
+      "previous_dimensions": [
+        744,
+        424
+      ],
+      "dimensions": [
+        744,
+        424
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/photo-round/victory-parade-1945.jpg": {
+      "previous_sha256": "d529bc595afa48229d53dd82f14185736ba8062d8209853978c6f8268bd8df1b",
+      "sha256": "f37ed3df632ba5821f8a4fd66fd07c6a9ca4df5a7adfd343044699572e3d258d",
+      "previous_bytes": 454727,
+      "bytes": 180939,
+      "previous_dimensions": [
+        900,
+        600
+      ],
+      "dimensions": [
+        900,
+        600
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/photo-round/yalta-1945.jpg": {
+      "previous_sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd",
+      "sha256": "154ee34fd3f8cac7527695c0b35c6de2c373b113342511a365d3086e689d5c29",
+      "previous_bytes": 1050190,
+      "bytes": 338222,
+      "previous_dimensions": [
+        2720,
+        2239
+      ],
+      "dimensions": [
+        1600,
+        1317
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/amur.jpg": {
+      "previous_sha256": "8d76f80b41ddb8adc1ffb254ae72a97b02e6d4976cbde883592f4c6cbdb5ce35",
+      "sha256": "f372b324506f2b82634c4cacc42d34e98f84860f81ba22740a10f4632a44a924",
+      "previous_bytes": 235249,
+      "bytes": 213660,
+      "previous_dimensions": [
+        960,
+        640
+      ],
+      "dimensions": [
+        960,
+        640
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/assembly.jpg": {
+      "previous_sha256": "630db26e6340c604be875162cb105cf356e929f59c36468f91c47b6659676466",
+      "sha256": "7b58a2bf6bc154e0aaabf01c75e5a051c75c1bc8373e807999774615da3ac672",
+      "previous_bytes": 35845,
+      "bytes": 28465,
+      "previous_dimensions": [
+        350,
+        241
+      ],
+      "dimensions": [
+        350,
+        241
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/becquerel.jpg": {
+      "previous_sha256": "a43177adc9f2599f50144386df181655d8d694ccd1d5c40699e489f93838a9ec",
+      "sha256": "b1daab39fd46f99410916bd245f98cb5794917fe02ab96d1e9eb599ea96f5ee6",
+      "previous_bytes": 313264,
+      "bytes": 294136,
+      "previous_dimensions": [
+        960,
+        1375
+      ],
+      "dimensions": [
+        960,
+        1375
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/brest.jpg": {
+      "previous_sha256": "070c9e835e3bc47755f0859a636ba912aa5990bf4274b91e2a2c2ca54b084bba",
+      "sha256": "907e1988e941279e9ceec625ae10139a6b61f7125a2cc2b55c73dd7f693e1296",
+      "previous_bytes": 240539,
+      "bytes": 219396,
+      "previous_dimensions": [
+        960,
+        659
+      ],
+      "dimensions": [
+        960,
+        659
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/calendar-object.jpg": {
+      "previous_sha256": "e8fd8199343737a87ab8fa5fcdc750a7d286b2903dceefcebc3cfc957d62bd34",
+      "sha256": "141494e6d0c5a69b29f3331a76232b39dff905aef771ce3ae649056ec37cb154",
+      "previous_bytes": 140948,
+      "bytes": 131523,
+      "previous_dimensions": [
+        960,
+        710
+      ],
+      "dimensions": [
+        960,
+        710
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/chkalov.jpg": {
+      "previous_sha256": "947a0fab0489c61a086d2a6af277d125af0431a7d2bf3571c3b9796b2c09bbd1",
+      "sha256": "e4dec0d83e4a76961acfee59cc3fbb2b8cb53d688d0258a814acad2f47bd6b84",
+      "previous_bytes": 144698,
+      "bytes": 135333,
+      "previous_dimensions": [
+        960,
+        789
+      ],
+      "dimensions": [
+        960,
+        789
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/constitution.jpg": {
+      "previous_sha256": "cb4a34ae2f8add3b9bf8ac849aa86af637b5a6fac31914a5518e6a08ec7eb578",
+      "sha256": "8c3cbfd0d980d5e872bdf5516e0accb183d0adce6d8d58d7aa20f0dbd4177906",
+      "previous_bytes": 538466,
+      "bytes": 482558,
+      "previous_dimensions": [
+        960,
+        1451
+      ],
+      "dimensions": [
+        960,
+        1451
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/curie.jpg": {
+      "previous_sha256": "889667305d2ff3059716e4fb16300893c93abc8a6a8c865a8131fb4e5f60bb24",
+      "sha256": "42b85d4f2a559308d1755d62c3be36d3679d735992332c10f4cca7e8f5186b96",
+      "previous_bytes": 403834,
+      "bytes": 363912,
+      "previous_dimensions": [
+        960,
+        1058
+      ],
+      "dimensions": [
+        960,
+        1058
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/dostoevsky.jpg": {
+      "previous_sha256": "3c86734e0db9b947d1ff51315bb55f9d63e6bf7abf4f707abaf37b78c0ca8629",
+      "sha256": "b33d803ef92b5259a29f9e7608c97a50e3039917b9499e1785fe60e48522b333",
+      "previous_bytes": 219896,
+      "bytes": 204935,
+      "previous_dimensions": [
+        960,
+        1200
+      ],
+      "dimensions": [
+        960,
+        1200
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/gromov-photo.jpg": {
+      "previous_sha256": "01bf93f7b5f75927e206cd355d87d76b3e5875e6cb123d7e65c8f658e5c18473",
+      "sha256": "511f359565b06b8c2bafa4169cd53f63be09588e23a35fbb40be606326916b7a",
+      "previous_bytes": 12892,
+      "bytes": 9649,
+      "previous_dimensions": [
+        200,
+        266
+      ],
+      "dimensions": [
+        200,
+        266
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/historical-museum.jpg": {
+      "previous_sha256": "877ab031aa640ffa2e32b66c764f945ddd3a9ed29052914456f73e3a4f0d4cd5",
+      "sha256": "fdb0b03bf1a3d2302811cd1fb79d6b932e441c5db8f84f66b5537c3a3a4dfe68",
+      "previous_bytes": 423106,
+      "bytes": 387275,
+      "previous_dimensions": [
+        960,
+        1440
+      ],
+      "dimensions": [
+        960,
+        1440
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/hokkaido.jpg": {
+      "previous_sha256": "c1a36540805e4d61b7cfc80ab9f374c0fa7a6d989423d32903eb46391ba194db",
+      "sha256": "c0d06401791180467c2e4f2f793117e970a4b61b27d39804f0ffe323ad0c12b3",
+      "previous_bytes": 146986,
+      "bytes": 114963,
+      "previous_dimensions": [
+        900,
+        602
+      ],
+      "dimensions": [
+        900,
+        602
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/leonov-single.jpg": {
+      "previous_sha256": "b73f2fae5820fda27e50b7732452497153a6b5f70e10a1b8ceb101d92d371ae6",
+      "sha256": "4efb0c5dd779517043b3682b009e4909dfd6308ac48a9644a1265d69c3e63646",
+      "previous_bytes": 253533,
+      "bytes": 232864,
+      "previous_dimensions": [
+        960,
+        1200
+      ],
+      "dimensions": [
+        960,
+        1200
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/manifesto.jpg": {
+      "previous_sha256": "b9f433208bdbc770130bab4dddec3d16d8ce5adac103b0b10ab65ac2bc8922dc",
+      "sha256": "02f568fcbde6d310c8187a5a52f215ab72c9b1b63e70350a9c25e2074d8d4d66",
+      "previous_bytes": 176300,
+      "bytes": 160004,
+      "previous_dimensions": [
+        960,
+        520
+      ],
+      "dimensions": [
+        960,
+        520
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/mariinsky.jpg": {
+      "previous_sha256": "b31c1a5cd1949b1a598472b2e840b4b0d27448dce722cdfbd9ad3fbeb400bff8",
+      "sha256": "db165b60b4ff38377f4b82f614fcc89b626ae1544c07979bbb4ebd66a0471a39",
+      "previous_bytes": 164562,
+      "bytes": 153102,
+      "previous_dimensions": [
+        960,
+        540
+      ],
+      "dimensions": [
+        960,
+        540
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/moscow-conservatory.jpg": {
+      "previous_sha256": "584b758022cd21895cf5dfec17b101413d1ec5da83cb1a720700461cc34e53df",
+      "sha256": "c14918afa11ccd012fcda647850aaa61c4faf899979dfcb11f03fd0a86127407",
+      "previous_bytes": 239064,
+      "bytes": 222971,
+      "previous_dimensions": [
+        960,
+        720
+      ],
+      "dimensions": [
+        960,
+        720
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/pugachev.jpg": {
+      "previous_sha256": "4e758118baaae2f4890b976093dbfd21c41405bb3f39f328b25efd7299e1cad2",
+      "sha256": "69c969d09216ef250625eae67b54c05db6f1dff0e4a1872ebd731a6bc8e61aab",
+      "previous_bytes": 200263,
+      "bytes": 183946,
+      "previous_dimensions": [
+        960,
+        613
+      ],
+      "dimensions": [
+        960,
+        613
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/spb-conservatory.jpg": {
+      "previous_sha256": "e45edc0334611cf13cfcb09bde020460655d678bc55317b2aed96cf9cee739b7",
+      "sha256": "5482137e27af37245ec81faad3a68d1b8ef40d605abdad80755467a2af704b80",
+      "previous_bytes": 142135,
+      "bytes": 132075,
+      "previous_dimensions": [
+        960,
+        636
+      ],
+      "dimensions": [
+        960,
+        636
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/thomson.jpg": {
+      "previous_sha256": "6affb9e10fdcbbc07ffe5cc6c758081ae1c9b2f1d5dcdd5ce5c8c2f165671752",
+      "sha256": "ecb088d4da16b9c2e635c014237564b7be8a879b5fbba9eb4b97e0471bace4a5",
+      "previous_bytes": 215018,
+      "bytes": 125142,
+      "previous_dimensions": [
+        687,
+        989
+      ],
+      "dimensions": [
+        687,
+        989
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/turgenev.jpg": {
+      "previous_sha256": "24d80c383ec5fdd0a02835444a84a6674a4408dc9f8acbf1a7886d104146f81c",
+      "sha256": "2b465f812f60b998a904bf866523c89c511f7626c2399c0c2a35a65b1da7a148",
+      "previous_bytes": 365178,
+      "bytes": 338260,
+      "previous_dimensions": [
+        960,
+        1252
+      ],
+      "dimensions": [
+        960,
+        1252
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/wanderers.jpg": {
+      "previous_sha256": "6c867f205fbe6b1a4510458072cf904f9d492766e1a80df56bae07af5c911c92",
+      "sha256": "28cfe33dbc0dd609ad5c800c8401bf3ddee870bf6b3ba769d4728774dfc2ec24",
+      "previous_bytes": 174038,
+      "bytes": 159336,
+      "previous_dimensions": [
+        960,
+        605
+      ],
+      "dimensions": [
+        960,
+        605
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    },
+    "assets/question-refresh/warsaw.jpg": {
+      "previous_sha256": "165a17edfcaf7b3defe9fecafeafd04d542b692f6b880b1f1995e3ee9c317598",
+      "sha256": "aadd063a661405d8fa8ac9096fd05a5cca22b78cd1a495b5c81e745948d169e3",
+      "previous_bytes": 168121,
+      "bytes": 151113,
+      "previous_dimensions": [
+        960,
+        596
+      ],
+      "dimensions": [
+        960,
+        596
+      ],
+      "method": "JPEG quality 85, progressive, maximum edge 1600px"
+    }
+  }
+}

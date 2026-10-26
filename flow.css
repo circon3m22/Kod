@@ -21,3 +21,16 @@ body.large .flow-question-text{font-size:62px}body.large .flow-question-text.med
 .flow-chronology .chronology-cards[style*="--event-count:5"] .chronology-date{padding:16px 20px 24px}
 
 #screen .flow-organizer{display:none}#screen.flow-screen>.flow-stage-page>.flow-organizer{display:block}
+
+/* A restrained, consistent reveal across the presenter screens. Only opacity and
+   transforms animate, keeping the content readable and avoiding layout work. */
+.flow-rule-cards article{animation:flow-detail-in 1s cubic-bezier(.22,.7,.2,1) both}
+.flow-rule-cards article:nth-child(2){animation-delay:100ms}.flow-rule-cards article:nth-child(3){animation-delay:200ms}
+.flow-question-copy,.flow-chronology .chronology-heading,.flow-countdown h1,.flow-countdown .flow-clock-large,.flow-title-page h1,.flow-answer-number,.flow-results-page>h1,.flow-task-intro>div,.flow-names form,.flow-manual h1,.flow-manual-rows{animation:flow-detail-in .9s cubic-bezier(.22,.7,.2,1) both}
+.flow-question-image,.flow-task-intro>img,.flow-count-art{animation:flow-image-in 1.1s cubic-bezier(.22,.7,.2,1) both}
+.flow-results>div{animation:flow-detail-in .8s cubic-bezier(.22,.7,.2,1) both}
+.flow-results>div:nth-child(2){animation-delay:60ms}.flow-results>div:nth-child(3){animation-delay:120ms}.flow-results>div:nth-child(4){animation-delay:180ms}.flow-results>div:nth-child(n+5){animation-delay:240ms}
+.flow-award-place,.flow-award-score,.flow-winner-mark{animation:flow-detail-in 1.2s cubic-bezier(.22,.7,.2,1) both}
+@keyframes flow-detail-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes flow-image-in{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media (hover:hover){.flow-stage-card:not(:disabled),.flow-block:not(:disabled){transition:transform .5s ease,background-color .5s ease}.flow-stage-card:not(:disabled):hover,.flow-block:not(:disabled):hover{transform:translateY(-5px)}}

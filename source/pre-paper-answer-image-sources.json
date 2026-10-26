@@ -155,7 +155,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "1617bdb3e4407f2110fd251f7350b104cc0d0e6aa19b4ee0a331dfc17e898c65",
+        "sha256": "f372f645c5c8753c7d2bd08fe2a60c5f426b3c1ab6fee044c6984ef900e978f3",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -169,7 +169,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "782bc6c97030d09b4b72875e817e1382f01c22dcd74107ec74f3ca9c80fc4f9a",
+        "sha256": "82fdf049416d986d36d4a86202cc9668264a7cfb5cdb5c29fa70c4f82051393b",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -183,7 +183,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "0ee22582e3de1d0ac3ef74f3e0089e359d48bb91b44ee9c3bf47df9afeb194ed",
+        "sha256": "2b6ad49ea73a43cb5e7a6ced6b91501fde671a189acc274c49e6c291c2c2c180",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -197,7 +197,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "38c36aa399da74a46df586b6595c076d518745a5b582abc16718ed68542b250a",
+        "sha256": "44b12ec717123e70e623043ad72a5942b875d525eaa903183abfcde16047b27c",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -225,7 +225,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "b36570a05bca4e84ceec273c7b6bd3e9f48d14141ee731fc536c41921eb7ff28",
+        "sha256": "64c151e5c5ab6b94486d8fd350ebfa0f323f220751c310f5f6e5f6bb3bd25805",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -239,7 +239,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "08127b37920731cff8cd823976068139bd6512c65b127009740d5297be2fdc11",
+        "sha256": "0edbe9a5701714e637d7f9ae024298312d0b144fc01bc1f360c272f343f2cabd",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -349,7 +349,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "b9a0c681c050aae4a562656d4edf13e1e116d1769b99f6258a9186bd15931070",
+        "sha256": "eea0f294485d90b60f24cdf9cb8acbefc0bc3771711f269788fffbb73d077cf8",
         "transform": "Без изменения исходного файла"
       },
       {
@@ -359,7 +359,7 @@
         "sourceUrl": "source/kviz-original.ppt",
         "author": "Из исходной презентации пользователя",
         "license": "Лицензия исходной презентации отдельно не установлена",
-        "sha256": "ee802d43b4ab173f8bd938f537d69ea84bf754149188c907189f53cc4cb8100d",
+        "sha256": "7689d106be96c04b34afbe51c8ca2bd2e0641afc49e9ceef29df991034b3f9e9",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -373,7 +373,7 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevski3.jpg",
         "author": "Sergey Eisenstein",
         "license": "Public domain",
-        "sha256": "cb21cbb5d6c007cc66d055f5b97c70f45228ef468a589871515468df1a417313",
+        "sha256": "556834995afb006704b18f12d943caa8d43f53a9e99643eb45a9b5f92b6926dd",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -408,7 +408,7 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potemkinmarch.jpg",
         "author": "Автор не указан",
         "license": "Public domain",
-        "sha256": "44591cc99ac02dae8737a183340201a9e64a368e89fe69812d37cde9a7fcec26",
+        "sha256": "00e40d62c7904d67e0fca68a975aef19caeb5234a8b95d5379cc1c5e421cb874",
         "transform": "Без изменения исходного файла"
       }
     ]
@@ -422,7 +422,7 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_and_Soviet_generals_on_the_banks_of_the_Elbe,_Torgau,_26_April_1945_(111-SC-229966).jpg",
         "author": "US Army Signal Corps photographer",
         "license": "Public domain",
-        "sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370",
+        "sha256": "ad779d44e63e6445b4bafe37b25a13f157d84843f1e41ce72c5d3f03218b5bc4",
         "transform": "Без изменения исходного файла"
       }
     ]
