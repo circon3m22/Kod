@@ -21,8 +21,8 @@ def rounded(points,r=12):
 
 letters=[
  {'name':'К','x':0,'path':rounded([(0,0),(118,0),(118,226),(308,0),(450,0),(219,274),(465,560),(315,560),(118,317),(118,560),(0,560)],56)},
- {'name':'О','x':555,'path':'M280 0A280 280 0 1 1 280 560A280 280 0 1 1 280 0Z M280 132A148 148 0 1 0 280 428A148 148 0 1 0 280 132Z'},
- {'name':'Д','x':1205,'path':rounded([(0,448),(48,448),(145,0),(436,0),(436,448),(520,448),(520,630),(395,630),(395,560),(125,560),(125,630),(0,630)],56)+' '+rounded([(180,448),(310,448),(310,125),(242,125)],40)}
+ {'name':'О','x':500,'path':'M280 0A280 280 0 1 1 280 560A280 280 0 1 1 280 0Z M280 132A148 148 0 1 0 280 428A148 148 0 1 0 280 132Z'},
+ {'name':'Д','x':1095,'path':rounded([(0,448),(48,448),(145,0),(436,0),(436,448),(520,448),(520,630),(395,630),(395,560),(125,560),(125,630),(0,630)],56)+' '+rounded([(180,448),(310,448),(310,125),(242,125)],40)}
 ]
 photo_sources=json.loads((ROOT/'source/cover-era-sources.json').read_text())['images']
 photo_by_id={x['id']:x for x in photo_sources}
@@ -55,7 +55,7 @@ for item in sectors:
   x,y,w,h=item['box'];iw,ih=Image.open(ROOT/item['photo']).size;scale=max(w/iw,h/ih)
   item['imageBox']=[x-(iw*scale-w)*focus,y-(ih*scale-h)*.5,iw*scale,ih*scale]
 assert len(sectors)==len({x['photo'] for x in sectors})==9
-art={'width':1725,'height':630,'letters':letters,'sectors':sectors,'event':{'kicker':'Исторический квиз','title':'КУЛЬТУРНЫЙ','date':'2 ноября 18:30','venue':'«Вектор», ул. Фрунзе, 60'}}
+art={'width':1615,'height':630,'letters':letters,'sectors':sectors,'event':{'kicker':'Исторический квиз','title':'КУЛЬТУРНЫЙ','date':'2 ноября 18:30','venue':'«Вектор», ул. Фрунзе, 60'}}
 (ROOT/'cover-art.js').write_text('// Shared geometry for the live cover and the 4:3 poster. Local sources only.\nwindow.COVER_ART = '+json.dumps(art,ensure_ascii=False,indent=2)+';\n')
 
 credits='\n\n'.join(f"{x['caption']}\n{x['author']} · {x['license']}\n{x['sourceUrl']}\n{x.get('licenseUrl','')}\nИзменения: кадрирование по скруглённым секциям; исходный цвет сохранён." for x in photo_sources)
@@ -64,14 +64,19 @@ credits+=f"\n\nФон афиши: светлый силуэт карты. {backg
 (ROOT/'design/cultural-code-poster-kod-4x3-credits.txt').write_text('Источники афиши Культурный код\n\n'+credits+'\n')
 
 # The poster uses the same background and clipped regions as the live website.
-font=instantiateVariableFont(TTFont(ROOT/'assets/fonts/Onest-Variable.ttf'),{'wght':500},inplace=False);glyphs=font.getGlyphSet();cmap=font.getBestCmap();units=font['head'].unitsPerEm
+def typeface(path,weight=None):
+ font=TTFont(ROOT/path)
+ if weight is not None:font=instantiateVariableFont(font,{'wght':weight},inplace=False)
+ return font.getGlyphSet(),font.getBestCmap(),font['head'].unitsPerEm
+body_font=typeface('assets/fonts/Onest-Variable.ttf',500)
 parts=['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400mm" height="300mm" viewBox="0 0 1920 1440" role="img" aria-labelledby="title">','<title id="title">Культурный код. Исторический квиз. 2 ноября 18:30. «Вектор», ул. Фрунзе, 60</title>','<rect width="1920" height="1440" fill="white"/>']
 # Inline the vector silhouette so the print PDF has no rasterized map.
 background_svg=ET.parse(ROOT/background['path']).getroot()
 parts.append('<g id="poster-background">')
 parts.extend(ET.tostring(child,encoding='unicode') for child in background_svg if child.tag.split('}')[-1]=='g')
 parts.append('</g>')
-def text(label,y,size,tracking=0,color='#171717'):
+def text(label,y,size,tracking=0,color='#171717',face=body_font):
+ glyphs,cmap,units=face
  scale=size/units;width=sum(glyphs[cmap[ord(c)]].width for c in label)*scale+tracking*(len(label)-1);x=(1920-width)/2;cursor=0
  parts.append(f'<g aria-label="{escape(label)}" fill="{color}" transform="translate({x:.3f} {y})">')
  for c in label:
@@ -80,17 +85,17 @@ def text(label,y,size,tracking=0,color='#171717'):
   cursor+=g.width*scale+tracking
  parts.append('</g>')
 parts.append('<metadata id="photo-attribution">'+escape(credits)+'</metadata>')
-text(art['event']['kicker'],200,39,1.4,'#777777');text(art['event']['title'],340,94,5.6)
-parts.append('<g transform="translate(110 460) scale(.985)"><defs>')
+text(art['event']['kicker'],170,52,1.1,'#777777');text(art['event']['title'],330,124,0,face=body_font)
+parts.append('<g transform="translate(44 425) scale(1.1343653251)"><defs>')
 for i,letter in enumerate(letters):parts.append(f'<clipPath id="letter-{i}"><path d="{letter["path"]}" clip-rule="evenodd"/></clipPath>')
 for i,s in enumerate(sectors):parts.append(f'<clipPath id="sector-{i}"><path d="{s["region"]}"/></clipPath>')
 parts.append('</defs>')
 for i,s in enumerate(sectors):
  x,y,w,h=s.get('imageBox',s['box']);photo=ROOT/s['photo'];raw=base64.b64encode(photo.read_bytes()).decode();align='none' if 'imageBox' in s else s['align']+' slice'
  parts.append(f'<g transform="translate({letters[s["letter"]]["x"]} 0)"><g clip-path="url(#letter-{s["letter"]})"><g clip-path="url(#sector-{i})"><image x="{x}" y="{y}" width="{w}" height="{h}" preserveAspectRatio="{align}" xlink:href="data:image/jpeg;base64,{raw}"/></g></g></g>')
-parts.append('</g>');text(art['event']['date'],1225,56,.4);text(art['event']['venue'],1300,32,.2);parts.append('</svg>')
+parts.append('</g>');text(art['event']['date'],1230,76,.4);text(art['event']['venue'],1335,46,.2);parts.append('</svg>')
 (ROOT/'design/cultural-code-poster-kod-4x3.svg').write_text('\n'.join(parts))
-(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'backgroundSource':'source/poster-background-source.json','animation':'Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions.'},ensure_ascii=False,indent=2)+'\n')
+(ROOT/'source/live-cover-design.json').write_text(json.dumps({'format':'4:3, 400 × 300 mm, 1920 × 1440 viewBox','sectors':9,'uniquePhotographs':9,'font':'Onest Medium 500','letterGaps':35,'wordmarkScale':1.1343653251,'layout':'cover-art.js','photoSources':['source/cover-era-sources.json'],'backgroundSource':'source/poster-background-source.json','animation':'Photos drift continuously under fixed masks with independent 24–32 second loops and 10% overscan; they pause during navigation. The background map fades immediately in 380 ms; text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions.'},ensure_ascii=False,indent=2)+'\n')
 print('Built shared nine-sector wordmark and 4:3 poster.')
 
 if '--export' in __import__('sys').argv:

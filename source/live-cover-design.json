@@ -3,10 +3,12 @@
   "sectors": 9,
   "uniquePhotographs": 9,
   "font": "Onest Medium 500",
+  "letterGaps": 35,
+  "wordmarkScale": 1.1343653251,
   "layout": "cover-art.js",
   "photoSources": [
     "source/cover-era-sources.json"
   ],
   "backgroundSource": "source/poster-background-source.json",
-  "animation": "Text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions."
+  "animation": "Photos drift continuously under fixed masks with independent 24–32 second loops and 10% overscan; they pause during navigation. The background map fades immediately in 380 ms; text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions."
 }
