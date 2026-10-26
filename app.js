@@ -128,7 +128,7 @@ function prepareFilmFinal(film,decoded){
  const layer=film.finalLayer;if(!layer||typeof Path2D==='undefined')return null;
  const map=layer.querySelector('.final-map'),ctx=map.getContext('2d');if(!ctx)return null;
  const f={layer,map,curtain:layer.querySelector('.final-map-curtain'),queue:[],idle:0,cycle:null,ready:false,mapReady:false};
- const source=new Image();source.src='assets/design/poster-russia-silhouette.svg';source.decode().then(()=>{if(!film.svg.isConnected)return;ctx.drawImage(source,240,0,1440,1080);f.mapReady=true;if(f.cycle!==null)f.markReady();}).catch(()=>{});
+ const source=new Image();source.src='assets/design/poster-russia-silhouette.svg';source.decode().then(()=>{if(posterFilm!==film||!film.svg.isConnected)return;ctx.drawImage(source,240,0,1440,1080);f.mapReady=true;if(f.cycle!==null)f.markReady();}).catch(()=>{});
  f.pieces=film.scenes[3].pieces.map(p=>{
   const part=window.COVER_ART.sectors[p.sector],b=p.mask.getBBox(),scale=p.target.scale,pad=2/scale,box=[b.x-pad,b.y-pad,b.width+pad*2,b.height+pad*2],origin=[p.target.x+(box[0]-p.target.center[0])*scale,p.target.y+(box[1]-p.target.center[1])*scale];
   const el=document.createElement('div');el.className='final-piece';el.dataset.sector=p.sector;el.style.width=box[2]*scale+'px';el.style.height=box[3]*scale+'px';
@@ -172,18 +172,19 @@ function paintFilmFinal(film,time){
  f.layer.dataset.landed=String(time>=3.65);
 }
 function stopPosterTour(exit=false){
- const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);posterFilm=null;
+ const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);clearTimeout(film.imagesTimer);posterFilm=null;
  if(exit&&film.titleAnimation){try{film.titleAnimation.commitStyles();}catch(e){}}film.titleAnimation?.cancel();
  film.final?.effects?.forEach(a=>{if(exit&&a.effect?.target?.isConnected){try{a.commitStyles();}catch(e){}}a.cancel();});
  if(film.final?.idle){if(window.cancelIdleCallback)cancelIdleCallback(film.final.idle);else clearTimeout(film.final.idle);}
  if(exit){for(const layer of [film.svg,film.finalLayer])if(layer){layer.classList.add('film-exiting');layer.style.opacity='0';}}
- else{film.svg.style.opacity='0';if(film.finalLayer)film.finalLayer.style.opacity='0';film.sheet.removeAttribute('data-film-motion');film.sheet.style.removeProperty('--film-copy');film.sheet.style.removeProperty('--film-map');}
+ else{film.svg.style.opacity='0';if(film.finalLayer){film.finalLayer.style.opacity='0';film.finalLayer.querySelector('.final-pieces')?.replaceChildren();delete film.finalLayer.dataset.ready;delete film.finalLayer.dataset.landed;}film.sheet.removeAttribute('data-film-motion');film.sheet.style.removeProperty('--film-copy');film.sheet.style.removeProperty('--film-map');}
 }
 function startPosterTour(){
  const svg=screen.querySelector('.poster-film'),sheet=screen.querySelector('.poster-sheet'),finalLayer=screen.querySelector('.poster-film-final');
- if(!svg||!window.COVER_FILM||reduceMotion()||coverTransition||posterFilm?.svg===svg)return;
+ if(!svg||!window.COVER_FILM||document.hidden||reduceMotion()||coverTransition||posterFilm?.svg===svg)return;
  stopPosterTour();
- const decoded=new Map(),all=[...new Set([...window.COVER_FILM.photos,...window.COVER_ART.sectors.map(s=>s.photo)])],images=all.map(src=>{const image=new Image();image.src=src;decoded.set(src,image);image.decode?.().catch(()=>{});return image;});
+ if(finalLayer){finalLayer.querySelector('.final-pieces')?.replaceChildren();delete finalLayer.dataset.ready;delete finalLayer.dataset.landed;}
+ const decoded=new Map(),all=[...new Set([...window.COVER_FILM.photos,...window.COVER_ART.sectors.map(s=>s.photo)])],images=all.map(src=>{const image=new Image();image.decoding='async';decoded.set(src,image);return image;});
  let seed=86231;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const art=window.COVER_ART,mark=sheet.querySelector('.poster-wordmark'),style=getComputedStyle(mark),baseScale=parseFloat(style.width)/art.width,baseX=sheet.offsetLeft+parseFloat(style.left),baseY=sheet.offsetTop+parseFloat(style.top);
  const orders=art.sectors.map(()=>{const order=all.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const k=Math.floor(random()*(i+1));[order[i],order[k]]=[order[k],order[i]];}return order;});
@@ -191,6 +192,8 @@ function startPosterTour(){
  return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),original:mark.querySelectorAll('.poster-photo')[sector],order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale}};
  })}));
  const film={svg,sheet,finalLayer,title:screen.querySelector('.film-calligraphy'),scenes,images,all,raf:0,start:performance.now(),duration:20000*MOTION_SCALE,sceneSeconds:4*MOTION_SCALE};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
+ // Let the visible poster start loading first, then warm the film images.
+ film.imagesTimer=setTimeout(()=>{if(posterFilm!==film)return;for(const src of all){const image=decoded.get(src);image.src=src;image.decode?.().catch(()=>{});}},400);
  film.paint=(ms)=>{
   ms/=MOTION_SCALE; // All tracks share the same half-speed clock, including the SVG fallback.
   const seconds=((ms%20000)+20000)%20000/1000,active=seconds>=3.5&&seconds<20;
@@ -499,6 +502,7 @@ document.addEventListener('keydown',e=>{
  else if(!modal&&(e.key==='ArrowRight'||(e.key==='Enter'&&!e.target.closest('button,a')))){e.preventDefault();presenterNext();}
  else if(!modal&&e.key==='ArrowLeft'){e.preventDefault();if(state.current.screen==='warmup'&&state.current.warmIndex>0)step(-1);else back();}
 });
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPosterTour();else if(state.current.screen==='home'&&!coverTransition)startPosterTour();});
 window.addEventListener('beforeunload',()=>{if(state.started)save();});
 // Read-only diagnostics for testing and operator support. Mutations use the UI.
 window.CulturalCode={snapshot:()=>structuredCloneSafe(state),content:D,validateSave:validateState};

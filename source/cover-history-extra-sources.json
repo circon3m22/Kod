@@ -13,10 +13,10 @@
     "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Gorskii_04422u.jpg/1280px-Gorskii_04422u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "originalDate": "1909",
     "retrieved": "2026-10-25",
-    "sha256": "90434bc24f9d59738a114776ac95a3a46d13fcfa6e5516bec97b8958cf9ad3d3",
+    "sha256": "f3a78f3fe68411d7a4213d01b170553d254e056900aada6316b110ccc4c9f123",
     "width": 1280,
     "height": 1103,
-    "bytes": 398439,
+    "bytes": 367740,
     "processing": "Downsampled to at most 1280 px and JPEG 86 for local cover; original historical color retained. No crop, generative editing, or artificial colorization. Digital color image reconstructs original color-separation negatives.",
     "metadata": {
       "DateTime": {
@@ -109,10 +109,10 @@
     "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Tyumen_Prokudin-Gorsky_1912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "originalDate": "1912",
     "retrieved": "2026-10-25",
-    "sha256": "464d5be001dba7d3c71277817d8c6474c4d4dcccf0cb66132eb8ae7680f8bf47",
+    "sha256": "22eb00ce972c042f97d5666aeaec2d101afbca42b24fce5a97f2b598fca47e5b",
     "width": 1000,
     "height": 943,
-    "bytes": 199202,
+    "bytes": 185469,
     "processing": "Downsampled to at most 1280 px and JPEG 86 for local cover; original historical color retained. No crop, generative editing, or artificial colorization. Digital color image reconstructs original color-separation negatives.",
     "metadata": {
       "DateTime": {
@@ -200,10 +200,10 @@
     "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Prokudin-Gorsky.Suna_River.jpg/1280px-Prokudin-Gorsky.Suna_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "originalDate": "1915",
     "retrieved": "2026-10-25",
-    "sha256": "c67ebc8cd90e6e4e23527d3be6238c1d8d125536929563c39a012c627459bbb3",
+    "sha256": "6d8609d9b883349fa978bb7849bca247e32b27e3db7590558223a3776830ca89",
     "width": 1280,
     "height": 1103,
-    "bytes": 327557,
+    "bytes": 304727,
     "processing": "Downsampled to at most 1280 px and JPEG 86 for local cover; original historical color retained. No crop, generative editing, or artificial colorization. Digital color image reconstructs original color-separation negatives.",
     "metadata": {
       "DateTime": {
@@ -296,10 +296,10 @@
     "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Gorskii_03948u.jpg/1280px-Gorskii_03948u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "originalDate": "between 1905 and 1915date QS:P,+1950-00-00T00:00:00Z/7,P1319,+1905-00-00T00:00:00Z/9,P1326,+1915-00-00T00:00:00Z/9",
     "retrieved": "2026-10-25",
-    "sha256": "63f12959e57aadd8616ff92900b1dd8f5c2a35935f529710c5231db8a0b08dcb",
+    "sha256": "1f12a4b8f2324c21c48ecd70c007a1530a13d3d5cc7a1ca542f0a6491bebbf00",
     "width": 1280,
     "height": 1158,
-    "bytes": 446702,
+    "bytes": 417386,
     "processing": "Downsampled to at most 1280 px and JPEG 86 for local cover; original historical color retained. No crop, generative editing, or artificial colorization. Digital color image reconstructs original color-separation negatives.",
     "metadata": {
       "DateTime": {

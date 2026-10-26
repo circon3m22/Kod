@@ -8,7 +8,7 @@
     "retrieved": "2026-10-25",
     "width": 640,
     "height": 463,
-    "sha256": "cb21cbb5d6c007cc66d055f5b97c70f45228ef468a589871515468df1a417313",
+    "sha256": "556834995afb006704b18f12d943caa8d43f53a9e99643eb45a9b5f92b6926dd",
     "metadata": {
       "DateTime": {
         "value": "2008-08-01 14:34:16",
@@ -95,7 +95,7 @@
     "retrieved": "2026-10-25",
     "width": 900,
     "height": 600,
-    "sha256": "d529bc595afa48229d53dd82f14185736ba8062d8209853978c6f8268bd8df1b",
+    "sha256": "f37ed3df632ba5821f8a4fd66fd07c6a9ca4df5a7adfd343044699572e3d258d",
     "metadata": {
       "DateTime": {
         "value": "2016-01-09 01:17:08",
@@ -186,7 +186,7 @@
     "retrieved": "2026-10-25",
     "width": 744,
     "height": 424,
-    "sha256": "44591cc99ac02dae8737a183340201a9e64a368e89fe69812d37cde9a7fcec26",
+    "sha256": "00e40d62c7904d67e0fca68a975aef19caeb5234a8b95d5379cc1c5e421cb874",
     "metadata": {
       "DateTime": {
         "value": "2020-12-21 23:49:56",
@@ -252,7 +252,7 @@
     "retrieved": "2026-10-25",
     "width": 1597,
     "height": 1200,
-    "sha256": "82484da1538b9480caa0bc598bb3af62ea825c4d678278a5a6996ffc5482a370",
+    "sha256": "ad779d44e63e6445b4bafe37b25a13f157d84843f1e41ce72c5d3f03218b5bc4",
     "metadata": {
       "DateTime": {
         "value": "2020-04-29 12:10:34",
@@ -332,9 +332,9 @@
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Yalta_Conference_(Churchill,_Roosevelt,_Stalin)_(B%26W).jpg",
     "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg",
     "retrieved": "2026-10-25",
-    "width": 2720,
-    "height": 2239,
-    "sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd",
+    "width": 1600,
+    "height": 1317,
+    "sha256": "154ee34fd3f8cac7527695c0b35c6de2c373b113342511a365d3086e689d5c29",
     "metadata": {
       "DateTime": {
         "value": "2012-03-13 22:33:14",
