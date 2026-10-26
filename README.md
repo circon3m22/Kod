@@ -20,10 +20,12 @@
 
 Афиша 4:3 вручную собрана из HTML/SVG. Заставка: К → О → Д → КОД, по 8 секунд и 8 секунд афиши между повторами, полный цикл 40 секунд. Все визуальные анимации работают на скорости 0.5×, игровые отсчёты сохраняют свои секунды. Финальная сборка использует заранее подготовленные секции и compositor-анимации, без покадровой перерисовки большой карты и девяти SVG-масок.
 
-Источники изображений и лицензии — credits.html и source/*.json. Три иллюстрации правил — CC0 с исходной прозрачностью, source/rules-image-sources.json. Печатные бланки и ключ ответов — design/answer-sheets.pdf и design/host-answer-key.html. Новые смешанные портреты ожидают пользовательских фотографий: source/mixed-portrait-plan.json.
+Источники изображений и лицензии — credits.html и source/*.json. Три иллюстрации правил — CC0 с исходной прозрачностью, source/rules-image-sources.json. Печатные бланки — design/answer-sheets.pdf: на одном A4 сразу шесть карточек команды для вырезания (2×3), оба логотипа векторные; печатать в масштабе 100%. Ключ — design/host-answer-key.html. Пересборка: python3 scripts/build-paper-printables.py; проверка PDF: python3 tests/check-printables.py. Новые смешанные портреты ожидают пользовательских фотографий: source/mixed-portrait-plan.json.
 
 Проверки: `node tests/check-sequence.cjs`, `node tests/check-sequence-browser.cjs`, `node tests/check-flow-layout.cjs`, `python3 tests/check-content.py`. Совместимость счёта/сохранений: `node tests/check-state.cjs`, `node tests/check-scoring.cjs`, `node tests/check-paper-flow.cjs`. Проверки афиши: tests/check-cover-browser.cjs и tests/check-poster-film.cjs. Для браузерных проверок нужен локальный HTTP-сервер и установленный Playwright/Chromium; блокировка file:// политикой данной среды не обходится.
 
 Актуальная хронология: 10 усложнённых заданий, 41 карточка, единый новый стиль дат. Изображения закреплены за конкретным заданием и не повторяются в других вопросах/ответах; проверка встроена в tests/check-content.py. Источники и лицензии доступны в credits.html.
 
 На афише — прежний Onest 500, увеличенный до 112 px, с плавным появлением в финале и чёрный SVG Молодёжного совета. Отдельный логотип квиза: assets/brand/quiz-logo-black.svg / .png, PNG 3600×2160. Дополнительная проверка: node tests/check-brand.cjs.
+
+Финальная сборка КОД: широкий разлёт, независимое начало схождения букв и мягкое замедление, с прежней длительностью 8 секунд. Логотип Молодёжного совета виден только на афише и в основном меню трёх этапов, вне вопросов, ответов, таймеров и выбора блоков.
