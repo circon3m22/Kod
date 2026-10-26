@@ -204,7 +204,7 @@ function startPosterTour(){
   const titleCycle=active&&seconds>=16?Math.floor(ms/20000):-1;
   if(titleCycle!==film.titleCycle){
    film.titleCycle=titleCycle;film.titleAnimation?.cancel();
-   if(film.title&&titleCycle>=0){film.titleAnimation=film.title.animate([{offset:0,opacity:0,transform:'translateY(24px) scale(1.045)'},{offset:.15,opacity:0,transform:'translateY(24px) scale(1.045)'},{offset:.78,opacity:1,transform:'translateY(0) scale(1)'},{offset:1,opacity:1,transform:'translateY(0) scale(1)'}],{duration:4000*MOTION_SCALE,fill:'both',easing:'cubic-bezier(.22,.65,.25,1)'});film.titleAnimation.startTime=film.start+(titleCycle*20000+16000)*MOTION_SCALE;}
+   if(film.title&&titleCycle>=0){film.titleAnimation=film.title.animate([{offset:0,opacity:0,transform:'translateY(24px) scale(1.045)'},{offset:.9125,opacity:0,transform:'translateY(24px) scale(1.045)',easing:'cubic-bezier(.22,.65,.25,1)'},{offset:1,opacity:1,transform:'translateY(0) scale(1)'}],{duration:4000*MOTION_SCALE,fill:'both'});film.titleAnimation.startTime=film.start+(titleCycle*20000+16000)*MOTION_SCALE;}
   }
   scenes.forEach(({el,pieces},scene)=>{
    const time=seconds-(4+scene*4),visible=!(scene===3&&layeredFinal)&&time>=(scene===0?-.5:0)&&time<4;
