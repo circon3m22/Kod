@@ -1,6 +1,7 @@
 /* Cultural Code. Buildless, file:// compatible. All content is in quiz-data.js. */
 (function () {
 'use strict';
+const MOTION_SCALE = 2;
 const D = window.QUIZ_DATA, KEY = 'cultural-code-session-v1';
 const $ = s => document.querySelector(s);
 const screen = $('#screen'), stage = $('#stage'), overlay = $('#overlay');
@@ -69,7 +70,7 @@ function render(){
  applySettings();renderHeader();renderScores();screen.className=state.current.screen==='home'?'home-screen':state.current.screen==='stages'?'stage-menu-screen':'';screen.style.animation='none';if(!same){void screen.offsetWidth;screen.style.animation='';}
  if(state.current.screen==='paper')paperPrepareClock(state.current.blockId,state.current.paperPhase,state.current.paperIndex);
  const view=views[state.current.screen]||views.home;screen.innerHTML=view();fitStage();updateTimerUI();animatePaperChronology();if(state.current.screen==='home')startPosterTour();
- if(reorder&&!state.settings.reduced&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){screen.querySelectorAll('.chronology-card').forEach(el=>{const old=positions.get(el.dataset.event);if(!old||!el.animate)return;const dx=old.left-el.offsetLeft,dy=old.top-el.offsetTop;if(Math.abs(dx)<1&&Math.abs(dy)<1)return;el.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:`translate(${dx*.44}px,${dy-18}px)`,offset:.5},{transform:'translate(0,0)'}],{duration:850,easing:'cubic-bezier(.3,0,.18,1)'});});}
+ if(reorder&&!state.settings.reduced&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){screen.querySelectorAll('.chronology-card').forEach(el=>{const old=positions.get(el.dataset.event);if(!old||!el.animate)return;const dx=old.left-el.offsetLeft,dy=old.top-el.offsetTop;if(Math.abs(dx)<1&&Math.abs(dy)<1)return;el.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:`translate(${dx*.44}px,${dy-18}px)`,offset:.5},{transform:'translate(0,0)'}],{duration:850*MOTION_SCALE,easing:'cubic-bezier(.3,0,.18,1)'});});}
 }
 function questionOrigin(q){return Number.isInteger(q.sourceSlide)?`Слайды ${q.sourceSlide} / ${q.answerSlide}`:q.type==='photo'?'Фотозадание · новая редакция':'Хронология · новая категория';}
 function section(title,kicker,right=''){return `<div class="section-head"><div><div class="eyebrow">${kicker}</div><h2>${title}</h2></div>${right}</div>`;}
@@ -138,7 +139,7 @@ function prepareFilmFinal(film,decoded){
  };
  f.markReady=()=>{f.ready=!f.queue.length&&f.mapReady;if(f.ready&&!f.effects?.length)f.makeAnimations();layer.dataset.ready=String(f.ready);};
  f.makeAnimations=()=>{
-  const frames=Array.from({length:121},(_,i)=>i/120),bind=(el,keyframes)=>{const effect=el.animate(keyframes,{duration:4000,fill:'both',easing:'linear'});effect.pause();effect.currentTime=0;return effect;};
+  const frames=Array.from({length:121},(_,i)=>i/120),bind=(el,keyframes)=>{const effect=el.animate(keyframes,{duration:4000*MOTION_SCALE,fill:'both',easing:'linear'});effect.pause();effect.currentTime=0;return effect;};
   f.effects=[bind(f.curtain,frames.map(u=>({offset:u,transform:`translateX(${filmMix(-320,2240,filmEase((u*4-.35)/3.1))-220}px)`}))),bind(f.map,frames.map(u=>{const scale=Math.pow(3.6,1-filmEase(u*4/3.65));return {offset:u,transform:`matrix(${scale},0,0,${scale},${960*(1-scale)},${540*(1-scale)})`};}))];
   f.pieces.forEach(p=>{
    f.effects.push(bind(p.el,frames.map(u=>{const [x,y,sx,sy,,cx,cy]=filmPose(3,p.j,p.sector,u*4,p.target),zoom=sx/p.target.scale;return {offset:u,transform:`matrix(${zoom},0,0,${zoom},${x+sx*(p.box[0]-cx)},${y+sy*(p.box[1]-cy)})`};})),bind(p.textures[1],frames.map(u=>({offset:u,opacity:filmEase(u*4/2.7)}))),bind(p.textures[2],frames.map(u=>({offset:u,opacity:filmEase((u*4-2.7)/.95)}))));
@@ -157,7 +158,7 @@ function prepareFilmFinal(film,decoded){
 function paintFilmFinal(film,time){
  const f=film.final;
  if(f.playCycle!==f.cycle){
-  const start=film.start+f.cycle/3*20000+16000;
+  const start=film.start+(f.cycle/3*20000+16000)*MOTION_SCALE;
   f.effects.forEach(a=>{a.play();a.startTime=start;});f.playCycle=f.cycle;
  }
  // Geometry and fades now run on the compositor. The main loop only selects
@@ -182,8 +183,9 @@ function startPosterTour(){
  const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2];
  return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),original:mark.querySelectorAll('.poster-photo')[sector],order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale}};
  })}));
- const film={svg,sheet,finalLayer,scenes,images,all,raf:0,start:performance.now(),duration:20000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
+ const film={svg,sheet,finalLayer,scenes,images,all,raf:0,start:performance.now(),duration:20000*MOTION_SCALE,sceneSeconds:4*MOTION_SCALE};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
  film.paint=(ms)=>{
+  ms/=MOTION_SCALE; // All tracks share the same half-speed clock, including the SVG fallback.
   const seconds=((ms%20000)+20000)%20000/1000,active=seconds>=3.5&&seconds<20;
   if(film.motion!==active){film.motion=active;sheet.toggleAttribute('data-film-motion',active);if(active&&film.final)film.final.prepare(Math.floor(ms/20000)*3);}
   svg.dataset.scene=active?String(Math.min(3,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
@@ -235,10 +237,10 @@ function teamStart(){
  const done=()=>{if(coverTransition!==token)return;coverTransition=null;if(state.current.screen==='home'&&cover?.isConnected)go('stages');};
  if(state.settings.reduced||window.matchMedia('(prefers-reduced-motion: reduce)').matches){done();return;}
  const allAnimations=cover?.getAnimations?.({subtree:true})||[];allAnimations.filter(a=>a.effect?.getTiming().iterations===Infinity).forEach(a=>a.pause());
- const animations=allAnimations.filter(a=>a.effect?.getTiming().iterations!==Infinity);const now=document.timeline?.currentTime;if(now!=null)animations.forEach(a=>{if(a.pending&&a.startTime===null)a.startTime=now;});if(animations.length)Promise.allSettled(animations.map(a=>a.finished)).then(done);else setTimeout(done,1450);
+ const animations=allAnimations.filter(a=>a.effect?.getTiming().iterations!==Infinity);const now=document.timeline?.currentTime;if(now!=null)animations.forEach(a=>{if(a.pending&&a.startTime===null)a.startTime=now;});if(animations.length)Promise.allSettled(animations.map(a=>a.finished)).then(done);else setTimeout(done,1450*MOTION_SCALE);
 }
 let coverTransition=null;
-function posterWordmark(){const art=window.COVER_ART;return `<svg class="poster-wordmark" viewBox="0 0 ${art.width} ${art.height}" aria-hidden="true" focusable="false"><defs>${art.letters.map((l,i)=>`<clipPath id="home-letter-${i}"><path d="${l.path}" clip-rule="evenodd"/></clipPath>`).join('')}${art.sectors.map((s,i)=>`<clipPath id="home-sector-${i}"><path d="${s.region}"/></clipPath>`).join('')}</defs>${art.sectors.map((s,i)=>{const [x,y,w,h]=s.imageBox||s.box;const [duration,delay,dx,dy]=[[24,0,2.4,1.4],[30,-6,-2,1.8],[27,-15,2.1,-1.5],[32,-10,-2.3,-1.5],[25,-4,1.8,2],[29,-20,-2.2,1.4],[31,-12,2.3,-1.8],[26,-18,-1.9,1.7],[28,-8,2,-2]][i];return `<g transform="translate(${art.letters[s.letter].x} 0)"><g class="kod-sector" data-sector="${i}"><g clip-path="url(#home-letter-${s.letter})"><g clip-path="url(#home-sector-${i})"><image class="poster-photo" style="--photo-duration:${duration}s;--photo-delay:${delay}s;--photo-x:${dx}%;--photo-y:${dy}%" href="${s.photo}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="${s.imageBox?'none':s.align+' slice'}"/></g></g></g></g>`;}).join('')}</svg>`;}
+function posterWordmark(){const art=window.COVER_ART;return `<svg class="poster-wordmark" viewBox="0 0 ${art.width} ${art.height}" aria-hidden="true" focusable="false"><defs>${art.letters.map((l,i)=>`<clipPath id="home-letter-${i}"><path d="${l.path}" clip-rule="evenodd"/></clipPath>`).join('')}${art.sectors.map((s,i)=>`<clipPath id="home-sector-${i}"><path d="${s.region}"/></clipPath>`).join('')}</defs>${art.sectors.map((s,i)=>{const [x,y,w,h]=s.imageBox||s.box;const [duration,delay,dx,dy]=[[24,0,2.4,1.4],[30,-6,-2,1.8],[27,-15,2.1,-1.5],[32,-10,-2.3,-1.5],[25,-4,1.8,2],[29,-20,-2.2,1.4],[31,-12,2.3,-1.8],[26,-18,-1.9,1.7],[28,-8,2,-2]][i];return `<g transform="translate(${art.letters[s.letter].x} 0)"><g class="kod-sector" data-sector="${i}"><g clip-path="url(#home-letter-${s.letter})"><g clip-path="url(#home-sector-${i})"><image class="poster-photo" style="--photo-duration:${duration*MOTION_SCALE}s;--photo-delay:${delay*MOTION_SCALE}s;--photo-x:${dx}%;--photo-y:${dy}%" href="${s.photo}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="${s.imageBox?'none':s.align+' slice'}"/></g></g></g></g>`;}).join('')}</svg>`;}
 
 function finishStage(after,next=null){if(!state.completedStages.includes(after))state.completedStages.push(after);for(const [key,t] of Object.entries(state.timers)){if(t.running){t.remaining=remaining(t);t.running=false;}}state.intermission=next?{after,next}:null;go(next?'ranking':'stages');}
 function continueAfterResults(){const next=state.intermission?.next;state.intermission=null;go(next||'stages');}
@@ -309,7 +311,7 @@ function animatePaperChronology(){
  const c=state.current;if(c.screen!=='paper'||c.paperPhase!=='answers'||reduceMotion())return;
  const q=paperQuestions(paperRound(c.blockId))[c.paperIndex];if(q?.type!=='chronology')return;
  const row=screen.querySelector('.chronology-cards');if(!row)return;
- [...row.children].forEach((el,i)=>{const original=q.events.findIndex(e=>e.label===el.dataset.event),dx=(original-i)*(el.offsetWidth+26);if(dx)el.animate([{transform:`translateX(${dx}px)`},{transform:'translateX(0)'}],{duration:850,easing:'cubic-bezier(.3,0,.18,1)'});});
+ [...row.children].forEach((el,i)=>{const original=q.events.findIndex(e=>e.label===el.dataset.event),dx=(original-i)*(el.offsetWidth+26);if(dx)el.animate([{transform:`translateX(${dx}px)`},{transform:'translateX(0)'}],{duration:850*MOTION_SCALE,easing:'cubic-bezier(.3,0,.18,1)'});});
 }
 
 function roundScore(teamId,roundId){return state.history.filter(h=>!h.undone&&!h.isUndo&&h.roundId===roundId).reduce((sum,h)=>sum+h.entries.filter(e=>e.teamId===teamId).reduce((n,e)=>n+e.delta,0),0);}
@@ -369,8 +371,8 @@ function morphQuick(dialog,opening,done){
  cancelQuickMotion();
  if(reduceMotion()||!dialog.animate){dialog.style.clipPath='';done();return;}
  const circle=`inset(${Math.max(0,dialog.offsetHeight-64)}px 0px 0px ${dialog.offsetWidth-64}px round 32px)`,expanded='inset(0px 0px 0px 0px round 28px)';
- const shell=dialog.animate([{clipPath:currentClip==='none'?(opening?circle:expanded):currentClip},{clipPath:opening?expanded:circle}],{duration:opening?620:360,easing:opening?'cubic-bezier(.2,.8,.2,1)':'cubic-bezier(.4,0,.2,1)',fill:'both'});
- const copy=content.animate(opening?[{opacity:currentClip==='none'?0:currentOpacity,translate:currentClip==='none'?'0 9px':getComputedStyle(content).translate},{opacity:1,translate:'0 0'}]:[{opacity:currentOpacity},{opacity:0}],{duration:opening?300:140,delay:opening?170:0,easing:'ease',fill:'both'});
+ const shell=dialog.animate([{clipPath:currentClip==='none'?(opening?circle:expanded):currentClip},{clipPath:opening?expanded:circle}],{duration:(opening?620:360)*MOTION_SCALE,easing:opening?'cubic-bezier(.2,.8,.2,1)':'cubic-bezier(.4,0,.2,1)',fill:'both'});
+ const copy=content.animate(opening?[{opacity:currentClip==='none'?0:currentOpacity,translate:currentClip==='none'?'0 9px':getComputedStyle(content).translate},{opacity:1,translate:'0 0'}]:[{opacity:currentOpacity},{opacity:0}],{duration:(opening?300:140)*MOTION_SCALE,delay:(opening?170:0)*MOTION_SCALE,easing:'ease',fill:'both'});
  const token={animations:[shell,copy]};quickMotion=token;
  Promise.all(token.animations.map(a=>a.finished)).then(()=>{if(quickMotion!==token||!dialog.isConnected)return;quickMotion=null;token.animations.forEach(a=>a.cancel());done();}).catch(()=>{});
 }
@@ -404,7 +406,7 @@ function back(){if(modal){closeModal();return;}if(state.current.screen==='paper'
 function inspect(qid){const q=qById(qid);openModal('Материалы исходного задания',`<p>${esc(q.category)} · ${q.value} · слайды ${q.sourceSlide}/${q.answerSlide}</p><div class="alert">${esc(q.unavailableReason)}</div><p>${esc(q.text)}</p>${q.images.map(src=>`<img style="height:270px;max-width:100%;object-fit:contain;margin-top:20px" src="${esc(src)}" alt="Сохранённый кадр-превью">`).join('')}<div class="rule"></div><p>Исходный ответ: ${esc(q.answer)}</p>${q.status==='missing-video'?`<div class="actions" style="margin-top:25px">${btn('Подключить оригинальное видео','attach-video','primary',`data-id="${q.id}"`)}</div><p class="note" style="margin-top:18px">Файл подключается до закрытия страницы. Для постоянного подключения поместите ролик в assets/videos и укажите путь в quiz-data.js.</p>`:''}`,'','inspect');}
 let lastAdvance=0;
 let dotFeedbackHandle;
-function flashDot(number=null){const dot=$('#operator-dot');if(!dot)return;clearTimeout(dotFeedbackHandle);dot.classList.remove('ack','number-feedback');const mark=dot.querySelector('span');mark.textContent=number===null?'':String(number);void dot.offsetWidth;dot.classList.add(number===null?'ack':'number-feedback');dotFeedbackHandle=setTimeout(()=>{dot.classList.remove('ack','number-feedback');mark.textContent='';},number===null?240:1050);}
+function flashDot(number=null){const dot=$('#operator-dot');if(!dot)return;clearTimeout(dotFeedbackHandle);dot.classList.remove('ack','number-feedback');const mark=dot.querySelector('span');mark.textContent=number===null?'':String(number);void dot.offsetWidth;dot.classList.add(number===null?'ack':'number-feedback');dotFeedbackHandle=setTimeout(()=>{dot.classList.remove('ack','number-feedback');mark.textContent='';},(number===null?240:1050)*MOTION_SCALE);}
 function alreadyAwarded(key=taskKey()){return !!key&&state.history.some(h=>h.taskKey===key&&!h.undone&&!h.isUndo);}
 function selectTeam(index,keepOpen=false){const t=state.teams[index],key=taskKey();if(!t||!key||scoreDefaults().amount<=0||alreadyAwarded(key))return;if(state.pendingAward?.taskKey!==key||state.pendingAward.teamId!==t.id){state.pendingAward={taskKey:key,teamId:t.id};save();}if(!keepOpen)closeModal(false);else refreshSelection();flashDot(index+1);}
 function refreshSelection(){const key=taskKey(),selected=state.pendingAward?.taskKey===key?state.pendingAward.teamId:null;overlay.querySelectorAll('[data-action="select-team"]').forEach(el=>{const t=state.teams[Number(el.dataset.index)],active=t?.id===selected;el.classList.toggle('selected-team',active);el.setAttribute('aria-pressed',String(active));});const status=$('#selection-status');if(status){const t=state.teams.find(t=>t.id===selected);status.textContent=scoreDefaults().amount<=0?'На этом экране выбор команды не требуется':alreadyAwarded(key)?'Баллы за это задание уже начислены':t?`${t.name} · +${scoreDefaults().amount} при переходе дальше`:'Выберите команду — баллы начислятся при переходе дальше';}const undoButton=overlay.querySelector('[data-action="quiet-undo"]');if(undoButton)undoButton.disabled=!state.history.some(h=>!h.undone&&!h.isUndo&&h.entries.some(e=>state.teams.some(t=>t.id===e.teamId)));}

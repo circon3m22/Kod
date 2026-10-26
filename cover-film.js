@@ -1,5 +1,5 @@
 window.COVER_FILM = {
-  "sceneSeconds": 4,
+  "sceneSeconds": 8,
   "sequence": ["К", "О", "Д", "КОД"],
   "photos": [
     "assets/cover-film/perm-railway.jpg",
