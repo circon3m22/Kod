@@ -1,6 +1,6 @@
 window.COVER_FILM = {
   "sceneSeconds": 4,
-  "sequence": ["К", "К", "О", "О", "Д", "Д", "КОД"],
+  "sequence": ["К", "К", "К", "О", "О", "О", "Д", "Д", "Д", "КОД"],
   "photos": [
     "assets/cover-film/perm-railway.jpg",
     "assets/cover-film/three-generations.jpg",

@@ -74,44 +74,46 @@ function render(){
 function questionOrigin(q){return Number.isInteger(q.sourceSlide)?`Слайды ${q.sourceSlide} / ${q.answerSlide}`:q.type==='photo'?'Фотозадание · новая редакция':'Хронология · новая категория';}
 function section(title,kicker,right=''){return `<div class="section-head"><div><div class="eyebrow">${kicker}</div><h2>${title}</h2></div>${right}</div>`;}
 function circle(label,action,data='',disabled=false){return `<button class="circle-control" data-action="${action}" ${data} ${disabled?'disabled':''}>${label}</button>`;}
-/* Seven calm compositions, in letter pairs followed by the final assembly. Photos live in stage coordinates; only their masks rotate. */
+/* Three shots per letter: separated macro, assembly, then a whole-letter turn.
+   Every section shares one rigid camera. Separation happens in letter coordinates,
+   so adjacent sections cannot rotate or stretch through each other. */
 function posterFilmMarkup(){
- const art=window.COVER_ART;
- const layouts=[[0,1,2],[0,1,2],[3,4,5],[3,4,5],[6,8,7],[6,8,7],[0,1,2,3,4,5,6,7,8]];
+ const art=window.COVER_ART,layouts=Array.from({length:10},(_,scene)=>scene<9?[[0,1,2],[3,4,5],[6,7,8]][Math.floor(scene/3)]:art.sectors.map((_,i)=>i));
  let defs='',scenes='';
- layouts.forEach((ids,scene)=>{let pieces='';ids.forEach((sector,j)=>{const part=art.sectors[sector],key=`film-${scene}-${j}`;
+ layouts.forEach((ids,scene)=>{let pieces='';defs+=`<clipPath id="film-cut-${scene}"><rect class="film-cut" width="1920" height="1080"/></clipPath>`;
+ ids.forEach((sector,j)=>{const part=art.sectors[sector],key=`film-${scene}-${j}`;
  defs+=`<clipPath id="${key}-mask" clipPathUnits="userSpaceOnUse"><path class="film-mask" data-mask="${key}" d="${part.region}"/></clipPath>`;
- pieces+=`<g class="film-piece" data-sector="${sector}" data-key="${key}" clip-path="url(#${key}-mask)"><image class="film-photo film-photo-a" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/><image class="film-photo film-photo-b" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" opacity="0"/>${scene===6?`<image class="film-final-photo" href="${part.photo}" preserveAspectRatio="${part.imageBox?'none':part.align+' slice'}" opacity="0"/>`:''}</g>`;
- });scenes+=`<g class="film-scene" data-scene="${scene}" data-letter="${window.COVER_FILM.sequence[scene]}" style="display:none"><rect width="1920" height="1080" fill="#fff"/>${pieces}</g>`;});
+ pieces+=`<g class="film-piece" data-sector="${sector}" data-key="${key}" clip-path="url(#${key}-mask)"><image class="film-photo film-photo-a" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/><image class="film-photo film-photo-b" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" opacity="0"/>${scene===9?`<image class="film-final-photo" href="${part.photo}" preserveAspectRatio="${part.imageBox?'none':part.align+' slice'}" opacity="0"/>`:''}</g>`;
+ });scenes+=`<g class="film-scene" data-scene="${scene}" data-letter="${window.COVER_FILM.sequence[scene]}" clip-path="url(#film-cut-${scene})" style="display:none"><rect width="1920" height="1080" fill="#fff"/>${scene===9?'<image class="film-map" href="assets/design/poster-russia-silhouette.svg" x="240" y="0" width="1440" height="1080"/>':''}${pieces}</g>`;});
  return `<svg class="poster-film" viewBox="0 0 1920 1080" aria-hidden="true" focusable="false"><defs>${defs}</defs>${scenes}</svg>`;
 }
 let posterFilm=null;
 const filmEase=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
 const filmMix=(a,b,t)=>a+(b-a)*t;
+const filmCenters=[[232.5,280],[280,280],[260,315]];
+const filmSeparation=[[-155,0],[100,-115],[100,115],[125,-72],[0,145],[-125,-72],[-120,-30],[120,-30],[0,95]];
 function filmPose(scene,j,sector,t,target){
- const e=filmEase(t/4),blend=(a,b)=>a.map((v,i)=>filmMix(v,b[i],e));
- // Each adjacent pair follows the same letter, and meets at an identical pose.
- if(scene<2){
-  const poses=[
-   [[290,550,2.4,2.4,-5],[1140,260,2.3,2.3,-10],[1220,910,2.3,2.3,8]],
-   [[390,580,2.25,2.25,1],[1040,350,2.15,2.15,-3],[1340,850,2.15,2.15,3]],
-   [[160,570,2.7,2.7,-3],[940,340,2.5,2.5,8],[1510,900,2.4,2.4,-5]]
-  ];return [...blend(poses[scene][j],poses[scene+1][j]),...target.center];
+ const letter=scene<9?Math.floor(scene/3):Math.floor(sector/3),[cx,cy]=filmCenters[letter];
+ const e=filmEase(t/4),mix=(a,b)=>a.map((v,i)=>filmMix(v,b[i],e));
+ let camera,spread;
+ if(scene<9){
+  // [stage centre x/y, uniform scale, angle, separation]. Identical cuts within
+  // each triptych; a large change of framing happens during its assembly shot.
+  const keys=[
+   [[960,540,2.05,-12,1.1],[960,540,1.95,-6,1],[960,540,1.42,0,0],[960,540,1.55,-20,0]],
+   [[960,540,2.05,-22,1.1],[960,540,1.95,-12,1],[960,540,1.5,0,0],[960,540,1.65,54,0]],
+   [[960,440,1.85,-12,1.1],[960,440,1.7,-6,1],[960,540,1.32,0,0],[960,540,1.43,18,0]]
+  ][letter],shot=scene%3;
+  camera=mix(keys[shot],keys[shot+1]);spread=camera.pop();
+ }else{
+  const land=filmEase(t/3.7);
+  const finalX=target.x+(cx-target.center[0])*target.scale,finalY=target.y+(cy-target.center[1])*target.scale;
+  camera=[filmMix([330,960,1590][letter],finalX,land),filmMix(540,finalY,land),filmMix(.72,target.scale,land),0];spread=.45*(1-land);
  }
- if(scene<4){
-  const poses=[[1000,550,2.15,2.15,-12],[970,550,2.25,2.25,3],[1120,600,2.7,2.7,18]];
-  return [...blend(poses[scene-2],poses[scene-1]),280,280];
- }
- if(scene<6){
-  const poses=[
-   [[580,500,2.4,2.2,-10],[1180,960,2.4,2.4,5],[1660,430,2,2,4]],
-   [[630,500,2.25,2.35,-5],[1120,930,2.35,2.25,0],[1570,410,2,2.1,1]],
-   [[470,460,2.5,2.7,0],[1350,850,2.65,2.45,-6],[1710,380,2.1,2.35,-4]]
-  ];return [...blend(poses[scene-4][j],poses[scene-3][j]),...target.center];
- }
- const offsets=[[-80,-20,-6],[-90,-90,7],[-60,100,-6],[30,-65,-5],[0,90,5],[-40,-55,3],[80,-60,-4],[100,50,6],[90,110,-3]];
- const [dx,dy,a]=offsets[sector],land=filmEase(t/3.7);
- return [target.x+dx*(1-land),target.y+dy*(1-land),filmMix(1.1,target.scale,land),filmMix(1.1,target.scale,land),a*(1-land),...target.center];
+ const [x,y,scale,angle]=camera,[dx,dy]=filmSeparation[sector],rad=angle*Math.PI/180;
+ // Translate the original letter origin, then rotate/scale every section about
+ // that same origin. Outward offsets close without independent rotations.
+ return [x+scale*spread*(dx*Math.cos(rad)-dy*Math.sin(rad)),y+scale*spread*(dx*Math.sin(rad)+dy*Math.cos(rad)),scale,scale,angle,cx,cy];
 }
 function stopPosterTour(exit=false){
  const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);posterFilm=null;
@@ -126,27 +128,32 @@ function startPosterTour(){
  let seed=86231;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const art=window.COVER_ART,mark=sheet.querySelector('.poster-wordmark'),style=getComputedStyle(mark),baseScale=parseFloat(style.width)/art.width,baseX=sheet.offsetLeft+parseFloat(style.left),baseY=sheet.offsetTop+parseFloat(style.top);
  const orders=art.sectors.map(()=>{const order=all.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const k=Math.floor(random()*(i+1));[order[i],order[k]]=[order[k],order[i]];}return order;});
- const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2],ib=p.imageBox||b;
+ const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,cut:svg.querySelector(`#film-cut-${scene} rect`),pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2],ib=p.imageBox||b;
  return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale,box:[baseX+(art.letters[p.letter].x+ib[0])*baseScale,baseY+ib[1]*baseScale,ib[2]*baseScale,ib[3]*baseScale]}};
  })}));
- const film={svg,sheet,scenes,images,raf:0,start:performance.now(),duration:32000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;
+ const film={svg,sheet,scenes,images,raf:0,start:performance.now(),duration:44000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;
  film.paint=(ms)=>{
-  const seconds=((ms%32000)+32000)%32000/1000,active=seconds>=3.5&&seconds<32;
+  const seconds=((ms%44000)+44000)%44000/1000,active=seconds>=3.5&&seconds<44;
   if(film.motion!==active){film.motion=active;sheet.toggleAttribute('data-film-motion',active);}
-  svg.dataset.scene=active?String(Math.min(6,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
-  const copy=seconds<3.5?1:seconds<4?1-filmEase((seconds-3.5)/.5):seconds<31.7?0:filmEase((seconds-31.7)/.3);
-  sheet.style.setProperty('--film-copy',copy);sheet.style.setProperty('--film-map',active?'0':'1');
+  svg.dataset.scene=active?String(Math.min(9,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
+  const copy=seconds<3.5?1:seconds<4?1-filmEase((seconds-3.5)/.5):seconds<43.7?0:filmEase((seconds-43.7)/.3);
+  sheet.style.setProperty('--film-copy',copy);sheet.style.setProperty('--film-map','1');
   svg.style.opacity=active?String(1-copy):'0';
-  scenes.forEach(({el,pieces},scene)=>{
-   const time=seconds-(4+scene*4),alpha=time<-.5||time>=4.4?0:scene===0?1:filmEase((time+.4)/.8);
-   el.style.display=alpha>0?'':'none';if(alpha<=0)return;el.style.opacity=alpha;
+  scenes.forEach(({el,cut,pieces},scene)=>{
+   const time=seconds-(4+scene*4),nextCut=(scene===2||scene===5||scene===8),incoming=(scene===3||scene===6||scene===9);
+   const visible=time>=(scene===0?-.5:0)&&time<(nextCut?4.8:4);
+   el.style.display=visible?'':'none';if(!visible)return;
+   // An opaque, soft-paced wipe between different letters. No two scenes are
+   // blended over the same pixel, so their sections never ghost through each other.
+   cut.setAttribute('width',incoming?1920*filmEase(time/.8):1920);
+   if(scene===9){const map=el.querySelector('.film-map'),land=filmEase(Math.max(0,(time-.35)/3.35)),scale=Math.pow(18,1-land);map.setAttribute('transform',`translate(960 540) scale(${scale}) translate(-960 -540)`);map.setAttribute('opacity',filmEase(time/.8));}
    pieces.forEach(p=>{const local=Math.max(0,Math.min(4,time)),pose=filmPose(scene,p.j,p.sector,local,p.target),[x,y,sx,sy,angle,cx,cy]=pose;
     p.mask.setAttribute('transform',`translate(${x.toFixed(3)} ${y.toFixed(3)}) rotate(${angle.toFixed(3)}) scale(${sx.toFixed(4)} ${sy.toFixed(4)}) translate(${-cx} ${-cy})`);
-    const cycle=Math.floor(ms/32000)*3,first=cycle+(scene===6?1:0),a=all[p.order[first%all.length]],b=all[p.order[(first+1)%all.length]];
-    const pairTime=local+(scene%2)*4,fade=scene===6?filmEase(local/2.7):filmEase((pairTime-2)/4);
+    const cycle=Math.floor(ms/44000)*3,first=cycle+(scene===9?1:0),a=all[p.order[first%all.length]],b=all[p.order[(first+1)%all.length]];
+    const letterTime=local+(scene%3)*4,fade=scene===9?filmEase(local/2.7):filmEase((letterTime-3)/6);
     if(a!==p.lastA){p.a.setAttribute('href',a);p.lastA=a;}if(b!==p.lastB){p.b.setAttribute('href',b);p.lastB=b;}
     p.b.setAttribute('opacity',fade.toFixed(4));
-    const zoom=1.025+.015*(scene===6?local/4:pairTime/8);[p.a,p.b].forEach(image=>image.setAttribute('transform',`translate(960 540) scale(${zoom.toFixed(4)}) translate(-960 -540)`));
+    const zoom=1.025+.015*(scene===9?local/4:letterTime/12);[p.a,p.b].forEach(image=>image.setAttribute('transform',`translate(960 540) scale(${zoom.toFixed(4)}) translate(-960 -540)`));
     if(p.final){const [ix,iy,iw,ih]=p.target.box;p.final.setAttribute('x',ix);p.final.setAttribute('y',iy);p.final.setAttribute('width',iw);p.final.setAttribute('height',ih);p.final.setAttribute('opacity',filmEase((local-2.7)/1.0));}
    });
   });
