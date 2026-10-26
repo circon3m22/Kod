@@ -89,3 +89,8 @@ body.large .chronology-canvas.answer-canvas .question-body.has-media>.question-t
 .poster-photo{transform-box:fill-box;transform-origin:center;animation:poster-photo-drift var(--photo-duration) ease-in-out var(--photo-delay) infinite;will-change:transform}.cover-leaving .poster-photo{animation-play-state:paused}
 @keyframes poster-photo-drift{0%,100%{transform:translate(calc(-1 * var(--photo-x)),calc(-1 * var(--photo-y))) scale(1.1)}50%{transform:translate(var(--photo-x),var(--photo-y)) scale(1.1)}}
 body.reduced .poster-photo{animation:none!important;transform:none;will-change:auto}@media(prefers-reduced-motion:reduce){.poster-photo{animation:none!important;transform:none;will-change:auto}}
+
+/* A broad pearl highlight travels only inside the map's original silhouette. */
+.poster-sheet::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(110deg,transparent 35%,#ffffff24 43%,#ffffffdf 50%,#ffffff24 57%,transparent 65%) 150% 50%/260% 100% no-repeat;-webkit-mask:url("assets/design/poster-russia-silhouette.svg") center/100% 100% no-repeat;mask:url("assets/design/poster-russia-silhouette.svg") center/100% 100% no-repeat;opacity:1;animation:map-sheen 22s ease-in-out -5s infinite;transition:opacity .38s ease}
+.cover-leaving .poster-sheet::after{opacity:0;animation-play-state:paused}@keyframes map-sheen{0%,6%{background-position:150% 50%}94%,100%{background-position:-50% 50%}}
+body.reduced .poster-sheet::after{display:none;animation:none;transition:none}@media(prefers-reduced-motion:reduce){.poster-sheet::after{display:none;animation:none;transition:none}}
