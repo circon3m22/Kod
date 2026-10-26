@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "p-c6-transport",
+    "type": "chronology",
+    "text": "Расположите открытия транспортных линий от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Открытие Московского метрополитена\n\nБ) Открытие Царскосельской железной дороги\n\nВ) Начало сквозного движения поездов Петербург — Москва",
+    "events": [
+      {
+        "label": "А",
+        "text": "Открытие Московского метрополитена",
+        "date": "1935-05-15",
+        "sourceRef": "p-c6-transport:metro-moscow",
+        "image": "assets/paper-rounds/metro-moscow.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Открытие Царскосельской железной дороги",
+        "date": "1837-11-11",
+        "sourceRef": "p-c6-transport:rail-tsarskoe",
+        "image": "assets/paper-rounds/rail-tsarskoe.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Начало сквозного движения поездов Петербург — Москва",
+        "date": "1851",
+        "sourceRef": "p-c6-transport:rail-capitals",
+        "image": "assets/paper-rounds/rail-capitals.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "answer": "Б → В → А\n\nБ) Открытие Царскосельской железной дороги — 1837.\nВ) Начало сквозного движения поездов Петербург — Москва — 1851.\nА) Открытие Московского метрополитена — 1935.",
+    "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+    "category": "Что было раньше?",
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "video": null,
+    "images": [
+      "assets/paper-rounds/metro-moscow.jpg",
+      "assets/paper-rounds/rail-tsarskoe.jpg",
+      "assets/paper-rounds/rail-capitals.jpg"
+    ],
+    "source": "source/paper-round-content.json",
+    "sourceRefs": [
+      "p-c6-transport"
+    ],
+    "revision": {
+      "date": "2026-10-26",
+      "note": "Новый вопрос для бланков; факты и критерии зачёта сохранены в источнике."
+    },
+    "paperImages": [
+      "assets/paper-rounds/metro-moscow.jpg",
+      "assets/paper-rounds/rail-tsarskoe.jpg",
+      "assets/paper-rounds/rail-capitals.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/paper-rounds/metro-moscow.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/rail-tsarskoe.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/rail-capitals.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      }
+    ],
+    "answerImages": [
+      "assets/paper-rounds/rail-tsarskoe.jpg",
+      "assets/paper-rounds/rail-capitals.jpg",
+      "assets/paper-rounds/metro-moscow.jpg"
+    ],
+    "answerImageDetails": [
+      {
+        "src": "assets/paper-rounds/rail-tsarskoe.jpg",
+        "alt": "Открытие Царскосельской железной дороги. Историческая иллюстрация",
+        "caption": "Открытие Царскосельской железной дороги. Историческая иллюстрация"
+      },
+      {
+        "src": "assets/paper-rounds/rail-capitals.jpg",
+        "alt": "Николаевский вокзал в Москве. Историческое изображение",
+        "caption": "Николаевский вокзал в Москве. Историческое изображение"
+      },
+      {
+        "src": "assets/paper-rounds/metro-moscow.jpg",
+        "alt": "Станция Московского метрополитена. Современная фотография",
+        "caption": "Станция Московского метрополитена. Современная фотография"
+      }
+    ],
+    "value": 100
+  },
+  {
+    "id": "c6-order-200",
+    "category": "Что было раньше?",
+    "value": 200,
+    "type": "chronology",
+    "text": "Что было раньше? Назовите букву.\n\nА) Основание Санкт-Петербурга\n\nБ) Первое летописное упоминание о Москве",
+    "answer": "Б → А\n\nБ) Первое летописное упоминание о Москве — 1147 год.\nА) Основание Санкт-Петербурга — 1703 год.",
+    "images": [
+      "assets/answer-history/petersburg.jpg",
+      "assets/answer-history/moscow.jpg"
+    ],
+    "answerImages": [
+      "assets/answer-history/moscow.jpg",
+      "assets/answer-history/petersburg.jpg"
+    ],
+    "video": null,
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "source": "source/new-question-evidence.json",
+    "sourceRefs": [
+      "petersburg",
+      "moscow"
+    ],
+    "events": [
+      {
+        "label": "А",
+        "text": "Основание Санкт-Петербурга",
+        "date": "1703",
+        "sourceRef": "petersburg",
+        "image": "assets/answer-history/petersburg.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Первое летописное упоминание о Москве",
+        "date": "1147",
+        "sourceRef": "moscow",
+        "image": "assets/answer-history/moscow.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "А"
+    ],
+    "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+    "revision": {
+      "date": "2026-10-25",
+      "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+      "evidence": [
+        "petersburg",
+        "moscow"
+      ]
+    },
+    "answerImageDetails": [
+      {
+        "src": "assets/answer-history/moscow.jpg",
+        "alt": "Москва. Современная фотография",
+        "caption": "Москва. Современная фотография"
+      },
+      {
+        "src": "assets/answer-history/petersburg.jpg",
+        "alt": "Петропавловская крепость. Современная фотография",
+        "caption": "Петропавловская крепость. Современная фотография"
+      }
+    ],
+    "legacyValue": 200,
+    "paperImages": [
+      "assets/answer-history/petersburg.jpg",
+      "assets/answer-history/moscow.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/answer-history/petersburg.jpg",
+        "alt": "Основание Санкт-Петербурга",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/moscow.jpg",
+        "alt": "Первое летописное упоминание о Москве",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "p-c6-museums",
+    "type": "chronology",
+    "text": "Расположите события из истории художественных музеев от раннего к позднему. Назовите порядок букв.\n\nА) Русский музей открывается для посетителей\n\nБ) Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа\n\nВ) Павел Третьяков передаёт галерею в дар Москве",
+    "events": [
+      {
+        "label": "А",
+        "text": "Русский музей открывается для посетителей",
+        "date": "1898-03-19",
+        "sourceRef": "p-c6-museums:russian-museum",
+        "image": "assets/paper-rounds/russian-museum.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа",
+        "date": "1764",
+        "sourceRef": "p-c6-museums:hermitage",
+        "image": "assets/paper-rounds/hermitage.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Павел Третьяков передаёт галерею в дар Москве",
+        "date": "1892",
+        "sourceRef": "p-c6-museums:tretyakov",
+        "image": "assets/paper-rounds/tretyakov.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "answer": "Б → В → А\n\nБ) Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа — 1764.\nВ) Павел Третьяков передаёт галерею в дар Москве — 1892.\nА) Русский музей открывается для посетителей — 1898.",
+    "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+    "category": "Что было раньше?",
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "video": null,
+    "images": [
+      "assets/paper-rounds/russian-museum.jpg",
+      "assets/paper-rounds/hermitage.jpg",
+      "assets/paper-rounds/tretyakov.jpg"
+    ],
+    "source": "source/paper-round-content.json",
+    "sourceRefs": [
+      "p-c6-museums"
+    ],
+    "revision": {
+      "date": "2026-10-26",
+      "note": "Новый вопрос для бланков; факты и критерии зачёта сохранены в источнике."
+    },
+    "paperImages": [
+      "assets/paper-rounds/russian-museum.jpg",
+      "assets/paper-rounds/hermitage.jpg",
+      "assets/paper-rounds/tretyakov.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/paper-rounds/russian-museum.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/hermitage.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/tretyakov.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      }
+    ],
+    "answerImages": [
+      "assets/paper-rounds/hermitage.jpg",
+      "assets/paper-rounds/tretyakov.jpg",
+      "assets/paper-rounds/russian-museum.jpg"
+    ],
+    "answerImageDetails": [
+      {
+        "src": "assets/paper-rounds/hermitage.jpg",
+        "alt": "Зимний дворец. Современная фотография",
+        "caption": "Зимний дворец. Современная фотография"
+      },
+      {
+        "src": "assets/paper-rounds/tretyakov.jpg",
+        "alt": "Фасад Третьяковской галереи на почтовой марке 1992 года",
+        "caption": "Фасад Третьяковской галереи на почтовой марке 1992 года"
+      },
+      {
+        "src": "assets/paper-rounds/russian-museum.jpg",
+        "alt": "Михайловский дворец Русского музея. Современная фотография",
+        "caption": "Михайловский дворец Русского музея. Современная фотография"
+      }
+    ],
+    "value": 300
+  },
+  {
+    "id": "c6-order-400",
+    "category": "Что было раньше?",
+    "value": 400,
+    "type": "chronology",
+    "text": "Расположите космические события от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Первый полёт Юрия Гагарина\n\nБ) Полёт Валентины Терешковой\n\nВ) Запуск первого искусственного спутника Земли",
+    "answer": "В → А → Б\n\nВ) Запуск первого искусственного спутника Земли — 4 октября 1957.\nА) Первый полёт Юрия Гагарина — 12 апреля 1961.\nБ) Полёт Валентины Терешковой — 16 июня 1963.",
+    "images": [
+      "assets/answer-history/gagarin.jpg",
+      "assets/chronology-cards/tereshkova.jpg",
+      "assets/answer-history/sputnik.jpg"
+    ],
+    "answerImages": [
+      "assets/answer-history/sputnik.jpg",
+      "assets/answer-history/gagarin.jpg",
+      "assets/chronology-cards/tereshkova.jpg"
+    ],
+    "video": null,
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "source": "source/new-question-evidence.json",
+    "sourceRefs": [
+      "space-firsts",
+      "tereshkova"
+    ],
+    "events": [
+      {
+        "label": "А",
+        "text": "Первый полёт Юрия Гагарина",
+        "date": "1961-04-12",
+        "sourceRef": "space-firsts",
+        "image": "assets/answer-history/gagarin.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Полёт Валентины Терешковой",
+        "date": "1963-06-16",
+        "sourceRef": "tereshkova",
+        "image": "assets/chronology-cards/tereshkova.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Запуск первого искусственного спутника Земли",
+        "date": "1957-10-04",
+        "sourceRef": "space-firsts",
+        "image": "assets/answer-history/sputnik.jpg"
+      }
+    ],
+    "correctOrder": [
+      "В",
+      "А",
+      "Б"
+    ],
+    "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+    "revision": {
+      "date": "2026-10-25",
+      "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+      "evidence": [
+        "space-firsts",
+        "tereshkova"
+      ]
+    },
+    "answerImageDetails": [
+      {
+        "src": "assets/answer-history/sputnik.jpg",
+        "alt": "Макет первого искусственного спутника Земли",
+        "caption": "Макет первого искусственного спутника Земли"
+      },
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Юрий Гагарин. Архивный портрет",
+        "caption": "Юрий Гагарин. Архивный портрет"
+      },
+      {
+        "src": "assets/chronology-cards/tereshkova.jpg",
+        "alt": "Валентина Терешкова. Архивный портрет",
+        "caption": "Валентина Терешкова. Архивный портрет"
+      }
+    ],
+    "legacyValue": 400,
+    "paperImages": [
+      "assets/answer-history/gagarin.jpg",
+      "assets/chronology-cards/tereshkova.jpg",
+      "assets/answer-history/sputnik.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Первый полёт Юрия Гагарина",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/tereshkova.jpg",
+        "alt": "Полёт Валентины Терешковой",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/sputnik.jpg",
+        "alt": "Запуск первого искусственного спутника Земли",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "p-c6-literature",
+    "type": "chronology",
+    "text": "Расположите литературные публикации от самой ранней к самой поздней. Речь о первых отдельных изданиях, а у «Войны и мира» — о завершении выхода полного шеститомника. Назовите порядок букв.\n\nА) Завершается выход первого полного издания «Войны и мира»\n\nБ) Отдельное издание «Героя нашего времени»\n\nВ) Первый том «Мёртвых душ» выходит из печати",
+    "events": [
+      {
+        "label": "А",
+        "text": "Завершается выход первого полного издания «Войны и мира»",
+        "date": "1869",
+        "sourceRef": "p-c6-literature:war-peace",
+        "image": "assets/cover-eras/tolstoy.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Отдельное издание «Героя нашего времени»",
+        "date": "1840",
+        "sourceRef": "p-c6-literature:hero",
+        "image": "assets/paper-rounds/lermontov.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Первый том «Мёртвых душ» выходит из печати",
+        "date": "1842",
+        "sourceRef": "p-c6-literature:souls",
+        "image": "assets/paper-rounds/gogol.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "answer": "Б → В → А\n\nБ) Отдельное издание «Героя нашего времени» — 1840.\nВ) Первый том «Мёртвых душ» выходит из печати — 1842.\nА) Завершается выход первого полного издания «Войны и мира» — 1869.",
+    "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+    "category": "Что было раньше?",
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "video": null,
+    "images": [
+      "assets/cover-eras/tolstoy.jpg",
+      "assets/paper-rounds/lermontov.jpg",
+      "assets/paper-rounds/gogol.jpg"
+    ],
+    "source": "source/paper-round-content.json",
+    "sourceRefs": [
+      "p-c6-literature"
+    ],
+    "revision": {
+      "date": "2026-10-26",
+      "note": "Новый вопрос для бланков; факты и критерии зачёта сохранены в источнике."
+    },
+    "paperImages": [
+      "assets/cover-eras/tolstoy.jpg",
+      "assets/paper-rounds/lermontov.jpg",
+      "assets/paper-rounds/gogol.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/cover-eras/tolstoy.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/lermontov.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/gogol.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      }
+    ],
+    "answerImages": [
+      "assets/paper-rounds/lermontov.jpg",
+      "assets/paper-rounds/gogol.jpg",
+      "assets/cover-eras/tolstoy.jpg"
+    ],
+    "answerImageDetails": [
+      {
+        "src": "assets/paper-rounds/lermontov.jpg",
+        "alt": "Михаил Лермонтов. Исторический портрет",
+        "caption": "Михаил Лермонтов. Исторический портрет"
+      },
+      {
+        "src": "assets/paper-rounds/gogol.jpg",
+        "alt": "Николай Гоголь. Фёдор Моллер, 1840",
+        "caption": "Николай Гоголь. Фёдор Моллер, 1840"
+      },
+      {
+        "src": "assets/cover-eras/tolstoy.jpg",
+        "alt": "Лев Толстой в Ясной Поляне. С. М. Прокудин-Горский, 1908. Подлинная ранняя цветная фотография",
+        "caption": "Лев Толстой в Ясной Поляне. С. М. Прокудин-Горский, 1908. Подлинная ранняя цветная фотография"
+      }
+    ],
+    "value": 500
+  },
+  {
+    "id": "c6-order-600",
+    "category": "Что было раньше?",
+    "value": 600,
+    "type": "chronology",
+    "text": "Расположите события в истории культуры и науки от раннего к позднему. Назовите порядок букв.\n\nА) Основание Московского университета\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца\n\nВ) Основание Кунсткамеры",
+    "answer": "Б → В → А\n\nБ) Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца — 1564 год.\nВ) Основание Кунсткамеры — 1714 год.\nА) Основание Московского университета — 1755 год.",
+    "images": [
+      "assets/chronology-cards/msu.jpg",
+      "assets/answer-history/book.jpg",
+      "assets/answer-history/kunstkamera.jpg"
+    ],
+    "answerImages": [
+      "assets/answer-history/book.jpg",
+      "assets/answer-history/kunstkamera.jpg",
+      "assets/chronology-cards/msu.jpg"
+    ],
+    "video": null,
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "source": "source/new-question-evidence.json",
+    "sourceRefs": [
+      "msu",
+      "apostol",
+      "kunstkamera"
+    ],
+    "events": [
+      {
+        "label": "А",
+        "text": "Основание Московского университета",
+        "date": "1755",
+        "sourceRef": "msu",
+        "image": "assets/chronology-cards/msu.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
+        "date": "1564",
+        "sourceRef": "apostol",
+        "image": "assets/answer-history/book.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Основание Кунсткамеры",
+        "date": "1714",
+        "sourceRef": "kunstkamera",
+        "image": "assets/answer-history/kunstkamera.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+    "revision": {
+      "date": "2026-10-25",
+      "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+      "evidence": [
+        "msu",
+        "apostol",
+        "kunstkamera"
+      ]
+    },
+    "answerImageDetails": [
+      {
+        "src": "assets/answer-history/book.jpg",
+        "alt": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца",
+        "caption": "Московский «Апостол» Ивана Фёдорова и Петра Мстиславца"
+      },
+      {
+        "src": "assets/answer-history/kunstkamera.jpg",
+        "alt": "Кунсткамера. Современная фотография",
+        "caption": "Кунсткамера. Современная фотография"
+      },
+      {
+        "src": "assets/chronology-cards/msu.jpg",
+        "alt": "Московский университет. Акварель XVIII века",
+        "caption": "Московский университет. Акварель XVIII века"
+      }
+    ],
+    "legacyValue": 600,
+    "paperImages": [
+      "assets/chronology-cards/msu.jpg",
+      "assets/answer-history/book.jpg",
+      "assets/answer-history/kunstkamera.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/chronology-cards/msu.jpg",
+        "alt": "Основание Московского университета",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/book.jpg",
+        "alt": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/kunstkamera.jpg",
+        "alt": "Основание Кунсткамеры",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "p-c6-science",
+    "type": "chronology",
+    "text": "Расположите научные события от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Обнинская АЭС начинает промышленную эксплуатацию\n\nБ) Попов демонстрирует прибор для регистрации электромагнитных колебаний\n\nВ) Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1»",
+    "events": [
+      {
+        "label": "А",
+        "text": "Обнинская АЭС начинает промышленную эксплуатацию",
+        "date": "1954-06-27",
+        "sourceRef": "p-c6-science:obninsk",
+        "image": "assets/paper-rounds/obninsk.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Попов демонстрирует прибор для регистрации электромагнитных колебаний",
+        "date": "1895-05-07",
+        "sourceRef": "p-c6-science:popov",
+        "image": "assets/paper-rounds/popov.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1»",
+        "date": "1937-05-21",
+        "sourceRef": "p-c6-science:northpole",
+        "image": "assets/paper-rounds/northpole.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "answer": "Б → В → А\n\nБ) Попов демонстрирует прибор для регистрации электромагнитных колебаний — 1895.\nВ) Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1» — 1937.\nА) Обнинская АЭС начинает промышленную эксплуатацию — 1954.",
+    "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+    "category": "Что было раньше?",
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "video": null,
+    "images": [
+      "assets/paper-rounds/obninsk.jpg",
+      "assets/paper-rounds/popov.jpg",
+      "assets/paper-rounds/northpole.jpg"
+    ],
+    "source": "source/paper-round-content.json",
+    "sourceRefs": [
+      "p-c6-science"
+    ],
+    "revision": {
+      "date": "2026-10-26",
+      "note": "Новый вопрос для бланков; факты и критерии зачёта сохранены в источнике."
+    },
+    "paperImages": [
+      "assets/paper-rounds/obninsk.jpg",
+      "assets/paper-rounds/popov.jpg",
+      "assets/paper-rounds/northpole.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/paper-rounds/obninsk.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/popov.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/northpole.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      }
+    ],
+    "answerImages": [
+      "assets/paper-rounds/popov.jpg",
+      "assets/paper-rounds/northpole.jpg",
+      "assets/paper-rounds/obninsk.jpg"
+    ],
+    "answerImageDetails": [
+      {
+        "src": "assets/paper-rounds/popov.jpg",
+        "alt": "Александр Попов. Архивный портрет",
+        "caption": "Александр Попов. Архивный портрет"
+      },
+      {
+        "src": "assets/paper-rounds/northpole.jpg",
+        "alt": "Иван Папанин и участники экспедиции перед высадкой на льдину",
+        "caption": "Иван Папанин и участники экспедиции перед высадкой на льдину"
+      },
+      {
+        "src": "assets/paper-rounds/obninsk.jpg",
+        "alt": "Обнинская АЭС. Современная фотография",
+        "caption": "Обнинская АЭС. Современная фотография"
+      }
+    ],
+    "value": 700
+  },
+  {
+    "id": "c6-order-800",
+    "category": "Что было раньше?",
+    "value": 800,
+    "type": "chronology",
+    "text": "Соберите дальневосточную хронологию: от самого раннего события к самому позднему. Назовите порядок букв.\n\nА) Открытие первого постоянного моста через Амур в Хабаровске\n\nБ) Основание военного поста Владивосток\n\nВ) Церемония закладки Транссибирской магистрали у Владивостока\n\nГ) Основание военного поста Хабаровка",
+    "answer": "Г → Б → В → А\n\nГ) Основание военного поста Хабаровка — 1858 год.\nБ) Основание военного поста Владивосток — 1860 год.\nВ) Церемония закладки Транссибирской магистрали у Владивостока — 1891 год.\nА) Открытие первого постоянного моста через Амур в Хабаровске — 1916 год.",
+    "images": [
+      "assets/chronology-cards/amur-bridge.jpg",
+      "assets/chronology-cards/vladivostok.jpg",
+      "assets/chronology-cards/transsib.jpg",
+      "assets/chronology-cards/khabarovka.jpg"
+    ],
+    "answerImages": [
+      "assets/chronology-cards/khabarovka.jpg",
+      "assets/chronology-cards/vladivostok.jpg",
+      "assets/chronology-cards/transsib.jpg",
+      "assets/chronology-cards/amur-bridge.jpg"
+    ],
+    "video": null,
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "source": "source/new-question-evidence.json",
+    "sourceRefs": [
+      "bridge",
+      "vladivostok",
+      "transsib",
+      "khabarovsk"
+    ],
+    "events": [
+      {
+        "label": "А",
+        "text": "Открытие первого постоянного моста через Амур в Хабаровске",
+        "date": "1916",
+        "sourceRef": "bridge",
+        "image": "assets/chronology-cards/amur-bridge.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Основание военного поста Владивосток",
+        "date": "1860",
+        "sourceRef": "vladivostok",
+        "image": "assets/chronology-cards/vladivostok.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Церемония закладки Транссибирской магистрали у Владивостока",
+        "date": "1891",
+        "sourceRef": "transsib",
+        "image": "assets/chronology-cards/transsib.jpg"
+      },
+      {
+        "label": "Г",
+        "text": "Основание военного поста Хабаровка",
+        "date": "1858",
+        "sourceRef": "khabarovsk",
+        "image": "assets/chronology-cards/khabarovka.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Г",
+      "Б",
+      "В",
+      "А"
+    ],
+    "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+    "revision": {
+      "date": "2026-10-25",
+      "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+      "evidence": [
+        "bridge",
+        "vladivostok",
+        "transsib",
+        "khabarovsk"
+      ]
+    },
+    "answerImageDetails": [
+      {
+        "src": "assets/chronology-cards/khabarovka.jpg",
+        "alt": "Хабаровка. Ранняя архивная фотография",
+        "caption": "Хабаровка. Ранняя архивная фотография"
+      },
+      {
+        "src": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Ранний Владивосток. Архивная фотография",
+        "caption": "Ранний Владивосток. Архивная фотография"
+      },
+      {
+        "src": "assets/chronology-cards/transsib.jpg",
+        "alt": "Закладка Транссиба. Историческая иллюстрация",
+        "caption": "Закладка Транссиба. Историческая иллюстрация"
+      },
+      {
+        "src": "assets/chronology-cards/amur-bridge.jpg",
+        "alt": "Первый мост через Амур. Архивная фотография",
+        "caption": "Первый мост через Амур. Архивная фотография"
+      }
+    ],
+    "legacyValue": 800,
+    "paperImages": [
+      "assets/chronology-cards/amur-bridge.jpg",
+      "assets/chronology-cards/vladivostok.jpg",
+      "assets/chronology-cards/transsib.jpg",
+      "assets/chronology-cards/khabarovka.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/chronology-cards/amur-bridge.jpg",
+        "alt": "Открытие первого постоянного моста через Амур в Хабаровске",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Основание военного поста Владивосток",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/transsib.jpg",
+        "alt": "Церемония закладки Транссибирской магистрали у Владивостока",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/khabarovka.jpg",
+        "alt": "Основание военного поста Хабаровка",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "p-c6-year1905",
+    "type": "chronology",
+    "text": "Все три события произошли в 1905 году. Расположите их от самого раннего к самому позднему. Назовите порядок букв.\n\nА) Подписание Портсмутского мирного договора\n\nБ) «Кровавое воскресенье» в Петербурге\n\nВ) Начало восстания на броненосце «Потёмкин»",
+    "events": [
+      {
+        "label": "А",
+        "text": "Подписание Портсмутского мирного договора",
+        "date": "1905-09-05",
+        "sourceRef": "p-c6-year1905:portsmouth",
+        "image": "assets/paper-rounds/portsmouth.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "«Кровавое воскресенье» в Петербурге",
+        "date": "1905-01-22",
+        "sourceRef": "p-c6-year1905:bloody-sunday",
+        "image": "assets/paper-rounds/bloody-sunday.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Начало восстания на броненосце «Потёмкин»",
+        "date": "1905-06-27",
+        "sourceRef": "p-c6-year1905:potemkin-uprising",
+        "image": "assets/paper-rounds/potemkin-uprising.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Б",
+      "В",
+      "А"
+    ],
+    "answer": "Б → В → А\n\nБ) «Кровавое воскресенье» в Петербурге — 22.01.1905.\nВ) Начало восстания на броненосце «Потёмкин» — 27.06.1905.\nА) Подписание Портсмутского мирного договора — 05.09.1905.",
+    "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+    "category": "Что было раньше?",
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "video": null,
+    "images": [
+      "assets/paper-rounds/portsmouth.jpg",
+      "assets/paper-rounds/bloody-sunday.jpg",
+      "assets/paper-rounds/potemkin-uprising.jpg"
+    ],
+    "source": "source/paper-round-content.json",
+    "sourceRefs": [
+      "p-c6-year1905"
+    ],
+    "revision": {
+      "date": "2026-10-26",
+      "note": "Новый вопрос для бланков; факты и критерии зачёта сохранены в источнике."
+    },
+    "paperImages": [
+      "assets/paper-rounds/portsmouth.jpg",
+      "assets/paper-rounds/bloody-sunday.jpg",
+      "assets/paper-rounds/potemkin-uprising.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/paper-rounds/portsmouth.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/bloody-sunday.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      },
+      {
+        "src": "assets/paper-rounds/potemkin-uprising.jpg",
+        "alt": "Иллюстрация к вопросу",
+        "caption": ""
+      }
+    ],
+    "answerImages": [
+      "assets/paper-rounds/bloody-sunday.jpg",
+      "assets/paper-rounds/potemkin-uprising.jpg",
+      "assets/paper-rounds/portsmouth.jpg"
+    ],
+    "answerImageDetails": [
+      {
+        "src": "assets/paper-rounds/bloody-sunday.jpg",
+        "alt": "Кровавое воскресенье. Историческая иллюстрация",
+        "caption": "Кровавое воскресенье. Историческая иллюстрация"
+      },
+      {
+        "src": "assets/paper-rounds/potemkin-uprising.jpg",
+        "alt": "Броненосец «Князь Потёмкин-Таврический» в Констанце, 1905 год",
+        "caption": "Броненосец «Князь Потёмкин-Таврический» в Констанце, 1905 год"
+      },
+      {
+        "src": "assets/paper-rounds/portsmouth.jpg",
+        "alt": "Участники Портсмутской мирной конференции, 1905",
+        "caption": "Участники Портсмутской мирной конференции, 1905"
+      }
+    ],
+    "value": 900
+  },
+  {
+    "id": "c6-order-1000",
+    "category": "Что было раньше?",
+    "value": 1000,
+    "type": "chronology",
+    "text": "Все эти события произошли в 1961 году. Расположите их от раннего к позднему. Назовите порядок букв.\n\nА) Открытие XXII съезда КПСС\n\nБ) Начало сооружения Берлинской стены\n\nВ) Старт Германа Титова на корабле «Восток-2»\n\nГ) Первый полёт Юрия Гагарина",
+    "answer": "Г → В → Б → А\n\nГ) Первый полёт Юрия Гагарина — 12 апреля 1961.\nВ) Старт Германа Титова на корабле «Восток-2» — 6 августа 1961.\nБ) Начало сооружения Берлинской стены — 13 августа 1961.\nА) Открытие XXII съезда КПСС — 17 октября 1961.",
+    "images": [
+      "assets/chronology-cards/congress-palace.jpg",
+      "assets/answer-history/berlin-wall.jpg",
+      "assets/chronology-cards/titov.jpg",
+      "assets/answer-history/gagarin.jpg"
+    ],
+    "answerImages": [
+      "assets/answer-history/gagarin.jpg",
+      "assets/chronology-cards/titov.jpg",
+      "assets/answer-history/berlin-wall.jpg",
+      "assets/chronology-cards/congress-palace.jpg"
+    ],
+    "video": null,
+    "enabled": true,
+    "status": "complete",
+    "sourceSlide": null,
+    "answerSlide": null,
+    "source": "source/new-question-evidence.json",
+    "sourceRefs": [
+      "congress",
+      "berlin",
+      "titov",
+      "space-firsts"
+    ],
+    "events": [
+      {
+        "label": "А",
+        "text": "Открытие XXII съезда КПСС",
+        "date": "1961-10-17",
+        "sourceRef": "congress",
+        "image": "assets/chronology-cards/congress-palace.jpg"
+      },
+      {
+        "label": "Б",
+        "text": "Начало сооружения Берлинской стены",
+        "date": "1961-08-13",
+        "sourceRef": "berlin",
+        "image": "assets/answer-history/berlin-wall.jpg"
+      },
+      {
+        "label": "В",
+        "text": "Старт Германа Титова на корабле «Восток-2»",
+        "date": "1961-08-06",
+        "sourceRef": "titov",
+        "image": "assets/chronology-cards/titov.jpg"
+      },
+      {
+        "label": "Г",
+        "text": "Первый полёт Юрия Гагарина",
+        "date": "1961-04-12",
+        "sourceRef": "space-firsts",
+        "image": "assets/answer-history/gagarin.jpg"
+      }
+    ],
+    "correctOrder": [
+      "Г",
+      "В",
+      "Б",
+      "А"
+    ],
+    "acceptance": "Принимается полный порядок букв. Точные даты и годы называть не обязательно.",
+    "revision": {
+      "date": "2026-10-25",
+      "note": "Новая категория по запросу пользователя; порядок событий проверен по указанным источникам.",
+      "evidence": [
+        "congress",
+        "berlin",
+        "titov",
+        "space-firsts"
+      ]
+    },
+    "answerImageDetails": [
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Юрий Гагарин. Архивный портрет",
+        "caption": "Юрий Гагарин. Архивный портрет"
+      },
+      {
+        "src": "assets/chronology-cards/titov.jpg",
+        "alt": "Герман Титов. Архивный портрет",
+        "caption": "Герман Титов. Архивный портрет"
+      },
+      {
+        "src": "assets/answer-history/berlin-wall.jpg",
+        "alt": "Строительство Берлинской стены. Архивный снимок",
+        "caption": "Строительство Берлинской стены. Архивный снимок"
+      },
+      {
+        "src": "assets/chronology-cards/congress-palace.jpg",
+        "alt": "Кремлёвский дворец съездов — место проведения XXII съезда",
+        "caption": "Кремлёвский дворец съездов — место проведения XXII съезда"
+      }
+    ],
+    "legacyValue": 1000,
+    "paperImages": [
+      "assets/chronology-cards/congress-palace.jpg",
+      "assets/answer-history/berlin-wall.jpg",
+      "assets/chronology-cards/titov.jpg",
+      "assets/answer-history/gagarin.jpg"
+    ],
+    "paperImageDetails": [
+      {
+        "src": "assets/chronology-cards/congress-palace.jpg",
+        "alt": "Открытие XXII съезда КПСС",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/berlin-wall.jpg",
+        "alt": "Начало сооружения Берлинской стены",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/titov.jpg",
+        "alt": "Старт Германа Титова на корабле «Восток-2»",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Первый полёт Юрия Гагарина",
+        "caption": ""
+      }
+    ]
+  }
+]

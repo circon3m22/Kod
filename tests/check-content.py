@@ -41,7 +41,10 @@ for q in original_questions+archive:
   assert q['answer'].strip()!='Текст' and q['text'].strip()!='Текст'
   assert 'original' in q and q['revision']['date']=='2026-10-25'
  if q['status']=='missing-video':assert q['images'] and not q['video'] and not q['enabled']
-known_refs=set(new_sources)|{x['id'] for x in photo_sources}|paper_refs
+review=json.loads((r/'source/chronology-review-20261026.json').read_text())
+review_refs=set(review['sources'])
+review_refs|={e['sourceRef'] for x in review['sources'].values() for e in x['events']}
+known_refs=review_refs|set(new_sources)|{x['id'] for x in photo_sources}|paper_refs
 for q in d['questions']:
  assert q['enabled'] and q['status']=='complete' and q['text'].strip() and q['answer'].strip()
  assert q['text'].strip()!='Текст' and q['answer'].strip()!='Текст'
@@ -123,7 +126,7 @@ for x in eras:
  assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
 event_sources=json.loads((r/'source/chronology-card-sources.json').read_text())
 assert set(event_sources)=={q['id'] for q in timelines}
-assert sum(len(q['events']) for q in timelines)==31
+assert sum(len(q['events']) for q in timelines)==41
 for q in timelines:
  assert set(event_sources[q['id']])=={e['label'] for e in q['events']}
  assert q['images']==[e['image'] for e in q['events']]
@@ -140,7 +143,7 @@ prior=json.loads((r/'source/pre-paper-quiz-data.json').read_text())
 for old in prior['questions']:
  q=by_id[old['id']]
  for key in ['text','answer','type','images','events','matches','columns']:
-  if key in old:assert q[key]==old[key],(q['id'],key)
+  if key in old and not (q['type']=='chronology' or key=='images' and q['id'] in ['c2-800']):assert q[key]==old[key],(q['id'],key)
  assert q['legacyValue']==old['value']
 assert d['legacyWarmupIds']==[q['id'] for q in prior['warmup']]
 assert d['values']==list(range(100,1001,100))
@@ -160,8 +163,8 @@ for q in d['questions']+d['warmup']:
  assert all(not x.get('caption') for x in q['paperImageDetails'])
 assert 'class="media-caption"' not in (r/'app.js').read_text()
 print('PASS: 60 main questions, 15 warmup; 7 paper rounds; ordered 100–1000 costs; 34500 maximum.')
-print('PASS: all 30 previous questions preserved; original slide mappings; 75 sourced answer illustrations and question images.')
-print('PASS: 10 timelines / 31 illustrated events; sources, local dependencies, asset checksums and cover geometry.')
+print('PASS: original slide text preserved; requested chronology and illustration replacements; 75 source-backed tasks.')
+print('PASS: 10 harder timelines / 41 illustrated events; sources, local dependencies, asset checksums and cover geometry.')
 
 film=json.loads((r/'cover-film.js').read_text().split('window.COVER_FILM = ')[1].rstrip(';\n'))
 film_sources=json.loads((r/'source/cover-film-sources.json').read_text())['images']
@@ -185,3 +188,19 @@ for item in rules:
     assert png[25] in (4, 6) or (png[25] == 3 and b'tRNS' in png)
 assert 'quiz-flow.js' in (r / 'index.html').read_text() and (r / 'flow.css').exists()
 print('PASS: three source-backed transparent rule illustrations and local sequential-flow dependencies.')
+
+# The same picture may recur in its own answer, but never in another question.
+from collections import defaultdict
+image_owners=defaultdict(set)
+for q in d['warmup']+d['questions']:
+ for path in set(q.get('images',[])+q['paperImages']+q['answerImages']+[e['image'] for e in q.get('events',[])]):
+  image_owners[hashlib.sha256((r/path).read_bytes()).hexdigest()].add(q['id'])
+assert all(len(ids)==1 for ids in image_owners.values()),dict((k,v) for k,v in image_owners.items() if len(v)>1)
+previous={q['id']:q for q in json.loads((r/'source/chronology-before-20261026.json').read_text())}
+assert len(timelines)==10 and all(q['events']!=previous[q['id']]['events'] for q in timelines)
+assert [len(q['events']) for q in sorted(timelines,key=lambda q:q['value'])]==[3,4,4,4,4,4,4,4,5,5]
+assert all(q['correctOrder']!=[e['label'] for e in q['events']] for q in timelines)
+assert (r/'assets/brand/quiz-logo-black.png').read_bytes().startswith(b'\x89PNG')
+assert '<image' not in (r/'assets/brand/quiz-logo-black.svg').read_text()
+assert '<text' not in (r/'assets/brand/quiz-logo-black.svg').read_text()
+print('PASS: no image bytes shared by distinct questions; all ten timelines replaced and more demanding; outlined black logo export.')

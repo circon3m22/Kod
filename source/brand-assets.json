@@ -1,0 +1,12 @@
+{
+  "councilLogo": {
+    "path": "assets/brand/youth-council-black.svg",
+    "source": "User-supplied reference, 2026-10-26",
+    "method": "Manual vector reconstruction; black mark; letter outlines."
+  },
+  "quizLogo": {
+    "svg": "assets/brand/quiz-logo-black.svg",
+    "png": "assets/brand/quiz-logo-black.png",
+    "method": "Original cover sector paths clipped by the same letter shapes, solid black; calligraphy converted to paths."
+  }
+}

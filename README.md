@@ -23,3 +23,7 @@
 Источники изображений и лицензии — credits.html и source/*.json. Три иллюстрации правил — CC0 с исходной прозрачностью, source/rules-image-sources.json. Печатные бланки и ключ ответов — design/answer-sheets.pdf и design/host-answer-key.html. Новые смешанные портреты ожидают пользовательских фотографий: source/mixed-portrait-plan.json.
 
 Проверки: `node tests/check-sequence.cjs`, `node tests/check-sequence-browser.cjs`, `node tests/check-flow-layout.cjs`, `python3 tests/check-content.py`. Совместимость счёта/сохранений: `node tests/check-state.cjs`, `node tests/check-scoring.cjs`, `node tests/check-paper-flow.cjs`. Проверки афиши: tests/check-cover-browser.cjs и tests/check-poster-film.cjs. Для браузерных проверок нужен локальный HTTP-сервер и установленный Playwright/Chromium; блокировка file:// политикой данной среды не обходится.
+
+Актуальная хронология: 10 усложнённых заданий, 41 карточка, единый новый стиль дат. Изображения закреплены за конкретным заданием и не повторяются в других вопросах/ответах; проверка встроена в tests/check-content.py. Источники и лицензии доступны в credits.html.
+
+На афише — локальная кириллическая каллиграфия Great Vibes с плавным появлением в финале и чёрный SVG Молодёжного совета. Отдельный логотип квиза: assets/brand/quiz-logo-black.svg / .png, PNG 3600×2160. Дополнительная проверка: node tests/check-brand.cjs.
