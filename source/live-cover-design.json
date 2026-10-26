@@ -10,5 +10,5 @@
     "source/cover-era-sources.json"
   ],
   "backgroundSource": "source/poster-background-source.json",
-  "animation": "Photos drift continuously under fixed masks with independent 24–32 second loops and 10% overscan; they pause during navigation. The background map fades immediately in 380 ms; text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions."
+  "animation": "A soft white highlight sweeps inside the map in a seamless 22 second loop; reduced motion hides it. Photos drift continuously under fixed masks with independent 24–32 second loops and 10% overscan; they pause during navigation. The background map fades immediately in 380 ms; text fades; the assembled word zooms through the centre of O. Stage cards fade in from left to right with 120 ms stagger. System and app reduced motion skip both transitions."
 }
