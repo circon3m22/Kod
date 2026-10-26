@@ -5,6 +5,7 @@ const url=process.env.QUIZ_URL||'http://127.0.0.1:8782';
 (async()=>{const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});try{
  const errors=[],failed=[];const context=await browser.newContext({viewport:{width:1920,height:1080}});const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>failed.push(r.url()));
  await p.goto(url);await p.evaluate(async()=>{await document.fonts.ready;await Promise.all(COVER_ART.sectors.map(async s=>{const i=new Image();i.src=s.photo;await i.decode()}));});
+ await p.evaluate(()=>document.getAnimations().filter(a=>a.id.startsWith('poster-tour-')).forEach(a=>a.cancel()));
  const read=()=>p.evaluate(()=>CulturalCode.snapshot());
  assert.equal(await p.locator('.kod-sector image').count(),9);assert.equal(await p.locator('.kod-sector image').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),9);
  assert.equal(await p.locator('.cover-poster img,.cover-poster object,.cover-poster canvas').count(),0);
