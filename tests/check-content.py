@@ -165,7 +165,7 @@ print('PASS: 10 timelines / 31 illustrated events; sources, local dependencies, 
 
 film=json.loads((r/'cover-film.js').read_text().split('window.COVER_FILM = ')[1].rstrip(';\n'))
 film_sources=json.loads((r/'source/cover-film-sources.json').read_text())['images']
-assert film['sceneSeconds']==4 and film['sequence']==['К','К','К','О','О','О','Д','Д','Д','КОД'] and len(film['photos'])==13
+assert film['sceneSeconds']==4 and film['sequence']==['К','О','Д','КОД'] and len(film['photos'])==13
 assert set(film['photos'])=={x['path'] for x in film_sources}
 for x in film_sources:
  assert x['author'] and x['sourceUrl'] and x['license']
