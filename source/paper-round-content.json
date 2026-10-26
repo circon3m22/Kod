@@ -1,0 +1,930 @@
+{
+  "date": "2026-10-26",
+  "status": "complete",
+  "main": [
+    {
+      "id": "p-c1-beresta",
+      "categoryIndex": 1,
+      "suggestedValue": 200,
+      "type": "text",
+      "text": "В 1951 году в Новгороде нашли средневековое письмо: буквы на нём были процарапаны, а не написаны чернилами. Как называется материал, на котором сохранилось это письмо?",
+      "answer": "Береста — кора берёзы.",
+      "acceptance": "Береста / берёзовая кора. Слово «бумага» не принимается.",
+      "sources": [
+        {
+          "url": "https://archaeolog.ru/online-museum/onlayn-vystavka-svideteli-proshlogo-iskusstvo-i-remeslo-v-arkheologicheskikh-nakhodkakh/berestyanaya-gramota",
+          "evidence": "Институт археологии РАН: берестяные грамоты — записи на коре берёзы; первая найдена 26 июля 1951 года."
+        }
+      ],
+      "imageSubject": "Birch-bark letter; avoid filename/caption revealing material."
+    },
+    {
+      "id": "p-c1-beard-token",
+      "categoryIndex": 1,
+      "suggestedValue": 400,
+      "type": "text",
+      "text": "На медном жетоне петровского времени выбито «ДЕНГИ ВЗЯТЫ». Какое право подтверждал такой жетон?",
+      "answer": "Право носить бороду после уплаты пошлины.",
+      "acceptance": "Ношение бороды / уплата налога на бороду. Размер пошлины не требуется.",
+      "sources": [
+        {
+          "url": "https://nav.shm.ru/exhibits/694/",
+          "evidence": "ГИМ: бородовой знак 1705 года выдавался уплатившим пошлину за ношение бороды."
+        }
+      ],
+      "imageSubject": "Beard-tax token1705."
+    },
+    {
+      "id": "p-c1-yermak",
+      "categoryIndex": 1,
+      "suggestedValue": 600,
+      "type": "text",
+      "text": "Этот ледокол вошёл в строй в 1899 году. Его создание продвигал адмирал Степан Макаров, а имя судно получило в честь покорителя Сибири. Назовите ледокол.",
+      "answer": "«Ермак».",
+      "acceptance": "Ермак.",
+      "sources": [
+        {
+          "url": "https://ke-culture.gov-murman.ru/slovnik/?ELEMENT_ID=94408",
+          "evidence": "Кольская энциклопедия: линейный ледокол «Ермак» построен в 1897–1899 годах по идее и проекту С. О. Макарова."
+        }
+      ],
+      "imageSubject": "Historical icebreaker Yermak; conceal readable vessel name if necessary."
+    },
+    {
+      "id": "p-c1-year-7208",
+      "categoryIndex": 1,
+      "suggestedValue": 800,
+      "type": "text",
+      "text": "Пётр I велел встречать новый 1700 год 1 января и считать годы от Рождества Христова. Но сам указ от 20 декабря 1699 года ещё датирован годом «от создания мира». Какое число года стоит в начале указа?",
+      "answer": "7208 год.",
+      "acceptance": "7208. Это смена летосчисления и начала года, а не переход на григорианский календарь.",
+      "sources": [
+        {
+          "url": "https://www.vostlit.info/Texts/Dokumenty/Russ/XVII/1680-1700/PetrI/ukaz_prazdn_nov_god_20_12_1699.htm",
+          "evidence": "Публикация первичного документа начинается датировкой «7208 года (1699), декабря 20»."
+        }
+      ],
+      "imageSubject": "PeterI portrait or old calendar; do not show decree text with answer.",
+      "secondarySource": "https://docs.historyrussia.org/ru/nodes/340419"
+    },
+    {
+      "id": "p-c1-vasyutinsky",
+      "categoryIndex": 1,
+      "suggestedValue": 1000,
+      "type": "text",
+      "text": "Перед вами золотой советский червонец «Сеятель» 1923 года. Его рисунок нередко ошибочно связывают с Иваном Шадром. Назовите настоящего автора монеты — художника-медальера.",
+      "answer": "Антон Фёдорович Васютинский.",
+      "acceptance": "Васютинский; имя и отчество необязательны. Шадр не принимается.",
+      "sources": [
+        {
+          "url": "https://museum.cbr.ru/articles/put-chervontsa-listaem-stranitsy-istorii/",
+          "evidence": "Музей Банка России, раздел «Спорный сеятель»: автор червонца Антон Васютинский; приписывание Шадру ошибочно."
+        }
+      ],
+      "imageSubject": "1923 goldchervonets Sower reverse, existingasset.",
+      "secondarySource": "https://www.cbr.ru/cash_circulation/memorable_coins/coins_base/ShowCoins/?cat_num=5214-0009-23"
+    },
+    {
+      "id": "p-c2-petropavlovsk",
+      "categoryIndex": 2,
+      "suggestedValue": 200,
+      "type": "text",
+      "text": "Два пакетбота Второй Камчатской экспедиции — «Святой Пётр» и «Святой Павел» — остались зимовать в Авачинской губе. Какой город получил своё имя от этих кораблей?",
+      "answer": "Петропавловск-Камчатский.",
+      "acceptance": "Петропавловск-Камчатский; «Петропавловск» допускается, если не назван казахстанский город.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/history/619636",
+          "evidence": "Президентская библиотека: поселение 1740 года получило имя от пакетботов «Святой апостол Пётр» и «Святой апостол Павел»."
+        }
+      ],
+      "imageSubject": "Petropavlovsk harbor historic view."
+    },
+    {
+      "id": "p-c2-sakhalin-census",
+      "categoryIndex": 2,
+      "suggestedValue": 400,
+      "type": "text",
+      "text": "В 1890 году он приехал на Сахалин не с литературными гастролями: обходил дома и тюремные камеры и заполнял переписные карточки. Какой русский писатель провёл эту работу?",
+      "answer": "Антон Павлович Чехов.",
+      "acceptance": "Чехов; имя и отчество необязательны.",
+      "sources": [
+        {
+          "url": "https://55.rosstat.gov.ru/news_vpn-2020/document/65817",
+          "evidence": "Росстат: Чехов в 1890 году посетил Сахалин, провёл перепись; итогом стала книга «Остров Сахалин»."
+        }
+      ],
+      "imageSubject": "Sakhalin historic landscape or censusform without Chekhovsignature."
+    },
+    {
+      "id": "p-c2-la-perouse",
+      "categoryIndex": 2,
+      "suggestedValue": 600,
+      "type": "text",
+      "text": "Он соединяет Японское и Охотское моря и отделяет Сахалин от Хоккайдо. Как называется этот пролив?",
+      "answer": "Пролив Лаперуза.",
+      "acceptance": "Лаперуза / пролив Лаперуза.",
+      "sources": [
+        {
+          "url": "https://old.bigenc.ru/geography/text/2133075",
+          "evidence": "БРЭ: пролив Лаперуза между Сахалином и Хоккайдо соединяет Японское и Охотское моря."
+        }
+      ],
+      "imageSubject": "Sakhalin-Hokkaido neutralmap; no straitlabel."
+    },
+    {
+      "id": "p-c2-pallada",
+      "categoryIndex": 2,
+      "suggestedValue": 800,
+      "type": "text",
+      "text": "Будущий автор «Обломова» отправился к берегам Японии секретарём адмирала Евфимия Путятина. Как назывался фрегат, давший имя его книге об этом путешествии?",
+      "answer": "«Паллада».",
+      "acceptance": "Паллада / фрегат «Паллада».",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/item/2076069",
+          "evidence": "Президентская библиотека: первое издание «Фрегата „Паллада“» И. А. Гончарова, 1858 год. СПбГУ подтверждает роль секретаря Путятина."
+        }
+      ],
+      "imageSubject": "Frigate Pallada illustration without label.",
+      "secondarySource": "https://pureportal.spbu.ru/ru/publications/------(df324e73-a199-426f-bcf6-bb2f6767fe11).html"
+    },
+    {
+      "id": "p-c2-manjur",
+      "categoryIndex": 2,
+      "suggestedValue": 1000,
+      "type": "text",
+      "text": "В июне 1860 года в бухту Золотой Рог вошёл военный транспорт. Он высадил отряд прапорщика Николая Комарова, основавший пост Владивосток. Как назывался транспорт?",
+      "answer": "«Маньчжур».",
+      "acceptance": "Маньчжур / Манджур; орфографический вариант принимается.",
+      "sources": [
+        {
+          "url": "https://vladlib.ru/n25_05_20_4/",
+          "evidence": "Владивостокская централизованная библиотечная система приводит шканечный журнал транспорта «Маньчжур»: 20 июня 1860 года по старому стилю."
+        }
+      ],
+      "imageSubject": "Historical transport Manjur."
+    },
+    {
+      "id": "p-c3-komsomolsk",
+      "categoryIndex": 3,
+      "suggestedValue": 200,
+      "type": "text",
+      "text": "10 мая 1932 года пароходы «Колумб» и «Коминтерн» привезли первых строителей к селу Пермскому на Амуре. Какой город вырос на этом месте?",
+      "answer": "Комсомольск-на-Амуре.",
+      "acceptance": "Комсомольск-на-Амуре.",
+      "sources": [
+        {
+          "url": "https://archive.kmscity.ru/activity/lessons/detstvo-goroda-yunosti/",
+          "evidence": "Городской архив: высадка строителей 10 мая 1932 года, преобразование Пермского в Комсомольск 10 декабря 1932 года."
+        }
+      ],
+      "imageSubject": "Komsomolskfirstbuilders memorial or1930shistoriccity."
+    },
+    {
+      "id": "p-c3-kurosawa",
+      "categoryIndex": 3,
+      "suggestedValue": 400,
+      "type": "text",
+      "text": "Книги Владимира Арсеньева вдохновили этого японского режиссёра на советско-японский фильм «Дерсу Узала» 1975 года. Назовите режиссёра.",
+      "answer": "Акира Куросава.",
+      "acceptance": "Куросава; имя необязательно.",
+      "sources": [
+        {
+          "url": "https://www.mosfilm.ru/cinema/films/dersu-uzala/",
+          "evidence": "Официальная карточка «Мосфильма»: режиссёр Акира Куросава, 1975 год, по произведениям Арсеньева."
+        }
+      ],
+      "imageSubject": "Ussuri forest or licensedKurosawa portrait; no unlicensed1975filmstill."
+    },
+    {
+      "id": "p-c3-petroglyphs",
+      "categoryIndex": 3,
+      "suggestedValue": 600,
+      "type": "text",
+      "text": "На базальтовых валунах у Сикачи-Аляна выбиты личины, животные и сцены охоты. Каким научным словом называют такие древние наскальные изображения?",
+      "answer": "Петроглифы.",
+      "acceptance": "Петроглифы. Просто «рисунки» недостаточно.",
+      "sources": [
+        {
+          "url": "https://nasledie27.ru/okn/sikachi-alyan-petroglify",
+          "evidence": "Краевой центр охраны памятников описывает объект «Сикачи-Алян. Петроглифы» и его изображения."
+        }
+      ],
+      "imageSubject": "SikachiAlyanpetroglyphs."
+    },
+    {
+      "id": "p-c3-small-railway",
+      "categoryIndex": 3,
+      "suggestedValue": 800,
+      "type": "text",
+      "text": "Когда в Хабаровске открыли детскую железную дорогу, на её коротком кольце была всего одна станция. Она получила имя в честь столетия города. Как называлась эта станция?",
+      "answer": "«Юбилейная».",
+      "acceptance": "Юбилейная. «Пионерская» появилась после первой реконструкции.",
+      "sources": [
+        {
+          "url": "https://www.dzd-ussr.ru/towns/habarovsk/index.html",
+          "evidence": "Специализированная история детских железных дорог: первая станция — Юбилейная, названа в честь столетия Хабаровска, 1958 год."
+        }
+      ],
+      "imageSubject": "Khabarovskchildrenrailway locomotive or route without stationlabels.",
+      "sourceCaution": "Sources disagree on exact ceremonialopeningday(19/30May1958); questiondeliberatelydoesnotaskday."
+    },
+    {
+      "id": "p-c3-stone-turtle",
+      "categoryIndex": 3,
+      "suggestedValue": 1000,
+      "type": "text",
+      "text": "Каменная черепаха у Гродековского музея прежде была частью средневекового погребального памятника полководца Эсыкуя. Какому народу принадлежал этот полководец?",
+      "answer": "Чжурчжэням.",
+      "acceptance": "Чжурчжэни / чжурчжэньский народ. Допускаются варианты транскрипции.",
+      "sources": [
+        {
+          "url": "https://hkm.ru/istoriya-muzeya/",
+          "evidence": "Гродековский музей: гранитная черепаха из-под Уссурийска была частью надмогильного комплекса чжурчжэньского полководца Эсыкуя."
+        }
+      ],
+      "imageSubject": "Grodekovmuseumstone turtle; crop/removeplaquegivinganswer."
+    },
+    {
+      "id": "p-c4-mendeleev",
+      "categoryIndex": 4,
+      "suggestedValue": 200,
+      "type": "text",
+      "text": "В 1869 году этот учёный составил первый вариант периодической системы химических элементов. Кто изображён на портрете?",
+      "answer": "Дмитрий Иванович Менделеев.",
+      "acceptance": "Достаточно фамилии Менделеев.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/history/619066",
+          "evidence": "Президентская библиотека: 17 февраля (1 марта) 1869 года Менделеев завершил первый вариант таблицы «Опыт системы элементов, основанной на их атомном весе и химическом сходстве»."
+        }
+      ],
+      "imageSubject": "Portrait Dmitri Mendeleev without labels"
+    },
+    {
+      "id": "p-c4-tsiolkovsky",
+      "categoryIndex": 4,
+      "suggestedValue": 400,
+      "type": "text",
+      "text": "В 1903 году он опубликовал работу «Исследование мировых пространств реактивными приборами», ставшую основой теории космических полётов. Назовите учёного на портрете.",
+      "answer": "Константин Эдуардович Циолковский.",
+      "acceptance": "Достаточно фамилии Циолковский.",
+      "sources": [
+        {
+          "url": "https://gmik.ru/2017/09/13/k-istorii-izdaniya-i-rasprostraneniya-stati-k-e-tsiolkovskogo-issledovanie-mirovyih-prostranstv-reaktivnyimi-priborami-1903-g/",
+          "evidence": "Государственный музей истории космонавтики: статья К. Э. Циолковского вышла в майском номере «Научного обозрения» за 1903 год."
+        }
+      ],
+      "imageSubject": "Portrait Konstantin Tsiolkovsky without labels"
+    },
+    {
+      "id": "p-c4-pirogov",
+      "categoryIndex": 4,
+      "suggestedValue": 600,
+      "type": "text",
+      "text": "Во время Крымской войны этот хирург внедрял в Севастополе гипсовые повязки и сортировку раненых. Назовите его.",
+      "answer": "Николай Иванович Пирогов.",
+      "acceptance": "Достаточно фамилии Пирогов.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/news/2067938",
+          "evidence": "Президентская библиотека описывает применение Пироговым гипсовых повязок и сортировки раненых во время Крымской войны. Вопрос не утверждает мирового первенства в изобретении гипсовой повязки."
+        }
+      ],
+      "imageSubject": "Portrait Nikolai Pirogov without labels"
+    },
+    {
+      "id": "p-c4-shukhov",
+      "categoryIndex": 4,
+      "suggestedValue": 800,
+      "type": "text",
+      "text": "Этот инженер создал радиобашню на Шаболовке: её ажурная конструкция собрана из гиперболоидных секций. Кто на портрете?",
+      "answer": "Владимир Григорьевич Шухов.",
+      "acceptance": "Достаточно фамилии Шухов.",
+      "sources": [
+        {
+          "url": "https://rgantd.ru/shuhov/projects/setchatie-sooruzheniya/radio/",
+          "evidence": "Российский государственный архив научно-технической документации: радиобашня Шухова на Шаболовке строилась в 1919–1922 годах, состоит из шести гиперболоидных секций."
+        }
+      ],
+      "imageSubject": "Portrait Vladimir Shukhov without labels"
+    },
+    {
+      "id": "p-c4-lodygin",
+      "categoryIndex": 4,
+      "suggestedValue": 1000,
+      "type": "text",
+      "text": "В 1874 году этот русский электротехник получил Ломоносовскую премию за изобретение лампы накаливания. Назовите человека на портрете.",
+      "answer": "Александр Николаевич Лодыгин.",
+      "acceptance": "Достаточно фамилии Лодыгин.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/Great_Russia/outstanding_scientists_XX/Lodygin",
+          "evidence": "Президентская библиотека прямо указывает присуждение Ломоносовской премии в 1874 году А. Н. Лодыгину за изобретение лампы накаливания."
+        }
+      ],
+      "imageSubject": "Portrait Alexander Lodygin without labels"
+    },
+    {
+      "id": "p-c5-olympics",
+      "categoryIndex": 5,
+      "suggestedValue": 200,
+      "type": "text",
+      "text": "На снимке — церемония открытия крупнейшего спортивного события, впервые прошедшего в Москве в 1980 году. Назовите это событие.",
+      "answer": "XXII летние Олимпийские игры — Олимпиада-80.",
+      "acceptance": "Олимпиада 1980 года / московские летние Олимпийские игры.",
+      "sources": [
+        {
+          "url": "https://library.olympics.com/Default/basicfilesdownload.ashx?itemGuid=2ECE9BE9-EA5F-4F0F-97DF-84C75B6BC60A",
+          "evidence": "Исторический архив МОК: Московские игры XXII Олимпиады проходили 19 июля — 3 августа 1980 года; открыты 19 июля."
+        }
+      ],
+      "imageSubject": "Existing Moscow1980 opening photograph"
+    },
+    {
+      "id": "p-c5-soyuz-apollo",
+      "categoryIndex": 5,
+      "suggestedValue": 400,
+      "type": "text",
+      "text": "На фотографии — советский корабль «Союз-19», участник первого совместного советско-американского космического полёта 1975 года. Как называлась программа?",
+      "answer": "«Союз — Аполлон».",
+      "acceptance": "Союз — Аполлон / Аполлон — Союз / ЭПАС / ASTP.",
+      "sources": [
+        {
+          "url": "https://www.nasa.gov/missions/apollo-soyuz/the-apollo-soyuz-mission/",
+          "evidence": "NASA: корабли Apollo и Soyuz 19 состыковались 17 июля 1975 года, после открытия люков экипажи приветствовали друг друга и проводили совместные работы."
+        }
+      ],
+      "imageSubject": "Existing NASA Soyuz19 spacecraft photograph from ApolloSoyuz1975 mission"
+    },
+    {
+      "id": "p-c5-duma",
+      "categoryIndex": 5,
+      "suggestedValue": 600,
+      "type": "text",
+      "text": "На фотографии Николай II приветствует депутатов первого созыва в 1906 году. Какой представительный орган Российской империи они составляли?",
+      "answer": "Государственную думу.",
+      "acceptance": "Государственная дума / I Государственная дума. Государственный совет не принимается.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/node/619233",
+          "evidence": "Президентская библиотека: 27 апреля (10 мая) 1906 года состоялся приём депутатов I Государственной думы в Зимнем дворце, затем первое заседание в Таврическом дворце. Снимок приёма не следует называть рабочим заседанием в Зимнем дворце."
+        }
+      ],
+      "imageSubject": "NicholasII opening FirstDuma reception GeorgeHallWinterPalace1906 photo",
+      "secondarySource": "https://expositions.nlr.ru/ex_manus/state_duma/"
+    },
+    {
+      "id": "p-c5-prokudin",
+      "categoryIndex": 5,
+      "suggestedValue": 800,
+      "type": "text",
+      "text": "Этот цветной портрет Льва Толстого сделан в 1908 году, задолго до появления привычной цветной фотоплёнки. Назовите фотографа.",
+      "answer": "Сергей Михайлович Прокудин-Горский.",
+      "acceptance": "Прокудин-Горский; имя необязательно.",
+      "sources": [
+        {
+          "url": "https://www.culture.ru/materials/245335/vse-cveta-rossiiskoi-imperii",
+          "evidence": "Портал Культура.РФ: цветной портрет Льва Толстого, Ясная Поляна, 1908 год, фотограф Сергей Прокудин-Горский. Не заявляем спорное «самый первый цветной портрет России»."
+        }
+      ],
+      "imageSubject": "Existing color Tolstoy1908 photograph"
+    },
+    {
+      "id": "p-c5-exter",
+      "categoryIndex": 5,
+      "suggestedValue": 1000,
+      "type": "text",
+      "text": "Перед вами эскиз костюма для фантастического фильма «Аэлита» 1924 года. Какая художница-авангардистка создала именно этот эскиз?",
+      "answer": "Александра Александровна Экстер.",
+      "acceptance": "Александра Экстер / Экстер.",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Alexandra_Exter_-_Aelita_(Lobanov-Rostovsky_coll.)_01.jpg",
+          "evidence": "Метаданные конкретного эскиза из собрания Н. Д. Лобанова-Ростовского указывают автора Александру Экстер. Музей кино подтверждает её участие в создании костюмов фильма."
+        }
+      ],
+      "imageSubject": "Exact downloaded Exter sketch from LobanovRostovsky collection",
+      "secondarySource": "https://www.museikino.ru/exposition/films/aelita/",
+      "sourceCaution": "Только указанный конкретный эскиз. Общее «кто создал все костюмы Аэлиты» неоднозначно: участвовали несколько художников. Не подменять эскизом МоМА Guardian of Energy, это другая работа."
+    },
+    {
+      "id": "p-c6-transport",
+      "categoryIndex": 6,
+      "suggestedValue": 200,
+      "type": "chronology",
+      "text": "Расположите открытия транспортных линий от самого раннего к самому позднему.",
+      "events": [
+        {
+          "id": "metro-moscow",
+          "text": "Открытие Московского метрополитена",
+          "date": "1935-05-15",
+          "year": 1935,
+          "sourceUrl": "https://mosmetro.ru/about/history",
+          "evidence": "Официальная история Московского метрополитена: первая очередь открыта 15 мая 1935 года.",
+          "imageSubject": "Moscowmetro oldstation"
+        },
+        {
+          "id": "rail-tsarskoe",
+          "text": "Открытие Царскосельской железной дороги",
+          "date": "1837-11-11",
+          "year": 1837,
+          "sourceUrl": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
+          "evidence": "Администрация Санкт-Петербурга: открытие 30 октября (11 ноября) 1837 года.",
+          "imageSubject": "TsarskoyeSelo railway engraving"
+        },
+        {
+          "id": "rail-capitals",
+          "text": "Начало сквозного движения поездов Петербург — Москва",
+          "date": "1851",
+          "year": 1851,
+          "sourceUrl": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
+          "evidence": "Администрация Санкт-Петербурга: линия продлена до Москвы в 1851 году.",
+          "imageSubject": "Nikolaevsky railway MoscowPetersburg steam train"
+        }
+      ],
+      "correctOrder": [
+        "rail-tsarskoe",
+        "rail-capitals",
+        "metro-moscow"
+      ],
+      "answer": "Открытие Царскосельской железной дороги (1837) → Начало сквозного движения поездов Петербург — Москва (1851) → Открытие Московского метрополитена (1935)",
+      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "sources": [
+        {
+          "url": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
+          "evidence": "Администрация Санкт-Петербурга: открытие 30 октября (11 ноября) 1837 года."
+        },
+        {
+          "url": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
+          "evidence": "Администрация Санкт-Петербурга: линия продлена до Москвы в 1851 году."
+        },
+        {
+          "url": "https://mosmetro.ru/about/history",
+          "evidence": "Официальная история Московского метрополитена: первая очередь открыта 15 мая 1935 года."
+        }
+      ]
+    },
+    {
+      "id": "p-c6-museums",
+      "categoryIndex": 6,
+      "suggestedValue": 400,
+      "type": "chronology",
+      "text": "Расположите события из истории художественных музеев от раннего к позднему.",
+      "events": [
+        {
+          "id": "russian-museum",
+          "text": "Русский музей открывается для посетителей",
+          "date": "1898-03-19",
+          "year": 1898,
+          "sourceUrl": "https://rusmuseum.ru/news/19-marta-1898-goda-v-mikhaylovskom-dvortse-otkrylsya-russkiy-muzey-imeni-imperatora-aleksandra-iii-/",
+          "evidence": "Русский музей: торжественное открытие 19 марта 1898 года, учреждение указом в 1895 году — другое событие.",
+          "imageSubject": "RussianMuseumMikhailovskypalace"
+        },
+        {
+          "id": "hermitage",
+          "text": "Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа",
+          "date": "1764",
+          "year": 1764,
+          "sourceUrl": "https://hermitagemuseum.org/about/facts_and_figures",
+          "evidence": "Эрмитаж: 1764 год считается датой основания, когда Екатерина II приобрела коллекцию Гоцковского.",
+          "imageSubject": "Hermitagewinterpalace"
+        },
+        {
+          "id": "tretyakov",
+          "text": "Павел Третьяков передаёт галерею в дар Москве",
+          "date": "1892",
+          "year": 1892,
+          "sourceUrl": "https://www.tretyakovgallery.ru/about/projects/kak-tretyakovskaya-galereya-stala-obshchestvennym-muzeem/",
+          "evidence": "Третьяковская галерея: 27 сентября 1892 года коллекция вместе со зданием передана Москве.",
+          "imageSubject": "Tretyakovgalleryfacade"
+        }
+      ],
+      "correctOrder": [
+        "hermitage",
+        "tretyakov",
+        "russian-museum"
+      ],
+      "answer": "Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа (1764) → Павел Третьяков передаёт галерею в дар Москве (1892) → Русский музей открывается для посетителей (1898)",
+      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "sources": [
+        {
+          "url": "https://hermitagemuseum.org/about/facts_and_figures",
+          "evidence": "Эрмитаж: 1764 год считается датой основания, когда Екатерина II приобрела коллекцию Гоцковского."
+        },
+        {
+          "url": "https://www.tretyakovgallery.ru/about/projects/kak-tretyakovskaya-galereya-stala-obshchestvennym-muzeem/",
+          "evidence": "Третьяковская галерея: 27 сентября 1892 года коллекция вместе со зданием передана Москве."
+        },
+        {
+          "url": "https://rusmuseum.ru/news/19-marta-1898-goda-v-mikhaylovskom-dvortse-otkrylsya-russkiy-muzey-imeni-imperatora-aleksandra-iii-/",
+          "evidence": "Русский музей: торжественное открытие 19 марта 1898 года, учреждение указом в 1895 году — другое событие."
+        }
+      ]
+    },
+    {
+      "id": "p-c6-literature",
+      "categoryIndex": 6,
+      "suggestedValue": 600,
+      "type": "chronology",
+      "text": "Расположите литературные публикации от самой ранней к самой поздней. Речь о первых отдельных изданиях, а у «Войны и мира» — о завершении выхода полного шеститомника.",
+      "events": [
+        {
+          "id": "war-peace",
+          "text": "Завершается выход первого полного издания «Войны и мира»",
+          "date": "1869",
+          "year": 1869,
+          "sourceUrl": "https://rusneb.ru/catalog/000199_000009_003850997/",
+          "evidence": "НЭБ / РГБ: шестой том первого полного издания датирован 1869 годом; всё издание 1868–1869. Ранние журнальные фрагменты 1865–1866 здесь не имеются в виду.",
+          "imageSubject": "Tolstoyportrait"
+        },
+        {
+          "id": "hero",
+          "text": "Отдельное издание «Героя нашего времени»",
+          "date": "1840",
+          "year": 1840,
+          "sourceUrl": "https://rusneb.ru/catalog/000199_000009_003506054/",
+          "evidence": "НЭБ / Российская государственная библиотека: первое отдельное издание романа Лермонтова, Санкт-Петербург, 1840.",
+          "imageSubject": "Lermontovportrait"
+        },
+        {
+          "id": "souls",
+          "text": "Первый том «Мёртвых душ» выходит из печати",
+          "date": "1842",
+          "year": 1842,
+          "sourceUrl": "https://www.culture.ru/books/215/mertvye-dushi",
+          "evidence": "Культура.РФ: первый том «Похождения Чичикова, или Мёртвые души» издан в 1842 году.",
+          "imageSubject": "Gogolportrait"
+        }
+      ],
+      "correctOrder": [
+        "hero",
+        "souls",
+        "war-peace"
+      ],
+      "answer": "Отдельное издание «Героя нашего времени» (1840) → Первый том «Мёртвых душ» выходит из печати (1842) → Завершается выход первого полного издания «Войны и мира» (1869)",
+      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "sources": [
+        {
+          "url": "https://rusneb.ru/catalog/000199_000009_003506054/",
+          "evidence": "НЭБ / Российская государственная библиотека: первое отдельное издание романа Лермонтова, Санкт-Петербург, 1840."
+        },
+        {
+          "url": "https://www.culture.ru/books/215/mertvye-dushi",
+          "evidence": "Культура.РФ: первый том «Похождения Чичикова, или Мёртвые души» издан в 1842 году."
+        },
+        {
+          "url": "https://rusneb.ru/catalog/000199_000009_003850997/",
+          "evidence": "НЭБ / РГБ: шестой том первого полного издания датирован 1869 годом; всё издание 1868–1869. Ранние журнальные фрагменты 1865–1866 здесь не имеются в виду."
+        }
+      ]
+    },
+    {
+      "id": "p-c6-science",
+      "categoryIndex": 6,
+      "suggestedValue": 800,
+      "type": "chronology",
+      "text": "Расположите научные события от самого раннего к самому позднему.",
+      "events": [
+        {
+          "id": "obninsk",
+          "text": "Обнинская АЭС начинает промышленную эксплуатацию",
+          "date": "1954-06-27",
+          "year": 1954,
+          "sourceUrl": "https://www.biblioatom.ru/core-systems/nuclear-power-plants/obninskaya-aes/",
+          "evidence": "История Росатома / архивные материалы: начало промышленной эксплуатации 27 июня 1954 года.",
+          "imageSubject": "ObninskNPP"
+        },
+        {
+          "id": "popov",
+          "text": "Попов демонстрирует прибор для регистрации электромагнитных колебаний",
+          "date": "1895-05-07",
+          "year": 1895,
+          "sourceUrl": "https://www.prlib.ru/history/1866978",
+          "evidence": "Президентская библиотека: доклад и демонстрация прибора состоялись 25 апреля (7 мая) 1895 года. Формулировка не требует спорить о мировом первенстве радио.",
+          "imageSubject": "AlexanderPopovportrait"
+        },
+        {
+          "id": "northpole",
+          "text": "Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1»",
+          "date": "1937-05-21",
+          "year": 1937,
+          "sourceUrl": "https://arctic-map.ru/history",
+          "evidence": "История дрейфующих станций: высадка 21 мая 1937 года, официальное открытие станции 6 июня 1937. Поэтому карточка спрашивает именно высадку.",
+          "imageSubject": "PapaninNorthPole1"
+        }
+      ],
+      "correctOrder": [
+        "popov",
+        "northpole",
+        "obninsk"
+      ],
+      "answer": "Попов демонстрирует прибор для регистрации электромагнитных колебаний (1895) → Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1» (1937) → Обнинская АЭС начинает промышленную эксплуатацию (1954)",
+      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/history/1866978",
+          "evidence": "Президентская библиотека: доклад и демонстрация прибора состоялись 25 апреля (7 мая) 1895 года. Формулировка не требует спорить о мировом первенстве радио."
+        },
+        {
+          "url": "https://arctic-map.ru/history",
+          "evidence": "История дрейфующих станций: высадка 21 мая 1937 года, официальное открытие станции 6 июня 1937. Поэтому карточка спрашивает именно высадку."
+        },
+        {
+          "url": "https://www.biblioatom.ru/core-systems/nuclear-power-plants/obninskaya-aes/",
+          "evidence": "История Росатома / архивные материалы: начало промышленной эксплуатации 27 июня 1954 года."
+        }
+      ]
+    },
+    {
+      "id": "p-c6-year1905",
+      "categoryIndex": 6,
+      "suggestedValue": 900,
+      "type": "chronology",
+      "text": "Все три события произошли в 1905 году. Расположите их от самого раннего к самому позднему.",
+      "events": [
+        {
+          "id": "portsmouth",
+          "text": "Подписание Портсмутского мирного договора",
+          "date": "1905-09-05",
+          "year": 1905,
+          "sourceUrl": "https://www.prlib.ru/history/619512",
+          "evidence": "Президентская библиотека: 23 августа (5 сентября) 1905 года, мирный договор завершил Русско-японскую войну.",
+          "imageSubject": "PortsmouthpeaceWitte1905"
+        },
+        {
+          "id": "bloody-sunday",
+          "text": "«Кровавое воскресенье» в Петербурге",
+          "date": "1905-01-22",
+          "year": 1905,
+          "sourceUrl": "https://www.prlib.ru/history/618968",
+          "evidence": "Президентская библиотека: 9 (22) января 1905 года.",
+          "imageSubject": "BloodySunday1905historicalillustration"
+        },
+        {
+          "id": "potemkin-uprising",
+          "text": "Начало восстания на броненосце «Потёмкин»",
+          "date": "1905-06-27",
+          "year": 1905,
+          "sourceUrl": "https://navalmuseum.ru/news/memorable?id=740",
+          "evidence": "Центральный военно-морской музей: начало восстания 27 июня 1905 года (14 июня по старому стилю).",
+          "imageSubject": "Potemkinbattleshiphistoricalphoto"
+        }
+      ],
+      "correctOrder": [
+        "bloody-sunday",
+        "potemkin-uprising",
+        "portsmouth"
+      ],
+      "answer": "«Кровавое воскресенье» в Петербурге (1905) → Начало восстания на броненосце «Потёмкин» (1905) → Подписание Портсмутского мирного договора (1905)",
+      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/history/618968",
+          "evidence": "Президентская библиотека: 9 (22) января 1905 года."
+        },
+        {
+          "url": "https://navalmuseum.ru/news/memorable?id=740",
+          "evidence": "Центральный военно-морской музей: начало восстания 27 июня 1905 года (14 июня по старому стилю)."
+        },
+        {
+          "url": "https://www.prlib.ru/history/619512",
+          "evidence": "Президентская библиотека: 23 августа (5 сентября) 1905 года, мирный договор завершил Русско-японскую войну."
+        }
+      ]
+    }
+  ],
+  "warmup": [
+    {
+      "id": "pw1",
+      "value": 100,
+      "type": "text",
+      "text": "В 1535 году при Елене Глинской появилась монета с изображением всадника, вооружённого копьём. Какое название закрепилось за этой монетой?",
+      "answer": "Копейка.",
+      "acceptance": "Копейка.",
+      "sources": [
+        {
+          "url": "https://museum.cbr.ru/articles/kopeyka-takaya-izmenchivaya-i-postoyannaya/",
+          "evidence": "Музей Банка России: первые копейки отчеканены в Новгороде в 1535 году при реформе Елены Глинской; всадник-копейщик дал монете название."
+        }
+      ],
+      "imageSubject": "ElenaGlinskaya portrait or unlabelled kopeck"
+    },
+    {
+      "id": "pw2",
+      "value": 100,
+      "type": "text",
+      "text": "Русский военный корабль, спущенный на воду в Дединове в 1668 году, получил имя в честь главной птицы государственного герба. Как он назывался?",
+      "answer": "«Орёл».",
+      "acceptance": "Орёл.",
+      "sources": [
+        {
+          "url": "https://special.navalmuseum.ru/collection/izo/risunok?id=290",
+          "evidence": "Центральный военно-морской музей: корабль спущен в 1668 году; указом 4 апреля 1669 года назван «Орлом» в честь государственного герба. Не говорить, что название было дано в день спуска."
+        }
+      ],
+      "imageSubject": "Warship Orel1668 engraving"
+    },
+    {
+      "id": "pw3",
+      "value": 100,
+      "type": "text",
+      "text": "В 1768 году Екатерина II пригласила английского врача Томаса Димсдейла и решила «собою подать пример». Против какой болезни она сделала прививку?",
+      "answer": "Против натуральной оспы.",
+      "acceptance": "Оспа / натуральная оспа; ветрянка не принимается.",
+      "sources": [
+        {
+          "url": "https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921728.pdf",
+          "evidence": "Государственный Эрмитаж, отчёт о коллекции: личный сервиз — подарок Димсдейлу; врач провёл оспопрививание Екатерине II и наследнику в 1768 году. Исторический метод — вариоляция, а не современная вакцинация."
+        }
+      ],
+      "imageSubject": "CatherineII portrait"
+    },
+    {
+      "id": "pw4",
+      "value": 100,
+      "type": "text",
+      "text": "В первой русской антарктической экспедиции Беллинсгаузен командовал шлюпом «Восток». Какой мореплаватель командовал вторым шлюпом — «Мирным»?",
+      "answer": "Михаил Петрович Лазарев.",
+      "acceptance": "Достаточно фамилии Лазарев.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/history/618985",
+          "evidence": "Президентская библиотека: экспедиция 1819–1821 годов на «Востоке» и «Мирном» под руководством Фаддея Беллинсгаузена и Михаила Лазарева; Лазарев командовал «Мирным»."
+        }
+      ],
+      "imageSubject": "Antarcticexpedition landscape or Lazarevportrait"
+    },
+    {
+      "id": "pw5",
+      "value": 100,
+      "type": "text",
+      "text": "В 1761 году Ломоносов наблюдал прохождение планеты по диску Солнца и по светящемуся ободку сделал вывод о существовании у неё атмосферы. Что это за планета?",
+      "answer": "Венера.",
+      "acceptance": "Венера.",
+      "sources": [
+        {
+          "url": "https://expositions.nlr.ru/pdf/Lomonosov.pdf",
+          "evidence": "Российская национальная библиотека, научный каталог: наблюдая Венеру 26 мая 1761 года по старому стилю, Ломоносов объяснил ободок «знатною воздушною атмосферою»."
+        }
+      ],
+      "imageSubject": "Lomonosovportrait; no diagram labels naming Venus"
+    },
+    {
+      "id": "pw6",
+      "value": 100,
+      "type": "text",
+      "text": "В лаборатории он был химиком-органиком, а в музыке создал оперу «Князь Игорь». Назовите этого учёного и композитора.",
+      "answer": "Александр Порфирьевич Бородин.",
+      "acceptance": "Достаточно фамилии Бородин.",
+      "sources": [
+        {
+          "url": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh-4011/index.php",
+          "evidence": "Государственный Русский музей: Бородин — композитор, учёный-химик и автор оперы «Князь Игорь»."
+        }
+      ],
+      "imageSubject": "AlexanderBorodinportrait"
+    },
+    {
+      "id": "pw7",
+      "value": 100,
+      "type": "text",
+      "text": "Пушкин успел выпустить четыре тома этого литературного журнала. Первый появился в 1836 году. Как назывался журнал?",
+      "answer": "«Современник».",
+      "acceptance": "Современник. «Литературная газета» не принимается.",
+      "sources": [
+        {
+          "url": "https://www.museumpushkin.ru/library/novosti-lib/literaturnyj_zhurnal-_izdavaemyj_aleksandrom_pushkinym-_k_190-letiyu_sovremennika.html",
+          "evidence": "Всероссийский музей А. С. Пушкина: журнал основан Пушкиным; первый том вышел 11 (23) апреля 1836 года; разрешено четыре тома в год."
+        }
+      ],
+      "imageSubject": "Pushkinportrait; journalcover only on answer"
+    },
+    {
+      "id": "pw8",
+      "value": 100,
+      "type": "text",
+      "text": "В 1828 году Россия начала чеканить для обращения монеты из редкого уральского металла. Они были серыми и тусклыми, хотя металл ценится очень высоко. Назовите металл.",
+      "answer": "Платина.",
+      "acceptance": "Платина. Серебро, палладий не принимаются.",
+      "sources": [
+        {
+          "url": "https://museum.cbr.ru/photostory/ot-zolota-do-kupyury-metamorfozy-chervontsa-/",
+          "evidence": "Музей Банка России, раздел «Белый червонец»: с 1828 года при Николае I чеканили монеты из уральской платины, Россия первой официально ввела платиновые деньги."
+        }
+      ],
+      "imageSubject": "Platinum3rublecoin; remove readable metal inscription for question"
+    },
+    {
+      "id": "pw9",
+      "value": 100,
+      "type": "text",
+      "text": "За какого российского императора выдавал себя Емельян Пугачёв во время восстания 1773–1775 годов?",
+      "answer": "За Петра III.",
+      "acceptance": "Пётр III. Номер обязателен.",
+      "sources": [
+        {
+          "url": "https://drevlit.ru/docs/russia/XVIII/1760-1780/Pugachev/Sbornik/text2.php",
+          "evidence": "Опубликованные следственные документы восстания Пугачёва и научный комментарий неоднократно фиксируют выступление самозванца под именем Петра III. Не требуется спорная точная дата первого употребления имени."
+        }
+      ],
+      "imageSubject": "Pugachevportrait"
+    },
+    {
+      "id": "pw10",
+      "value": 100,
+      "type": "text",
+      "text": "9 августа 1942 года в блокадном Ленинграде прозвучала Седьмая симфония. Её исполнение стало символом сопротивления города. Кто её написал?",
+      "answer": "Дмитрий Дмитриевич Шостакович.",
+      "acceptance": "Достаточно фамилии Шостакович.",
+      "sources": [
+        {
+          "url": "https://www.philharmonia.spb.ru/about/press/about/?id=507123",
+          "evidence": "Санкт-Петербургская филармония: исполнение Седьмой, Ленинградской, симфонии Дмитрия Шостаковича в Большом зале 9 августа 1942 года; дирижировал Карл Элиасберг. Не путать композитора и дирижёра."
+        }
+      ],
+      "imageSubject": "Shostakovichportrait or wartime Philharmonic"
+    },
+    {
+      "id": "pw11",
+      "value": 100,
+      "type": "text",
+      "text": "Эту компьютерную головоломку Алексей Пажитнов создал в Вычислительном центре Академии наук СССР в 1984 году. В ней исчезают заполненные горизонтальные линии. Назовите игру.",
+      "answer": "«Тетрис».",
+      "acceptance": "Тетрис / Tetris.",
+      "sources": [
+        {
+          "url": "https://mai.ru/press/news/detail.php?ID=49675",
+          "evidence": "Московский авиационный институт, вуз автора: первая версия «Тетриса» создана Алексеем Пажитновым в 1984 году в Вычислительном центре АН СССР."
+        }
+      ],
+      "imageSubject": "Soviet computer; gameplay picture only in answer"
+    },
+    {
+      "id": "pw12",
+      "value": 100,
+      "type": "text",
+      "text": "3 ноября 1957 года на орбиту Земли отправился «Спутник-2». Как звали собаку, находившуюся на его борту?",
+      "answer": "Лайка.",
+      "acceptance": "Лайка; Белка и Стрелка не принимаются.",
+      "sources": [
+        {
+          "url": "https://rgantd.ru/news/pamyatnye-daty/k-65-letiyu-zapuska-pervogo-v-mire-biologicheskogo-sput/",
+          "evidence": "РГАНТД: второй искусственный спутник запущен 3 ноября 1957 года с собакой Лайкой. Не спрашивать «первое животное в космосе»: раньше были суборбитальные полёты других животных."
+        }
+      ],
+      "imageSubject": "Sputnik2context; Laika portrait can show on answer"
+    },
+    {
+      "id": "pw13",
+      "value": 100,
+      "type": "text",
+      "text": "Театральный актёр Глеб Котельников разработал спасательное устройство РК-1, которое лётчик носил в ранце за спиной. Что это за устройство?",
+      "answer": "Ранцевый парашют.",
+      "acceptance": "Парашют; уточнение «ранцевый» необязательно.",
+      "sources": [
+        {
+          "url": "https://www.cmaf.ru/upload/iblock/2e8/%D0%98%D0%9D%D0%A4%D0%9E%D0%A0%D0%9C%D0%90%D0%A6%D0%98%D0%9E%D0%9D%D0%9D%D0%9E-%D0%9C%D0%95%D0%A2%D0%9E%D0%94%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%98%D0%99%20%D0%A1%D0%91%D0%9E%D0%A0%D0%9D%D0%98%D0%9A%20%E2%84%96%202%20%2842%29%202020.pdf",
+          "evidence": "Центральный музей Вооружённых сил, информационно-методический сборник №2(42),2020,с.87: парашют Котельникова, охранное свидетельство 1911 года. Не называть это выданным в России патентом."
+        }
+      ],
+      "imageSubject": "GlebKotelnikovportrait; foldedpack not deployed parachute"
+    },
+    {
+      "id": "pw14",
+      "value": 100,
+      "type": "text",
+      "text": "В 1931 году Николай Экк снял первый советский звуковой игровой фильм — о перевоспитании беспризорников в трудовой коммуне. Как назывался фильм?",
+      "answer": "«Путёвка в жизнь».",
+      "acceptance": "Путёвка в жизнь.",
+      "sources": [
+        {
+          "url": "https://www.culture.ru/live/movies/581/putevka-v-zhizn",
+          "evidence": "Культура.РФ: «Путёвка в жизнь», режиссёр Николай Экк, 1931, первый советский звуковой фильм, сюжет основан на истории трудовой коммуны. Уточнение игровой отделяет ранние звуковые документальные опыты."
+        }
+      ],
+      "imageSubject": "Neutral1930sfilmprojector question; exactmovieposter answer"
+    },
+    {
+      "id": "pw15",
+      "value": 100,
+      "type": "text",
+      "text": "В 1862 году в кремле этого города открыли памятник «Тысячелетие России». Город не Москва и не Петербург. Назовите его.",
+      "answer": "Великий Новгород.",
+      "acceptance": "Новгород / Великий Новгород. Нижний Новгород не принимается.",
+      "sources": [
+        {
+          "url": "https://www.prlib.ru/node/2194477",
+          "evidence": "Президентская библиотека: памятник открыт в 1862 году в Новгородском детинце, напротив Софийского собора. Дата дня имеет частые календарные ошибки в популярных источниках, здесь спрашиваем только город."
+        }
+      ],
+      "imageSubject": "MillenniumRussia monument in Novgorod"
+    }
+  ],
+  "notes": [
+    "Difficulty is editorial ordering, not an empirically measured success rate. Final1000 questions are very difficult but verifiable, not impossible.",
+    "Main30 originals should be retained; new questions are supplements.",
+    "Для хронологии 1905 и оригинального задания 1961 при разборе показывать полную дату, а не только одинаковый год. Музейная карточка: дар Третьякова Москве 1892, а не спорная дата покупки «Искушения»; научная: высадка Папанина, а не открытие станции."
+  ]
+}

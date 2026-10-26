@@ -1,0 +1,357 @@
+{
+  "c1-200": {
+    "images": [
+      {
+        "src": "assets/cover-eras/bogatyrs.jpg",
+        "alt": "Живописный образ Древней Руси",
+        "caption": ""
+      }
+    ],
+    "rationale": "Neutral cultural illustration; not a portrait of the answer person."
+  },
+  "c1-400": {
+    "images": [
+      {
+        "src": "assets/cover-history/haying.jpg",
+        "alt": "Историческая фотография сельского труда",
+        "caption": ""
+      }
+    ],
+    "rationale": "Neutral context for the quoted legal provision; no date/event name printed."
+  },
+  "c1-600": {
+    "images": [
+      {
+        "src": "assets/images/image6.png",
+        "alt": "Карта военной операции",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c1-800": {
+    "images": [
+      {
+        "src": "assets/cover-history/suzdal.jpg",
+        "alt": "Историческая городская панорама",
+        "caption": ""
+      }
+    ],
+    "rationale": "Decorative Russian-history context; dates remain only the actual matching choices."
+  },
+  "c1-1000": {
+    "images": [
+      {
+        "src": "assets/answer-history/chervonets.jpg",
+        "alt": "Монета, выпущенная в указанную эпоху",
+        "caption": ""
+      }
+    ],
+    "rationale": "Question itself supplies 1923; coin does not state the financial institution answer."
+  },
+  "c2-200": {
+    "images": [
+      {
+        "src": "assets/paper-rounds/sakhalin-velikan.jpg",
+        "alt": "Побережье Дальнего Востока",
+        "caption": ""
+      }
+    ],
+    "rationale": "Do NOT use answer map with numbers1–11; this coastal photo does not disclose the region count."
+  },
+  "c2-400": {
+    "images": [
+      {
+        "src": "assets/paper-rounds/grodekov-museum.jpg",
+        "alt": "Музейное здание в Хабаровске",
+        "caption": ""
+      }
+    ],
+    "rationale": "Museum context without identifying Arsenyev by portrait or caption."
+  },
+  "c2-600": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Архивный вид дальневосточного порта",
+        "caption": ""
+      }
+    ],
+    "rationale": "Neutral regional context; no printed matching solution."
+  },
+  "c2-800": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Архивная панорама портового города",
+        "caption": ""
+      }
+    ],
+    "rationale": "Original modern bridge view is an instant answer hint; archival view keeps a less obvious visual cue."
+  },
+  "c2-1000": {
+    "images": [
+      {
+        "src": "assets/paper-rounds/sakhalin-velikan.jpg",
+        "alt": "Островное побережье",
+        "caption": ""
+      }
+    ],
+    "rationale": "Sakhalin context without Nevelskoy portrait/name."
+  },
+  "c3-200": {
+    "images": [
+      {
+        "src": "assets/images/image11.jpeg",
+        "alt": "Собор в Хабаровске",
+        "caption": ""
+      }
+    ],
+    "rationale": "Intentional landmark recognition prompt; no cathedral name in alt/caption."
+  },
+  "c3-400": {
+    "images": [
+      {
+        "src": "assets/images/image12.jpeg",
+        "alt": "Историческое изображение к вопросу",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c3-600": {
+    "images": [
+      {
+        "src": "assets/paper-rounds/amur-cliff.jpg",
+        "alt": "Вид с реки на набережную",
+        "caption": ""
+      }
+    ],
+    "rationale": "Distant view of the Amur cliff preserves landmark context without revealing the commemorative inscription requested by the question."
+  },
+  "c3-800": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/khabarovka.jpg",
+        "alt": "Архивный вид города",
+        "caption": ""
+      }
+    ],
+    "rationale": "Modern TSUM answer photo shows readable shop name; neutral archive view avoids it."
+  },
+  "c3-1000": {
+    "images": [
+      {
+        "src": "assets/images/image34.jpeg",
+        "alt": "Историческое изображение к вопросу",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c4-200": {
+    "images": [
+      {
+        "src": "assets/images/image16.jpeg",
+        "alt": "Составной портрет для определения двух людей",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c4-400": {
+    "images": [
+      {
+        "src": "assets/images/image19.jpeg",
+        "alt": "Составной портрет для определения двух людей",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c4-600": {
+    "images": [
+      {
+        "src": "assets/images/image22.jpeg",
+        "alt": "Составной портрет для определения двух людей",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c4-800": {
+    "images": [
+      {
+        "src": "assets/images/image25.jpeg",
+        "alt": "Составной портрет для определения двух людей",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c4-1000": {
+    "images": [
+      {
+        "src": "assets/images/image36.png",
+        "alt": "Составной портрет для определения двух людей",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c5-photo-200": {
+    "images": [
+      {
+        "src": "assets/photo-round/nevsky-1938.jpg",
+        "alt": "Исторический кадр для задания",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c5-photo-400": {
+    "images": [
+      {
+        "src": "assets/answer-history/victory-parade-1945-color.jpg",
+        "alt": "Исторический кадр для задания",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c5-photo-600": {
+    "images": [
+      {
+        "src": "assets/photo-round/potemkin-1925.jpg",
+        "alt": "Исторический кадр для задания",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c5-photo-800": {
+    "images": [
+      {
+        "src": "assets/photo-round/elbe-1945.jpg",
+        "alt": "Исторический кадр для задания",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c5-photo-1000": {
+    "images": [
+      {
+        "src": "assets/answer-history/yalta-1945-color.jpg",
+        "alt": "Исторический кадр для задания",
+        "caption": ""
+      }
+    ],
+    "rationale": "Preserve the original supplied visual prompt. No identifying answer caption or alt text."
+  },
+  "c6-order-200": {
+    "images": [
+      {
+        "src": "assets/answer-history/petersburg.jpg",
+        "alt": "Основание Санкт-Петербурга",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/moscow.jpg",
+        "alt": "Первое летописное упоминание о Москве",
+        "caption": ""
+      }
+    ],
+    "rationale": "Each event keeps its own sourced card image; dates must stay hidden during question phase."
+  },
+  "c6-order-400": {
+    "images": [
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Первый полёт Юрия Гагарина",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/tereshkova.jpg",
+        "alt": "Полёт Валентины Терешковой",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/sputnik.jpg",
+        "alt": "Запуск первого искусственного спутника Земли",
+        "caption": ""
+      }
+    ],
+    "rationale": "Each event keeps its own sourced card image; dates must stay hidden during question phase."
+  },
+  "c6-order-600": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/msu.jpg",
+        "alt": "Основание Московского университета",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/book.jpg",
+        "alt": "Выход московского «Апостола» Ивана Фёдорова и Петра Мстиславца",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/kunstkamera.jpg",
+        "alt": "Основание Кунсткамеры",
+        "caption": ""
+      }
+    ],
+    "rationale": "Each event keeps its own sourced card image; dates must stay hidden during question phase."
+  },
+  "c6-order-800": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/amur-bridge.jpg",
+        "alt": "Открытие первого постоянного моста через Амур в Хабаровске",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/vladivostok.jpg",
+        "alt": "Основание военного поста Владивосток",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/transsib.jpg",
+        "alt": "Церемония закладки Транссибирской магистрали у Владивостока",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/khabarovka.jpg",
+        "alt": "Основание военного поста Хабаровка",
+        "caption": ""
+      }
+    ],
+    "rationale": "Each event keeps its own sourced card image; dates must stay hidden during question phase."
+  },
+  "c6-order-1000": {
+    "images": [
+      {
+        "src": "assets/chronology-cards/congress-palace.jpg",
+        "alt": "Открытие XXII съезда КПСС",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/berlin-wall.jpg",
+        "alt": "Начало сооружения Берлинской стены",
+        "caption": ""
+      },
+      {
+        "src": "assets/chronology-cards/titov.jpg",
+        "alt": "Старт Германа Титова на корабле «Восток-2»",
+        "caption": ""
+      },
+      {
+        "src": "assets/answer-history/gagarin.jpg",
+        "alt": "Первый полёт Юрия Гагарина",
+        "caption": ""
+      }
+    ],
+    "rationale": "Each event keeps its own sourced card image; dates must stay hidden during question phase."
+  }
+}
