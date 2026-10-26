@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "viewport": "1920×1080",
+  "cpuThrottle": 1,
+  "cycleSeconds": 40,
+  "finalSeconds": 8,
+  "summary": {
+    "samples": 319,
+    "medianGap": 16.700000000004366,
+    "p95Gap": 49.89999999999418,
+    "p95Work": 0.20000000298023224,
+    "maxWork": 18.69999999552965,
+    "over50": 6,
+    "renderers": [
+      "svg",
+      "layers"
+    ]
+  },
+  "nativeCompositorChecks": [
+    {
+      "t": 32255.5,
+      "scale": 1.48,
+      "time": 15.60000000149131,
+      "state": "running"
+    },
+    {
+      "t": 34105.4,
+      "scale": 1.42746,
+      "time": 1865.5000000014966,
+      "state": "running"
+    }
+  ],
+  "note": "Local Chromium headless measurement; timings are environment-specific, not a guarantee of device frame rate. First generic RAF sample occurred before the final layer reported readiness; subsequent final samples used prepared layers."
+}
