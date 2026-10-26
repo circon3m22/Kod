@@ -21,7 +21,7 @@ assert all(.12 < b['stroke_opacity'] < .25 and b['dashes'] == '[] 0' and all(ite
 assert all(page.rect.contains(b['rect']) for b in borders)
 for index, border in enumerate(borders):
     text = page.get_text(clip=border['rect']).strip().splitlines()
-    assert text == ['КУЛЬТУРНЫЙ КОД', str(index + 1), rounds[index]['title']] + [str(n) for n in range(1, 11)], text
+    assert text == ['КУЛЬТУРНЫЙ КОД', str(index + 1), rounds[index]['title'], 'Команда:'] + [str(n) for n in range(1, 11)], text
     rows = [d for d in drawings if abs(d['rect'].width - 77 * mm) < .1 and d['rect'].height < .01 and border['rect'].contains(d['rect'])]
     assert len(rows) == 10
     for word in page.get_text('words', clip=border['rect']):
@@ -29,5 +29,6 @@ for index, border in enumerate(borders):
 html = (root / 'design/answer-sheets.html').read_text()
 assert html.count('class="slip"') == 6 and html.count('<li value=') == 60
 assert html.count('class="brand"') == 6 and 'youth-council' not in html and 'quiz-logo' not in html
-assert not re.search('Команда:|Итого:|Баллы|ножниц|пунктир', html)
+assert html.count('class="team"') == 6
+assert not re.search('Итого:|Баллы|ножниц|пунктир', html)
 print('PASS: one exact A4 page, six rectangular 95×91 mm slips, faint continuous cut lines, 60 writing rows, only required text, text headings; matching HTML print layout.')
