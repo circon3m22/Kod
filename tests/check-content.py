@@ -162,3 +162,14 @@ assert 'class="media-caption"' not in (r/'app.js').read_text()
 print('PASS: 60 main questions, 15 warmup; 7 paper rounds; ordered 100–1000 costs; 34500 maximum.')
 print('PASS: all 30 previous questions preserved; original slide mappings; 75 sourced answer illustrations and question images.')
 print('PASS: 10 timelines / 31 illustrated events; sources, local dependencies, asset checksums and cover geometry.')
+
+film=json.loads((r/'cover-film.js').read_text().split('window.COVER_FILM = ')[1].rstrip(';\n'))
+film_sources=json.loads((r/'source/cover-film-sources.json').read_text())['images']
+assert film['sceneSeconds']==4 and len(film['photos'])==13
+assert set(film['photos'])=={x['path'] for x in film_sources}
+for x in film_sources:
+ assert x['author'] and x['sourceUrl'] and x['license']
+ assert hashlib.sha256((r/x['path']).read_bytes()).hexdigest()==x['sha256']
+assert not re.search(r'https?://|fetch\s*\(', (r/'cover-film.js').read_text())
+assert (r/'index.html').read_text().index('cover-film.js')<(r/'index.html').read_text().index('app.js')
+print('PASS: 13 sourced local animation images; independent scene data loaded before the app.')

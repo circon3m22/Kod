@@ -155,6 +155,58 @@
     "bytes": 225649,
     "sha256": "985a0be301c98fa5586e5e7fe53038e8ffc4e0278bf058a2780bdef4901fac2b"
   },
+  "assets/cover-film/battleship-borodino.jpg": {
+    "bytes": 460028,
+    "sha256": "fb7463f394352dee60b5d791e3890ed13549e253202c086a2c2919e152e3fe41"
+  },
+  "assets/cover-film/boris-gleb.jpg": {
+    "bytes": 308757,
+    "sha256": "a2b3dd4de99d3bc391d599e674f8967a21ca9c8f1d1f9e3d1ba4cf763509cfbb"
+  },
+  "assets/cover-film/borodino-church.jpg": {
+    "bytes": 122554,
+    "sha256": "721e8d3bfd8def6e1de3dd8be3196eb9ddb98d993f87fe37e7799a55f58da517"
+  },
+  "assets/cover-film/borodino-station.jpg": {
+    "bytes": 372998,
+    "sha256": "9c1a5da3ab98c7704df397325a8907744ae079ddea20f7780c40fcb71c6929b4"
+  },
+  "assets/cover-film/mosaic.jpg": {
+    "bytes": 519405,
+    "sha256": "fb6bb75ca409ab222f46266da53b3aad86d2d3d7df06640fa5b50dc935ab5e80"
+  },
+  "assets/cover-film/moscow-metro-1964.jpg": {
+    "bytes": 113089,
+    "sha256": "ea86eee38316560a1621fd9f8182af9f6b7ee4dc90947d35e78178f00237a8a1"
+  },
+  "assets/cover-film/nyrob-relic.jpg": {
+    "bytes": 608087,
+    "sha256": "33d7c642850f662b871d35ac711086b6a170831380dcf7045df57b1ae8843992"
+  },
+  "assets/cover-film/perm-railway.jpg": {
+    "bytes": 371143,
+    "sha256": "c0764880a6663746d9927e975ad4c02b610ab4d415dad26b39642ef06e0997cf"
+  },
+  "assets/cover-film/pokrov-monastery.jpg": {
+    "bytes": 344161,
+    "sha256": "87f4447f0447fb78e2e2c835a428b4060c481e4318df315248a29c65a4c3f793"
+  },
+  "assets/cover-film/soyuz-apollo-crews.jpg": {
+    "bytes": 308903,
+    "sha256": "8fbdef9c0eba0061764edebeb2dc2592b76842de59db8a49c66e3ba1557a2b1b"
+  },
+  "assets/cover-film/suzdal-cathedral.jpg": {
+    "bytes": 293946,
+    "sha256": "4892627ccfdc391bd96815b58cc73a43da992c38a776e1b5f6a256993118d3c3"
+  },
+  "assets/cover-film/suzdal-river.jpg": {
+    "bytes": 268518,
+    "sha256": "795c2230e7adb9135433d7afb748eca1ac7fb17f1ec745b67b5e2047d5044728"
+  },
+  "assets/cover-film/three-generations.jpg": {
+    "bytes": 364606,
+    "sha256": "a3b1540aa00f264a463d8c6c8f1e347e069a777fefbbaa886d4892a19ba07ec0"
+  },
   "assets/cover-history/fabric-merchant.jpg": {
     "bytes": 446702,
     "sha256": "63f12959e57aadd8616ff92900b1dd8f5c2a35935f529710c5231db8a0b08dcb"
