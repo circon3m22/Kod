@@ -74,45 +74,44 @@ function render(){
 function questionOrigin(q){return Number.isInteger(q.sourceSlide)?`Слайды ${q.sourceSlide} / ${q.answerSlide}`:q.type==='photo'?'Фотозадание · новая редакция':'Хронология · новая категория';}
 function section(title,kicker,right=''){return `<div class="section-head"><div><div class="eyebrow">${kicker}</div><h2>${title}</h2></div>${right}</div>`;}
 function circle(label,action,data='',disabled=false){return `<button class="circle-control" data-action="${action}" ${data} ${disabled?'disabled':''}>${label}</button>`;}
-/* Six independently staged compositions. Photos live in stage coordinates; only their masks rotate. */
+/* Seven calm compositions, in letter pairs followed by the final assembly. Photos live in stage coordinates; only their masks rotate. */
 function posterFilmMarkup(){
  const art=window.COVER_ART;
- const layouts=[[3,4,5],[6,8,7],[0,1,2],[5,8,1,6,4],[0,1,2,3,4,5,6,7,8],[0,1,2,3,4,5,6,7,8]];
+ const layouts=[[0,1,2],[0,1,2],[3,4,5],[3,4,5],[6,8,7],[6,8,7],[0,1,2,3,4,5,6,7,8]];
  let defs='',scenes='';
- layouts.forEach((ids,scene)=>{let pieces='';ids.forEach((sector,j)=>{const part=art.sectors[sector],letter=art.letters[part.letter],key=`film-${scene}-${j}`;
+ layouts.forEach((ids,scene)=>{let pieces='';ids.forEach((sector,j)=>{const part=art.sectors[sector],key=`film-${scene}-${j}`;
  defs+=`<clipPath id="${key}-mask" clipPathUnits="userSpaceOnUse"><path class="film-mask" data-mask="${key}" d="${part.region}"/></clipPath>`;
- pieces+=`<g class="film-piece" data-sector="${sector}" data-key="${key}" clip-path="url(#${key}-mask)"><image class="film-photo film-photo-a" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/><image class="film-photo film-photo-b" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" opacity="0"/>${scene===5?`<image class="film-final-photo" href="${part.photo}" preserveAspectRatio="${part.imageBox?'none':part.align+' slice'}" opacity="0"/>`:''}<rect class="film-glaze" x="0" y="0" width="1920" height="1080" fill="url(#film-pearl)" opacity="0"/></g>`;
- });scenes+=`<g class="film-scene" data-scene="${scene}" style="display:none">${pieces}</g>`;});
- return `<svg class="poster-film" viewBox="0 0 1920 1080" aria-hidden="true" focusable="false"><defs><linearGradient id="film-pearl" x1="0" y1="0" x2="1" y2=".3"><stop offset="0" stop-color="white" stop-opacity="0"/><stop offset=".46" stop-color="white" stop-opacity="0"/><stop offset=".55" stop-color="white" stop-opacity=".26"/><stop offset=".64" stop-color="white" stop-opacity="0"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>${defs}</defs>${scenes}</svg>`;
+ pieces+=`<g class="film-piece" data-sector="${sector}" data-key="${key}" clip-path="url(#${key}-mask)"><image class="film-photo film-photo-a" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/><image class="film-photo film-photo-b" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" opacity="0"/>${scene===6?`<image class="film-final-photo" href="${part.photo}" preserveAspectRatio="${part.imageBox?'none':part.align+' slice'}" opacity="0"/>`:''}</g>`;
+ });scenes+=`<g class="film-scene" data-scene="${scene}" data-letter="${window.COVER_FILM.sequence[scene]}" style="display:none"><rect width="1920" height="1080" fill="#fff"/>${pieces}</g>`;});
+ return `<svg class="poster-film" viewBox="0 0 1920 1080" aria-hidden="true" focusable="false"><defs>${defs}</defs>${scenes}</svg>`;
 }
 let posterFilm=null;
 const filmEase=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
 const filmMix=(a,b,t)=>a+(b-a)*t;
 function filmPose(scene,j,sector,t,target){
- const s=t/4,e=filmEase(s),osc=Math.sin(s*Math.PI),id=sector;
- if(scene===0)return [940+Math.sin(s*Math.PI)*170,565-65*s,3.6+.2*osc,3.6+.2*osc,-35+190*s,280,280];
- if(scene===1){const p=[
- [460+230*e,470-200*s,3.2+.7*osc,3.15-.65*e,-27+47*e],
- [1390-230*e,940-130*e,2.45+.5*osc,2.8-.55*e,22-40*e],
- [1810-190*e,65+150*e,1.8,2.7+osc,-15+34*e]
- ][j];return [...p,...target.center];}
- if(scene===2){const p=[
- [185+170*e,580+100*s,3.2,2.6+.3*osc,-25+38*e],
- [1020+90*e,360-90*e,2.7+.7*osc,2.7-.45*e,27-52*e],
- [1640-100*e,1010-160*e,2.5+.45*osc,2.6,4+43*e]
- ][j];return [...p,...target.center];}
- if(scene===3){const p=[
- [340+140*e,410-70*osc,2.35,2.1,-58+90*s],
- [1480-180*e,245+100*e,2.15,1.4+.6*osc,-18+42*e],
- [1230+100*e,940-80*e,1.6,1.85,55-105*s],
- [760-140*e,630+80*e,1.7+.25*osc,1.8,-12+42*e],
- [1770-40*e,1040-190*e,1.4,1.4,28-80*s]
- ][j];return [...p,...target.center];}
- const clouds=[[-90,420,-32],[470,135,24],[555,980,-23],[1460,150,40],[1510,920,-24],[940,350,-28],[1335,530,18],[2000,680,-15],[1060,1160,7]];
- const [x,y,a]=clouds[id],shrink=filmMix(1.7,1.18,e),float=35*Math.sin(s*Math.PI+id);
- if(scene===4)return [x+float,y-float,shrink,shrink,a-18*e,...target.center];
- const land=filmEase(Math.min(1,s/0.83));
- return [filmMix(x,target.x,land),filmMix(y,target.y,land),filmMix(1.18,target.scale,land),filmMix(1.18,target.scale,land),filmMix(a-18,0,land),...target.center];
+ const e=filmEase(t/4),blend=(a,b)=>a.map((v,i)=>filmMix(v,b[i],e));
+ // Each adjacent pair follows the same letter, and meets at an identical pose.
+ if(scene<2){
+  const poses=[
+   [[290,550,2.4,2.4,-5],[1140,260,2.3,2.3,-10],[1220,910,2.3,2.3,8]],
+   [[390,580,2.25,2.25,1],[1040,350,2.15,2.15,-3],[1340,850,2.15,2.15,3]],
+   [[160,570,2.7,2.7,-3],[940,340,2.5,2.5,8],[1510,900,2.4,2.4,-5]]
+  ];return [...blend(poses[scene][j],poses[scene+1][j]),...target.center];
+ }
+ if(scene<4){
+  const poses=[[1000,550,2.15,2.15,-12],[970,550,2.25,2.25,3],[1120,600,2.7,2.7,18]];
+  return [...blend(poses[scene-2],poses[scene-1]),280,280];
+ }
+ if(scene<6){
+  const poses=[
+   [[580,500,2.4,2.2,-10],[1180,960,2.4,2.4,5],[1660,430,2,2,4]],
+   [[630,500,2.25,2.35,-5],[1120,930,2.35,2.25,0],[1570,410,2,2.1,1]],
+   [[470,460,2.5,2.7,0],[1350,850,2.65,2.45,-6],[1710,380,2.1,2.35,-4]]
+  ];return [...blend(poses[scene-4][j],poses[scene-3][j]),...target.center];
+ }
+ const offsets=[[-80,-20,-6],[-90,-90,7],[-60,100,-6],[30,-65,-5],[0,90,5],[-40,-55,3],[80,-60,-4],[100,50,6],[90,110,-3]];
+ const [dx,dy,a]=offsets[sector],land=filmEase(t/3.7);
+ return [target.x+dx*(1-land),target.y+dy*(1-land),filmMix(1.1,target.scale,land),filmMix(1.1,target.scale,land),a*(1-land),...target.center];
 }
 function stopPosterTour(exit=false){
  const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);posterFilm=null;
@@ -126,29 +125,29 @@ function startPosterTour(){
  const all=[...new Set([...window.COVER_FILM.photos,...window.COVER_ART.sectors.map(s=>s.photo)])],images=all.map(src=>{const image=new Image();image.src=src;image.decode?.().catch(()=>{});return image;});
  let seed=86231;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
  const art=window.COVER_ART,mark=sheet.querySelector('.poster-wordmark'),style=getComputedStyle(mark),baseScale=parseFloat(style.width)/art.width,baseX=sheet.offsetLeft+parseFloat(style.left),baseY=sheet.offsetTop+parseFloat(style.top);
+ const orders=art.sectors.map(()=>{const order=all.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const k=Math.floor(random()*(i+1));[order[i],order[k]]=[order[k],order[i]];}return order;});
  const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2],ib=p.imageBox||b;
- const order=all.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const k=Math.floor(random()*(i+1));[order[i],order[k]]=[order[k],order[i]];}
- return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),glaze:el.querySelector('.film-glaze'),order,interval:1.15+random()*.65,phase:random()*.7,lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale,box:[baseX+(art.letters[p.letter].x+ib[0])*baseScale,baseY+ib[1]*baseScale,ib[2]*baseScale,ib[3]*baseScale]}};
+ return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale,box:[baseX+(art.letters[p.letter].x+ib[0])*baseScale,baseY+ib[1]*baseScale,ib[2]*baseScale,ib[3]*baseScale]}};
  })}));
- const film={svg,sheet,scenes,images,raf:0,start:performance.now(),duration:28000,sceneSeconds:4};posterFilm=film;
+ const film={svg,sheet,scenes,images,raf:0,start:performance.now(),duration:32000,sceneSeconds:4};posterFilm=film;svg.dataset.startedAt=film.start;
  film.paint=(ms)=>{
-  const seconds=((ms%28000)+28000)%28000/1000,active=seconds>=3.5&&seconds<28;
+  const seconds=((ms%32000)+32000)%32000/1000,active=seconds>=3.5&&seconds<32;
   if(film.motion!==active){film.motion=active;sheet.toggleAttribute('data-film-motion',active);}
-  svg.dataset.scene=active?String(Math.min(5,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
-  const copy=seconds<3.5?1:seconds<4?1-filmEase((seconds-3.5)/.5):seconds<27.45?0:filmEase((seconds-27.45)/.55);
+  svg.dataset.scene=active?String(Math.min(6,Math.max(0,Math.floor((seconds-4)/4)))):'poster';
+  const copy=seconds<3.5?1:seconds<4?1-filmEase((seconds-3.5)/.5):seconds<31.7?0:filmEase((seconds-31.7)/.3);
   sheet.style.setProperty('--film-copy',copy);sheet.style.setProperty('--film-map',active?'0':'1');
   svg.style.opacity=active?String(1-copy):'0';
   scenes.forEach(({el,pieces},scene)=>{
-   const time=seconds-(4+scene*4),alpha=filmEase((time+.45)/.45)*(1-filmEase((time-3.55)/.45));
+   const time=seconds-(4+scene*4),alpha=time<-.5||time>=4.4?0:scene===0?1:filmEase((time+.4)/.8);
    el.style.display=alpha>0?'':'none';if(alpha<=0)return;el.style.opacity=alpha;
    pieces.forEach(p=>{const local=Math.max(0,Math.min(4,time)),pose=filmPose(scene,p.j,p.sector,local,p.target),[x,y,sx,sy,angle,cx,cy]=pose;
     p.mask.setAttribute('transform',`translate(${x.toFixed(3)} ${y.toFixed(3)}) rotate(${angle.toFixed(3)}) scale(${sx.toFixed(4)} ${sy.toFixed(4)}) translate(${-cx} ${-cy})`);
-    const clock=(local+p.phase)/p.interval,step=Math.floor(clock)+Math.floor(ms/28000)*5,phase=clock-step,a=all[p.order[step%all.length]],b=all[p.order[(step+1)%all.length]];
+    const cycle=Math.floor(ms/32000)*3,first=cycle+(scene===6?1:0),a=all[p.order[first%all.length]],b=all[p.order[(first+1)%all.length]];
+    const pairTime=local+(scene%2)*4,fade=scene===6?filmEase(local/2.7):filmEase((pairTime-2)/4);
     if(a!==p.lastA){p.a.setAttribute('href',a);p.lastA=a;}if(b!==p.lastB){p.b.setAttribute('href',b);p.lastB=b;}
-    const fade=filmEase((phase-.48)/.52);p.b.setAttribute('opacity',fade.toFixed(4));
-    const zoom=1.025+.025*Math.sin((local/4)*Math.PI+p.phase);[p.a,p.b].forEach(image=>image.setAttribute('transform',`translate(960 540) scale(${zoom.toFixed(4)}) translate(-960 -540)`));
-    p.glaze.setAttribute('opacity',(.5*Math.sin(Math.PI*phase)**2).toFixed(3));p.glaze.setAttribute('transform',`translate(${((phase-.5)*2300).toFixed(2)} 0)`);
-    if(p.final){const [ix,iy,iw,ih]=p.target.box;p.final.setAttribute('x',ix);p.final.setAttribute('y',iy);p.final.setAttribute('width',iw);p.final.setAttribute('height',ih);p.final.setAttribute('opacity',filmEase((local-2.6)/.7));}
+    p.b.setAttribute('opacity',fade.toFixed(4));
+    const zoom=1.025+.015*(scene===6?local/4:pairTime/8);[p.a,p.b].forEach(image=>image.setAttribute('transform',`translate(960 540) scale(${zoom.toFixed(4)}) translate(-960 -540)`));
+    if(p.final){const [ix,iy,iw,ih]=p.target.box;p.final.setAttribute('x',ix);p.final.setAttribute('y',iy);p.final.setAttribute('width',iw);p.final.setAttribute('height',ih);p.final.setAttribute('opacity',filmEase((local-2.7)/1.0));}
    });
   });
  };
