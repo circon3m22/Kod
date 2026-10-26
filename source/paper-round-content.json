@@ -414,55 +414,48 @@
       "categoryIndex": 6,
       "suggestedValue": 200,
       "type": "chronology",
-      "text": "Расположите открытия транспортных линий от самого раннего к самому позднему.",
+      "text": "Расположите открытия железнодорожных линий Российской империи от раннего к позднему. Назовите порядок букв.\n\nА) Сквозное движение Петербург — Москва\n\nБ) Первые пассажирские поезда Варшава — Гродзиск\n\nВ) Открытие Царскосельской железной дороги",
       "events": [
         {
-          "id": "metro-moscow",
-          "text": "Открытие Московского метрополитена",
-          "date": "1935-05-15",
-          "year": 1935,
-          "sourceUrl": "https://mosmetro.ru/about/history",
-          "evidence": "Официальная история Московского метрополитена: первая очередь открыта 15 мая 1935 года.",
-          "imageSubject": "Moscowmetro oldstation"
-        },
-        {
-          "id": "rail-tsarskoe",
-          "text": "Открытие Царскосельской железной дороги",
-          "date": "1837-11-11",
-          "year": 1837,
-          "sourceUrl": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
-          "evidence": "Администрация Санкт-Петербурга: открытие 30 октября (11 ноября) 1837 года.",
-          "imageSubject": "TsarskoyeSelo railway engraving"
-        },
-        {
-          "id": "rail-capitals",
-          "text": "Начало сквозного движения поездов Петербург — Москва",
+          "text": "Сквозное движение Петербург — Москва",
           "date": "1851",
-          "year": 1851,
-          "sourceUrl": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
-          "evidence": "Администрация Санкт-Петербурга: линия продлена до Москвы в 1851 году.",
-          "imageSubject": "Nikolaevsky railway MoscowPetersburg steam train"
+          "image": "assets/paper-rounds/rail-capitals.jpg",
+          "id": "event1",
+          "label": "А",
+          "sourceRef": "chronology-2026-p-c6-transport:1"
+        },
+        {
+          "text": "Первые пассажирские поезда Варшава — Гродзиск",
+          "date": "1845",
+          "image": "assets/question-refresh/warsaw.jpg",
+          "id": "event2",
+          "label": "Б",
+          "sourceRef": "chronology-2026-p-c6-transport:2"
+        },
+        {
+          "text": "Открытие Царскосельской железной дороги",
+          "date": "1837",
+          "image": "assets/paper-rounds/rail-tsarskoe.jpg",
+          "id": "event3",
+          "label": "В",
+          "sourceRef": "chronology-2026-p-c6-transport:3"
         }
       ],
       "correctOrder": [
-        "rail-tsarskoe",
-        "rail-capitals",
-        "metro-moscow"
+        "В",
+        "Б",
+        "А"
       ],
-      "answer": "Открытие Царскосельской железной дороги (1837) → Начало сквозного движения поездов Петербург — Москва (1851) → Открытие Московского метрополитена (1935)",
-      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "answer": "В → Б → А\n\nВ) Открытие Царскосельской железной дороги — 1837.\nБ) Первые пассажирские поезда Варшава — Гродзиск — 1845.\nА) Сквозное движение Петербург — Москва — 1851.",
+      "acceptance": "Полное совпадение порядка. Даты знать не требуется. В разборе все точные даты приведены по новому стилю.",
       "sources": [
         {
-          "url": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
-          "evidence": "Администрация Санкт-Петербурга: открытие 30 октября (11 ноября) 1837 года."
+          "url": "https://istmat.org/node/42966",
+          "evidence": "Статистика железных дорог: Варшаво-Венская с 1845; Петербург—Москва с 1851; Царскосельская с 1837."
         },
         {
-          "url": "https://www.gov.spb.ru/gov/otrasl/c_transport/istoriya-obshestvennogo-transporta-sankt-peterburga/razvitie-vodnogo-zheleznodorozhnogo-i-vozdushnogo-transporta/",
-          "evidence": "Администрация Санкт-Петербурга: линия продлена до Москвы в 1851 году."
-        },
-        {
-          "url": "https://mosmetro.ru/about/history",
-          "evidence": "Официальная история Московского метрополитена: первая очередь открыта 15 мая 1935 года."
+          "url": "https://ru.wikipedia.org/wiki/Варшаво-Венская_железная_дорога",
+          "evidence": "Уточнение: открытие первого участка до Гродзиска в 1845, а не завершение всей дороги в 1848."
         }
       ]
     },
@@ -471,55 +464,65 @@
       "categoryIndex": 6,
       "suggestedValue": 400,
       "type": "chronology",
-      "text": "Расположите события из истории художественных музеев от раннего к позднему.",
+      "text": "Расположите первые издания книг от раннего к позднему. У «Мёртвых душ» — первый том, у «Записок охотника» — отдельный сборник. Назовите порядок букв.\n\nА) «Бедные люди» Достоевского — первая публикация\n\nБ) «Герой нашего времени» — отдельное издание\n\nВ) «Записки охотника» — отдельный сборник\n\nГ) Первый том «Мёртвых душ»",
       "events": [
         {
-          "id": "russian-museum",
-          "text": "Русский музей открывается для посетителей",
-          "date": "1898-03-19",
-          "year": 1898,
-          "sourceUrl": "https://rusmuseum.ru/news/19-marta-1898-goda-v-mikhaylovskom-dvortse-otkrylsya-russkiy-muzey-imeni-imperatora-aleksandra-iii-/",
-          "evidence": "Русский музей: торжественное открытие 19 марта 1898 года, учреждение указом в 1895 году — другое событие.",
-          "imageSubject": "RussianMuseumMikhailovskypalace"
+          "text": "«Бедные люди» Достоевского — первая публикация",
+          "date": "1846",
+          "image": "assets/question-refresh/dostoevsky.jpg",
+          "id": "event1",
+          "label": "А",
+          "sourceRef": "chronology-2026-p-c6-museums:1"
         },
         {
-          "id": "hermitage",
-          "text": "Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа",
-          "date": "1764",
-          "year": 1764,
-          "sourceUrl": "https://hermitagemuseum.org/about/facts_and_figures",
-          "evidence": "Эрмитаж: 1764 год считается датой основания, когда Екатерина II приобрела коллекцию Гоцковского.",
-          "imageSubject": "Hermitagewinterpalace"
+          "text": "«Герой нашего времени» — отдельное издание",
+          "date": "1840",
+          "image": "assets/paper-rounds/lermontov.jpg",
+          "id": "event2",
+          "label": "Б",
+          "sourceRef": "chronology-2026-p-c6-museums:2"
         },
         {
-          "id": "tretyakov",
-          "text": "Павел Третьяков передаёт галерею в дар Москве",
-          "date": "1892",
-          "year": 1892,
-          "sourceUrl": "https://www.tretyakovgallery.ru/about/projects/kak-tretyakovskaya-galereya-stala-obshchestvennym-muzeem/",
-          "evidence": "Третьяковская галерея: 27 сентября 1892 года коллекция вместе со зданием передана Москве.",
-          "imageSubject": "Tretyakovgalleryfacade"
+          "text": "«Записки охотника» — отдельный сборник",
+          "date": "1852",
+          "image": "assets/question-refresh/turgenev.jpg",
+          "id": "event3",
+          "label": "В",
+          "sourceRef": "chronology-2026-p-c6-museums:3"
+        },
+        {
+          "text": "Первый том «Мёртвых душ»",
+          "date": "1842",
+          "image": "assets/paper-rounds/gogol.jpg",
+          "id": "event4",
+          "label": "Г",
+          "sourceRef": "chronology-2026-p-c6-museums:4"
         }
       ],
       "correctOrder": [
-        "hermitage",
-        "tretyakov",
-        "russian-museum"
+        "Б",
+        "Г",
+        "А",
+        "В"
       ],
-      "answer": "Екатерина II покупает собрание Гоцковского — начало коллекции Эрмитажа (1764) → Павел Третьяков передаёт галерею в дар Москве (1892) → Русский музей открывается для посетителей (1898)",
-      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "answer": "Б → Г → А → В\n\nБ) «Герой нашего времени» — отдельное издание — 1840.\nГ) Первый том «Мёртвых душ» — 1842.\nА) «Бедные люди» Достоевского — первая публикация — 1846.\nВ) «Записки охотника» — отдельный сборник — 1852.",
+      "acceptance": "Полное совпадение порядка. Даты знать не требуется. В разборе все точные даты приведены по новому стилю.",
       "sources": [
         {
-          "url": "https://hermitagemuseum.org/about/facts_and_figures",
-          "evidence": "Эрмитаж: 1764 год считается датой основания, когда Екатерина II приобрела коллекцию Гоцковского."
+          "url": "https://www.prlib.ru/history/619629",
+          "evidence": "Герой нашего времени — отдельное издание 1840."
         },
         {
-          "url": "https://www.tretyakovgallery.ru/about/projects/kak-tretyakovskaya-galereya-stala-obshchestvennym-muzeem/",
-          "evidence": "Третьяковская галерея: 27 сентября 1892 года коллекция вместе со зданием передана Москве."
+          "url": "https://www.prlib.ru/history/1871181",
+          "evidence": "Мёртвые души — 1842."
         },
         {
-          "url": "https://rusmuseum.ru/news/19-marta-1898-goda-v-mikhaylovskom-dvortse-otkrylsya-russkiy-muzey-imeni-imperatora-aleksandra-iii-/",
-          "evidence": "Русский музей: торжественное открытие 19 марта 1898 года, учреждение указом в 1895 году — другое событие."
+          "url": "https://www.culture.ru/books/434/bednye-lyudi",
+          "evidence": "Бедные люди впервые в Петербургском сборнике 1846."
+        },
+        {
+          "url": "https://search.rsl.ru/ru/record/01003600027",
+          "evidence": "Записки охотника: рассказы печатались раньше, отдельный сборник вышел в 1852."
         }
       ]
     },
@@ -528,55 +531,65 @@
       "categoryIndex": 6,
       "suggestedValue": 600,
       "type": "chronology",
-      "text": "Расположите литературные публикации от самой ранней к самой поздней. Речь о первых отдельных изданиях, а у «Войны и мира» — о завершении выхода полного шеститомника.",
+      "text": "Расположите научные сообщения и открытия от раннего к позднему. Здесь всего несколько лет разницы. Назовите порядок букв.\n\nА) Томсон объявил об открытии электрона\n\nБ) Попов продемонстрировал радиоприёмник\n\nВ) Супруги Кюри сообщили об открытии радия\n\nГ) Беккерель открыл радиоактивность урана",
       "events": [
         {
-          "id": "war-peace",
-          "text": "Завершается выход первого полного издания «Войны и мира»",
-          "date": "1869",
-          "year": 1869,
-          "sourceUrl": "https://rusneb.ru/catalog/000199_000009_003850997/",
-          "evidence": "НЭБ / РГБ: шестой том первого полного издания датирован 1869 годом; всё издание 1868–1869. Ранние журнальные фрагменты 1865–1866 здесь не имеются в виду.",
-          "imageSubject": "Tolstoyportrait"
+          "text": "Томсон объявил об открытии электрона",
+          "date": "1897",
+          "image": "assets/question-refresh/thomson.jpg",
+          "id": "event1",
+          "label": "А",
+          "sourceRef": "chronology-2026-p-c6-literature:1"
         },
         {
-          "id": "hero",
-          "text": "Отдельное издание «Героя нашего времени»",
-          "date": "1840",
-          "year": 1840,
-          "sourceUrl": "https://rusneb.ru/catalog/000199_000009_003506054/",
-          "evidence": "НЭБ / Российская государственная библиотека: первое отдельное издание романа Лермонтова, Санкт-Петербург, 1840.",
-          "imageSubject": "Lermontovportrait"
+          "text": "Попов продемонстрировал радиоприёмник",
+          "date": "1895",
+          "image": "assets/paper-rounds/popov.jpg",
+          "id": "event2",
+          "label": "Б",
+          "sourceRef": "chronology-2026-p-c6-literature:2"
         },
         {
-          "id": "souls",
-          "text": "Первый том «Мёртвых душ» выходит из печати",
-          "date": "1842",
-          "year": 1842,
-          "sourceUrl": "https://www.culture.ru/books/215/mertvye-dushi",
-          "evidence": "Культура.РФ: первый том «Похождения Чичикова, или Мёртвые души» издан в 1842 году.",
-          "imageSubject": "Gogolportrait"
+          "text": "Супруги Кюри сообщили об открытии радия",
+          "date": "1898",
+          "image": "assets/question-refresh/curie.jpg",
+          "id": "event3",
+          "label": "В",
+          "sourceRef": "chronology-2026-p-c6-literature:3"
+        },
+        {
+          "text": "Беккерель открыл радиоактивность урана",
+          "date": "1896",
+          "image": "assets/question-refresh/becquerel.jpg",
+          "id": "event4",
+          "label": "Г",
+          "sourceRef": "chronology-2026-p-c6-literature:4"
         }
       ],
       "correctOrder": [
-        "hero",
-        "souls",
-        "war-peace"
+        "Б",
+        "Г",
+        "А",
+        "В"
       ],
-      "answer": "Отдельное издание «Героя нашего времени» (1840) → Первый том «Мёртвых душ» выходит из печати (1842) → Завершается выход первого полного издания «Войны и мира» (1869)",
-      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "answer": "Б → Г → А → В\n\nБ) Попов продемонстрировал радиоприёмник — 1895.\nГ) Беккерель открыл радиоактивность урана — 1896.\nА) Томсон объявил об открытии электрона — 1897.\nВ) Супруги Кюри сообщили об открытии радия — 1898.",
+      "acceptance": "Полное совпадение порядка. Даты знать не требуется. В разборе все точные даты приведены по новому стилю.",
       "sources": [
         {
-          "url": "https://rusneb.ru/catalog/000199_000009_003506054/",
-          "evidence": "НЭБ / Российская государственная библиотека: первое отдельное издание романа Лермонтова, Санкт-Петербург, 1840."
+          "url": "https://www.nobelprize.org/prizes/physics/1906/thomson/biographical/",
+          "evidence": "Сообщение Томсона об электроне — 30 апреля 1897."
         },
         {
-          "url": "https://www.culture.ru/books/215/mertvye-dushi",
-          "evidence": "Культура.РФ: первый том «Похождения Чичикова, или Мёртвые души» издан в 1842 году."
+          "url": "https://www.nobelprize.org/prizes/uncategorized/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/",
+          "evidence": "Сообщение о радии — декабрь 1898; не выделение чистого металла."
         },
         {
-          "url": "https://rusneb.ru/catalog/000199_000009_003850997/",
-          "evidence": "НЭБ / РГБ: шестой том первого полного издания датирован 1869 годом; всё издание 1868–1869. Ранние журнальные фрагменты 1865–1866 здесь не имеются в виду."
+          "url": "https://www2.lbl.gov/abc/wallchart/chapters/02/1.html",
+          "evidence": "Открытие радиоактивности Беккерелем — 1896."
+        },
+        {
+          "url": "https://www.prlib.ru/history/1866978",
+          "evidence": "Демонстрация радиоприёмника Поповым — 1895."
         }
       ]
     },
@@ -585,55 +598,61 @@
       "categoryIndex": 6,
       "suggestedValue": 800,
       "type": "chronology",
-      "text": "Расположите научные события от самого раннего к самому позднему.",
+      "text": "Расположите полярные события от раннего к позднему. Учитывайте порядок событий внутри одного года. Назовите порядок букв.\n\nА) Экипаж Громова завершил перелёт через полюс в Калифорнии\n\nБ) Пароход «Челюскин» затонул во льдах\n\nВ) Экипаж Чкалова завершил перелёт через полюс в США\n\nГ) Папанинцы высадились на льдину у Северного полюса",
       "events": [
         {
-          "id": "obninsk",
-          "text": "Обнинская АЭС начинает промышленную эксплуатацию",
-          "date": "1954-06-27",
-          "year": 1954,
-          "sourceUrl": "https://www.biblioatom.ru/core-systems/nuclear-power-plants/obninskaya-aes/",
-          "evidence": "История Росатома / архивные материалы: начало промышленной эксплуатации 27 июня 1954 года.",
-          "imageSubject": "ObninskNPP"
+          "text": "Экипаж Громова завершил перелёт через полюс в Калифорнии",
+          "date": "1937-07-14",
+          "image": "assets/question-refresh/gromov-photo.jpg",
+          "id": "event1",
+          "label": "А",
+          "sourceRef": "chronology-2026-p-c6-science:1"
         },
         {
-          "id": "popov",
-          "text": "Попов демонстрирует прибор для регистрации электромагнитных колебаний",
-          "date": "1895-05-07",
-          "year": 1895,
-          "sourceUrl": "https://www.prlib.ru/history/1866978",
-          "evidence": "Президентская библиотека: доклад и демонстрация прибора состоялись 25 апреля (7 мая) 1895 года. Формулировка не требует спорить о мировом первенстве радио.",
-          "imageSubject": "AlexanderPopovportrait"
+          "text": "Пароход «Челюскин» затонул во льдах",
+          "date": "1934-02-13",
+          "image": "assets/question-refresh/chelyuskin.jpg",
+          "id": "event2",
+          "label": "Б",
+          "sourceRef": "chronology-2026-p-c6-science:2"
         },
         {
-          "id": "northpole",
-          "text": "Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1»",
+          "text": "Экипаж Чкалова завершил перелёт через полюс в США",
+          "date": "1937-06-20",
+          "image": "assets/question-refresh/chkalov.jpg",
+          "id": "event3",
+          "label": "В",
+          "sourceRef": "chronology-2026-p-c6-science:3"
+        },
+        {
+          "text": "Папанинцы высадились на льдину у Северного полюса",
           "date": "1937-05-21",
-          "year": 1937,
-          "sourceUrl": "https://arctic-map.ru/history",
-          "evidence": "История дрейфующих станций: высадка 21 мая 1937 года, официальное открытие станции 6 июня 1937. Поэтому карточка спрашивает именно высадку.",
-          "imageSubject": "PapaninNorthPole1"
+          "image": "assets/paper-rounds/northpole.jpg",
+          "id": "event4",
+          "label": "Г",
+          "sourceRef": "chronology-2026-p-c6-science:4"
         }
       ],
       "correctOrder": [
-        "popov",
-        "northpole",
-        "obninsk"
+        "Б",
+        "Г",
+        "В",
+        "А"
       ],
-      "answer": "Попов демонстрирует прибор для регистрации электромагнитных колебаний (1895) → Экспедиция Папанина высаживается на лёд для станции «Северный полюс-1» (1937) → Обнинская АЭС начинает промышленную эксплуатацию (1954)",
-      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "answer": "Б → Г → В → А\n\nБ) Пароход «Челюскин» затонул во льдах — 13 февраля 1934.\nГ) Папанинцы высадились на льдину у Северного полюса — 21 мая 1937.\nВ) Экипаж Чкалова завершил перелёт через полюс в США — 20 июня 1937.\nА) Экипаж Громова завершил перелёт через полюс в Калифорнии — 14 июля 1937.",
+      "acceptance": "Полное совпадение порядка. Даты знать не требуется. В разборе все точные даты приведены по новому стилю.",
       "sources": [
         {
-          "url": "https://www.prlib.ru/history/1866978",
-          "evidence": "Президентская библиотека: доклад и демонстрация прибора состоялись 25 апреля (7 мая) 1895 года. Формулировка не требует спорить о мировом первенстве радио."
+          "url": "https://www.prlib.ru/node/619162",
+          "evidence": "Челюскин затонул 13 февраля 1934."
         },
         {
-          "url": "https://arctic-map.ru/history",
-          "evidence": "История дрейфующих станций: высадка 21 мая 1937 года, официальное открытие станции 6 июня 1937. Поэтому карточка спрашивает именно высадку."
+          "url": "https://rgo.ru/activity/lecture-halls-list/moscow-lecture/na-severnom-polyuse/",
+          "evidence": "Высадка папанинцев 21 мая 1937; не путать с церемонией 6 июня."
         },
         {
-          "url": "https://www.biblioatom.ru/core-systems/nuclear-power-plants/obninskaya-aes/",
-          "evidence": "История Росатома / архивные материалы: начало промышленной эксплуатации 27 июня 1954 года."
+          "url": "https://militera.lib.ru/bio/baydukov_gf_chkalov/08.html",
+          "evidence": "Перелёт Громова завершён 14 июля 1937; Чкалова — 20 июня 1937."
         }
       ]
     },
@@ -642,55 +661,78 @@
       "categoryIndex": 6,
       "suggestedValue": 900,
       "type": "chronology",
-      "text": "Все три события произошли в 1905 году. Расположите их от самого раннего к самому позднему.",
+      "text": "Пять событий 1961 года. Восстановите их порядок от раннего к позднему. Назовите порядок букв.\n\nА) Начало строительства Берлинской стены\n\nБ) Авария реактора подлодки К-19\n\nВ) Открытие Кремлёвского дворца съездов\n\nГ) Старт Германа Титова на «Востоке-2»\n\nД) Полёт Юрия Гагарина",
       "events": [
         {
-          "id": "portsmouth",
-          "text": "Подписание Портсмутского мирного договора",
-          "date": "1905-09-05",
-          "year": 1905,
-          "sourceUrl": "https://www.prlib.ru/history/619512",
-          "evidence": "Президентская библиотека: 23 августа (5 сентября) 1905 года, мирный договор завершил Русско-японскую войну.",
-          "imageSubject": "PortsmouthpeaceWitte1905"
+          "text": "Начало строительства Берлинской стены",
+          "date": "1961-08-13",
+          "image": "assets/answer-history/berlin-wall.jpg",
+          "id": "event1",
+          "label": "А",
+          "sourceRef": "chronology-2026-p-c6-year1905:1"
         },
         {
-          "id": "bloody-sunday",
-          "text": "«Кровавое воскресенье» в Петербурге",
-          "date": "1905-01-22",
-          "year": 1905,
-          "sourceUrl": "https://www.prlib.ru/history/618968",
-          "evidence": "Президентская библиотека: 9 (22) января 1905 года.",
-          "imageSubject": "BloodySunday1905historicalillustration"
+          "text": "Авария реактора подлодки К-19",
+          "date": "1961-07-04",
+          "image": "assets/question-refresh/k19.jpg",
+          "id": "event2",
+          "label": "Б",
+          "sourceRef": "chronology-2026-p-c6-year1905:2"
         },
         {
-          "id": "potemkin-uprising",
-          "text": "Начало восстания на броненосце «Потёмкин»",
-          "date": "1905-06-27",
-          "year": 1905,
-          "sourceUrl": "https://navalmuseum.ru/news/memorable?id=740",
-          "evidence": "Центральный военно-морской музей: начало восстания 27 июня 1905 года (14 июня по старому стилю).",
-          "imageSubject": "Potemkinbattleshiphistoricalphoto"
+          "text": "Открытие Кремлёвского дворца съездов",
+          "date": "1961-10-17",
+          "image": "assets/chronology-cards/congress-palace.jpg",
+          "id": "event3",
+          "label": "В",
+          "sourceRef": "chronology-2026-p-c6-year1905:3"
+        },
+        {
+          "text": "Старт Германа Титова на «Востоке-2»",
+          "date": "1961-08-06",
+          "image": "assets/chronology-cards/titov.jpg",
+          "id": "event4",
+          "label": "Г",
+          "sourceRef": "chronology-2026-p-c6-year1905:4"
+        },
+        {
+          "text": "Полёт Юрия Гагарина",
+          "date": "1961-04-12",
+          "image": "assets/answer-history/gagarin.jpg",
+          "id": "event5",
+          "label": "Д",
+          "sourceRef": "chronology-2026-p-c6-year1905:5"
         }
       ],
       "correctOrder": [
-        "bloody-sunday",
-        "potemkin-uprising",
-        "portsmouth"
+        "Д",
+        "Б",
+        "Г",
+        "А",
+        "В"
       ],
-      "answer": "«Кровавое воскресенье» в Петербурге (1905) → Начало восстания на броненосце «Потёмкин» (1905) → Подписание Портсмутского мирного договора (1905)",
-      "acceptance": "Полное совпадение порядка. Точные даты знать не требуется; они показаны только при разборе.",
+      "answer": "Д → Б → Г → А → В\n\nД) Полёт Юрия Гагарина — 12 апреля 1961.\nБ) Авария реактора подлодки К-19 — 4 июля 1961.\nГ) Старт Германа Титова на «Востоке-2» — 6 августа 1961.\nА) Начало строительства Берлинской стены — 13 августа 1961.\nВ) Открытие Кремлёвского дворца съездов — 17 октября 1961.",
+      "acceptance": "Полное совпадение порядка. Даты знать не требуется. В разборе все точные даты приведены по новому стилю.",
       "sources": [
         {
-          "url": "https://www.prlib.ru/history/618968",
-          "evidence": "Президентская библиотека: 9 (22) января 1905 года."
+          "url": "https://k19.ru/2007/04/29/raport/",
+          "evidence": "Рапорт командира: авария К-19 — 4 июля 1961."
         },
         {
-          "url": "https://navalmuseum.ru/news/memorable?id=740",
-          "evidence": "Центральный военно-морской музей: начало восстания 27 июня 1905 года (14 июня по старому стилю)."
+          "url": "https://www.chronik-der-mauer.de/en/",
+          "evidence": "Берлинская стена: начало возведения — 13 августа 1961."
         },
         {
-          "url": "https://www.prlib.ru/history/619512",
-          "evidence": "Президентская библиотека: 23 августа (5 сентября) 1905 года, мирный договор завершил Русско-японскую войну."
+          "url": "https://kremlinpalace.org/about/history",
+          "evidence": "Дворец съездов открыт 17 октября 1961."
+        },
+        {
+          "url": "https://www.nasa.gov/history/60-years-ago-gagarin-becomes-the-first-human-in-space/",
+          "evidence": "Гагарин — 12 апреля 1961."
+        },
+        {
+          "url": "https://www.nasa.gov/history/60-years-ago-titov-orbits-the-earth-17-times/",
+          "evidence": "Титов стартовал 6 августа 1961; не дата посадки 7 августа."
         }
       ]
     }

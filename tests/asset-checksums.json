@@ -87,6 +87,18 @@
     "bytes": 68006,
     "sha256": "4f05a85f2efc4b433d0157170cee48759c254f67dae4bbd1e108e94f2d5d098a"
   },
+  "assets/brand/quiz-logo-black.png": {
+    "bytes": 284752,
+    "sha256": "69a4324fc38570afd7d541aa6d81c47cd2141049ed0e90dcb6e2022124c87fd9"
+  },
+  "assets/brand/quiz-logo-black.svg": {
+    "bytes": 31789,
+    "sha256": "55cbdc9cd2c99c315048fc91def6c4de2ad8132a68d8b0754527111f186cf0c2"
+  },
+  "assets/brand/youth-council-black.svg": {
+    "bytes": 25422,
+    "sha256": "b8cc172a8ac7ddf3fd7cb71e1a308204c4e8d314368e90f4ee989a08310a5fce"
+  },
   "assets/chronology-cards/amur-bridge.jpg": {
     "bytes": 127349,
     "sha256": "cd35f221c5816147c0f8a776913c391595c8985120ace795c67cf24c798443cb"
@@ -262,6 +274,14 @@
   "assets/fonts/DejaVuSansCondensed-Bold.ttf": {
     "bytes": 708920,
     "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "assets/fonts/GreatVibes-OFL.txt": {
+    "bytes": 4399,
+    "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49"
+  },
+  "assets/fonts/GreatVibes-Regular.ttf": {
+    "bytes": 457588,
+    "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
   },
   "assets/fonts/LICENSE.txt": {
     "bytes": 3859,
@@ -674,6 +694,126 @@
   "assets/photo-round/yalta-1945.jpg": {
     "bytes": 1050190,
     "sha256": "987c8cf8a03f6da7255cb7888e69cea35b5c2625ace18740075cba24a8a899fd"
+  },
+  "assets/question-refresh/amur.jpg": {
+    "bytes": 235249,
+    "sha256": "8d76f80b41ddb8adc1ffb254ae72a97b02e6d4976cbde883592f4c6cbdb5ce35"
+  },
+  "assets/question-refresh/assembly.jpg": {
+    "bytes": 35845,
+    "sha256": "630db26e6340c604be875162cb105cf356e929f59c36468f91c47b6659676466"
+  },
+  "assets/question-refresh/becquerel.jpg": {
+    "bytes": 313264,
+    "sha256": "a43177adc9f2599f50144386df181655d8d694ccd1d5c40699e489f93838a9ec"
+  },
+  "assets/question-refresh/brest.jpg": {
+    "bytes": 240539,
+    "sha256": "070c9e835e3bc47755f0859a636ba912aa5990bf4274b91e2a2c2ca54b084bba"
+  },
+  "assets/question-refresh/calendar-object.jpg": {
+    "bytes": 140948,
+    "sha256": "e8fd8199343737a87ab8fa5fcdc750a7d286b2903dceefcebc3cfc957d62bd34"
+  },
+  "assets/question-refresh/calendar.jpg": {
+    "bytes": 37161,
+    "sha256": "07b225272c820f0b8be1025ade6eb0945d97368571a327b4a77ee698150bc925"
+  },
+  "assets/question-refresh/capital.jpg": {
+    "bytes": 133118,
+    "sha256": "99303dc585910259148b2022512c46c6bd04088d25f9d0d556d52bb8134ec56d"
+  },
+  "assets/question-refresh/chelyuskin.jpg": {
+    "bytes": 6751,
+    "sha256": "8bbee91225c861c1b5e3b4ef8306b28887c296dafef72401ae3c420314cb7aac"
+  },
+  "assets/question-refresh/chkalov.jpg": {
+    "bytes": 144698,
+    "sha256": "947a0fab0489c61a086d2a6af277d125af0431a7d2bf3571c3b9796b2c09bbd1"
+  },
+  "assets/question-refresh/constitution.jpg": {
+    "bytes": 538466,
+    "sha256": "cb4a34ae2f8add3b9bf8ac849aa86af637b5a6fac31914a5518e6a08ec7eb578"
+  },
+  "assets/question-refresh/curie.jpg": {
+    "bytes": 403834,
+    "sha256": "889667305d2ff3059716e4fb16300893c93abc8a6a8c865a8131fb4e5f60bb24"
+  },
+  "assets/question-refresh/dostoevsky.jpg": {
+    "bytes": 219896,
+    "sha256": "3c86734e0db9b947d1ff51315bb55f9d63e6bf7abf4f707abaf37b78c0ca8629"
+  },
+  "assets/question-refresh/gromov-photo.jpg": {
+    "bytes": 12892,
+    "sha256": "01bf93f7b5f75927e206cd355d87d76b3e5875e6cb123d7e65c8f658e5c18473"
+  },
+  "assets/question-refresh/historical-museum.jpg": {
+    "bytes": 423106,
+    "sha256": "877ab031aa640ffa2e32b66c764f945ddd3a9ed29052914456f73e3a4f0d4cd5"
+  },
+  "assets/question-refresh/hokkaido.jpg": {
+    "bytes": 146986,
+    "sha256": "c1a36540805e4d61b7cfc80ab9f374c0fa7a6d989423d32903eb46391ba194db"
+  },
+  "assets/question-refresh/k19.jpg": {
+    "bytes": 31732,
+    "sha256": "3b6dffc13888b07f840f77672b9c7deb0b1fa2b34e4e5c1293ae3e3d459327d2"
+  },
+  "assets/question-refresh/leonov-single.jpg": {
+    "bytes": 253533,
+    "sha256": "b73f2fae5820fda27e50b7732452497153a6b5f70e10a1b8ceb101d92d371ae6"
+  },
+  "assets/question-refresh/luna2.png": {
+    "bytes": 138386,
+    "sha256": "2149db411de630aa97201480bc4991ef9675de4401474758ad0e9d9918baf4d4"
+  },
+  "assets/question-refresh/manifesto.jpg": {
+    "bytes": 176300,
+    "sha256": "b9f433208bdbc770130bab4dddec3d16d8ce5adac103b0b10ab65ac2bc8922dc"
+  },
+  "assets/question-refresh/mariinsky.jpg": {
+    "bytes": 164562,
+    "sha256": "b31c1a5cd1949b1a598472b2e840b4b0d27448dce722cdfbd9ad3fbeb400bff8"
+  },
+  "assets/question-refresh/moscow-conservatory.jpg": {
+    "bytes": 239064,
+    "sha256": "584b758022cd21895cf5dfec17b101413d1ec5da83cb1a720700461cc34e53df"
+  },
+  "assets/question-refresh/narkomfin.jpg": {
+    "bytes": 180068,
+    "sha256": "bf6a4dff8cab111910fc3bd50a5e37e629ce3d9b6b1885625f214eb2fe18a74f"
+  },
+  "assets/question-refresh/pugachev.jpg": {
+    "bytes": 200263,
+    "sha256": "4e758118baaae2f4890b976093dbfd21c41405bb3f39f328b25efd7299e1cad2"
+  },
+  "assets/question-refresh/sakhalin-old.jpg": {
+    "bytes": 33361,
+    "sha256": "c3ac6729f5eebc484af9217dd042480872667bd3c2c23055675b5b3161bbb322"
+  },
+  "assets/question-refresh/spb-conservatory.jpg": {
+    "bytes": 142135,
+    "sha256": "e45edc0334611cf13cfcb09bde020460655d678bc55317b2aed96cf9cee739b7"
+  },
+  "assets/question-refresh/thomson.jpg": {
+    "bytes": 215018,
+    "sha256": "6affb9e10fdcbbc07ffe5cc6c758081ae1c9b2f1d5dcdd5ce5c8c2f165671752"
+  },
+  "assets/question-refresh/turgenev.jpg": {
+    "bytes": 365178,
+    "sha256": "24d80c383ec5fdd0a02835444a84a6674a4408dc9f8acbf1a7886d104146f81c"
+  },
+  "assets/question-refresh/vaccination.jpg": {
+    "bytes": 573589,
+    "sha256": "5c3de8192a70b74f7011d45bbbd66b30f2cc2485cd66fa5fea26002dcbfaeec2"
+  },
+  "assets/question-refresh/wanderers.jpg": {
+    "bytes": 174038,
+    "sha256": "6c867f205fbe6b1a4510458072cf904f9d492766e1a80df56bae07af5c911c92"
+  },
+  "assets/question-refresh/warsaw.jpg": {
+    "bytes": 168121,
+    "sha256": "165a17edfcaf7b3defe9fecafeafd04d542b692f6b880b1f1995e3ee9c317598"
   },
   "assets/rules/binoculars.png": {
     "bytes": 941822,

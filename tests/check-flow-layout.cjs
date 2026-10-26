@@ -11,7 +11,8 @@ const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('nod
    if(!['warmup','warmup-answer','question','answer','rules','names','blocks','stages','manual','main-results','creative-intro','captains-intro'].includes(step.kind))continue;
    s.flow.cursor=index;s.flow.clock=step.seconds?{owner:step.id,remaining:step.seconds,running:false}:null;root.innerHTML=ui.view();await Promise.all([...root.querySelectorAll('img')].map(img=>img.decode().catch(()=>{})));
    for(const img of root.querySelectorAll('img'))if(!img.naturalWidth)broken.push({step:step.id,src:img.src});
-   const overflow=[...root.querySelectorAll('.flow-question-copy,.flow-question-text,.chronology-card,.flow-rule-cards article,.flow-block h2')].filter(el=>el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2).map(el=>({class:el.className,height:[el.scrollHeight,el.clientHeight],width:[el.scrollWidth,el.clientWidth],text:el.textContent.slice(0,100)}));
+   const overflow=[...root.querySelectorAll('.flow-question-copy,.flow-question-text,.chronology-card,.flow-rule-cards article,.flow-block h2,.flow-stage-cards')].filter(el=>el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2).map(el=>({class:el.className,height:[el.scrollHeight,el.clientHeight],width:[el.scrollWidth,el.clientWidth],text:el.textContent.slice(0,100)}));
+   for(const el of root.querySelectorAll('.flow-stage-card,.flow-block,.flow-organizer')){const box=el.getBoundingClientRect(),stage=document.querySelector('#stage').getBoundingClientRect();if(box.left<stage.left-1||box.top<stage.top-1||box.right>stage.right+1||box.bottom>stage.bottom+1)overflow.push({class:el.className,reason:'outside stage'});}
    if(overflow.length)bad.push({step:step.id,overflow});checked++;
   }
   return {checked,bad,broken};

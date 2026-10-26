@@ -1,0 +1,11 @@
+{
+  "family": "Great Vibes",
+  "style": "Regular; calligraphic Cyrillic",
+  "author": "Robert E. Leuschke, Viktoriya Grabowska, Viviana Monsalve, Eben Sorkin",
+  "license": "SIL Open Font License 1.1",
+  "sourceUrl": "https://github.com/google/fonts/tree/main/ofl/greatvibes",
+  "font": "assets/fonts/GreatVibes-Regular.ttf",
+  "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+  "use": "Poster title and outlined quiz-logo export",
+  "retrieved": "2026-10-26"
+}

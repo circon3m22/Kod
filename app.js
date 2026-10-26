@@ -170,6 +170,7 @@ function paintFilmFinal(film,time){
 }
 function stopPosterTour(exit=false){
  const film=posterFilm;if(!film)return;cancelAnimationFrame(film.raf);posterFilm=null;
+ if(exit&&film.titleAnimation){try{film.titleAnimation.commitStyles();}catch(e){}}film.titleAnimation?.cancel();
  film.final?.effects?.forEach(a=>{if(exit&&a.effect?.target?.isConnected){try{a.commitStyles();}catch(e){}}a.cancel();});
  if(film.final?.idle){if(window.cancelIdleCallback)cancelIdleCallback(film.final.idle);else clearTimeout(film.final.idle);}
  if(exit){for(const layer of [film.svg,film.finalLayer])if(layer){layer.classList.add('film-exiting');layer.style.opacity='0';}}
@@ -186,7 +187,7 @@ function startPosterTour(){
  const scenes=[...svg.querySelectorAll('.film-scene')].map((el,scene)=>({el,pieces:[...el.querySelectorAll('.film-piece')].map((el,j)=>{const sector=Number(el.dataset.sector),p=art.sectors[sector],b=p.box,center=[b[0]+b[2]/2,b[1]+b[3]/2];
  return {el,sector,j,mask:svg.querySelector(`[data-mask="${el.dataset.key}"]`),a:el.querySelector('.film-photo-a'),b:el.querySelector('.film-photo-b'),final:el.querySelector('.film-final-photo'),original:mark.querySelectorAll('.poster-photo')[sector],order:orders[sector],lastA:null,lastB:null,target:{center,x:baseX+(art.letters[p.letter].x+center[0])*baseScale,y:baseY+center[1]*baseScale,scale:baseScale}};
  })}));
- const film={svg,sheet,finalLayer,scenes,images,all,raf:0,start:performance.now(),duration:20000*MOTION_SCALE,sceneSeconds:4*MOTION_SCALE};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
+ const film={svg,sheet,finalLayer,title:screen.querySelector('.film-calligraphy'),scenes,images,all,raf:0,start:performance.now(),duration:20000*MOTION_SCALE,sceneSeconds:4*MOTION_SCALE};posterFilm=film;svg.dataset.startedAt=film.start;film.final=prepareFilmFinal(film,decoded);
  film.paint=(ms)=>{
   ms/=MOTION_SCALE; // All tracks share the same half-speed clock, including the SVG fallback.
   const seconds=((ms%20000)+20000)%20000/1000,active=seconds>=3.5&&seconds<20;
@@ -197,6 +198,11 @@ function startPosterTour(){
   const layeredFinal=active&&seconds>=16&&film.final?.ready;
   svg.style.opacity=active&&!layeredFinal?String(1-copy):'0';if(finalLayer)finalLayer.style.opacity=layeredFinal?String(1-copy):'0';
   if(layeredFinal)paintFilmFinal(film,seconds-16);
+  const titleCycle=active&&seconds>=16?Math.floor(ms/20000):-1;
+  if(titleCycle!==film.titleCycle){
+   film.titleCycle=titleCycle;film.titleAnimation?.cancel();
+   if(film.title&&titleCycle>=0){film.titleAnimation=film.title.animate([{offset:0,opacity:0,transform:'translateY(24px) scale(1.045)'},{offset:.15,opacity:0,transform:'translateY(24px) scale(1.045)'},{offset:.78,opacity:1,transform:'translateY(0) scale(1)'},{offset:1,opacity:1,transform:'translateY(0) scale(1)'}],{duration:4000*MOTION_SCALE,fill:'both',easing:'cubic-bezier(.22,.65,.25,1)'});film.titleAnimation.startTime=film.start+(titleCycle*20000+16000)*MOTION_SCALE;}
+  }
   scenes.forEach(({el,pieces},scene)=>{
    const time=seconds-(4+scene*4),visible=!(scene===3&&layeredFinal)&&time>=(scene===0?-.5:0)&&time<4;
    el.style.display=visible?'':'none';if(!visible)return;
@@ -247,7 +253,7 @@ function posterWordmark(){const art=window.COVER_ART;return `<svg class="poster-
 function finishStage(after,next=null){if(!state.completedStages.includes(after))state.completedStages.push(after);for(const [key,t] of Object.entries(state.timers)){if(t.running){t.remaining=remaining(t);t.running=false;}}state.intermission=next?{after,next}:null;go(next?'ranking':'stages');}
 function continueAfterResults(){const next=state.intermission?.next;state.intermission=null;go(next||'stages');}
 const views={
- home(){const e=window.COVER_ART.event;return `<div class="cover cover-poster" data-action="enter-cover" role="button" tabindex="0" aria-label="Открыть игру"><div class="poster-sheet"><p class="poster-kicker">${esc(e.kicker)}</p><h1 class="poster-title">${esc(e.title)}<span class="sr-only"> КОД</span></h1>${posterWordmark()}<div class="poster-details"><p class="poster-date">${esc(e.date)}</p><p class="poster-venue">${esc(e.venue)}</p></div></div>${posterFilmMarkup()}</div>`;},
+ home(){const e=window.COVER_ART.event;return `<div class="cover cover-poster" data-action="enter-cover" role="button" tabindex="0" aria-label="Открыть игру"><div class="poster-sheet"><p class="poster-kicker">${esc(e.kicker)}</p><img class="poster-organizer" src="assets/brand/youth-council-black.svg" alt="Молодёжный совет Хабаровска"><h1 class="poster-title">${esc(e.title)}<span class="sr-only"> КОД</span></h1>${posterWordmark()}<div class="poster-details"><p class="poster-date">${esc(e.date)}</p><p class="poster-venue">${esc(e.venue)}</p></div></div>${posterFilmMarkup()}<div class="film-calligraphy" aria-hidden="true">${esc(e.title)}</div></div>`;},
  setup(){return `<div class="view team-selection"><div class="team-selection-grid scroll">${state.teams.map((t,i)=>`<div class="team-tile"><span class="team-index">${String(i+1).padStart(2,'0')}</span><input maxlength="120" aria-label="Название команды ${i+1}" value="${esc(t.name)}" data-team-name="${esc(t.id)}"><button class="team-remove" data-action="remove-team" data-id="${esc(t.id)}" aria-label="Удалить команду ${i+1}">×</button></div>`).join('')}</div><div class="selection-controls">${circle('+','add-team','aria-label="Добавить команду"',state.teams.length>=9)}${circle('→','stages','aria-label="Продолжить к этапам"',!state.teams.length)}</div></div>`;},
  stages(){return `<div class="view stage-sequence paper-stage-menu"><h2 class="sequence-heading">Этапы игры</h2><div class="sequence-list">${[['Разминка','warmup','warmup-book.png'],['Основная часть','board','main-globe.png']].map(([title,action,image],i)=>`<button style="--stage-index:${i}" class="sequence-item ${state.completedStages.includes(action)?'stage-completed':''}" data-action="${action}"><strong>${title}</strong><img src="assets/stage-objects/${image}" alt="" draggable="false"></button>`).join('')}</div></div>`;},
  rules(){return rulesView();},
@@ -326,9 +332,9 @@ function teamEditors(){return state.teams.map(t=>`<div class="team-edit"><input 
 function mediaMarkup(q,images,a){const details=a?q.answerImageDetails:q.imageDetails;return `<div class="question-media ${images.length>2?'media-many':''}" style="--count:${images.length}">${images.map((src,i)=>{const detail=details?.find(x=>x.src===src);return `<button class="media-item" data-action="advance" aria-label="${state.current.screen==='paper'?(a?'Следующий ответ':'Следующий вопрос'):(a?'Продолжить':'Раскрыть ответ')}"><span class="media-visual"><img src="${esc(src)}" alt="${esc(detail?.alt||'Материал задания')}" draggable="false"></span></button>`;}).join('')}</div>`;}
 function chronologyView(q,a){
  const events=a?[...q.events].sort((x,y)=>x.date.localeCompare(y.date)):q.events;
- const sameYear=new Set(q.events.map(e=>e.date.slice(0,4))).size===1;
+ const yearCounts=q.events.reduce((counts,e)=>(counts[e.date.slice(0,4)]=(counts[e.date.slice(0,4)]||0)+1,counts),{});
  const intro=q.text.split('\n\n')[0];
- return `<div class="view question-canvas chronology-canvas ${a?'answer-canvas':''}" data-answer="${a}" data-action="advance" role="button" tabindex="0" aria-label="${state.current.screen==='paper'?(a?'Следующий ответ':'Следующий вопрос'):(a?'Завершить вопрос':'Раскрыть правильный порядок')}"><h2 class="chronology-heading">${esc(intro)}</h2><div class="chronology-cards" data-question="${q.id}" data-answer="${a}" style="--event-count:${events.length};--row-width:${events.length===2?1180:events.length===3?1550:1720}px">${events.map(e=>{const day=sameYear&&e.date.length>4?new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:'long',timeZone:'UTC'}).format(new Date(e.date+'T12:00:00Z')):'';return `<article class="chronology-card" data-event="${e.label}"><div class="chronology-image"><img src="${esc(e.image)}" alt="${esc(e.text)}" draggable="false"><span class="chronology-label">${esc(e.label)}</span></div><h3 class="chronology-event-title">${esc(e.text)}</h3><div class="chronology-date" ${a?'':'aria-hidden="true"'}>${a?`<strong>${esc(e.date.slice(0,4))}</strong>${day?`<span>${esc(day)}</span>`:''}`:''}</div></article>`;}).join('')}</div></div>`;
+ return `<div class="view question-canvas chronology-canvas ${a?'answer-canvas':''}" data-answer="${a}" data-action="advance" role="button" tabindex="0" aria-label="${state.current.screen==='paper'?(a?'Следующий ответ':'Следующий вопрос'):(a?'Завершить вопрос':'Раскрыть правильный порядок')}"><h2 class="chronology-heading">${esc(intro)}</h2><div class="chronology-cards" data-question="${q.id}" data-answer="${a}" style="--event-count:${events.length};--row-width:${events.length===2?1180:events.length===3?1550:1720}px">${events.map(e=>{const day=yearCounts[e.date.slice(0,4)]>1&&e.date.length>4?new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:'long',timeZone:'UTC'}).format(new Date(e.date+'T12:00:00Z')):'';return `<article class="chronology-card" data-event="${e.label}"><div class="chronology-image"><img src="${esc(e.image)}" alt="${esc(e.text)}" draggable="false"><span class="chronology-label">${esc(e.label)}</span></div><h3 class="chronology-event-title">${esc(e.text)}</h3><div class="chronology-date" ${a?'':'aria-hidden="true"'}>${a?`<strong>${esc(e.date.slice(0,4))}</strong>${day?`<span>${esc(day)}</span>`:''}`:''}</div></article>`;}).join('')}</div></div>`;
 }
 function questionView(q,a,mode='question'){
  if(q.type==='chronology')return chronologyView(q,a);

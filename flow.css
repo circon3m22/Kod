@@ -14,3 +14,8 @@ body.reduced .flow-page,body.reduced .flow-stage-card,body.reduced .flow-block,b
 body.large .flow-question-text{font-size:62px}body.large .flow-question-text.medium{font-size:50px}body.large .flow-question-text.long{font-size:38px}body.high-contrast .flow-question-lead,body.high-contrast .flow-cost{color:#555}
 
 .flow-question-layout.dense{grid-template-columns:minmax(0,1.32fr) minmax(0,.68fr)}.flow-question-layout.dense .matching-column{gap:10px}.flow-question-layout.dense .match-item{padding:10px 13px;font-size:23px;line-height:1.3}.flow-question-layout.dense .match-answer-row{font-size:23px;line-height:1.3}
+
+.flow-stage-page .flow-organizer,.flow-block-page .flow-organizer{position:absolute;left:95px;bottom:45px;width:168px;height:133px;object-fit:contain;opacity:.8;pointer-events:none}
+.flow-chronology .chronology-cards[style*="--event-count:5"]{gap:20px}
+.flow-chronology .chronology-cards[style*="--event-count:5"] .chronology-event-title{font-size:23px;line-height:1.3;padding:20px 20px 10px}
+.flow-chronology .chronology-cards[style*="--event-count:5"] .chronology-date{padding:16px 20px 24px}
