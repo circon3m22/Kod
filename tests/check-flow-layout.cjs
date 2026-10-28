@@ -8,7 +8,7 @@ const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('nod
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const methods=new Function('esc','state',source+';return {matching,chronologyView,timeText}')(esc,s),ui=QUIZ_FLOW.mount({data,state:()=>s,esc,id:()=>Math.random().toString(),...methods});
   let checked=0;const bad=[],broken=[];
   for(const [index,step] of ui.rows.entries()){
-   if(!['warmup','warmup-answer','question','answer','rules','names','blocks','stages','manual','main-results','creative-intro','captains-intro'].includes(step.kind))continue;
+   if(!['warmup','warmup-answer','question','answer','rules','names','blocks','stages','manual','final-results','captains-intro'].includes(step.kind))continue;
    s.flow.cursor=index;s.flow.clock=step.seconds?{owner:step.id,remaining:step.seconds,running:false}:null;root.innerHTML=ui.view();if(root.querySelectorAll('.flow-organizer,.poster-organizer').length!==0)bad.push({step:step.id,error:'organizer logo outside main stage menu'});await Promise.all([...root.querySelectorAll('img')].map(img=>img.decode().catch(()=>{})));
    for(const img of root.querySelectorAll('img'))if(!img.naturalWidth)broken.push({step:step.id,src:img.src});
    const overflow=[...root.querySelectorAll('.flow-question-copy,.flow-question-text,.chronology-card,.flow-rule-cards article,.flow-block h2,.flow-stage-cards')].filter(el=>el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2).map(el=>({class:el.className,height:[el.scrollHeight,el.clientHeight],width:[el.scrollWidth,el.clientWidth],text:el.textContent.slice(0,100)}));
