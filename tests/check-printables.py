@@ -17,7 +17,7 @@ assert not page.get_images(), 'Page must remain vector-only'
 drawings = page.get_drawings()
 borders = [d for d in drawings if abs(d['rect'].width - 95 * mm) < .1 and abs(d['rect'].height - 91 * mm) < .1]
 assert len(borders) == 6
-assert all(.12 < b['stroke_opacity'] < .25 and b['dashes'] == '[] 0' and all(item[0] != 'c' for item in b['items']) for b in borders)
+assert all(b['stroke_opacity'] == 1 and b['dashes'] == '[] 0' and all(item[0] != 'c' for item in b['items']) for b in borders)
 assert all(page.rect.contains(b['rect']) for b in borders)
 for index, border in enumerate(borders):
     text = page.get_text(clip=border['rect']).strip().splitlines()
@@ -31,4 +31,4 @@ assert html.count('class="slip"') == 6 and html.count('<li value=') == 60
 assert html.count('class="brand"') == 6 and 'youth-council' not in html and 'quiz-logo' not in html
 assert html.count('class="team"') == 6
 assert not re.search('Итого:|Баллы|ножниц|пунктир', html)
-print('PASS: one exact A4 page, six rectangular 95×91 mm slips, faint continuous cut lines, 60 writing rows, only required text, text headings; matching HTML print layout.')
+print('PASS: one exact A4 page, six rectangular 95×91 mm slips, clear continuous cut lines, 60 writing rows, only required text, text headings; matching HTML print layout.')
