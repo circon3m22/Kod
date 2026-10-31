@@ -62,7 +62,7 @@ for ids in orders:
  for i,qid in enumerate(ids):q=byid[qid];q['value']=(i+1)*100;d['questions'].append(q)
 warmimages={
 'pw1':(['kopecks'],['kopecks']),
-'pw2':(['assets/paper-rounds/sailing-ship.svg'],['oryol']),
+'pw2':(['assets/paper-rounds/ship-engraving.webp'],['oryol']),
 'pw3':(['assets/images/image21.jpeg'],['assets/images/image21.jpeg']),
 'pw4':(['lazarev'],['lazarev']),
 'pw5':(['venus-transit'],['venus-transit']),
@@ -71,10 +71,10 @@ warmimages={
 'pw8':(['platinum'],['platinum']),
 'pw9':(['assets/cover-history/haying.jpg'],['peter-iii']),
 'pw10':(['shostakovich'],['shostakovich']),
-'pw11':(['assets/paper-rounds/terminal.svg'],['assets/paper-rounds/tetris.svg']),
+'pw11':(['assets/paper-rounds/soviet-computer.webp'],['assets/paper-rounds/tetris-gameboy.webp']),
 'pw12':(['sputnik2'],['laika']),
 'pw13':(['kotelnikov'],['kotelnikov']),
-'pw14':(['assets/paper-rounds/projector.svg'],['road-to-life']),
+'pw14':(['assets/paper-rounds/film-projector.webp'],['road-to-life']),
 'pw15':(['millennium'],['millennium'])}
 warmbyid={}
 for raw in draft['warmup']:

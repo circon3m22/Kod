@@ -2196,14 +2196,19 @@
     "images": [
       {
         "id": "tetris",
-        "path": "assets/paper-rounds/tetris.svg",
-        "caption": "Падающие блоки. Схематичная иллюстрация к ответу",
-        "alt": "Падающие блоки. Схематичная иллюстрация к ответу",
-        "author": "Проект «Культурный код»",
-        "license": "CC0",
-        "sourceUrl": "scripts/build-paper-vectors.py",
-        "sha256": "2f9a16bab44109fdc7fe62e2ca02a906db8ad27ac5961d081c2ab413bc14b277",
-        "changes": "Ручная векторная иллюстрация из геометрических фигур"
+        "path": "assets/paper-rounds/tetris-gameboy.webp",
+        "caption": "Игра «Тетрис» на Game Boy",
+        "alt": "Игра «Тетрис» на Game Boy",
+        "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26782864@N00\">William Warby</a> from London, England",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tetris_on_Game_Boy.jpg",
+        "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Tetris_on_Game_Boy.jpg/960px-Tetris_on_Game_Boy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sha256": "9ebd27017961fa93b7a341c84e3b53f86dd6bf7d3275d89f5031aab94253b72e",
+        "width": 700,
+        "height": 1100,
+        "bytes": 44640,
+        "changes": "Local WebP conversion; original color retained."
       }
     ]
   },

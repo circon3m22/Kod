@@ -3897,17 +3897,17 @@ window.QUIZ_DATA = {
         "pw2"
       ],
       "images": [
-        "assets/paper-rounds/sailing-ship.svg"
+        "assets/paper-rounds/ship-engraving.webp"
       ],
       "enabled": true,
       "status": "complete",
       "video": null,
       "paperImages": [
-        "assets/paper-rounds/sailing-ship.svg"
+        "assets/paper-rounds/ship-engraving.webp"
       ],
       "paperImageDetails": [
         {
-          "src": "assets/paper-rounds/sailing-ship.svg",
+          "src": "assets/paper-rounds/ship-engraving.webp",
           "alt": "Иллюстрация к вопросу",
           "caption": ""
         }
@@ -4021,29 +4021,29 @@ window.QUIZ_DATA = {
         "pw11"
       ],
       "images": [
-        "assets/paper-rounds/terminal.svg"
+        "assets/paper-rounds/soviet-computer.webp"
       ],
       "enabled": true,
       "status": "complete",
       "video": null,
       "paperImages": [
-        "assets/paper-rounds/terminal.svg"
+        "assets/paper-rounds/soviet-computer.webp"
       ],
       "paperImageDetails": [
         {
-          "src": "assets/paper-rounds/terminal.svg",
+          "src": "assets/paper-rounds/soviet-computer.webp",
           "alt": "Иллюстрация к вопросу",
           "caption": ""
         }
       ],
       "answerImages": [
-        "assets/paper-rounds/tetris.svg"
+        "assets/paper-rounds/tetris-gameboy.webp"
       ],
       "answerImageDetails": [
         {
-          "src": "assets/paper-rounds/tetris.svg",
-          "alt": "Падающие блоки. Схематичная иллюстрация к ответу",
-          "caption": "Падающие блоки. Схематичная иллюстрация к ответу"
+          "src": "assets/paper-rounds/tetris-gameboy.webp",
+          "alt": "Игра «Тетрис» на Game Boy",
+          "caption": "Игра «Тетрис» на Game Boy"
         }
       ]
     },
@@ -4379,17 +4379,17 @@ window.QUIZ_DATA = {
         "pw14"
       ],
       "images": [
-        "assets/paper-rounds/projector.svg"
+        "assets/paper-rounds/film-projector.webp"
       ],
       "enabled": true,
       "status": "complete",
       "video": null,
       "paperImages": [
-        "assets/paper-rounds/projector.svg"
+        "assets/paper-rounds/film-projector.webp"
       ],
       "paperImageDetails": [
         {
-          "src": "assets/paper-rounds/projector.svg",
+          "src": "assets/paper-rounds/film-projector.webp",
           "alt": "Иллюстрация к вопросу",
           "caption": ""
         }

@@ -495,6 +495,10 @@
     "bytes": 243114,
     "sha256": "d25e371514c2cf5c6abcd75b640cfccd5bc50886c09d92a0ee10e076f6e1c10e"
   },
+  "assets/paper-rounds/film-projector.webp": {
+    "bytes": 169182,
+    "sha256": "2ce661f4a553c7ea6ac054da3ec40a569e9eaea45f8d514b9a1149b1c83dcb5c"
+  },
   "assets/paper-rounds/gogol.jpg": {
     "bytes": 285061,
     "sha256": "82d68bb51a721506fee441d864d1047e06579637b53ba1a916c06f0ffffbabaf"
@@ -599,10 +603,6 @@
     "bytes": 183834,
     "sha256": "e0585d934de239ff949538cf26a0ae62504ff68f08af31384c1fd58d9d0604a9"
   },
-  "assets/paper-rounds/projector.svg": {
-    "bytes": 918,
-    "sha256": "db734140a4354653c51f299314a0a07518b6fb92e9a0c2f45ab6d98f035ff18f"
-  },
   "assets/paper-rounds/pushkin.jpg": {
     "bytes": 320900,
     "sha256": "5db61f0e2d817de64e41196b87195580e067a9f567d2db1509f5aa955ce97b50"
@@ -623,13 +623,13 @@
     "bytes": 299043,
     "sha256": "cf7a5aca404630721b8f7fe55d837bcf71413f243abd21ab984ee1a63ede7553"
   },
-  "assets/paper-rounds/sailing-ship.svg": {
-    "bytes": 531,
-    "sha256": "76a9b301aef23885eaa8fb623b74c364d9e04dadb5d832dc1a284a588d75006b"
-  },
   "assets/paper-rounds/sakhalin-velikan.jpg": {
     "bytes": 350839,
     "sha256": "c277fbc504b1a26f1ff360808ad63d5793561160a58bbba5bb90858680642248"
+  },
+  "assets/paper-rounds/ship-engraving.webp": {
+    "bytes": 130298,
+    "sha256": "28e5736565c851405f3bf3248ac3fc74a2a3487d4e848ee02d13c0372c1081a7"
   },
   "assets/paper-rounds/shostakovich.jpg": {
     "bytes": 99987,
@@ -643,6 +643,10 @@
     "bytes": 217236,
     "sha256": "cbe1fcca12b856568fe6b5f1de7ab436ed4c02036a3dd2cec2334d9e6d1fdd3a"
   },
+  "assets/paper-rounds/soviet-computer.webp": {
+    "bytes": 46926,
+    "sha256": "411688c4894b001406d54231ac3402f1fdec86a719ff10452484f59d68b1e3ea"
+  },
   "assets/paper-rounds/sputnik2.jpg": {
     "bytes": 135209,
     "sha256": "1b6cb10d8c26beede58fd002824008779460d1e949baf325c408c1094b12caca"
@@ -651,13 +655,9 @@
     "bytes": 238517,
     "sha256": "d83502bb9be8f54b89af2242d04c09adfd50defe2892ff766adae2cec89b2c54"
   },
-  "assets/paper-rounds/terminal.svg": {
-    "bytes": 3897,
-    "sha256": "665b54f33bb6d8b8779876504439d59628654b4df606c3bc8e8aaa2dd08d9da0"
-  },
-  "assets/paper-rounds/tetris.svg": {
-    "bytes": 1785,
-    "sha256": "2f9a16bab44109fdc7fe62e2ca02a906db8ad27ac5961d081c2ab413bc14b277"
+  "assets/paper-rounds/tetris-gameboy.webp": {
+    "bytes": 44640,
+    "sha256": "9ebd27017961fa93b7a341c84e3b53f86dd6bf7d3275d89f5031aab94253b72e"
   },
   "assets/paper-rounds/tretyakov.jpg": {
     "bytes": 192324,
