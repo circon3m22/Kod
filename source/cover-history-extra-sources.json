@@ -13,10 +13,10 @@
     "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Gorskii_04422u.jpg/1280px-Gorskii_04422u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "originalDate": "1909",
     "retrieved": "2026-10-25",
-    "sha256": "f3a78f3fe68411d7a4213d01b170553d254e056900aada6316b110ccc4c9f123",
+    "sha256": "6ef9c63be10f007b182a3b8af5f0c2046b7abb68f673ec617b38e677f74e8bfa",
     "width": 1280,
     "height": 1103,
-    "bytes": 367740,
+    "bytes": 322442,
     "processing": "Downsampled to at most 1280 px and JPEG 86 for local cover; original historical color retained. No crop, generative editing, or artificial colorization. Digital color image reconstructs original color-separation negatives.",
     "metadata": {
       "DateTime": {
