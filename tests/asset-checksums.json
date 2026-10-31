@@ -819,13 +819,25 @@
     "bytes": 941822,
     "sha256": "5b940579b36d344baab5d5efb34a40fcc97e2a6b7c3b912be83d6311a8bf7f1c"
   },
+  "assets/rules/binoculars.webp": {
+    "bytes": 176134,
+    "sha256": "e04608642acd85ab22ceac7510da52f7c3193a22f025be04a6ff9d7a0edc6489"
+  },
   "assets/rules/hourglass.png": {
     "bytes": 257372,
     "sha256": "dd501dafd301feafea849379a9e088d9385cb5ad6cf5943f46cc3c7ca7c196a4"
   },
+  "assets/rules/hourglass.webp": {
+    "bytes": 162082,
+    "sha256": "3b900c5f47abb4fb5c07dcc956a25f9d5f56de95d02be1fb9d740b99f16b3b4a"
+  },
   "assets/rules/telephone.png": {
     "bytes": 170474,
     "sha256": "4f5580a3d5ee3737b16367bd0e5956cae10ba817780b43955a08bebfb299a466"
+  },
+  "assets/rules/telephone.webp": {
+    "bytes": 42714,
+    "sha256": "f7be3bf325de70bbf6ceb4d789b89920e968e7c8995fe6a58c1d101968786219"
   },
   "assets/stage-objects/captains-compass.png": {
     "bytes": 164164,

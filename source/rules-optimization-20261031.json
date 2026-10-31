@@ -1,0 +1,53 @@
+[
+  {
+    "source": "assets/rules/binoculars.png",
+    "sourceSha256": "5b940579b36d344baab5d5efb34a40fcc97e2a6b7c3b912be83d6311a8bf7f1c",
+    "optimized": "assets/rules/binoculars.webp",
+    "optimizedSha256": "e04608642acd85ab22ceac7510da52f7c3193a22f025be04a6ff9d7a0edc6489",
+    "sourceSize": 941822,
+    "optimizedSize": 176134,
+    "sourceDimensions": [
+      1920,
+      1280
+    ],
+    "optimizedDimensions": [
+      1200,
+      800
+    ],
+    "method": "RGBA, Lanczos max 1200 px, WebP quality 90, preserve transparency"
+  },
+  {
+    "source": "assets/rules/hourglass.png",
+    "sourceSha256": "dd501dafd301feafea849379a9e088d9385cb5ad6cf5943f46cc3c7ca7c196a4",
+    "optimized": "assets/rules/hourglass.webp",
+    "optimizedSha256": "3b900c5f47abb4fb5c07dcc956a25f9d5f56de95d02be1fb9d740b99f16b3b4a",
+    "sourceSize": 257372,
+    "optimizedSize": 162082,
+    "sourceDimensions": [
+      1280,
+      1920
+    ],
+    "optimizedDimensions": [
+      800,
+      1200
+    ],
+    "method": "RGBA, Lanczos max 1200 px, WebP quality 90, preserve transparency"
+  },
+  {
+    "source": "assets/rules/telephone.png",
+    "sourceSha256": "4f5580a3d5ee3737b16367bd0e5956cae10ba817780b43955a08bebfb299a466",
+    "optimized": "assets/rules/telephone.webp",
+    "optimizedSha256": "f7be3bf325de70bbf6ceb4d789b89920e968e7c8995fe6a58c1d101968786219",
+    "sourceSize": 170474,
+    "optimizedSize": 42714,
+    "sourceDimensions": [
+      1920,
+      1920
+    ],
+    "optimizedDimensions": [
+      1200,
+      1200
+    ],
+    "method": "RGBA, Lanczos max 1200 px, WebP quality 90, preserve transparency"
+  }
+]

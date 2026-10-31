@@ -55,7 +55,7 @@ for item in sectors:
   x,y,w,h=item['box'];iw,ih=Image.open(ROOT/item['photo']).size;scale=max(w/iw,h/ih)
   item['imageBox']=[x-(iw*scale-w)*focus,y-(ih*scale-h)*.5,iw*scale,ih*scale]
 assert len(sectors)==len({x['photo'] for x in sectors})==9
-art={'width':1615,'height':630,'letters':letters,'sectors':sectors,'event':{'kicker':'Исторический квиз','title':'КУЛЬТУРНЫЙ','date':'2 ноября 18:30','venue':'«Вектор», ул. Фрунзе, 60'}}
+art={'width':1615,'height':630,'letters':letters,'sectors':sectors,'event':{'kicker':'Исторический квиз','title':'КУЛЬТУРНЫЙ','date':'2 ноября 14:00','venue':'«Вектор», ул. Фрунзе, 60'}}
 (ROOT/'cover-art.js').write_text('// Shared geometry for the live cover and the 4:3 poster. Local sources only.\nwindow.COVER_ART = '+json.dumps(art,ensure_ascii=False,indent=2)+';\n')
 
 credits='\n\n'.join(f"{x['caption']}\n{x['author']} · {x['license']}\n{x['sourceUrl']}\n{x.get('licenseUrl','')}\nИзменения: кадрирование по скруглённым секциям; исходный цвет сохранён." for x in photo_sources)
@@ -69,7 +69,7 @@ def typeface(path,weight=None):
  if weight is not None:font=instantiateVariableFont(font,{'wght':weight},inplace=False)
  return font.getGlyphSet(),font.getBestCmap(),font['head'].unitsPerEm
 body_font=typeface('assets/fonts/Onest-Variable.ttf',500)
-parts=['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400mm" height="300mm" viewBox="0 0 1920 1440" role="img" aria-labelledby="title">','<title id="title">Культурный код. Исторический квиз. 2 ноября 18:30. «Вектор», ул. Фрунзе, 60</title>','<rect width="1920" height="1440" fill="white"/>']
+parts=['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400mm" height="300mm" viewBox="0 0 1920 1440" role="img" aria-labelledby="title">','<title id="title">Культурный код. Исторический квиз. 2 ноября 14:00. «Вектор», ул. Фрунзе, 60</title>','<rect width="1920" height="1440" fill="white"/>']
 # Inline the vector silhouette so the print PDF has no rasterized map.
 background_svg=ET.parse(ROOT/background['path']).getroot()
 parts.append('<g id="poster-background">')
@@ -108,7 +108,7 @@ if '--export' in __import__('sys').argv:
   raw=Path(td)/'raw.pdf';compressed=Path(td)/'compressed.pdf'
   subprocess.run(['inkscape',str(svg),'--export-type=pdf','--export-filename='+str(raw)],check=True,capture_output=True)
   subprocess.run(['gs','-q','-sDEVICE=pdfwrite','-dCompatibilityLevel=1.6','-dNOPAUSE','-dBATCH','-dAutoFilterColorImages=false','-dColorImageFilter=/DCTEncode','-dAutoFilterGrayImages=false','-dGrayImageFilter=/DCTEncode','-dJPEGQ=92','-dDownsampleColorImages=false','-dDownsampleGrayImages=false','-sOutputFile='+str(compressed),str(raw)],check=True,capture_output=True)
-  writer=PdfWriter(clone_from=PdfReader(compressed));writer.add_metadata({'/Title':'Культурный код — исторический квиз','/Author':'Культурный код; авторы фотосекций указаны в описании','/Subject':credits,'/Keywords':'4:3; источники и лицензии фотографий; 2 ноября 18:30'})
+  writer=PdfWriter(clone_from=PdfReader(compressed));writer.add_metadata({'/Title':'Культурный код — исторический квиз','/Author':'Культурный код; авторы фотосекций указаны в описании','/Subject':credits,'/Keywords':'4:3; источники и лицензии фотографий; 2 ноября 14:00'})
   with pdf.open('wb') as f:writer.write(f)
  image=Image.open(png);image.load();info=PngInfo();info.add_itxt('Description',credits);info.add_itxt('Copyright','Фотосекции сохраняют индивидуальные лицензии, приведённые в Description.');info.add_itxt('Title','Культурный код — исторический квиз')
  image.save(png,pnginfo=info,dpi=(203.2,203.2))

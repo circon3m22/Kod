@@ -16,8 +16,7 @@ GUIDE = '''КУЛЬТУРНЫЙ КОД — АВТОНОМНЫЙ КВИЗ
 1. Распакуйте архив целиком на флешку или в папку на устройстве.
 2. Откройте папку KULTURNYY-KOD и дважды нажмите index.html.
 3. Используйте современный браузер, например Chrome, Edge или Firefox.
-   Интернет для игры не нужен. Ссылки на внешние источники в разделе
-   «Источники фото» требуют интернет.
+   Интернет для игры не нужен.
 4. Бланки для печати: design/answer-sheets.pdf (шесть бланков на A4).
 
 Сохраняйте всю папку: изображения, шрифты и скрипты нужны сайту.
@@ -49,8 +48,9 @@ def asset_paths():
         for path in re.findall(r'assets/[\w./-]+', text):
             if (ROOT / path).is_file(): paths.add(path)
     # These paths are assembled dynamically in the UI.
-    for directory in ('assets/rules', 'assets/stage-objects'):
+    for directory in ('assets/stage-objects',):
         paths.update(str(p.relative_to(ROOT)) for p in (ROOT / directory).glob('*') if p.is_file())
+    paths.update(str(p.relative_to(ROOT)) for p in (ROOT / 'assets/rules').glob('*.webp'))
     missing = sorted(path for path in paths if not (ROOT / path).is_file())
     if missing: raise SystemExit('Missing runtime assets: ' + ', '.join(missing))
     return paths

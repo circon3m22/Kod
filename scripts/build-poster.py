@@ -17,7 +17,7 @@ OUT=ROOT/'design/cultural-code-poster-kod.svg'
 font=instantiateVariableFont(TTFont(ROOT/'assets/fonts/Montserrat-Variable.ttf'),{'wght':500},inplace=False)
 glyphs=font.getGlyphSet();cmap=font.getBestCmap();units=font['head'].unitsPerEm
 parts=['''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="297mm" height="420mm" viewBox="0 0 1485 2100" role="img" aria-labelledby="title description">
-<title id="title">Культурный код — исторический квиз. 2 ноября 18:30. «Вектор», ул. Фрунзе, 60</title>
+<title id="title">Культурный код — исторический квиз. 2 ноября 14:00. «Вектор», ул. Фрунзе, 60</title>
 <desc id="description">Белая афиша. Слово КОД собрано вручную из округлых фотосекций: подлинные цветные снимки Сергея Прокудина-Горского начала XX века. Выше чёрное КУЛЬТУРНЫЙ и Исторический квиз. Ниже дата и адрес.</desc>
 <rect width="1485" height="2100" fill="#fff"/>
 <defs>''']
@@ -93,10 +93,26 @@ tile(rect(0,584,105,67,23),(0,584,105,67),'locomotive',(.6,.6))
 tile(rect(305,584,105,67,23),(305,584,105,67),'wooden-house',(.5,.2))
 parts.append('</g>')
 
-text('2 ноября 18:30',1630,54,.4)
+text('2 ноября 14:00',1630,54,.4)
 text('«Вектор», ул. Фрунзе, 60',1715,32,.2)
 parts.append('</svg>')
 OUT.write_text('\n'.join(parts))
-manifest={'format':'A3 portrait 297 × 420 mm','svg':str(OUT.relative_to(ROOT)),'text':['Исторический квиз','КУЛЬТУРНЫЙ','КОД','2 ноября 18:30','«Вектор», ул. Фрунзе, 60'],'construction':'Hand-built SVG; 15 rounded photograph sections form Cyrillic КОД; no generated imagery or colorization. Text outlined from local Montserrat Medium 500.','photoSources':'source/cover-history-sources.json','fontSource':'source/montserrat-font-source.json','photos':[f'assets/cover-history/{x}.jpg' for x in photos]}
+manifest={'format':'A3 portrait 297 × 420 mm','svg':str(OUT.relative_to(ROOT)),'text':['Исторический квиз','КУЛЬТУРНЫЙ','КОД','2 ноября 14:00','«Вектор», ул. Фрунзе, 60'],'construction':'Hand-built SVG; 15 rounded photograph sections form Cyrillic КОД; no generated imagery or colorization. Text outlined from local Montserrat Medium 500.','photoSources':'source/cover-history-sources.json','fontSource':'source/montserrat-font-source.json','photos':[f'assets/cover-history/{x}.jpg' for x in photos]}
 (ROOT/'source/poster-kod-design.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print(OUT)
+if '--export' in __import__('sys').argv:
+ import subprocess,tempfile
+ from PIL.PngImagePlugin import PngInfo
+ from pypdf import PdfReader,PdfWriter
+ sources=json.loads((ROOT/'source/cover-history-sources.json').read_text())
+ attribution='\n'.join(f"{item['caption']} — {item['sourcePage']}" for item in sources)
+ png=OUT.with_suffix('.png');pdf=OUT.with_name('cultural-code-poster-kod-A3.pdf')
+ subprocess.run(['inkscape',str(OUT),'--export-type=png','--export-filename='+str(png),'--export-width=2480'],check=True,capture_output=True)
+ with tempfile.TemporaryDirectory(prefix='kod-a3-poster-') as directory:
+  raw=Path(directory)/'raw.pdf';compressed=Path(directory)/'compressed.pdf'
+  subprocess.run(['inkscape',str(OUT),'--export-type=pdf','--export-filename='+str(raw)],check=True,capture_output=True)
+  subprocess.run(['gs','-q','-sDEVICE=pdfwrite','-dCompatibilityLevel=1.6','-dNOPAUSE','-dBATCH','-dAutoFilterColorImages=false','-dColorImageFilter=/DCTEncode','-dJPEGQ=92','-dDownsampleColorImages=false','-sOutputFile='+str(compressed),str(raw)],check=True,capture_output=True)
+  writer=PdfWriter(clone_from=PdfReader(compressed));writer.add_metadata({'/Title':'Культурный код — исторический квиз, 2 ноября 14:00','/Subject':attribution})
+  with pdf.open('wb') as file:writer.write(file)
+ picture=Image.open(png);picture.load();info=PngInfo();info.add_itxt('Title','Культурный код — 2 ноября 14:00');info.add_itxt('Description',attribution);picture.save(png,pnginfo=info,dpi=(211.9,211.9))
+ print('Exported A3 PNG and PDF with source metadata.')

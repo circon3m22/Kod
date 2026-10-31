@@ -187,6 +187,13 @@ for item in rules:
     png = path.read_bytes()
     assert png[25] in (4, 6) or (png[25] == 3 and b'tRNS' in png)
 assert 'quiz-flow.js' in (r / 'index.html').read_text() and (r / 'flow.css').exists()
+optimized_rules = json.loads((r / 'source/rules-optimization-20261031.json').read_text())
+assert len(optimized_rules) == 3
+for item in optimized_rules:
+    webp = (r / item['optimized']).read_bytes()
+    assert webp[:4] == b'RIFF' and webp[8:12] == b'WEBP'
+    assert hashlib.sha256(webp).hexdigest() == item['optimizedSha256']
+    assert len(webp) < item['sourceSize']
 print('PASS: three source-backed transparent rule illustrations and local sequential-flow dependencies.')
 
 # The same picture may recur in its own answer, but never in another question.
