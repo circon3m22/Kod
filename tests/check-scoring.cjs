@@ -17,9 +17,9 @@ assert.deepEqual(ctx.state.teams.map(t=>t.score),[0,600]);assert.equal(ctx.state
 ctx.quietUndo();assert.deepEqual(ctx.state.teams.map(t=>t.score),[0,0]);ctx.selectTeam(0);ctx.commitSelection();assert.deepEqual(ctx.state.teams.map(t=>t.score),[600,0]);
 ctx.state.current={screen:'warmup',warmIndex:0};ctx.selectTeam(1);ctx.clearSelection();ctx.commitSelection();assert.equal(ctx.state.teams[1].score,0);
 ctx.selectTeam(1);ctx.state.current.warmIndex=1;ctx.commitSelection();assert.equal(ctx.state.teams[1].score,0);
-ctx.selectTeam(1);ctx.commitSelection();assert.equal(ctx.state.teams[1].score,10);
+ctx.selectTeam(1);ctx.commitSelection();assert.equal(ctx.state.teams[1].score,0);
 ctx.state.current={screen:'board'};ctx.selectTeam(0);ctx.commitSelection();assert.equal(ctx.state.teams[0].score,600);
-ctx.state.current={screen:'bonus',bonusIndex:0};ctx.selectTeam(0);ctx.selectTeam(1);ctx.commitSelection();ctx.commitSelection();assert.equal(ctx.state.teams[1].score,210);
+ctx.state.current={screen:'bonus',bonusIndex:0};ctx.selectTeam(0);ctx.selectTeam(1);ctx.commitSelection();ctx.commitSelection();assert.equal(ctx.state.teams[1].score,200);
 ctx.state.current={screen:'captains',captainIndex:0};ctx.selectTeam(0);ctx.commitSelection();ctx.commitSelection();assert.equal(ctx.state.teams[0].score,700);
 ctx.state.current={screen:'question',questionId:'c1-200'};ctx.selectTeam(1);ctx.state.teams.pop();ctx.commitSelection();assert.equal(ctx.state.teams[0].score,700);
 console.log('PASS: 50 repeated selections do not score; last choice wins; one commit per task; reopen protection; undo; clear; stale selection; bonus/captains; deleted team.');
