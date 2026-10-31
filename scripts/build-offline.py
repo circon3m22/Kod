@@ -7,7 +7,7 @@ import re
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-ROOT_FILES = ['index.html', 'app.js', 'quiz-flow.js', 'quiz-data.js', 'cover-art.js',
+ROOT_FILES = ['index.html', 'app.js', 'quiz-flow.js', 'quiz-data.js', 'preload.js', 'preload-assets.js', 'cover-art.js',
               'cover-film.js', 'styles.css', 'flow.css', 'credits.html',
               'design/answer-sheets.html', 'design/answer-sheets.pdf',
               'design/host-answer-key.html', 'source/russia-silhouette-geodata.geojson']
@@ -42,6 +42,8 @@ def asset_paths():
     walk(data)
     # Collect literal paths from the UI, CSS, film, poster, and credits.
     for filename in ROOT_FILES:
+        if filename == 'preload-assets.js':
+            continue
         if not filename.endswith(('.html', '.js', '.css')):
             continue
         text = (ROOT / filename).read_text()

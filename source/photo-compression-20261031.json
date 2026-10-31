@@ -1,0 +1,774 @@
+{
+  "date": "2026-10-31",
+  "method": "JPEG quality 78, optimized progressive, preserve dimensions and ICC profile; keep original if less than 5% smaller",
+  "files": {
+    "assets/answer-history/berlin-wall.jpg": {
+      "beforeBytes": 132431,
+      "afterBytes": 116337,
+      "beforeSha256": "e3b9f9d72d0285d0944d7bfa1cf815ba7907180c403edda9e3880bd75c40affa",
+      "afterSha256": "5e24bdf51177068c992affa02a437537a6625de94f0d171813f774803cca3e31"
+    },
+    "assets/answer-history/book.jpg": {
+      "beforeBytes": 177916,
+      "afterBytes": 166086,
+      "beforeSha256": "9216f422387e05f0e31364233c7c04d4cdfaa465b58b6f2e60c78343267eb0c8",
+      "afterSha256": "53d4f060620fec98ef87790bfdfad1b54b94e084165cc64e793a356cd4b560c7"
+    },
+    "assets/answer-history/cyril-methodius.jpg": {
+      "beforeBytes": 141388,
+      "afterBytes": 126993,
+      "beforeSha256": "87c024dab030527a2fb554b63aa8188e4a0be906a1dd336ce9b4597ba036efb8",
+      "afterSha256": "71a1d6dda6c3fd12ba65f683ea25e6dedc24f0fe45a7c73607708a7484b4f33c"
+    },
+    "assets/answer-history/far-east.jpg": {
+      "beforeBytes": 90359,
+      "afterBytes": 78215,
+      "beforeSha256": "ec7640932ccc20b6566efa4bd5769e8489d27dd7a353544a073e2c509a506d7d",
+      "afterSha256": "638b4c69fccd7bfa22efedfa98df11926fdba5997022fe9f0f1b6af1364d10d1"
+    },
+    "assets/answer-history/gagarin.jpg": {
+      "beforeBytes": 162950,
+      "afterBytes": 145068,
+      "beforeSha256": "0c668d6b6a1ce68de842ae4c72e0903e650d0cfa289e8013b738ed1235456c82",
+      "afterSha256": "7a9d9f7699d073e69d6b958631af80152eb7073decd49c7413b033c5eefc4d02"
+    },
+    "assets/answer-history/ivan-iii.jpg": {
+      "beforeBytes": 157999,
+      "afterBytes": 142008,
+      "beforeSha256": "53fe06f7bba707a93c04816b8666327a63e9b32db8adf4d6fa11f001a24bbf19",
+      "afterSha256": "6ac6766776ccfdf4eb51546936533df61db45b402f141495382a1562eafbf322"
+    },
+    "assets/answer-history/kazan.jpg": {
+      "beforeBytes": 146058,
+      "afterBytes": 138593,
+      "beforeSha256": "977745ae39107fc25646a5e057de706b48a8bd8b7aefa8f6dcdeba5452a3b32f",
+      "afterSha256": "d123cdc3d2a3bb8ef5540b90d7624be7c5871e21ef51ad89b7244601e5af2a7b"
+    },
+    "assets/answer-history/kunstkamera.jpg": {
+      "beforeBytes": 154851,
+      "afterBytes": 139961,
+      "beforeSha256": "55affc65bfcfe8fd0bef9dc7df55eb2b99e9b87cd1c8d9afcbf66cce1f5bbefb",
+      "afterSha256": "e478bd14018f10c408b450faa06666a933876bcab09b05e6a5aea2b7c4a8efb3"
+    },
+    "assets/answer-history/lesnaya.jpg": {
+      "beforeBytes": 91268,
+      "afterBytes": 82255,
+      "beforeSha256": "532ddd4fbbc2773424d2f048072317b48ac923d27bf45fcf560411834d26e80d",
+      "afterSha256": "43593d715b21a387823a203b036033e2c2d455c51de6041602a7457a96d17c23"
+    },
+    "assets/answer-history/moscow.jpg": {
+      "beforeBytes": 161952,
+      "afterBytes": 142692,
+      "beforeSha256": "b2ee7aa7d151d0adc387d98155573181dccfba8769a62195687decd7bb42f663",
+      "afterSha256": "d8e9bbd2102e2e764934ba5972a65c4ed4dafd364ff8a38497084f62ac3a492f"
+    },
+    "assets/answer-history/petersburg.jpg": {
+      "beforeBytes": 120933,
+      "afterBytes": 109444,
+      "beforeSha256": "22a31bbcbf5838d8256641d4e1d9dfe8919f4b49de1577102499c4adbe47139a",
+      "afterSha256": "c7613096f5689ebda036274e1de8d35d3725c05fc2039f12c41bb067f2ffaf37"
+    },
+    "assets/answer-history/sputnik.jpg": {
+      "beforeBytes": 5341,
+      "afterBytes": 5060,
+      "beforeSha256": "e1f5cb7ba837c220641280f7ad317cbbd59326c48c27c6e2195a97dc36f45f87",
+      "afterSha256": "45cc5992e54b46085c42a83b8da0939c8df4d9dd3f434f8fb5bd39d52cc9cfc0"
+    },
+    "assets/answer-history/streltsy.jpg": {
+      "beforeBytes": 177045,
+      "afterBytes": 154265,
+      "beforeSha256": "86d0680be6990a74a72c091cf7327fc5aeee73f5d9344cec95b6689e537ff7d9",
+      "afterSha256": "e6082bce6839e765170d184b1fc68cd3c32e8864b04e6ebe984cd7dc72275eed"
+    },
+    "assets/answer-history/victory-parade-1945-color.jpg": {
+      "beforeBytes": 72249,
+      "afterBytes": 67752,
+      "beforeSha256": "74a4349d374637120cc5607915add306f538763fad2fc8237226a4ed91b4ddf4",
+      "afterSha256": "f2a83a2a874c2b005a19db2bc9fb7cf5842cdfb2900f32dfd23985b376623e18"
+    },
+    "assets/answer-history/vladimir.jpg": {
+      "beforeBytes": 109625,
+      "afterBytes": 99457,
+      "beforeSha256": "50744ddc304e7976ed2706e8f11b93f19b46dd25e61d4fef09c5f1a0de4b1ff5",
+      "afterSha256": "e967669827f074b4a1819a5a2f559c8b5562299d07a7630460074606a3b71628"
+    },
+    "assets/answer-history/yeltsin.jpg": {
+      "beforeBytes": 68006,
+      "afterBytes": 61652,
+      "beforeSha256": "4f05a85f2efc4b433d0157170cee48759c254f67dae4bbd1e108e94f2d5d098a",
+      "afterSha256": "9f0099a08ec9c413ecc79a387c312ac9500dd0a2a93e35a7ca7c97e0a0bb5638"
+    },
+    "assets/chronology-cards/congress-palace.jpg": {
+      "beforeBytes": 97856,
+      "afterBytes": 87619,
+      "beforeSha256": "3e3f6e9f236e38b9e94cc2e29f606f64b676bc984ab30153abcf65c934405276",
+      "afterSha256": "c1cf1bd997e3a41a5b4a25213e53d6c1b02887637aa7a873867fc2260f58b1fb"
+    },
+    "assets/chronology-cards/khabarovka.jpg": {
+      "beforeBytes": 100244,
+      "afterBytes": 89362,
+      "beforeSha256": "6de6ff2ddaf81fa0934c558841831c78ee0c77b05a86b2243d243ce354995059",
+      "afterSha256": "867c53f9f909260529bfd7780c3a568c0c99196d587512eea005feeda3d0be13"
+    },
+    "assets/chronology-cards/tereshkova.jpg": {
+      "beforeBytes": 72231,
+      "afterBytes": 64461,
+      "beforeSha256": "1e4c3a220bd0c192b7f13555d1b12a1fa5f6a5bde8714779fbbbd90325d72633",
+      "afterSha256": "9f97794d8d48fe5741544d9a7f37dc50a2a8dc4f8278a98b963a4513c6853871"
+    },
+    "assets/chronology-cards/titov.jpg": {
+      "beforeBytes": 109897,
+      "afterBytes": 97394,
+      "beforeSha256": "c363b7c3f89ee13c34aabbb095e8a7f716b37dba45a59531a5267cf49ce2f96d",
+      "afterSha256": "b3c8ef9f75383c100efe7a54500ea6f5399cc0f55d27dd40865fc48a84c0b5ac"
+    },
+    "assets/chronology-cards/vladivostok.jpg": {
+      "beforeBytes": 98479,
+      "afterBytes": 87173,
+      "beforeSha256": "a0ff662e1938816e2dee49b2d24d40840fc7594ab4bf55d1ac0941908afb2f42",
+      "afterSha256": "9c32662f38d10462fb13c046e2c979751fe2afda8f6a694692dfa86818fc5955"
+    },
+    "assets/cover-eras/borodino.jpg": {
+      "beforeBytes": 196247,
+      "afterBytes": 176376,
+      "beforeSha256": "e403db6cae31114d8c250d5fe10ad1111293771c2188977a36b3bcdc021c7be4",
+      "afterSha256": "ba339a50b331eae6526203f536af9d1f59972b9daf3f20d3fb3ba5d226d3704a"
+    },
+    "assets/cover-eras/moscow-1964.jpg": {
+      "beforeBytes": 104519,
+      "afterBytes": 91095,
+      "beforeSha256": "5b5ec0f94db9c2565f9ed53c64208c7a1c2db9dd54e849d6ccde4ed66f70aaab",
+      "afterSha256": "dcf6e7d9d762f96989a23db9cab83062a3c51dba3c9c859f9bb718d5da9adfcf"
+    },
+    "assets/cover-eras/soyuz-1975.jpg": {
+      "beforeBytes": 175102,
+      "afterBytes": 155771,
+      "beforeSha256": "a12483e719f8d55a29fa67ebfdf4b6c72036aeac6219bf0faefed6a00050d322",
+      "afterSha256": "ac1eb1085287a996342971d12876982eb98ace95ecff7f399f35106b1d126dd5"
+    },
+    "assets/cover-film/battleship-borodino.jpg": {
+      "beforeBytes": 429256,
+      "afterBytes": 365405,
+      "beforeSha256": "d9a30b723da5f74970244d72c6dbffc6036c26b90193dca9363f124df9a7b9cc",
+      "afterSha256": "d940e141b19b5b9753871407f0ce11a6dd58cc32929d7af7ba8ebd701448e3fe"
+    },
+    "assets/cover-film/boris-gleb.jpg": {
+      "beforeBytes": 278129,
+      "afterBytes": 245888,
+      "beforeSha256": "7bdc1da85fab2c3deaf6b1685d37c67e26ffe49cbf54cf5980bb520ae6e5d608",
+      "afterSha256": "6bf48a4eb147ca759d43f0f25c483da62765a932c5fc7ab4bc82412ca03e2d6d"
+    },
+    "assets/cover-film/borodino-church.jpg": {
+      "beforeBytes": 122554,
+      "afterBytes": 110274,
+      "beforeSha256": "721e8d3bfd8def6e1de3dd8be3196eb9ddb98d993f87fe37e7799a55f58da517",
+      "afterSha256": "53d52f9e7edf0ae73f7b1e67dbe406e63f8bfd69e8de3a09f1121cbe65fc5cc9"
+    },
+    "assets/cover-film/borodino-station.jpg": {
+      "beforeBytes": 339953,
+      "afterBytes": 298723,
+      "beforeSha256": "9eb76c896b7d19f4f87c4812786c27921b2a3a87fe6a9994f0cc19c386bc1b6f",
+      "afterSha256": "43ec9045ec46cd191f4e463362b3a043a20688e30bd97bc52511f365605db8d1"
+    },
+    "assets/cover-film/mosaic.jpg": {
+      "beforeBytes": 374515,
+      "afterBytes": 320649,
+      "beforeSha256": "ee76567d18c99d4670c2cbf9c14bde0c7d0b669b625da9e2f6aaf9dbf9f63a61",
+      "afterSha256": "e50cade8a556d6a744195ecad2e306f9fdfc2df6a588e0de9b1e8f03f9f3386c"
+    },
+    "assets/cover-film/moscow-metro-1964.jpg": {
+      "beforeBytes": 105145,
+      "afterBytes": 94793,
+      "beforeSha256": "d1115dc82461dbdcb364c22e77c9a62b0b0a8d8509de05594dc0026744ef1c86",
+      "afterSha256": "45cd695121940151d41c2ad23b17f6997252f451783377f8d4304b0d2e4107fa"
+    },
+    "assets/cover-film/nyrob-relic.jpg": {
+      "beforeBytes": 179197,
+      "afterBytes": 157125,
+      "beforeSha256": "57360d09a88ebea64fd2d6ba6e4a4b5d6897b35a01d3d3deec369cbd8ab91343",
+      "afterSha256": "c18d37b06bdb3b0f7f759326bf5c9d0a609915b5d29d1be42763e17e76defd52"
+    },
+    "assets/cover-film/perm-railway.jpg": {
+      "beforeBytes": 334125,
+      "afterBytes": 292443,
+      "beforeSha256": "4870e22500e18612cae520fac307df7edb9753155c154d3a6f7ab6166f1d3c9b",
+      "afterSha256": "8543c6274a25c0bc8edeb5a05d26c7fc91b99b3a2a2d090c4e945b8d8b47527a"
+    },
+    "assets/cover-film/pokrov-monastery.jpg": {
+      "beforeBytes": 309538,
+      "afterBytes": 271385,
+      "beforeSha256": "daafb5f7cb781f559ce31f95f2c185a0369430320018427437738556719924a7",
+      "afterSha256": "9a63a34030d2a61a837a1a0617505bd01a9c63eb198cfa41b64e71e5696a4506"
+    },
+    "assets/cover-film/soyuz-apollo-crews.jpg": {
+      "beforeBytes": 286544,
+      "afterBytes": 252748,
+      "beforeSha256": "9c85fc11d8284a83cc5250da66e7f4dbaf9c158a0740743f40572414113913dc",
+      "afterSha256": "e8ba922dde2e214c46772a4736caab325f47979ec58f582032088edbc6fb18b7"
+    },
+    "assets/cover-film/suzdal-cathedral.jpg": {
+      "beforeBytes": 269776,
+      "afterBytes": 239176,
+      "beforeSha256": "b3627b682b12d95047d7eaf781d6851f6a3f4d5fc40aaae6eecdbdb86530119f",
+      "afterSha256": "8e4bbe9bcf8f3fbc120edc6e95c680061567033b138b31800fee279ce4048ddd"
+    },
+    "assets/cover-film/suzdal-river.jpg": {
+      "beforeBytes": 243300,
+      "afterBytes": 216015,
+      "beforeSha256": "ff08daa954405fd176d9868b74082580a79769d27aad852695f16ace8d14ee2d",
+      "afterSha256": "0194db3252095ed0d01e2ffc63c8f1a4e102d435d4fcf9d0e60703e2c7b50c3e"
+    },
+    "assets/cover-film/three-generations.jpg": {
+      "beforeBytes": 335159,
+      "afterBytes": 296208,
+      "beforeSha256": "d9727777bceab67813d7bdca933fea9f857f2a128f48bb24e57ec9086ae94748",
+      "afterSha256": "4c1f604d7948f686d46de004594f4456d1fb7905fd885631fc3006f2175fc590"
+    },
+    "assets/cover-history/haying.jpg": {
+      "beforeBytes": 367740,
+      "afterBytes": 322442,
+      "beforeSha256": "f3a78f3fe68411d7a4213d01b170553d254e056900aada6316b110ccc4c9f123",
+      "afterSha256": "6ef9c63be10f007b182a3b8af5f0c2046b7abb68f673ec617b38e677f74e8bfa"
+    },
+    "assets/cover-history/suzdal.jpg": {
+      "beforeBytes": 311263,
+      "afterBytes": 273976,
+      "beforeSha256": "ff4528918a4e3342dce7ccef78057d769cf3c84fc3b0620fe234b9c15f310b7d",
+      "afterSha256": "3ec198974cb743589f0c6a03ea1dfc83fe7088f8c3a4cf505a1f7d73ae08cab6"
+    },
+    "assets/images/image10.jpeg": {
+      "beforeBytes": 208520,
+      "afterBytes": 178420,
+      "beforeSha256": "f372f645c5c8753c7d2bd08fe2a60c5f426b3c1ab6fee044c6984ef900e978f3",
+      "afterSha256": "28d1d281a4f89a844e8ce6725d099e846abc7ed217274907974dced5ff2884dd"
+    },
+    "assets/images/image11.jpeg": {
+      "beforeBytes": 229210,
+      "afterBytes": 194494,
+      "beforeSha256": "2b6ad49ea73a43cb5e7a6ced6b91501fde671a189acc274c49e6c291c2c2c180",
+      "afterSha256": "793bad0d81c14aaee74edfb01148a647a45c42a718cb892385025903c103366b"
+    },
+    "assets/images/image12.jpeg": {
+      "beforeBytes": 238845,
+      "afterBytes": 214205,
+      "beforeSha256": "30c7745292b79d69512136d510bef4b860762ca652357697f6a248ff0377cc33",
+      "afterSha256": "b2eb11cc6b14c6fe0ad06f84ba0fde8ef20d43e70d389dd9f1bcae3169abd671"
+    },
+    "assets/images/image13.jpeg": {
+      "beforeBytes": 123580,
+      "afterBytes": 107779,
+      "beforeSha256": "44b12ec717123e70e623043ad72a5942b875d525eaa903183abfcde16047b27c",
+      "afterSha256": "1da47613dce946c239431549f85dd80f772d1e11dd9219ec8394e1f400c37bf1"
+    },
+    "assets/images/image15.jpeg": {
+      "beforeBytes": 374090,
+      "afterBytes": 328799,
+      "beforeSha256": "64c151e5c5ab6b94486d8fd350ebfa0f323f220751c310f5f6e5f6bb3bd25805",
+      "afterSha256": "78f772fc6752fd463190341d560aa600dc41dfd5b08f17f60868453eb34c6a3b"
+    },
+    "assets/images/image16.jpeg": {
+      "beforeBytes": 73575,
+      "afterBytes": 65477,
+      "beforeSha256": "e8f2ba604486715828e5e5dff359f7972115b75cd5f689e0579ac65d8ee2ed76",
+      "afterSha256": "47c44bade455ac9c2fc3736da626ad3c89a6ec564adb29024971304d953a1bdb"
+    },
+    "assets/images/image19.jpeg": {
+      "beforeBytes": 72858,
+      "afterBytes": 64676,
+      "beforeSha256": "cb897635a43321fdca7a10304844f2fba6486d92bb118da97497abad4911c4f4",
+      "afterSha256": "9f30bb292f453674b31deb7281a2fd9590f0af9c6862dccd6de964fb6bdadce3"
+    },
+    "assets/images/image21.jpeg": {
+      "beforeBytes": 15229,
+      "afterBytes": 13771,
+      "beforeSha256": "91cb67df5cbd2521f69c43864e8235788b21dc9f7259ab6cf28b98398451ee29",
+      "afterSha256": "85367998d3cc253d7849349caa476330a08b24915a41b4b27f1900dc1a91ce59"
+    },
+    "assets/images/image22.jpeg": {
+      "beforeBytes": 76048,
+      "afterBytes": 67116,
+      "beforeSha256": "9096370b1921601877e7f950fc6ef13262e11ba9260c14e87ea904400d67ca83",
+      "afterSha256": "2011effde0bb31065f0126f5fb24a73f43237ffd0df43d0a9717b0f951084bf6"
+    },
+    "assets/images/image33.jpeg": {
+      "beforeBytes": 63799,
+      "afterBytes": 58026,
+      "beforeSha256": "82fdf049416d986d36d4a86202cc9668264a7cfb5cdb5c29fa70c4f82051393b",
+      "afterSha256": "ecd2679e387ba0d2732be776adc658a6006d36b18adccdcf8e53b889fa6a04bc"
+    },
+    "assets/images/image34.jpeg": {
+      "beforeBytes": 282525,
+      "afterBytes": 251574,
+      "beforeSha256": "b4e58a4691fc689b47256ccfcee4079ff8f3d3a6afb861798efbca183375491b",
+      "afterSha256": "aa2df3886042790568e2f2229f82bc338903bdd5862183c2cb47affb38f458f8"
+    },
+    "assets/images/image35.jpeg": {
+      "beforeBytes": 136745,
+      "afterBytes": 120554,
+      "beforeSha256": "0edbe9a5701714e637d7f9ae024298312d0b144fc01bc1f360c272f343f2cabd",
+      "afterSha256": "e73a08986fb27dded767c3daf14e26f1cd4cfaf31edc2badc5afe80bd214d7b3"
+    },
+    "assets/images/image5.jpeg": {
+      "beforeBytes": 139641,
+      "afterBytes": 126165,
+      "beforeSha256": "cb70508fd4ab6258944781a10527c62edf856ced688041df277a5efb7b0eb0d7",
+      "afterSha256": "eaa31d942606431eeeebce50321397d08b8a876a400501439be3297b4c64914e"
+    },
+    "assets/images/image8.jpeg": {
+      "beforeBytes": 186485,
+      "afterBytes": 175763,
+      "beforeSha256": "6d8c9415c994a09c78c052c3a8a5a3d20684dca11dfa7e717f0b4e9d959a33c4",
+      "afterSha256": "9ff76ec674e1a1b82905c7151cc5ce4b4dbbdd9a2d8087ebed6aa4743b5dbcca"
+    },
+    "assets/paper-rounds/aelita-costume.jpg": {
+      "beforeBytes": 46575,
+      "afterBytes": 41233,
+      "beforeSha256": "ae7620ba786524f3af7d578449d03fbb09382c2db206dbd3e694561966775128",
+      "afterSha256": "676b291f805ce25cebb2504cdfce847734caedf1cbdadbf6b072d1e5c144de19"
+    },
+    "assets/paper-rounds/amur-cliff.jpg": {
+      "beforeBytes": 111474,
+      "afterBytes": 98617,
+      "beforeSha256": "dc5cf58992c1b32fd8967695a3cd5660364408a01b5645cfaa7ce0e7650af513",
+      "afterSha256": "a30111c7884b6476ef5ad394b3525815ba99a61921cf48a4b54ed54f5ff57f47"
+    },
+    "assets/paper-rounds/beard-token.jpg": {
+      "beforeBytes": 45227,
+      "afterBytes": 39940,
+      "beforeSha256": "a32b93c41b3502442f9dec9a82b9807cdfd7dcdce5d63140b5228628410f9b70",
+      "afterSha256": "7b4441834ae0c53097fdab2480ebd91d1cd58d7ccf121661dc9be7abaae4440b"
+    },
+    "assets/paper-rounds/birch-bark-onfim.jpg": {
+      "beforeBytes": 130788,
+      "afterBytes": 115945,
+      "beforeSha256": "2261db8547ec782ee551bf15496e90fbfb648962790c92fa1db744c5c89f93da",
+      "afterSha256": "86c31ecc467612dc1063ce7b452e66eff739220bbabb3a30b7017e4b69a942bf"
+    },
+    "assets/paper-rounds/borodin.jpg": {
+      "beforeBytes": 54543,
+      "afterBytes": 42550,
+      "beforeSha256": "8eb5b1a0983b69c611fa0e39e67c442a10bf77ba375426996d46fec9bd8ec3c5",
+      "afterSha256": "802713d2d322e52b74fc06b22642a9e41d7144211b72e35941480a9e33dde9a5"
+    },
+    "assets/paper-rounds/children-railway.jpg": {
+      "beforeBytes": 262096,
+      "afterBytes": 226272,
+      "beforeSha256": "541f6a6505a09587ec5b394afdfeba0c6c4bd8fd1bc5d3602a7eb5d9639d8a53",
+      "afterSha256": "e09aab60050722d6cd513bbbad3e6a1c43bab4e18ec02698286f20934bf8e109"
+    },
+    "assets/paper-rounds/duma-opening.jpg": {
+      "beforeBytes": 243114,
+      "afterBytes": 213317,
+      "beforeSha256": "d25e371514c2cf5c6abcd75b640cfccd5bc50886c09d92a0ee10e076f6e1c10e",
+      "afterSha256": "37c35fd715ffeab40ff793ae12f5ba33ee17be84419ccf485f1a0272de522963"
+    },
+    "assets/paper-rounds/gogol.jpg": {
+      "beforeBytes": 285061,
+      "afterBytes": 248370,
+      "beforeSha256": "82d68bb51a721506fee441d864d1047e06579637b53ba1a916c06f0ffffbabaf",
+      "afterSha256": "f6a62d243993a3cbe69b64a22d5f8e35bc0cb9786067992d9b079c57cef931eb"
+    },
+    "assets/paper-rounds/grodekov-museum.jpg": {
+      "beforeBytes": 212204,
+      "afterBytes": 184675,
+      "beforeSha256": "525227722f263d9668052a70ecbb6cb3f0373d7ffb286065de4acaad4929a494",
+      "afterSha256": "cd48bc229e6b49c01d85c8d3dbd2e4b287338fec4d3765ad9d9feb4240f60225"
+    },
+    "assets/paper-rounds/hermitage.jpg": {
+      "beforeBytes": 219884,
+      "afterBytes": 192524,
+      "beforeSha256": "c3c4f2f847c1cfcd4ce051ad40fa8a95ce957aeafbfb235727717713a5186848",
+      "afterSha256": "b942850173731dd7fc0c6bf4d30252ed13b9f2b9327bf0de94261b3fbd5c80f7"
+    },
+    "assets/paper-rounds/komsomolsk.jpg": {
+      "beforeBytes": 245480,
+      "afterBytes": 212746,
+      "beforeSha256": "f64213c965a641183f53b4346a0533e8000c8596f27762c2a87dc662fe8197e4",
+      "afterSha256": "d8f49d0b5e449383dafa0477b3c8cb99a2ac4853ea9a1349562f282e4b833a59"
+    },
+    "assets/paper-rounds/kopecks.jpg": {
+      "beforeBytes": 61823,
+      "afterBytes": 55420,
+      "beforeSha256": "dab6a9f5c8bbf6a4ca16187906fb27edf00b2664238a7b1cd2fd24e91fdd9acc",
+      "afterSha256": "6db3acb0234fc622dffe76e89b2084bb26931a0fbe7b7fb4af689dded0ea0408"
+    },
+    "assets/paper-rounds/kotelnikov.jpg": {
+      "beforeBytes": 434159,
+      "afterBytes": 382034,
+      "beforeSha256": "1188eadfa45ed8bfe44a78006c470f8edfaeb918e9ca3e42cfdc4c61de25e4b3",
+      "afterSha256": "bf13190e9a0eb093f2d75fbcccb2a41f47bd5e4694865189121f1436f141dc38"
+    },
+    "assets/paper-rounds/kurosawa.jpg": {
+      "beforeBytes": 214817,
+      "afterBytes": 190282,
+      "beforeSha256": "7c1c1015cd92d16bdac3758327a4b3a6545e9beafd073658ba4050c1ae14349c",
+      "afterSha256": "c6a1bc04ce501371005a1259fb550a93397448d8334ecaf118c1a623e39eb0f6"
+    },
+    "assets/paper-rounds/laika.jpg": {
+      "beforeBytes": 100818,
+      "afterBytes": 89727,
+      "beforeSha256": "86699f4b24f356fc780a425ab1bac7e1126c67def4c5b4aaa40a57b963ae5c0b",
+      "afterSha256": "9ead7c85cfc817be5cb6457d8a463a58fa02eeb6f5e8a97287ff0719483d99e6"
+    },
+    "assets/paper-rounds/lazarev.jpg": {
+      "beforeBytes": 277229,
+      "afterBytes": 240611,
+      "beforeSha256": "b396d4d87121b46c4767624fc45c6303594992a3f337b3bc0bd634e3032a5195",
+      "afterSha256": "9bccae542f837cb77b7b717532eb44928ef7aa4372c05ba56f53cf77e162422a"
+    },
+    "assets/paper-rounds/lermontov.jpg": {
+      "beforeBytes": 316406,
+      "afterBytes": 275830,
+      "beforeSha256": "657ed453fda6f1346352e4e900cea34859d30d4d9571980ab2818c21f37d9196",
+      "afterSha256": "db231f8cdfd6a9426d088f90457a17224935c5c3c57fe7619c7e1e375a6b87d9"
+    },
+    "assets/paper-rounds/lodygin.jpg": {
+      "beforeBytes": 34276,
+      "afterBytes": 30594,
+      "beforeSha256": "c6954ecbe74a4ab2e6642619f1c2d62a3a810e91c0ef4c85065a3b3a9a233324",
+      "afterSha256": "184f2e666b991aa20a3447d18ad7f20e8902ecfdbdc53c4e1429f9fb2f63f8ae"
+    },
+    "assets/paper-rounds/manjur.jpg": {
+      "beforeBytes": 197144,
+      "afterBytes": 169198,
+      "beforeSha256": "c04f48ef41f1f5ebd433fcf4caf49ca70aac358f890646f6df59b8de2158b410",
+      "afterSha256": "693101d639cffd45c688ca28dbcdb697ea81858981dcc7cd810eb262bbf2102f"
+    },
+    "assets/paper-rounds/mendeleev.jpg": {
+      "beforeBytes": 151897,
+      "afterBytes": 142631,
+      "beforeSha256": "94190bbbc7495fb502441035b4a34d95a9a6a7b78c7e2d1c62c87122cb78e071",
+      "afterSha256": "f2e61c10abfdea55d58669cf1b21c08791d7b5fc68db6b28664c3c595db3f581"
+    },
+    "assets/paper-rounds/millennium.jpg": {
+      "beforeBytes": 217587,
+      "afterBytes": 193942,
+      "beforeSha256": "d2d2e532af3c74fa08cbd44705be9c59b21f5c7f7157e7d940278095d7a95540",
+      "afterSha256": "69488132179655abcb18642b9638298ec90af08b2fc7171ee25abca9006d4982"
+    },
+    "assets/paper-rounds/northpole.jpg": {
+      "beforeBytes": 139692,
+      "afterBytes": 123922,
+      "beforeSha256": "00c871608c882aff5af9dd3b3546e16a3523cb3d6937695064e979ca075007ca",
+      "afterSha256": "2181f773f100006ea1e4523575ab6d84cc1edd3be3689cf65728658a61232a91"
+    },
+    "assets/paper-rounds/oryol.jpg": {
+      "beforeBytes": 268695,
+      "afterBytes": 243944,
+      "beforeSha256": "e9a8a2a35e533f178d408e18d4c4999698c1788456999992bb99a6d324501449",
+      "afterSha256": "d8e8df061f6706914aaab6a54341a416de838c7d1e7e7bd55312c1b20bce857e"
+    },
+    "assets/paper-rounds/peter-iii.jpg": {
+      "beforeBytes": 435872,
+      "afterBytes": 376447,
+      "beforeSha256": "4ad7dd15fe7d01dfedda8db6f6d34d6fe224b1ac4fe0e4fe3145aeed6d599515",
+      "afterSha256": "c609e402b9b146ea53d09c5cb6f0dab68f8eec06ae24a72ff507ea4e1d5714f3"
+    },
+    "assets/paper-rounds/petropavlovsk.jpg": {
+      "beforeBytes": 187228,
+      "afterBytes": 164236,
+      "beforeSha256": "1fe85cfd0639b1fa10b3e0ea863b02fd0eb26ee841958273b1a1924374c562f0",
+      "afterSha256": "b64777fcc851182483dc380f841c61c2fd4132c631873d8d71656e801ddd7b80"
+    },
+    "assets/paper-rounds/pirogov.jpg": {
+      "beforeBytes": 239132,
+      "afterBytes": 209791,
+      "beforeSha256": "e1de63f3324bd748f6d8890704d57284497898568cd0ba51f4e904dcf0c0f628",
+      "afterSha256": "dd76e1a11427611c9582e6276d9ff90a8055e2717a9c41c1c92d64d4f1f5e584"
+    },
+    "assets/paper-rounds/platinum.jpg": {
+      "beforeBytes": 116726,
+      "afterBytes": 102703,
+      "beforeSha256": "58e1c6f675821549e56a14282ca60269d1f126c82c52e5eee89c03efcffc911c",
+      "afterSha256": "292fdfc2c29f84dbaef17d50d3f5d18d07df861b96e5e209904f060fcb8aea33"
+    },
+    "assets/paper-rounds/popov.jpg": {
+      "beforeBytes": 300648,
+      "afterBytes": 263549,
+      "beforeSha256": "b51a59260b9a9bdb107d0bb2807dcc2533bdf1640b9c832caf3e57e5c9e3f8a7",
+      "afterSha256": "1fcc6ac5d961e521f482d229bba5a3e9056282d0b20b5953cfab2499e3b1805f"
+    },
+    "assets/paper-rounds/portsmouth.jpg": {
+      "beforeBytes": 45823,
+      "afterBytes": 41278,
+      "beforeSha256": "2f7f0754f7fd6a2955c6dd3191e0d479e73b7c1994f20674e1bc7e13cd725ddf",
+      "afterSha256": "425c2b7923faebbef171bc93e076873fcc46b0f8cefb525eca97592afd74bddb"
+    },
+    "assets/paper-rounds/potemkin-uprising.jpg": {
+      "beforeBytes": 183834,
+      "afterBytes": 158817,
+      "beforeSha256": "e0585d934de239ff949538cf26a0ae62504ff68f08af31384c1fd58d9d0604a9",
+      "afterSha256": "7f7e48450939cb9257d11137220404005b338eebcab3d036669b2dfdf7d0e6b0"
+    },
+    "assets/paper-rounds/pushkin.jpg": {
+      "beforeBytes": 320900,
+      "afterBytes": 278533,
+      "beforeSha256": "5db61f0e2d817de64e41196b87195580e067a9f567d2db1509f5aa955ce97b50",
+      "afterSha256": "627fed38ca2c3b1bb6059c84b81e45d7ba4d6ce8c3c73773ad0471b09ea50e04"
+    },
+    "assets/paper-rounds/rail-capitals.jpg": {
+      "beforeBytes": 159340,
+      "afterBytes": 141352,
+      "beforeSha256": "50bbf8b93f7014b322127c4474246308c7eac883f3e66b8dc8babb05604fbf0b",
+      "afterSha256": "a409b06be18aa068afc49119d6ce33682384dd8247c28a7940f9f1ba0a79aab0"
+    },
+    "assets/paper-rounds/rail-tsarskoe.jpg": {
+      "beforeBytes": 38757,
+      "afterBytes": 34807,
+      "beforeSha256": "bb20781b4425de3050902659617ae36e3d6842d72b230068c457af7ca35fdda5",
+      "afterSha256": "aaa8390fffcd3c81b64cc60fd2045cfbd667eab69cd2099ace498aa558bbf717"
+    },
+    "assets/paper-rounds/road-to-life.jpg": {
+      "beforeBytes": 374443,
+      "afterBytes": 326403,
+      "beforeSha256": "83b759646de4c881e1c6b235f1617e721561a09b7c800b4f8d26a8320f5a166e",
+      "afterSha256": "c48d88ccf2c5823031ba71858fe8539d9acb40108148db6bf64db74e0e34783a"
+    },
+    "assets/paper-rounds/russian-museum.jpg": {
+      "beforeBytes": 299043,
+      "afterBytes": 264053,
+      "beforeSha256": "cf7a5aca404630721b8f7fe55d837bcf71413f243abd21ab984ee1a63ede7553",
+      "afterSha256": "a4c9bcd5c114555b3e416c50b299b9ff3c63f4145c652fbcd79ec962dbeeae6d"
+    },
+    "assets/paper-rounds/sakhalin-velikan.jpg": {
+      "beforeBytes": 350839,
+      "afterBytes": 305171,
+      "beforeSha256": "c277fbc504b1a26f1ff360808ad63d5793561160a58bbba5bb90858680642248",
+      "afterSha256": "d0701e3fd4aff5068a6787b913e8333daf457e8094e9cbe26f54ffbba04e0984"
+    },
+    "assets/paper-rounds/shostakovich.jpg": {
+      "beforeBytes": 99987,
+      "afterBytes": 88525,
+      "beforeSha256": "fdd0d0ee8e3db82666cfc51177eaca2a5334cd978648ff6d30082603d74fa001",
+      "afterSha256": "529659ea49e48910f1afbf348caf5c7deaa4eb862c65b1880217c7acfa18b0f5"
+    },
+    "assets/paper-rounds/shukhov.jpg": {
+      "beforeBytes": 339870,
+      "afterBytes": 299250,
+      "beforeSha256": "fc6e47ea18c9b014abdbbfc8450c610b301e0b89e48c1b662a847a51e31424b1",
+      "afterSha256": "464b8d40c3039cefd962cc58b6050d42ae552ce767f09d78414950de9a41986b"
+    },
+    "assets/paper-rounds/sikachi-alyan.jpg": {
+      "beforeBytes": 217236,
+      "afterBytes": 190547,
+      "beforeSha256": "cbe1fcca12b856568fe6b5f1de7ab436ed4c02036a3dd2cec2334d9e6d1fdd3a",
+      "afterSha256": "8e894b925a717dedde22a0c89309868e37c6b8af8b437528b4d8aac8e2acf524"
+    },
+    "assets/paper-rounds/sputnik2.jpg": {
+      "beforeBytes": 135209,
+      "afterBytes": 120594,
+      "beforeSha256": "1b6cb10d8c26beede58fd002824008779460d1e949baf325c408c1094b12caca",
+      "afterSha256": "454b2dddda6b622546fba3bba20f1a3643866cb81fca9aa0495e6f36a16d6688"
+    },
+    "assets/paper-rounds/stone-tortoise.jpg": {
+      "beforeBytes": 238517,
+      "afterBytes": 208728,
+      "beforeSha256": "d83502bb9be8f54b89af2242d04c09adfd50defe2892ff766adae2cec89b2c54",
+      "afterSha256": "8bcc3240b005fefcead512b0faf8bccdd7f99a7e673b8852231c0b10ed83bc62"
+    },
+    "assets/paper-rounds/tretyakov.jpg": {
+      "beforeBytes": 192324,
+      "afterBytes": 168077,
+      "beforeSha256": "2d66ca02c69993c78d3be25aa451091198146d89e094b8b5fadee4df85a9d451",
+      "afterSha256": "f0e7321dddbb63cf5bcc6274e4b7862d83e889420dab16a61f1a8ecce8c951d8"
+    },
+    "assets/paper-rounds/tsiolkovsky.jpg": {
+      "beforeBytes": 163278,
+      "afterBytes": 136767,
+      "beforeSha256": "2e7c67e49aeadf56da5b2a4d93d1a4f52adb6b018c634f12b8b41ac0e1162953",
+      "afterSha256": "3a8a2435e4aca1b09d0c432fec1b98293d1678be0a20c1d2ef64da29babe2068"
+    },
+    "assets/paper-rounds/venus-transit.jpg": {
+      "beforeBytes": 73980,
+      "afterBytes": 65451,
+      "beforeSha256": "6f6df4aa04f55a364b1344ba03d635eb48177b300510c0f15202380ca4a6e417",
+      "afterSha256": "bf78bb2c32361a6ba447a6247d86ed8c7f8d24b07444b9095f8d533512230c48"
+    },
+    "assets/paper-rounds/yermak.jpg": {
+      "beforeBytes": 125089,
+      "afterBytes": 110156,
+      "beforeSha256": "8fc39974402611d4e3390d2a9018dd46a3d2f07bbc3ea8c356962fc2d938f308",
+      "afterSha256": "cbce482f4cfaf6992a24ef4f21cf6bb20ef99e2100f4d2a5568617bdb8b1e2ad"
+    },
+    "assets/photo-round/elbe-1945.jpg": {
+      "beforeBytes": 501959,
+      "afterBytes": 453563,
+      "beforeSha256": "ad779d44e63e6445b4bafe37b25a13f157d84843f1e41ce72c5d3f03218b5bc4",
+      "afterSha256": "c5cdf385f0842adf8e9637e1cea4df8e76367c53712ec163693063fca5fd2232"
+    },
+    "assets/photo-round/nevsky-1938.jpg": {
+      "beforeBytes": 48774,
+      "afterBytes": 44081,
+      "beforeSha256": "556834995afb006704b18f12d943caa8d43f53a9e99643eb45a9b5f92b6926dd",
+      "afterSha256": "6ba23550fbd3d121b31201d36158927abade9bcffae98b7552623d8531803de1"
+    },
+    "assets/photo-round/potemkin-1925.jpg": {
+      "beforeBytes": 77802,
+      "afterBytes": 63064,
+      "beforeSha256": "00e40d62c7904d67e0fca68a975aef19caeb5234a8b95d5379cc1c5e421cb874",
+      "afterSha256": "0d7e4c989a7c06569dd91f430687a99419aa08cc97ab40981baff920a5049938"
+    },
+    "assets/question-refresh/amur.jpg": {
+      "beforeBytes": 213660,
+      "afterBytes": 183678,
+      "beforeSha256": "f372b324506f2b82634c4cacc42d34e98f84860f81ba22740a10f4632a44a924",
+      "afterSha256": "6e2a77da6d157a7a13a31413da7e1b60cf9d34fbf2877c988fb002f1272f05e3"
+    },
+    "assets/question-refresh/assembly.jpg": {
+      "beforeBytes": 28465,
+      "afterBytes": 25729,
+      "beforeSha256": "7b58a2bf6bc154e0aaabf01c75e5a051c75c1bc8373e807999774615da3ac672",
+      "afterSha256": "85c9663cd64e24b3b1879340f34069806642733d6e8a42c937b33e353bfc4c02"
+    },
+    "assets/question-refresh/becquerel.jpg": {
+      "beforeBytes": 294136,
+      "afterBytes": 257539,
+      "beforeSha256": "b1daab39fd46f99410916bd245f98cb5794917fe02ab96d1e9eb599ea96f5ee6",
+      "afterSha256": "9b813e39a1d941d7c93346bf06f32dea1ed754bb4a2541589ca42c661fc893e5"
+    },
+    "assets/question-refresh/brest.jpg": {
+      "beforeBytes": 219396,
+      "afterBytes": 191072,
+      "beforeSha256": "907e1988e941279e9ceec625ae10139a6b61f7125a2cc2b55c73dd7f693e1296",
+      "afterSha256": "2e65bea2ad8ba18441eb39740873ff3c6cac0f14a1f8ca8b16053d46d9a11161"
+    },
+    "assets/question-refresh/calendar-object.jpg": {
+      "beforeBytes": 131523,
+      "afterBytes": 117135,
+      "beforeSha256": "141494e6d0c5a69b29f3331a76232b39dff905aef771ce3ae649056ec37cb154",
+      "afterSha256": "fa9130e2a853f805c5ae3553331c88b45600577c8953a392615257f479ac275e"
+    },
+    "assets/question-refresh/calendar.jpg": {
+      "beforeBytes": 37161,
+      "afterBytes": 33467,
+      "beforeSha256": "07b225272c820f0b8be1025ade6eb0945d97368571a327b4a77ee698150bc925",
+      "afterSha256": "d2a994d89432e1063ad6de642cd258755f49b9836a2beca1432705dfff2f4180"
+    },
+    "assets/question-refresh/capital.jpg": {
+      "beforeBytes": 133118,
+      "afterBytes": 112007,
+      "beforeSha256": "99303dc585910259148b2022512c46c6bd04088d25f9d0d556d52bb8134ec56d",
+      "afterSha256": "adbdbf0a8540d378f6b4689ef18160935304f7f432562403a748c462e0c7a896"
+    },
+    "assets/question-refresh/chkalov.jpg": {
+      "beforeBytes": 135333,
+      "afterBytes": 120229,
+      "beforeSha256": "e4dec0d83e4a76961acfee59cc3fbb2b8cb53d688d0258a814acad2f47bd6b84",
+      "afterSha256": "ac5d44b691ff104dd284a97e60d1c57b8d5d89396259601317c682b16196f07e"
+    },
+    "assets/question-refresh/constitution.jpg": {
+      "beforeBytes": 482558,
+      "afterBytes": 420771,
+      "beforeSha256": "8c3cbfd0d980d5e872bdf5516e0accb183d0adce6d8d58d7aa20f0dbd4177906",
+      "afterSha256": "7a67c96b5eb09d086887de40624637897eedfa4adb30ffc59508e87f5b19eec5"
+    },
+    "assets/question-refresh/curie.jpg": {
+      "beforeBytes": 363912,
+      "afterBytes": 311414,
+      "beforeSha256": "42b85d4f2a559308d1755d62c3be36d3679d735992332c10f4cca7e8f5186b96",
+      "afterSha256": "76eccde364918f1c058c8826e24930b44b0ecf4cfd198df400dd5e8470c463e1"
+    },
+    "assets/question-refresh/dostoevsky.jpg": {
+      "beforeBytes": 204935,
+      "afterBytes": 180322,
+      "beforeSha256": "b33d803ef92b5259a29f9e7608c97a50e3039917b9499e1785fe60e48522b333",
+      "afterSha256": "ca7e8f906694bdc580d27699c81cdb907f9ccfe0d803e1e2c28d6355a8b8f005"
+    },
+    "assets/question-refresh/gromov-photo.jpg": {
+      "beforeBytes": 9649,
+      "afterBytes": 8957,
+      "beforeSha256": "511f359565b06b8c2bafa4169cd53f63be09588e23a35fbb40be606326916b7a",
+      "afterSha256": "289a59a61a1de947ffe2c64d96119806d523a343cb2bfb9e4a0190a630c8c17f"
+    },
+    "assets/question-refresh/historical-museum.jpg": {
+      "beforeBytes": 387275,
+      "afterBytes": 337363,
+      "beforeSha256": "fdb0b03bf1a3d2302811cd1fb79d6b932e441c5db8f84f66b5537c3a3a4dfe68",
+      "afterSha256": "832db6e838b6950833931f3ed5d32df1027f4cd97f87736f2ae8990a9f893c59"
+    },
+    "assets/question-refresh/hokkaido.jpg": {
+      "beforeBytes": 114963,
+      "afterBytes": 97138,
+      "beforeSha256": "c0d06401791180467c2e4f2f793117e970a4b61b27d39804f0ffe323ad0c12b3",
+      "afterSha256": "ce3165e4e058f86cf15b986d896b97a1c1f9fa90cf24dad0ee75b260f8348c60"
+    },
+    "assets/question-refresh/leonov-single.jpg": {
+      "beforeBytes": 232864,
+      "afterBytes": 204632,
+      "beforeSha256": "4efb0c5dd779517043b3682b009e4909dfd6308ac48a9644a1265d69c3e63646",
+      "afterSha256": "5c6030dc36cb3ccb3895a99ec3e17e693e1387f51675366591796c1c5d6e54e2"
+    },
+    "assets/question-refresh/manifesto.jpg": {
+      "beforeBytes": 160004,
+      "afterBytes": 140058,
+      "beforeSha256": "02f568fcbde6d310c8187a5a52f215ab72c9b1b63e70350a9c25e2074d8d4d66",
+      "afterSha256": "865be5bef7595b159f7393dd3be5bdc4671d2a2958ec17ebb765146150dba23b"
+    },
+    "assets/question-refresh/mariinsky.jpg": {
+      "beforeBytes": 153102,
+      "afterBytes": 134476,
+      "beforeSha256": "db165b60b4ff38377f4b82f614fcc89b626ae1544c07979bbb4ebd66a0471a39",
+      "afterSha256": "9689b81d2bb5382373f87dec8a13b15b2356282ee7e4fdd6d9c9d990100f7d20"
+    },
+    "assets/question-refresh/moscow-conservatory.jpg": {
+      "beforeBytes": 222971,
+      "afterBytes": 194580,
+      "beforeSha256": "c14918afa11ccd012fcda647850aaa61c4faf899979dfcb11f03fd0a86127407",
+      "afterSha256": "7422efade9c31c9211c2150f449c91441e5e15d82ad38b73af9c123f7f01271d"
+    },
+    "assets/question-refresh/narkomfin.jpg": {
+      "beforeBytes": 180068,
+      "afterBytes": 151539,
+      "beforeSha256": "bf6a4dff8cab111910fc3bd50a5e37e629ce3d9b6b1885625f214eb2fe18a74f",
+      "afterSha256": "8e54d066b35f128fc1e5492c6d555e5c7633e30fab9efbad4ba5c19602a055c8"
+    },
+    "assets/question-refresh/pugachev.jpg": {
+      "beforeBytes": 183946,
+      "afterBytes": 160353,
+      "beforeSha256": "69c969d09216ef250625eae67b54c05db6f1dff0e4a1872ebd731a6bc8e61aab",
+      "afterSha256": "364855b045f12a678c661fe0539536f561ae46de7d2961b0edfe65de68189a05"
+    },
+    "assets/question-refresh/sakhalin-old.jpg": {
+      "beforeBytes": 33361,
+      "afterBytes": 25032,
+      "beforeSha256": "c3ac6729f5eebc484af9217dd042480872667bd3c2c23055675b5b3161bbb322",
+      "afterSha256": "e42761c2dedee655bbc1cf2f036654830c6e2b5faa12f0adb33ebb34736ae936"
+    },
+    "assets/question-refresh/spb-conservatory.jpg": {
+      "beforeBytes": 132075,
+      "afterBytes": 115992,
+      "beforeSha256": "5482137e27af37245ec81faad3a68d1b8ef40d605abdad80755467a2af704b80",
+      "afterSha256": "51a351f99fecbdc45e7b079da68ad8763802c0d5dfe3ae16f0db8e437b70945d"
+    },
+    "assets/question-refresh/thomson.jpg": {
+      "beforeBytes": 125142,
+      "afterBytes": 108811,
+      "beforeSha256": "ecb088d4da16b9c2e635c014237564b7be8a879b5fbba9eb4b97e0471bace4a5",
+      "afterSha256": "96003959eefa03ce378b9502cee26c5c77aac2a36953a749e6da0324e6b841d9"
+    },
+    "assets/question-refresh/turgenev.jpg": {
+      "beforeBytes": 338260,
+      "afterBytes": 293016,
+      "beforeSha256": "2b465f812f60b998a904bf866523c89c511f7626c2399c0c2a35a65b1da7a148",
+      "afterSha256": "60e44aeaff33ab165a938490e8536fd5477100018bda0871ee77c341f752587b"
+    },
+    "assets/question-refresh/vaccination.jpg": {
+      "beforeBytes": 573589,
+      "afterBytes": 539422,
+      "beforeSha256": "5c3de8192a70b74f7011d45bbbd66b30f2cc2485cd66fa5fea26002dcbfaeec2",
+      "afterSha256": "68500df56d94e8f153f7bda6419390689e229cb8fff25de0233f7045e8b80695"
+    },
+    "assets/question-refresh/wanderers.jpg": {
+      "beforeBytes": 159336,
+      "afterBytes": 141218,
+      "beforeSha256": "28cfe33dbc0dd609ad5c800c8401bf3ddee870bf6b3ba769d4728774dfc2ec24",
+      "afterSha256": "171bc3f7eea37a19108bd9f9ab438cb9f7e48042170308c43b8ab5b5f33728cf"
+    },
+    "assets/question-refresh/warsaw.jpg": {
+      "beforeBytes": 151113,
+      "afterBytes": 134365,
+      "beforeSha256": "aadd063a661405d8fa8ac9096fd05a5cca22b78cd1a495b5c81e745948d169e3",
+      "afterSha256": "7ae8325e748076f09d133bde683dfdc2203d3ebd181bde13e6372fee457e4a7d"
+    }
+  }
+}
