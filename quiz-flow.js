@@ -3,9 +3,7 @@
 'use strict';
 const clone=v=>JSON.parse(JSON.stringify(v)),own=(o,k)=>Object.prototype.hasOwnProperty.call(o||{},k);
 function sequence(data,legacy=0){
- const rows=[{id:'rules',kind:'rules'}];
- if(legacy)rows.push({id:'naming',kind:'naming',seconds:60});
- rows.push({id:'names',kind:'names'});
+ const rows=[{id:'rules',kind:'rules'},{id:'naming',kind:'naming',seconds:60},{id:'names',kind:'names'}];
  const warm=data.rounds.find(r=>r.kind==='warmup');
  warm.questionIds.forEach((qid,i)=>{rows.push({id:`warm-${i}-q`,kind:'warmup',qid,index:i},{id:`warm-${i}-a`,kind:'warmup-answer',qid,index:i});});
  rows.push({id:'stages',kind:'stages'});
@@ -28,7 +26,7 @@ function sequence(data,legacy=0){
   {id:'final-results',kind:'final-results'},{id:'awards',kind:'awards'});
  return rows;
 }
-function fresh(){return {version:4,cursor:0,frontier:0,awardIndex:-1,base:{},warmWins:{},marks:{},manual:{creative:{},captains:{}},captainWinner:null,finished:false,undo:[],clock:null,drafts:[],teamCount:3,nameIndex:0};}
+function fresh(){return {version:3,cursor:0,frontier:0,awardIndex:-1,base:{},warmWins:{},marks:{},manual:{creative:{},captains:{}},captainWinner:null,finished:false,undo:[],clock:null,drafts:[],teamCount:3,nameIndex:0};}
 function points(flow,teamId,data){
  const warm=Object.values(flow.warmWins).filter(id=>id===teamId).length*100;
  const checked=new Set(own(flow.marks,teamId)?flow.marks[teamId]:[]);
@@ -49,14 +47,14 @@ function apply(flow,op){
 function inverse(op){return {...op,from:clone(op.to),to:clone(op.from)};}
 function pause(flow,now=Date.now()){const t=flow?.clock;if(t?.running){t.remaining=Math.max(0,(t.deadline-now)/1000);t.running=false;t.deadline=0;}}
 function validate(raw,teams,data){
- if(!raw||![1,2,3,4].includes(raw.version))return null;if(teams.length>10)throw Error('В этом сценарии может быть не больше 10 команд.');
+ if(!raw||![1,2,3].includes(raw.version))return null;if(teams.length>10)throw Error('В этом сценарии может быть не больше 10 команд.');
  const f=fresh(),rows=sequence(data),ids=new Set(teams.map(t=>t.id)),qids=new Set(data.questions.map(q=>q.id)),warmIds=new Set(data.warmup.map(q=>q.id));
  const integer=(n,max)=>Number.isInteger(n)&&n>=0&&n<=max,signed=n=>Number.isInteger(n)&&Math.abs(n)<=1000000;
- const oldRows=raw.version===4?rows:sequence(data,raw.version);const mapIndex=n=>{const old=oldRows[integer(n,oldRows.length-1)?n:0],id=old?.id;const replacement={'naming':'names','count':'captains-intro','main-results':'captains-intro','creative-intro':'captains-intro','creative-prepare':'captains-intro','creative-present':'captains-intro','creative-score':'captains-intro','captains-play':'captains-intro','final-results':raw.version<3?'captain-winner':'final-results'}[id]||id;const found=rows.findIndex(row=>row.id===replacement);return found>=0?found:rows.findIndex(row=>row.id==='captains-intro');};f.cursor=mapIndex(raw.cursor);f.frontier=Math.max(f.cursor,mapIndex(raw.frontier));f.awardIndex=Number.isInteger(raw.awardIndex)?Math.max(-1,Math.min(teams.length-1,raw.awardIndex)):-1;
+ const oldRows=raw.version===3?rows:sequence(data,raw.version);const mapIndex=n=>{const old=oldRows[integer(n,oldRows.length-1)?n:0],id=old?.id;const replacement={'count':'captains-intro','main-results':'captains-intro','creative-intro':'captains-intro','creative-prepare':'captains-intro','creative-present':'captains-intro','creative-score':'captains-intro','captains-play':'captains-intro','final-results':raw.version<3?'captain-winner':'final-results'}[id]||id;const found=rows.findIndex(row=>row.id===replacement);return found>=0?found:rows.findIndex(row=>row.id==='captains-intro');};f.cursor=mapIndex(raw.cursor);f.frontier=Math.max(f.cursor,mapIndex(raw.frontier));f.awardIndex=Number.isInteger(raw.awardIndex)?Math.max(-1,Math.min(teams.length-1,raw.awardIndex)):-1;
  f.warmWins=Object.fromEntries([...warmIds].filter(q=>ids.has(raw.warmWins?.[q])).map(q=>[q,raw.warmWins[q]]));
  f.marks=Object.fromEntries(teams.map(t=>[t.id,[...new Set((Array.isArray(raw.marks?.[t.id])?raw.marks[t.id]:[]).filter(q=>qids.has(q)))]]));
  for(const stage of ['creative','captains'])f.manual[stage]=Object.fromEntries(teams.map(t=>[t.id,(stage==='captains'?signed(raw.manual?.[stage]?.[t.id]):integer(raw.manual?.[stage]?.[t.id],1000000))?raw.manual[stage][t.id]:0]));
- f.captainWinner=ids.has(raw.captainWinner)?raw.captainWinner:null;f.finished=raw.version>=3&&raw.finished===true;
+ f.captainWinner=ids.has(raw.captainWinner)?raw.captainWinner:null;f.finished=raw.version===3&&raw.finished===true;
  f.drafts=(Array.isArray(raw.drafts)?raw.drafts:[]).slice(0,10).filter(t=>t&&typeof t.id==='string'&&t.id.length<=100).map((t,i)=>({id:t.id,name:String(t.name||'').slice(0,120),number:integer(t.number,10)&&t.number>0?t.number:i+1}));
  f.teamCount=Math.max(3,f.drafts.length,teams.length,integer(raw.teamCount,10)&&raw.teamCount>0?raw.teamCount:3);f.nameIndex=integer(raw.nameIndex,f.teamCount-1)?raw.nameIndex:0;
  const patch=p=>p&&((p.kind==='warm'&&warmIds.has(p.qid)&&[p.from,p.to].every(id=>id===null||ids.has(id)))||(p.kind==='mark'&&ids.has(p.teamId)&&qids.has(p.qid)&&typeof p.from==='boolean'&&typeof p.to==='boolean')||(p.kind==='captain'&&[p.from,p.to].every(id=>id===null||ids.has(id)))||(p.kind==='manual'&&['creative','captains'].includes(p.stage)&&[p.from,p.to].every(v=>v&&typeof v==='object'&&Object.keys(v).every(id=>ids.has(id)&&(p.stage==='captains'?signed(v[id]):integer(v[id],1000000))))));

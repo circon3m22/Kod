@@ -18,7 +18,7 @@ function paperQuestions(round){if(!round)return [];const source=round.kind==='wa
 function paperPosition(c){const r=paperRound(c.blockId),count=paperQuestions(r).length;if(!count)return null;return {blockId:r.id,paperPhase:c.blockId==='warmup'&&c.paperPhase==='handoff'?'intro':['intro','questions','handoff','answers'].includes(c.paperPhase)?c.paperPhase:'intro',paperIndex:Math.max(0,Math.min(count-1,Number.isInteger(c.paperIndex)?c.paperIndex:0))};}
 function paperTimerOwner(c){return c.blockId!=='warmup'&&c.screen==='paper'&&['questions','handoff'].includes(c.paperPhase)?`${c.blockId}:${c.paperPhase}:${c.paperIndex}`:null;}
 function fresh() {
- return {schema:1, flow:null, started:false, rulesSeen:false, teams:D.defaultTeams.map((name,i)=>({id:id(),name,number:i+1,score:0})), history:[], pendingAward:null, roundProgress:{}, used:[], warmDone:[], current:{screen:'home',questionId:null,warmIndex:0,bonusIndex:0,captainIndex:0,answer:false}, setupTeamCount:D.defaultTeams.length,settings:{contrast:false,reduced:false,large:false,timerSound:false}, timers:{}, bonusPhase:'prepare', completedStages:[], intermission:null, updatedAt:null};
+ return {schema:1, flow:null, started:false, rulesSeen:false, teams:[], history:[], pendingAward:null, roundProgress:{}, used:[], warmDone:[], current:{screen:'home',questionId:null,warmIndex:0,bonusIndex:0,captainIndex:0,answer:false}, setupTeamCount:3,settings:{contrast:false,reduced:false,large:false,timerSound:false}, timers:{}, bonusPhase:'prepare', completedStages:[], intermission:null, updatedAt:null};
 }
 let state=fresh(), saved=null, storageOK=true, modal=null, lastFocus=null, scoreContext=null, toastHandle, pendingVideo=null;
 let flowUI=null;
@@ -410,7 +410,7 @@ function openManager(tab='navigate'){
  if(state.flow&&flowUI){
   if(['navigate','teams','scores'].includes(tab)){flowUI.manager(tab);return;}
   if(tab==='session'){openModal('Сохранение',`<div class="flow-details">${btn('Сохранить игру','export','')}${btn('Загрузить игру','import','')}</div>`,'flow-details-dialog','manager');modal.tab=tab;return;}
-  if(tab==='settings'){openModal('Настройки',`<div class="settings-grid">${[['contrast','Контраст'],['large','Крупный текст'],['reduced','Меньше анимации'],['timerSound','Звук таймера']].map(([k,t])=>`<label class="score-check"><input type="checkbox" data-preference="${k}" ${state.settings[k]?'checked':''}>${t}</label>`).join('')}</div><div class="flow-details">${btn('Полный экран','fullscreen','')}<a class="flow-detail-link" href="design/answer-sheets.pdf?v=20261102-teams" target="_blank" rel="noopener">Бланки PDF</a></div>`,'flow-details-dialog','manager');modal.tab=tab;return;}
+  if(tab==='settings'){openModal('Настройки',`<div class="settings-grid">${[['contrast','Контраст'],['large','Крупный текст'],['reduced','Меньше анимации'],['timerSound','Звук таймера']].map(([k,t])=>`<label class="score-check"><input type="checkbox" data-preference="${k}" ${state.settings[k]?'checked':''}>${t}</label>`).join('')}</div><div class="flow-details">${btn('Полный экран','fullscreen','')}<a class="flow-detail-link" href="design/answer-sheets.pdf?v=20261028-clean" target="_blank" rel="noopener">Бланки PDF</a></div>`,'flow-details-dialog','manager');modal.tab=tab;return;}
  }
  const content=managerContent(tab);openModal('Панель ведущего',`<nav class="dialog-tabs" aria-label="Разделы панели">${tabs.map(([k,t])=>btn(t,'manager-tab',`small ${tab===k?'active':''}`,`data-tab="${k}"`)).join('')}</nav>${content}`,'','manager');modal.tab=tab;
 }

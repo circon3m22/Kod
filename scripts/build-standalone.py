@@ -43,7 +43,7 @@ def bundled_scripts():
         "`<g class=\"film-map-window\" mask=\"url(#film-map-reveal)\"><image class=\"film-map\" href=\"${window.KOD_ASSET_URLS['assets/design/poster-russia-silhouette.svg']}\" x=\"240\" y=\"0\" width=\"1440\" height=\"1080\"/></g>`", 'app film map')
     app = replace_once(app, f"source.src='{map_path}'", f"source.src=window.KOD_ASSET_URLS['{map_path}']", 'app canvas map')
     app = replace_once(app, 'src="assets/stage-objects/${image}"', 'src="${window.KOD_ASSET_URLS[\'assets/stage-objects/\'+image]}"', 'app stage cards')
-    app = replace_once(app, 'href="design/answer-sheets.pdf?v=20261102-teams"', 'href="${window.KOD_ASSET_URLS[\'design/answer-sheets.pdf\']}"', 'app answer sheet')
+    app = replace_once(app, 'href="design/answer-sheets.pdf?v=20261028-clean"', 'href="${window.KOD_ASSET_URLS[\'design/answer-sheets.pdf\']}"', 'app answer sheet')
     app = replace_once(app, '<button data-action="import">Загрузить игру</button></div>', '<button data-action="import">Загрузить игру</button><button data-action="standalone-pdf">Бланки PDF</button></div>', 'app initial menu')
     flow = replace_once(flow, 'src="assets/stage-objects/${img}"', 'src="${window.KOD_ASSET_URLS[\'assets/stage-objects/\'+img]}"', 'flow stage cards')
     flow = replace_once(flow, 'src="assets/rules/${img}.webp"', 'src="${window.KOD_ASSET_URLS[\'assets/rules/\'+img+\'.webp\']}"', 'flow rule cards')
