@@ -47,11 +47,6 @@ function validateState(s) {
  return n;
 }
 try{const raw=localStorage.getItem(KEY);if(raw)saved=validateState(JSON.parse(raw));}catch(e){storageOK=false;}
-// Replace an old unstarted roster, but never overwrite a game that has reached a question.
-if(saved && !saved.history.length && !saved.completedStages.length && (!saved.flow || saved.flow.frontier<=1) && saved.teams.map(t=>t.name).join('\n')!==D.defaultTeams.join('\n')){
- saved.teams=fresh().teams;saved.flow=null;saved.setupTeamCount=saved.teams.length;saved.current={...saved.current,screen:'home'};
- try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){storageOK=false;}
-}
 let resumeCurrent=saved?structuredCloneSafe(saved.current):null;
 if(saved){state=structuredCloneSafe(saved);if(state.flow)window.QUIZ_FLOW.pause(state.flow);if(state.timers.paper?.running){state.timers.paper.remaining=remaining(state.timers.paper);state.timers.paper.running=false;}state.current={...state.current,screen:'home'};}
 function save(){state.updatedAt=new Date().toISOString();const payload=structuredCloneSafe(state);if(state.current.screen==='home'&&resumeCurrent)payload.current=structuredCloneSafe(resumeCurrent);saved=payload;try{localStorage.setItem(KEY,JSON.stringify(payload));storageOK=true;}catch(e){storageOK=false;} }
