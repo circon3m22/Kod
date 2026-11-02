@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
 const root=path.resolve(__dirname,'..'),src=fs.readFileSync(path.join(root,'app.js'),'utf8');
 const dataCtx={window:{}};vm.createContext(dataCtx);vm.runInContext(fs.readFileSync(path.join(root,'quiz-data.js'),'utf8'),dataCtx);
-const context={D:dataCtx.window.QUIZ_DATA};vm.createContext(context);
+let nextId=0;const context={D:dataCtx.window.QUIZ_DATA,id:()=>`test-${++nextId}`};vm.createContext(context);
 const helpers=src.slice(src.indexOf('function taskKey('),src.indexOf('function fresh()'));
 const fresh=src.slice(src.indexOf('function fresh()'),src.indexOf('\nlet state='));
 const validator=src.slice(src.indexOf('function validateState('),src.indexOf('\ntry{const raw'));
